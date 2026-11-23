@@ -1,0 +1,4808 @@
+{
+  "book": "Словарь-минимум с логической структурой",
+  "themes": [
+    {
+      "theme": {
+        "ru": "Прилагательные",
+        "en": "Adjectives"
+      },
+      "sections": [
+        {
+          "section": {
+            "ru": "Признаки, воспринимаемые органами чувств",
+            "en": "Qualities Given in Senses"
+          },
+          "subsections": [
+            {
+              "number": 1,
+              "subsection": {
+                "ru": "Глаз",
+                "en": "Eye"
+              },
+              "subsection_ocr": {
+                "ru": "Глаз",
+                "en": "Eye"
+              },
+              "entries": [
+                {
+                  "order": 0,
+                  "page": 100,
+                  "ru": "цвет",
+                  "en": "Colour",
+                  "transcription": "[kАlэ]",
+                  "is_main": false
+                },
+                {
+                  "order": 1,
+                  "page": 100,
+                  "ru": "красный",
+                  "en": "red",
+                  "transcription": "[red]",
+                  "is_main": true
+                },
+                {
+                  "order": 2,
+                  "page": 100,
+                  "ru": "оранжевый",
+                  "en": "orange",
+                  "transcription": "[Drind3]",
+                  "is_main": false
+                },
+                {
+                  "order": 3,
+                  "page": 100,
+                  "ru": "желтый",
+                  "en": "1y yellow",
+                  "transcription": "[jelэu]",
+                  "is_main": false
+                },
+                {
+                  "order": 4,
+                  "page": 100,
+                  "ru": "зеленый",
+                  "en": "green",
+                  "transcription": "[gri:n]",
+                  "is_main": false
+                },
+                {
+                  "order": 5,
+                  "page": 100,
+                  "ru": "синий",
+                  "en": "d ) blue",
+                  "transcription": "[blu:]",
+                  "is_main": false
+                },
+                {
+                  "order": 6,
+                  "page": 100,
+                  "ru": "фиолетовый",
+                  "en": "violet",
+                  "transcription": "[vaтэlэt]",
+                  "is_main": false
+                },
+                {
+                  "order": 7,
+                  "page": 100,
+                  "ru": "черный",
+                  "en": "black",
+                  "transcription": "[blak]",
+                  "is_main": false
+                },
+                {
+                  "order": 8,
+                  "page": 100,
+                  "ru": "коричневый",
+                  "en": "brown",
+                  "transcription": "[braun]",
+                  "is_main": false
+                },
+                {
+                  "order": 9,
+                  "page": 100,
+                  "ru": "серый",
+                  "en": "grey",
+                  "transcription": "[greт]",
+                  "is_main": false
+                },
+                {
+                  "order": 10,
+                  "page": 100,
+                  "ru": "белый",
+                  "en": "white",
+                  "transcription": "[wait]",
+                  "is_main": false
+                },
+                {
+                  "order": 11,
+                  "page": 100,
+                  "ru": "темный",
+                  "en": "dark",
+                  "transcription": "[da:k]",
+                  "is_main": true
+                },
+                {
+                  "order": 12,
+                  "page": 100,
+                  "ru": "светлый",
+                  "en": "light",
+                  "transcription": "[laIt]",
+                  "is_main": false
+                },
+                {
+                  "order": 13,
+                  "page": 100,
+                  "ru": "бесцветный",
+                  "en": "colourless",
+                  "transcription": "[kxlэlIs]",
+                  "is_main": true
+                },
+                {
+                  "order": 14,
+                  "page": 100,
+                  "ru": "прозрачный",
+                  "en": "transparent",
+                  "transcription": "[tren'sperэnt]",
+                  "is_main": false
+                },
+                {
+                  "order": 15,
+                  "page": 100,
+                  "ru": "непрозрачный",
+                  "en": "opaque",
+                  "transcription": "[эu'perk]",
+                  "is_main": false
+                },
+                {
+                  "order": 16,
+                  "page": 100,
+                  "ru": "яркий",
+                  "en": "bright",
+                  "transcription": "[brart]",
+                  "is_main": true
+                },
+                {
+                  "order": 17,
+                  "page": 100,
+                  "ru": "пестрый",
+                  "en": "particoloured",
+                  "transcription": "[pa:tr' k^lэd]",
+                  "is_main": false
+                },
+                {
+                  "order": 18,
+                  "page": 100,
+                  "ru": "блестящий",
+                  "en": "brilliant",
+                  "transcription": "[brrlrэnt]",
+                  "is_main": false
+                },
+                {
+                  "order": 19,
+                  "page": 100,
+                  "ru": "бледный",
+                  "en": "pale",
+                  "transcription": "[perl]",
+                  "is_main": false
+                },
+                {
+                  "order": 20,
+                  "page": 100,
+                  "ru": "неясньый",
+                  "en": "dim",
+                  "transcription": "[dmm]",
+                  "is_main": false
+                },
+                {
+                  "order": 21,
+                  "page": 100,
+                  "ru": "нежный, неясный",
+                  "en": "indistinct",
+                  "transcription": "[Indr'stinkt]",
+                  "is_main": false
+                },
+                {
+                  "order": 22,
+                  "page": 100,
+                  "ru": "отчетливый",
+                  "en": "distinct e",
+                  "transcription": "[drs'tmnkt]",
+                  "is_main": false
+                },
+                {
+                  "order": 23,
+                  "page": 100,
+                  "ru": "размер",
+                  "en": "Size 8s",
+                  "transcription": "[saIz]",
+                  "is_main": true
+                },
+                {
+                  "order": 24,
+                  "page": 100,
+                  "ru": "большой",
+                  "en": "large",
+                  "transcription": "[la:d3]",
+                  "is_main": true
+                },
+                {
+                  "order": 25,
+                  "page": 101,
+                  "ru": "большой",
+                  "en": "big nicu",
+                  "transcription": "[brg]",
+                  "is_main": false
+                },
+                {
+                  "order": 26,
+                  "page": 101,
+                  "ru": "огромный",
+                  "en": "huge",
+                  "transcription": "[hju:dз]",
+                  "is_main": false
+                },
+                {
+                  "order": 27,
+                  "page": 101,
+                  "ru": "широкий",
+                  "en": "wide",
+                  "transcription": "[ward]",
+                  "is_main": false
+                },
+                {
+                  "order": 28,
+                  "page": 101,
+                  "ru": "широкий",
+                  "en": "broad",
+                  "transcription": "[brэ:d]",
+                  "is_main": false
+                },
+                {
+                  "order": 29,
+                  "page": 101,
+                  "ru": "толстый",
+                  "en": "thick",
+                  "transcription": "[frk]",
+                  "is_main": false
+                },
+                {
+                  "order": 30,
+                  "page": 101,
+                  "ru": "длинный",
+                  "en": "long",
+                  "transcription": "[lon]",
+                  "is_main": false
+                },
+                {
+                  "order": 31,
+                  "page": 101,
+                  "ru": "высокий",
+                  "en": "tall",
+                  "transcription": "[tэ:l]",
+                  "is_main": false
+                },
+                {
+                  "order": 32,
+                  "page": 101,
+                  "ru": "глубокий",
+                  "en": "deep",
+                  "transcription": "[di:p]",
+                  "is_main": false
+                },
+                {
+                  "order": 33,
+                  "page": 101,
+                  "ru": "маленький",
+                  "en": "little",
+                  "transcription": "[Irtl]",
+                  "is_main": true
+                },
+                {
+                  "order": 34,
+                  "page": 101,
+                  "ru": "маленький",
+                  "en": "small",
+                  "transcription": "[smэ:l]",
+                  "is_main": false
+                },
+                {
+                  "order": 35,
+                  "page": 101,
+                  "ru": "узкий",
+                  "en": "narrow : }",
+                  "transcription": "[nerou]",
+                  "is_main": true
+                },
+                {
+                  "order": 36,
+                  "page": 101,
+                  "ru": "тонкий",
+                  "en": "thin",
+                  "transcription": "[Эmn]",
+                  "is_main": false
+                },
+                {
+                  "order": 37,
+                  "page": 101,
+                  "ru": "короткий",
+                  "en": "short",
+                  "transcription": "[Jэ:t]",
+                  "is_main": false
+                },
+                {
+                  "order": 38,
+                  "page": 101,
+                  "ru": "мелкий; тонкий, изящный",
+                  "en": "fine ; ! y",
+                  "transcription": "[famn]",
+                  "is_main": false
+                },
+                {
+                  "order": 39,
+                  "page": 101,
+                  "ru": "мелкии",
+                  "en": "shallow",
+                  "transcription": "[Jelэu]",
+                  "is_main": false
+                },
+                {
+                  "order": 40,
+                  "page": 101,
+                  "ru": "низкий",
+                  "en": "low",
+                  "transcription": "[lэu]",
+                  "is_main": false
+                },
+                {
+                  "order": 41,
+                  "page": 101,
+                  "ru": "среднего размера",
+                  "en": "medium-sized",
+                  "transcription": "[mi:drom samzd]",
+                  "is_main": true
+                },
+                {
+                  "order": 42,
+                  "page": 101,
+                  "ru": "далекий",
+                  "en": "far",
+                  "transcription": "[fa:]",
+                  "is_main": false
+                },
+                {
+                  "order": 43,
+                  "page": 101,
+                  "ru": "близкий",
+                  "en": "near",
+                  "transcription": "[nэ]",
+                  "is_main": false
+                },
+                {
+                  "order": 44,
+                  "page": 101,
+                  "ru": "плоский",
+                  "en": "flat",
+                  "transcription": "[flet]",
+                  "is_main": true
+                },
+                {
+                  "order": 45,
+                  "page": 101,
+                  "ru": "плоский",
+                  "en": "plane",
+                  "transcription": "[pleIn]",
+                  "is_main": false
+                },
+                {
+                  "order": 46,
+                  "page": 101,
+                  "ru": "выпуклый",
+                  "en": "convex",
+                  "transcription": "[kэn'veks]",
+                  "is_main": true
+                },
+                {
+                  "order": 47,
+                  "page": 101,
+                  "ru": "впалый вогнутый",
+                  "en": "concave",
+                  "transcription": "[konkerv]",
+                  "is_main": false
+                },
+                {
+                  "order": 48,
+                  "page": 101,
+                  "ru": "прямой",
+                  "en": "straight",
+                  "transcription": "[strert]",
+                  "is_main": true
+                },
+                {
+                  "order": 49,
+                  "page": 101,
+                  "ru": "кривой",
+                  "en": "curved",
+                  "transcription": "[kз:vd]",
+                  "is_main": false
+                },
+                {
+                  "order": 50,
+                  "page": 101,
+                  "ru": "вертикальный",
+                  "en": "vertical",
+                  "transcription": "[vз:trk(o)l]",
+                  "is_main": false
+                },
+                {
+                  "order": 51,
+                  "page": 101,
+                  "ru": "горизонтальный",
+                  "en": "horizontal",
+                  "transcription": "[hori zontl]",
+                  "is_main": false
+                },
+                {
+                  "order": 52,
+                  "page": 101,
+                  "ru": "наклонный",
+                  "en": "inclined",
+                  "transcription": "[mn' klamnd]",
+                  "is_main": false
+                },
+                {
+                  "order": 53,
+                  "page": 101,
+                  "ru": "круглый",
+                  "en": "round",
+                  "transcription": "[raund]",
+                  "is_main": false
+                },
+                {
+                  "order": 54,
+                  "page": 101,
+                  "ru": "квадратный",
+                  "en": "square",
+                  "transcription": "[skwea]",
+                  "is_main": false
+                },
+                {
+                  "order": 55,
+                  "page": 101,
+                  "ru": "овальный",
+                  "en": "oval",
+                  "transcription": "[эuv(э)l]",
+                  "is_main": false
+                },
+                {
+                  "order": 56,
+                  "page": 101,
+                  "ru": "треугольный",
+                  "en": "triangular",
+                  "transcription": "[trar'angjulэ]",
+                  "is_main": false
+                },
+                {
+                  "order": 57,
+                  "page": 101,
+                  "ru": "прямоугольный",
+                  "en": "rectangular",
+                  "transcription": "[rek ' tangjulэ]",
+                  "is_main": false
+                },
+                {
+                  "order": 58,
+                  "page": 101,
+                  "ru": "сферический",
+                  "en": "spherical",
+                  "transcription": "[sferrk(o)l]",
+                  "is_main": true
+                },
+                {
+                  "order": 59,
+                  "page": 101,
+                  "ru": "цилиндрический",
+                  "en": "cylindrical",
+                  "transcription": "[sr'lmndrrk(o)l]",
+                  "is_main": false
+                },
+                {
+                  "order": 60,
+                  "page": 101,
+                  "ru": "конический",
+                  "en": "conic",
+                  "transcription": "['konrk]",
+                  "is_main": false
+                },
+                {
+                  "order": 61,
+                  "page": 102,
+                  "ru": "кубический",
+                  "en": "cubic",
+                  "transcription": "[kju:brk]",
+                  "is_main": false
+                }
+              ]
+            },
+            {
+              "number": 2,
+              "subsection": {
+                "ru": "Кожа",
+                "en": "Skin"
+              },
+              "subsection_ocr": {
+                "ru": "Кожа",
+                "en": "Skin"
+              },
+              "entries": [
+                {
+                  "order": 62,
+                  "page": 102,
+                  "ru": "температура",
+                  "en": "Temperature",
+                  "transcription": "[temp(э)гэtЛэ]",
+                  "is_main": false
+                },
+                {
+                  "order": 63,
+                  "page": 102,
+                  "ru": "горячий",
+                  "en": "hot",
+                  "transcription": "[hot]",
+                  "is_main": false
+                },
+                {
+                  "order": 64,
+                  "page": 102,
+                  "ru": "теплый",
+                  "en": "warm",
+                  "transcription": "[wэ m]",
+                  "is_main": false
+                },
+                {
+                  "order": 65,
+                  "page": 102,
+                  "ru": "холодный",
+                  "en": "cold",
+                  "transcription": "[kэuld]",
+                  "is_main": false
+                },
+                {
+                  "order": 66,
+                  "page": 102,
+                  "ru": "прохладный",
+                  "en": "cool",
+                  "transcription": "[ku:l]",
+                  "is_main": false
+                },
+                {
+                  "order": 67,
+                  "page": 102,
+                  "ru": "свежий",
+                  "en": "fresh",
+                  "transcription": "[freЛ]",
+                  "is_main": false
+                },
+                {
+                  "order": 68,
+                  "page": 102,
+                  "ru": "поверхность",
+                  "en": "Surface",
+                  "transcription": "[ sз:frs]",
+                  "is_main": false
+                },
+                {
+                  "order": 69,
+                  "page": 102,
+                  "ru": "ровный",
+                  "en": "even",
+                  "transcription": "[i:v(э)n]",
+                  "is_main": false
+                },
+                {
+                  "order": 70,
+                  "page": 102,
+                  "ru": "гладкий",
+                  "en": "smooth",
+                  "transcription": "[smu:0]",
+                  "is_main": false
+                },
+                {
+                  "order": 71,
+                  "page": 102,
+                  "ru": "шероховатый",
+                  "en": "rough",
+                  "transcription": "[rAf]",
+                  "is_main": false
+                },
+                {
+                  "order": 72,
+                  "page": 102,
+                  "ru": "неровный",
+                  "en": "uneven",
+                  "transcription": "[An'i:v(э)n]",
+                  "is_main": false
+                },
+                {
+                  "order": 73,
+                  "page": 102,
+                  "ru": "твердый",
+                  "en": "hard",
+                  "transcription": "[ha:d]",
+                  "is_main": false
+                },
+                {
+                  "order": 74,
+                  "page": 102,
+                  "ru": "мягкий",
+                  "en": "soft",
+                  "transcription": "[soft]",
+                  "is_main": false
+                },
+                {
+                  "order": 75,
+                  "page": 102,
+                  "ru": "острый",
+                  "en": "sharp",
+                  "transcription": "[Ja:p]",
+                  "is_main": false
+                },
+                {
+                  "order": 76,
+                  "page": 102,
+                  "ru": "тупой",
+                  "en": "blunt",
+                  "transcription": "[blAnt]",
+                  "is_main": false
+                },
+                {
+                  "order": 77,
+                  "page": 102,
+                  "ru": "влажность",
+                  "en": "Humidity",
+                  "transcription": "[hju: midrtr]",
+                  "is_main": false
+                },
+                {
+                  "order": 78,
+                  "page": 102,
+                  "ru": "сухой",
+                  "en": "dry",
+                  "transcription": "[drar]",
+                  "is_main": false
+                },
+                {
+                  "order": 79,
+                  "page": 102,
+                  "ru": "мокрый",
+                  "en": "wet",
+                  "transcription": "[wet]",
+                  "is_main": false
+                },
+                {
+                  "order": 80,
+                  "page": 102,
+                  "ru": "влажныи",
+                  "en": "humid",
+                  "transcription": "[hju:mid]",
+                  "is_main": false
+                }
+              ]
+            },
+            {
+              "number": 3,
+              "subsection": {
+                "ru": "Язык",
+                "en": "Tongue"
+              },
+              "subsection_ocr": {
+                "ru": "Язык",
+                "en": "Tongue"
+              },
+              "entries": [
+                {
+                  "order": 81,
+                  "page": 102,
+                  "ru": "вкусный",
+                  "en": "tasty",
+                  "transcription": "[tersti]",
+                  "is_main": false
+                },
+                {
+                  "order": 82,
+                  "page": 102,
+                  "ru": "вкусный",
+                  "en": "delicious",
+                  "transcription": "[drlrJэs]",
+                  "is_main": false
+                },
+                {
+                  "order": 83,
+                  "page": 102,
+                  "ru": "безвкусный",
+                  "en": "tasteless",
+                  "transcription": "[terstlIs]",
+                  "is_main": false
+                },
+                {
+                  "order": 84,
+                  "page": 102,
+                  "ru": "сладкий",
+                  "en": "sweet",
+                  "transcription": "[swi:t]",
+                  "is_main": false
+                },
+                {
+                  "order": 85,
+                  "page": 102,
+                  "ru": "кислый",
+                  "en": "sOur",
+                  "transcription": "[saua]",
+                  "is_main": false
+                },
+                {
+                  "order": 86,
+                  "page": 102,
+                  "ru": "соленый",
+                  "en": "salty",
+                  "transcription": "[sэ:ltr]",
+                  "is_main": false
+                },
+                {
+                  "order": 87,
+                  "page": 102,
+                  "ru": "горький",
+                  "en": "bitter",
+                  "transcription": "[bita]",
+                  "is_main": false
+                },
+                {
+                  "order": 88,
+                  "page": 103,
+                  "ru": "крепкий",
+                  "en": "strong",
+                  "transcription": "[stron]",
+                  "is_main": false
+                },
+                {
+                  "order": 89,
+                  "page": 103,
+                  "ru": "острый",
+                  "en": "3s { pungent",
+                  "transcription": "[pAndЗ(э nt]",
+                  "is_main": false
+                }
+              ]
+            },
+            {
+              "number": 4,
+              "subsection": {
+                "ru": "Ухо",
+                "en": "Ear"
+              },
+              "subsection_ocr": {
+                "ru": "Ухо",
+                "en": "Ear"
+              },
+              "entries": [
+                {
+                  "order": 90,
+                  "page": 103,
+                  "ru": "громкий",
+                  "en": "loud",
+                  "transcription": "[laud]",
+                  "is_main": true
+                },
+                {
+                  "order": 91,
+                  "page": 103,
+                  "ru": "шумный",
+                  "en": "noisy",
+                  "transcription": "[nэIzI]",
+                  "is_main": false
+                },
+                {
+                  "order": 92,
+                  "page": 103,
+                  "ru": "резкий",
+                  "en": "sharp",
+                  "transcription": "[Ja:p]",
+                  "is_main": false
+                },
+                {
+                  "order": 93,
+                  "page": 103,
+                  "ru": "тихий",
+                  "en": "calm",
+                  "transcription": "[ka:m]",
+                  "is_main": false
+                },
+                {
+                  "order": 94,
+                  "page": 103,
+                  "ru": "тихий нежный",
+                  "en": "soft",
+                  "transcription": "[soft]",
+                  "is_main": false
+                },
+                {
+                  "order": 95,
+                  "page": 103,
+                  "ru": "тихий низкий",
+                  "en": "low",
+                  "transcription": "[lэч]",
+                  "is_main": false
+                },
+                {
+                  "order": 96,
+                  "page": 103,
+                  "ru": "еле слышный",
+                  "en": "hardly audible",
+                  "transcription": "[ha:dlr 'э drb(э)l]",
+                  "is_main": false
+                },
+                {
+                  "order": 97,
+                  "page": 103,
+                  "ru": "приятный",
+                  "en": "pleasant",
+                  "transcription": "[plez(э )nt]",
+                  "is_main": false
+                },
+                {
+                  "order": 98,
+                  "page": 103,
+                  "ru": "тихий",
+                  "en": "quiet",
+                  "transcription": "[kwa1эt]",
+                  "is_main": false
+                },
+                {
+                  "order": 99,
+                  "page": 103,
+                  "ru": "приглушенный",
+                  "en": "muffled",
+                  "transcription": "[mAf(э)ld]",
+                  "is_main": false
+                },
+                {
+                  "order": 100,
+                  "page": 103,
+                  "ru": "глухой",
+                  "en": "deaf",
+                  "transcription": "[def]",
+                  "is_main": true
+                }
+              ]
+            },
+            {
+              "number": 5,
+              "subsection": {
+                "ru": "Нос",
+                "en": "Nose"
+              },
+              "subsection_ocr": {
+                "ru": "Ноc",
+                "en": "Nose"
+              },
+              "entries": [
+                {
+                  "order": 101,
+                  "page": 103,
+                  "ru": "неприятно пахнущий",
+                  "en": "smelly",
+                  "transcription": "[smelr]",
+                  "is_main": true
+                },
+                {
+                  "order": 102,
+                  "page": 103,
+                  "ru": "вонючий",
+                  "en": "stinking",
+                  "transcription": "[stinkIn]",
+                  "is_main": false
+                },
+                {
+                  "order": 103,
+                  "page": 103,
+                  "ru": "неприятный",
+                  "en": "unpleasant",
+                  "transcription": "[An'plez(э )nt]",
+                  "is_main": false
+                },
+                {
+                  "order": 104,
+                  "page": 103,
+                  "ru": "ароматный",
+                  "en": "aromatic",
+                  "transcription": "[erэ' metrk]",
+                  "is_main": true
+                },
+                {
+                  "order": 105,
+                  "page": 103,
+                  "ru": "душистый",
+                  "en": "fragrant",
+                  "transcription": "[freIgront]",
+                  "is_main": false
+                },
+                {
+                  "order": 106,
+                  "page": 103,
+                  "ru": "специфический",
+                  "en": "specific",
+                  "transcription": "[spr sifik]",
+                  "is_main": true
+                },
+                {
+                  "order": 107,
+                  "page": 103,
+                  "ru": "запаха",
+                  "en": "odourless",
+                  "transcription": "[эudolrs]",
+                  "is_main": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "section": {
+            "ru": "Время",
+            "en": "Time"
+          },
+          "subsections": [
+            {
+              "number": 1,
+              "subsection": {
+                "ru": "Основные признаки",
+                "en": "Main Properties"
+              },
+              "subsection_ocr": {
+                "ru": "Основные признаки",
+                "en": "Main Properties"
+              },
+              "entries": [
+                {
+                  "order": 108,
+                  "page": 103,
+                  "ru": "долгий",
+                  "en": "long",
+                  "transcription": "[lon]",
+                  "is_main": true
+                },
+                {
+                  "order": 109,
+                  "page": 104,
+                  "ru": "краткий",
+                  "en": "brief",
+                  "transcription": "[bri:f]",
+                  "is_main": false
+                },
+                {
+                  "order": 110,
+                  "page": 104,
+                  "ru": "короткий",
+                  "en": "short",
+                  "transcription": "[Лэ:t]",
+                  "is_main": false
+                },
+                {
+                  "order": 111,
+                  "page": 104,
+                  "ru": "быстрый",
+                  "en": "fast",
+                  "transcription": "[fa:st]",
+                  "is_main": true
+                },
+                {
+                  "order": 112,
+                  "page": 104,
+                  "ru": "быстрый",
+                  "en": "swift",
+                  "transcription": "[swIft]",
+                  "is_main": false
+                },
+                {
+                  "order": 113,
+                  "page": 104,
+                  "ru": "быстрый",
+                  "en": "quick",
+                  "transcription": "[kwik]",
+                  "is_main": false
+                },
+                {
+                  "order": 114,
+                  "page": 104,
+                  "ru": "стремительный",
+                  "en": "rapid",
+                  "transcription": "[repId]",
+                  "is_main": false
+                },
+                {
+                  "order": 115,
+                  "page": 104,
+                  "ru": "срочный",
+                  "en": "urgent",
+                  "transcription": "[з:d3(э )nt]",
+                  "is_main": false
+                },
+                {
+                  "order": 116,
+                  "page": 104,
+                  "ru": "медленный",
+                  "en": "slow",
+                  "transcription": "[slэu]",
+                  "is_main": false
+                },
+                {
+                  "order": 117,
+                  "page": 104,
+                  "ru": "ранний",
+                  "en": "early",
+                  "transcription": "[з:l ]",
+                  "is_main": true
+                },
+                {
+                  "order": 118,
+                  "page": 104,
+                  "ru": "поздний",
+                  "en": "late",
+                  "transcription": "[lert]",
+                  "is_main": false
+                },
+                {
+                  "order": 119,
+                  "page": 104,
+                  "ru": "молодой",
+                  "en": "young",
+                  "transcription": "[jAn]",
+                  "is_main": true
+                },
+                {
+                  "order": 120,
+                  "page": 104,
+                  "ru": "маленький",
+                  "en": "little i",
+                  "transcription": "[Imtl]",
+                  "is_main": false
+                },
+                {
+                  "order": 121,
+                  "page": 104,
+                  "ru": "взрослый",
+                  "en": "adult",
+                  "transcription": "[э' dAlt]",
+                  "is_main": false
+                },
+                {
+                  "order": 122,
+                  "page": 104,
+                  "ru": "старый",
+                  "en": "old",
+                  "transcription": "[эuld]",
+                  "is_main": false
+                },
+                {
+                  "order": 123,
+                  "page": 104,
+                  "ru": "пожилой",
+                  "en": "aged",
+                  "transcription": "[eтdЗ(1)d]",
+                  "is_main": false
+                }
+              ]
+            },
+            {
+              "number": 2,
+              "subsection": {
+                "ru": "Стадии",
+                "en": "Stages"
+              },
+              "subsection_ocr": {
+                "ru": "Стадии",
+                "en": "Stages"
+              },
+              "entries": [
+                {
+                  "order": 124,
+                  "page": 104,
+                  "ru": "прошлый",
+                  "en": "past",
+                  "transcription": "[pa:st]",
+                  "is_main": true
+                },
+                {
+                  "order": 125,
+                  "page": 104,
+                  "ru": "недавний",
+                  "en": "recent",
+                  "transcription": "[ri:s(э)nt]",
+                  "is_main": false
+                },
+                {
+                  "order": 126,
+                  "page": 104,
+                  "ru": "устаревший",
+                  "en": "obsolete",
+                  "transcription": "[obsэli:t]",
+                  "is_main": false
+                },
+                {
+                  "order": 127,
+                  "page": 104,
+                  "ru": "древний",
+                  "en": "ancient",
+                  "transcription": "[eIn (э)nt]",
+                  "is_main": false
+                },
+                {
+                  "order": 128,
+                  "page": 104,
+                  "ru": "настоящий",
+                  "en": "present",
+                  "transcription": "[prez(э)nt]",
+                  "is_main": true
+                },
+                {
+                  "order": 129,
+                  "page": 104,
+                  "ru": "современный",
+                  "en": "contemporary [kon",
+                  "transcription": "",
+                  "is_main": false
+                },
+                {
+                  "order": 130,
+                  "page": 104,
+                  "ru": "современный",
+                  "en": "modern",
+                  "transcription": "[modn]",
+                  "is_main": false
+                },
+                {
+                  "order": 131,
+                  "page": 104,
+                  "ru": "новейший lxp tэ' dert]",
+                  "en": "up-to-date",
+                  "transcription": "[fju:tfa]",
+                  "is_main": false
+                },
+                {
+                  "order": 132,
+                  "page": 104,
+                  "ru": "будущий",
+                  "en": "future",
+                  "transcription": "",
+                  "is_main": true
+                },
+                {
+                  "order": 133,
+                  "page": 104,
+                  "ru": "предыдущий",
+                  "en": "previous",
+                  "transcription": "[pri:vIas]",
+                  "is_main": true
+                },
+                {
+                  "order": 134,
+                  "page": 104,
+                  "ru": "предшествующий",
+                  "en": "preceding",
+                  "transcription": "[prr' si:dmn]",
+                  "is_main": false
+                },
+                {
+                  "order": 135,
+                  "page": 104,
+                  "ru": "предварительный",
+                  "en": "preliminary [prr teImas]",
+                  "transcription": "",
+                  "is_main": false
+                },
+                {
+                  "order": 136,
+                  "page": 104,
+                  "ru": "одновременный",
+                  "en": "simultaneous",
+                  "transcription": "",
+                  "is_main": false
+                },
+                {
+                  "order": 137,
+                  "page": 104,
+                  "ru": "следующий",
+                  "en": "next",
+                  "transcription": "[nekst]",
+                  "is_main": false
+                },
+                {
+                  "order": 138,
+                  "page": 104,
+                  "ru": "следующий",
+                  "en": "following",
+                  "transcription": "[folauIn]",
+                  "is_main": false
+                },
+                {
+                  "order": 139,
+                  "page": 104,
+                  "ru": "первый",
+                  "en": "the first",
+                  "transcription": "[дэ 'fз:st]",
+                  "is_main": true
+                },
+                {
+                  "order": 140,
+                  "page": 104,
+                  "ru": "последний",
+                  "en": "the last",
+                  "transcription": "[дэ 'la:st]",
+                  "is_main": false
+                },
+                {
+                  "order": 141,
+                  "page": 104,
+                  "ru": "начальный",
+                  "en": "initial",
+                  "transcription": "[rn1J(э)l]",
+                  "is_main": false
+                },
+                {
+                  "order": 142,
+                  "page": 104,
+                  "ru": "конечный",
+                  "en": "final",
+                  "transcription": "[famn(э)l]",
+                  "is_main": false
+                }
+              ]
+            },
+            {
+              "number": 3,
+              "subsection": {
+                "ru": "Непрерывность, частотность",
+                "en": "Continuity / Frequency"
+              },
+              "subsection_ocr": {
+                "ru": "Непрерывность частотность",
+                "en": "Continuity / Frequency"
+              },
+              "entries": [
+                {
+                  "order": 143,
+                  "page": 105,
+                  "ru": "постоянный",
+                  "en": "constant",
+                  "transcription": "['konstont]",
+                  "is_main": false
+                },
+                {
+                  "order": 144,
+                  "page": 105,
+                  "ru": "временный",
+                  "en": "provisional",
+                  "transcription": "[prэ' vIЗ(э nэl]",
+                  "is_main": false
+                },
+                {
+                  "order": 145,
+                  "page": 105,
+                  "ru": "временный",
+                  "en": "temporary",
+                  "transcription": "[temрэгэr1]",
+                  "is_main": false
+                },
+                {
+                  "order": 146,
+                  "page": 105,
+                  "ru": "вечный",
+                  "en": "eternal",
+                  "transcription": "[1tз n(э)l]",
+                  "is_main": false
+                },
+                {
+                  "order": 147,
+                  "page": 105,
+                  "ru": "вечный",
+                  "en": "everlasting",
+                  "transcription": "[evэ'la:stIn]",
+                  "is_main": false
+                },
+                {
+                  "order": 148,
+                  "page": 105,
+                  "ru": "непрерывный",
+                  "en": "uninterrupted",
+                  "transcription": "[AnIntэ' rAptId]",
+                  "is_main": true
+                },
+                {
+                  "order": 149,
+                  "page": 105,
+                  "ru": "длящийся",
+                  "en": "continuous",
+                  "transcription": "[kэn'tInjuos]",
+                  "is_main": false
+                },
+                {
+                  "order": 150,
+                  "page": 105,
+                  "ru": "периодический",
+                  "en": "periodical",
+                  "transcription": "[рI(э)rr odrk(э)]",
+                  "is_main": true
+                },
+                {
+                  "order": 151,
+                  "page": 105,
+                  "ru": "редкий",
+                  "en": "rare",
+                  "transcription": "[reэ]",
+                  "is_main": false
+                },
+                {
+                  "order": 152,
+                  "page": 105,
+                  "ru": "нечастый",
+                  "en": "infrequent",
+                  "transcription": "[mn'fri:kwont]",
+                  "is_main": false
+                },
+                {
+                  "order": 153,
+                  "page": 105,
+                  "ru": "частый",
+                  "en": "frequent",
+                  "transcription": "[fri:kwont]",
+                  "is_main": false
+                },
+                {
+                  "order": 154,
+                  "page": 105,
+                  "ru": "обычный",
+                  "en": "usual",
+                  "transcription": "[ju:3Uэ]",
+                  "is_main": false
+                },
+                {
+                  "order": 155,
+                  "page": 105,
+                  "ru": "случайный",
+                  "en": "occasional",
+                  "transcription": "[э'kет3(э )nэ]",
+                  "is_main": false
+                },
+                {
+                  "order": 156,
+                  "page": 105,
+                  "ru": "внезапный",
+                  "en": "sudden",
+                  "transcription": "[sAdn]",
+                  "is_main": true
+                },
+                {
+                  "order": 157,
+                  "page": 105,
+                  "ru": "постепенный",
+                  "en": "gradual",
+                  "transcription": "[gredsual]",
+                  "is_main": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "section": {
+            "ru": "Способности человека",
+            "en": "Faculties; Ability"
+          },
+          "subsections": [
+            {
+              "number": 1,
+              "subsection": {
+                "ru": "Способность",
+                "en": "Ability"
+              },
+              "subsection_ocr": {
+                "ru": "Способность",
+                "en": "Ability"
+              },
+              "entries": [
+                {
+                  "order": 158,
+                  "page": 105,
+                  "ru": "одаренный ? nca}",
+                  "en": "gifted",
+                  "transcription": "[grftid]",
+                  "is_main": true
+                },
+                {
+                  "order": 159,
+                  "page": 105,
+                  "ru": "способный",
+                  "en": "capable",
+                  "transcription": "[kетрэb(э)l]",
+                  "is_main": false
+                },
+                {
+                  "order": 160,
+                  "page": 105,
+                  "ru": "талантливый",
+                  "en": "talented",
+                  "transcription": "[talontid]",
+                  "is_main": false
+                },
+                {
+                  "order": 161,
+                  "page": 105,
+                  "ru": "гениальный",
+                  "en": "great",
+                  "transcription": "[grent]",
+                  "is_main": false
+                },
+                {
+                  "order": 162,
+                  "page": 105,
+                  "ru": "умный",
+                  "en": "clever",
+                  "transcription": "[klevэ]",
+                  "is_main": true
+                },
+                {
+                  "order": 163,
+                  "page": 105,
+                  "ru": "умный",
+                  "en": "intelligent",
+                  "transcription": "[mn'telrdЗ(э)nt]",
+                  "is_main": false
+                },
+                {
+                  "order": 164,
+                  "page": 105,
+                  "ru": "находчивый",
+                  "en": "quick",
+                  "transcription": "[kwrk]",
+                  "is_main": false
+                },
+                {
+                  "order": 165,
+                  "page": 105,
+                  "ru": "мудрый",
+                  "en": "wise",
+                  "transcription": "[waiz]",
+                  "is_main": false
+                },
+                {
+                  "order": 166,
+                  "page": 105,
+                  "ru": "хитрый",
+                  "en": "sly",
+                  "transcription": "[sla]",
+                  "is_main": false
+                },
+                {
+                  "order": 167,
+                  "page": 105,
+                  "ru": "остроумный",
+                  "en": "sharp-witted",
+                  "transcription": "[Ja:p witid]",
+                  "is_main": true
+                },
+                {
+                  "order": 168,
+                  "page": 105,
+                  "ru": "эрудированный",
+                  "en": "erudite",
+                  "transcription": "[erudart]",
+                  "is_main": true
+                }
+              ]
+            },
+            {
+              "number": 2,
+              "subsection": {
+                "ru": "Отсутствие способности",
+                "en": "Absence of Ability"
+              },
+              "subsection_ocr": {
+                "ru": "Отсутствие способности",
+                "en": "Absence of Ability"
+              },
+              "entries": [
+                {
+                  "order": 169,
+                  "page": 106,
+                  "ru": "глупый",
+                  "en": "silly",
+                  "transcription": "[sIl]",
+                  "is_main": false
+                },
+                {
+                  "order": 170,
+                  "page": 106,
+                  "ru": "глупый",
+                  "en": "stolid",
+                  "transcription": "[stolid]",
+                  "is_main": false
+                },
+                {
+                  "order": 171,
+                  "page": 106,
+                  "ru": "глупый",
+                  "en": "stupid",
+                  "transcription": "[stju:pid]",
+                  "is_main": false
+                },
+                {
+                  "order": 172,
+                  "page": 106,
+                  "ru": "тупой",
+                  "en": "dull",
+                  "transcription": "[dAl]",
+                  "is_main": false
+                },
+                {
+                  "order": 173,
+                  "page": 106,
+                  "ru": "тупой",
+                  "en": "dim-witted",
+                  "transcription": "[dim'witid]",
+                  "is_main": false
+                },
+                {
+                  "order": 174,
+                  "page": 106,
+                  "ru": "наивныи",
+                  "en": "naive",
+                  "transcription": "[na:i:v]",
+                  "is_main": false
+                },
+                {
+                  "order": 175,
+                  "page": 106,
+                  "ru": "незнающий зiffiлx",
+                  "en": "ignorant",
+                  "transcription": "[1gnэгэnt]",
+                  "is_main": false
+                },
+                {
+                  "order": 176,
+                  "page": 106,
+                  "ru": "средний",
+                  "en": "average",
+                  "transcription": "[ev(э)rid3]",
+                  "is_main": true
+                },
+                {
+                  "order": 177,
+                  "page": 106,
+                  "ru": "посредственный",
+                  "en": "mediocre",
+                  "transcription": "[mi:drэuka]",
+                  "is_main": false
+                },
+                {
+                  "order": 178,
+                  "page": 106,
+                  "ru": "сумасшедший",
+                  "en": "mad",
+                  "transcription": "[mad]",
+                  "is_main": true
+                },
+                {
+                  "order": 179,
+                  "page": 106,
+                  "ru": "сумасшедший; чокнутый",
+                  "en": "crazy",
+                  "transcription": "[kreIzI]",
+                  "is_main": false
+                }
+              ]
+            },
+            {
+              "number": 3,
+              "subsection": {
+                "ru": "Прилежание, внимательность",
+                "en": "Diligence, Attention"
+              },
+              "subsection_ocr": {
+                "ru": "Прилежание внимательность",
+                "en": "Diligence_ Attention"
+              },
+              "entries": [
+                {
+                  "order": 180,
+                  "page": 106,
+                  "ru": "прилежный",
+                  "en": "diligent",
+                  "transcription": "[drl ds(э)nt]",
+                  "is_main": true
+                },
+                {
+                  "order": 181,
+                  "page": 106,
+                  "ru": "усердный",
+                  "en": "industrious",
+                  "transcription": "[mn' dAstrIas]",
+                  "is_main": false
+                },
+                {
+                  "order": 182,
+                  "page": 106,
+                  "ru": "ленивый",
+                  "en": "lazy",
+                  "transcription": "[leIzI]",
+                  "is_main": false
+                },
+                {
+                  "order": 183,
+                  "page": 106,
+                  "ru": "аккуратный",
+                  "en": "accurate",
+                  "transcription": "[ ekjэгэt]",
+                  "is_main": true
+                },
+                {
+                  "order": 184,
+                  "page": 106,
+                  "ru": "точный",
+                  "en": "exact",
+                  "transcription": "[1g' zekt]",
+                  "is_main": false
+                },
+                {
+                  "order": 185,
+                  "page": 106,
+                  "ru": "тщательный",
+                  "en": "thorough",
+                  "transcription": "[eAгэ]",
+                  "is_main": false
+                },
+                {
+                  "order": 186,
+                  "page": 106,
+                  "ru": "небрежный",
+                  "en": "negligent",
+                  "transcription": "[neglrdЗ(э nt]",
+                  "is_main": false
+                },
+                {
+                  "order": 187,
+                  "page": 106,
+                  "ru": "внимательный",
+                  "en": "attentive",
+                  "transcription": "[э' tentIv]",
+                  "is_main": true
+                },
+                {
+                  "order": 188,
+                  "page": 106,
+                  "ru": "внимательный",
+                  "en": "carefu]",
+                  "transcription": "[kеэf(э)l]",
+                  "is_main": false
+                },
+                {
+                  "order": 189,
+                  "page": 106,
+                  "ru": "невнимательный",
+                  "en": "careless",
+                  "transcription": "[keэlrs]",
+                  "is_main": false
+                },
+                {
+                  "order": 190,
+                  "page": 106,
+                  "ru": "рассеянный",
+                  "en": "absent-minded",
+                  "transcription": "",
+                  "is_main": false
+                },
+                {
+                  "order": 191,
+                  "page": 106,
+                  "ru": "рассеянный",
+                  "en": "distracted",
+                  "transcription": "[drs' trektid]",
+                  "is_main": false
+                }
+              ]
+            },
+            {
+              "number": 4,
+              "subsection": {
+                "ru": "Умение / опыт",
+                "en": "Skill / Experience"
+              },
+              "subsection_ocr": {
+                "ru": "Умение / опыт",
+                "en": "Skill Experience"
+              },
+              "entries": [
+                {
+                  "order": 192,
+                  "page": 106,
+                  "ru": "опытный",
+                  "en": "experienced",
+                  "transcription": "[rkspr(э)rIэnst]",
+                  "is_main": true
+                },
+                {
+                  "order": 193,
+                  "page": 106,
+                  "ru": "высококвалифицированный",
+                  "en": "high-skilled",
+                  "transcription": "[har' skild]",
+                  "is_main": false
+                },
+                {
+                  "order": 194,
+                  "page": 106,
+                  "ru": "неопытный spт(э)гiэnst]",
+                  "en": "inexperienced",
+                  "transcription": "",
+                  "is_main": false
+                },
+                {
+                  "order": 195,
+                  "page": 107,
+                  "ru": "умелый",
+                  "en": "skilful",
+                  "transcription": "[skilf(o)l]",
+                  "is_main": false
+                },
+                {
+                  "order": 196,
+                  "page": 107,
+                  "ru": "ловкий",
+                  "en": "deft",
+                  "transcription": "[deft]",
+                  "is_main": false
+                },
+                {
+                  "order": 197,
+                  "page": 107,
+                  "ru": "ловкий",
+                  "en": "dexterous",
+                  "transcription": "[dekst(э)rэs]",
+                  "is_main": false
+                },
+                {
+                  "order": 198,
+                  "page": 107,
+                  "ru": "неуклюжий",
+                  "en": "clumsy",
+                  "transcription": "[klamzI]",
+                  "is_main": true
+                },
+                {
+                  "order": 199,
+                  "page": 107,
+                  "ru": "неуклюжий",
+                  "en": "awkward",
+                  "transcription": "[э:kwэd]",
+                  "is_main": false
+                },
+                {
+                  "order": 200,
+                  "page": 107,
+                  "ru": "неумелый",
+                  "en": "unskilful",
+                  "transcription": "[An' skrlf(э)l]",
+                  "is_main": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "section": {
+            "ru": "Эмоция, чувство, настроение",
+            "en": "Emotion, Feeling, Frame of Mind"
+          },
+          "subsections": [
+            {
+              "number": 1,
+              "subsection": {
+                "ru": "Характер",
+                "en": "Character"
+              },
+              "subsection_ocr": {
+                "ru": "Характер",
+                "en": "Character"
+              },
+              "entries": [
+                {
+                  "order": 201,
+                  "page": 107,
+                  "ru": "чувствительный",
+                  "en": "sensitive",
+                  "transcription": "[sensitrv]",
+                  "is_main": true
+                },
+                {
+                  "order": 202,
+                  "page": 107,
+                  "ru": "чуткий, восприимчивый",
+                  "en": "susceptible",
+                  "transcription": "[sэ' septэbl]",
+                  "is_main": false
+                },
+                {
+                  "order": 203,
+                  "page": 107,
+                  "ru": "сентиментальный",
+                  "en": "sentimental",
+                  "transcription": "[sentr mentl]",
+                  "is_main": false
+                },
+                {
+                  "order": 204,
+                  "page": 107,
+                  "ru": "черствый",
+                  "en": "hard-hearted",
+                  "transcription": "[ha:dha:trd]",
+                  "is_main": true
+                },
+                {
+                  "order": 205,
+                  "page": 107,
+                  "ru": "безразличный",
+                  "en": "indifferent",
+                  "transcription": "[mn'drf(э)rent]",
+                  "is_main": false
+                },
+                {
+                  "order": 206,
+                  "page": 107,
+                  "ru": "раздражительный",
+                  "en": "irritable",
+                  "transcription": "[IrIt(э)bl]",
+                  "is_main": true
+                },
+                {
+                  "order": 207,
+                  "page": 107,
+                  "ru": "спокойный",
+                  "en": "calm",
+                  "transcription": "[ka:m]",
+                  "is_main": false
+                },
+                {
+                  "order": 208,
+                  "page": 107,
+                  "ru": "спокойный",
+                  "en": "quiet",
+                  "transcription": "[kwaэt]",
+                  "is_main": false
+                },
+                {
+                  "order": 209,
+                  "page": 107,
+                  "ru": "спокойный, безмятежный",
+                  "en": "tranquil",
+                  "transcription": "[trenkwil]",
+                  "is_main": false
+                },
+                {
+                  "order": 210,
+                  "page": 107,
+                  "ru": "нервный",
+                  "en": "nervous",
+                  "transcription": "[nз:vэs]",
+                  "is_main": false
+                }
+              ]
+            },
+            {
+              "number": 2,
+              "subsection": {
+                "ru": "Настроение",
+                "en": "Frame of Mind, Mood"
+              },
+              "subsection_ocr": {
+                "ru": "Настроение",
+                "en": "Frame of Mind, Mood"
+              },
+              "entries": [
+                {
+                  "order": 211,
+                  "page": 107,
+                  "ru": "счастливый hapру",
+                  "en": "",
+                  "transcription": "[hapi]",
+                  "is_main": true
+                },
+                {
+                  "order": 212,
+                  "page": 107,
+                  "ru": "везучий",
+                  "en": "lucky",
+                  "transcription": "[lAkI]",
+                  "is_main": false
+                },
+                {
+                  "order": 213,
+                  "page": 107,
+                  "ru": "несчастливый",
+                  "en": "unhappy",
+                  "transcription": "[An' hapi]",
+                  "is_main": false
+                },
+                {
+                  "order": 214,
+                  "page": 107,
+                  "ru": "радостный",
+                  "en": "joyful",
+                  "transcription": "[dзэтf(э)]",
+                  "is_main": true
+                },
+                {
+                  "order": 215,
+                  "page": 107,
+                  "ru": "радостный",
+                  "en": "merry",
+                  "transcription": "[meri]",
+                  "is_main": false
+                },
+                {
+                  "order": 216,
+                  "page": 107,
+                  "ru": "веселый",
+                  "en": "cheerful",
+                  "transcription": "[{Л1эf(o)l]",
+                  "is_main": false
+                },
+                {
+                  "order": 217,
+                  "page": 107,
+                  "ru": "довольный",
+                  "en": "glad",
+                  "transcription": "[glad]",
+                  "is_main": false
+                },
+                {
+                  "order": 218,
+                  "page": 107,
+                  "ru": "удовлетворенный",
+                  "en": "satisfied",
+                  "transcription": "[satisfard]",
+                  "is_main": false
+                },
+                {
+                  "order": 219,
+                  "page": 108,
+                  "ru": "хорошем настроении",
+                  "en": "B optimistic",
+                  "transcription": "[opti mIstik] [harsprritid]",
+                  "is_main": false
+                },
+                {
+                  "order": 220,
+                  "page": 108,
+                  "ru": "оптимистический",
+                  "en": "sad",
+                  "transcription": "[sed]",
+                  "is_main": true
+                },
+                {
+                  "order": 221,
+                  "page": 108,
+                  "ru": "печальный",
+                  "en": "sorry",
+                  "transcription": "[sorI]",
+                  "is_main": true
+                },
+                {
+                  "order": 222,
+                  "page": 108,
+                  "ru": "расстроенный",
+                  "en": "upset }N",
+                  "transcription": "[Аp' set]",
+                  "is_main": false
+                },
+                {
+                  "order": 223,
+                  "page": 108,
+                  "ru": "пессимистический в плохом настроении",
+                  "en": "pessimistic",
+                  "transcription": "[lэu'spirItrd] [pesi mIstrk]",
+                  "is_main": false
+                },
+                {
+                  "order": 224,
+                  "page": 108,
+                  "ru": "горестный",
+                  "en": "sorrowful",
+                  "transcription": "[sorэuf(o)l]",
+                  "is_main": false
+                }
+              ]
+            },
+            {
+              "number": 3,
+              "subsection": {
+                "ru": "Эмоциональная оценка",
+                "en": "Emotional Estimation"
+              },
+              "subsection_ocr": {
+                "ru": "Эмоциональная оценка",
+                "en": "Emotional Estimation 6"
+              },
+              "entries": [
+                {
+                  "order": 225,
+                  "page": 108,
+                  "ru": "хороший",
+                  "en": "good",
+                  "transcription": "[gud]",
+                  "is_main": true
+                },
+                {
+                  "order": 226,
+                  "page": 108,
+                  "ru": "приятный",
+                  "en": "pleasant",
+                  "transcription": "[plez(э )nt]",
+                  "is_main": false
+                },
+                {
+                  "order": 227,
+                  "page": 108,
+                  "ru": "приятный",
+                  "en": "agreeable",
+                  "transcription": "[э' gri:эb(э)]",
+                  "is_main": false
+                },
+                {
+                  "order": 228,
+                  "page": 108,
+                  "ru": "интересный",
+                  "en": "interesting",
+                  "transcription": "[IntrIstin]",
+                  "is_main": false
+                },
+                {
+                  "order": 229,
+                  "page": 108,
+                  "ru": "чудесный",
+                  "en": "wonderful",
+                  "transcription": "[wAndэf(э)l]",
+                  "is_main": false
+                },
+                {
+                  "order": 230,
+                  "page": 108,
+                  "ru": "отличный",
+                  "en": "excellent",
+                  "transcription": "[eks(э)lent]",
+                  "is_main": false
+                },
+                {
+                  "order": 231,
+                  "page": 108,
+                  "ru": "превосходный",
+                  "en": "superior",
+                  "transcription": "[s(j)u: р (э)г,э]",
+                  "is_main": false
+                },
+                {
+                  "order": 232,
+                  "page": 108,
+                  "ru": "великолепный",
+                  "en": "splendid",
+                  "transcription": "[splendrd]",
+                  "is_main": false
+                },
+                {
+                  "order": 233,
+                  "page": 108,
+                  "ru": "великолепный",
+                  "en": "gorgeous",
+                  "transcription": "[g :d3эs]",
+                  "is_main": false
+                },
+                {
+                  "order": 234,
+                  "page": 108,
+                  "ru": "великолепный",
+                  "en": "magnificent",
+                  "transcription": "[megnifis(a)nt]",
+                  "is_main": false
+                },
+                {
+                  "order": 235,
+                  "page": 108,
+                  "ru": "совершенный",
+                  "en": "perfect",
+                  "transcription": "[рз frkt]",
+                  "is_main": false
+                },
+                {
+                  "order": 236,
+                  "page": 108,
+                  "ru": "удивительный [sэ",
+                  "en": "surprising praIzIn]",
+                  "transcription": "",
+                  "is_main": true
+                },
+                {
+                  "order": 237,
+                  "page": 108,
+                  "ru": "удивительный",
+                  "en": "astonishing",
+                  "transcription": "[э' stonIJIn]",
+                  "is_main": false
+                },
+                {
+                  "order": 238,
+                  "page": 108,
+                  "ru": "удивительный",
+                  "en": "amazing",
+                  "transcription": "[э merzm]",
+                  "is_main": false
+                },
+                {
+                  "order": 239,
+                  "page": 108,
+                  "ru": "волнующий",
+                  "en": "exciting",
+                  "transcription": "[rk santm]",
+                  "is_main": false
+                },
+                {
+                  "order": 240,
+                  "page": 108,
+                  "ru": "волнующий",
+                  "en": "moving",
+                  "transcription": "[mu:vIn]",
+                  "is_main": false
+                },
+                {
+                  "order": 241,
+                  "page": 108,
+                  "ru": "трогательный",
+                  "en": "touching",
+                  "transcription": "[tAtJIn]",
+                  "is_main": false
+                },
+                {
+                  "order": 242,
+                  "page": 108,
+                  "ru": "странный",
+                  "en": "strange",
+                  "transcription": "[stremnd3]",
+                  "is_main": false
+                },
+                {
+                  "order": 243,
+                  "page": 108,
+                  "ru": "шокирующий",
+                  "en": "shocking",
+                  "transcription": "[Jokin]",
+                  "is_main": false
+                },
+                {
+                  "order": 244,
+                  "page": 108,
+                  "ru": "плохой",
+                  "en": "bad",
+                  "transcription": "[bed]",
+                  "is_main": true
+                },
+                {
+                  "order": 245,
+                  "page": 108,
+                  "ru": "скучный",
+                  "en": "tiresome",
+                  "transcription": "[tarosam]",
+                  "is_main": false
+                },
+                {
+                  "order": 246,
+                  "page": 108,
+                  "ru": "надоедливый",
+                  "en": "boring",
+                  "transcription": "[bэ:rIn]",
+                  "is_main": false
+                },
+                {
+                  "order": 247,
+                  "page": 108,
+                  "ru": "тревожный; вызывающий",
+                  "en": "disturbing",
+                  "transcription": "[dIs'tз:bn]",
+                  "is_main": false
+                },
+                {
+                  "order": 248,
+                  "page": 109,
+                  "ru": "неприятный",
+                  "en": "disgusting",
+                  "transcription": "[dIs' gAstIn]",
+                  "is_main": false
+                },
+                {
+                  "order": 249,
+                  "page": 109,
+                  "ru": "неприятный",
+                  "en": "unpleasant",
+                  "transcription": "[An' plez(э)nt]",
+                  "is_main": false
+                },
+                {
+                  "order": 250,
+                  "page": 109,
+                  "ru": "оскорбительный",
+                  "en": "insulting",
+                  "transcription": "[In' sAltIn]",
+                  "is_main": false
+                },
+                {
+                  "order": 251,
+                  "page": 109,
+                  "ru": "оскорбительный",
+                  "en": "abusive",
+                  "transcription": "[э'bju:sIv]",
+                  "is_main": false
+                },
+                {
+                  "order": 252,
+                  "page": 109,
+                  "ru": "оскорбительный",
+                  "en": "offensive",
+                  "transcription": "[э'fensIv]",
+                  "is_main": false
+                },
+                {
+                  "order": 253,
+                  "page": 109,
+                  "ru": "ужасный",
+                  "en": "awful",
+                  "transcription": "[э:f(э)]",
+                  "is_main": false
+                },
+                {
+                  "order": 254,
+                  "page": 109,
+                  "ru": "ужасный",
+                  "en": "terrible",
+                  "transcription": "[terэb(э)l]",
+                  "is_main": false
+                },
+                {
+                  "order": 255,
+                  "page": 109,
+                  "ru": "опасный",
+                  "en": "dangerous",
+                  "transcription": "[derndзorэs]",
+                  "is_main": false
+                },
+                {
+                  "order": 256,
+                  "page": 109,
+                  "ru": "красивый",
+                  "en": "beautiful",
+                  "transcription": "[bju:trf(э)l]",
+                  "is_main": true
+                },
+                {
+                  "order": 257,
+                  "page": 109,
+                  "ru": "красивый",
+                  "en": "lovely",
+                  "transcription": "[lxvlr]",
+                  "is_main": false
+                },
+                {
+                  "order": 258,
+                  "page": 109,
+                  "ru": "милый",
+                  "en": "nice",
+                  "transcription": "[naIs]",
+                  "is_main": false
+                },
+                {
+                  "order": 259,
+                  "page": 109,
+                  "ru": "привлекательный",
+                  "en": "pretty",
+                  "transcription": "[prItr]",
+                  "is_main": false
+                },
+                {
+                  "order": 260,
+                  "page": 109,
+                  "ru": "привлекательный",
+                  "en": "attractive",
+                  "transcription": "[э'trektiv]",
+                  "is_main": false
+                },
+                {
+                  "order": 261,
+                  "page": 109,
+                  "ru": "симпатичный (o мужчине)",
+                  "en": "handsome",
+                  "transcription": "[hans(э)m]",
+                  "is_main": false
+                },
+                {
+                  "order": 262,
+                  "page": 109,
+                  "ru": "безобразный",
+                  "en": "ugly",
+                  "transcription": "[Agli]",
+                  "is_main": true
+                },
+                {
+                  "order": 263,
+                  "page": 109,
+                  "ru": "непривлекательный",
+                  "en": "unattractive",
+                  "transcription": "[Anэ trektIv]",
+                  "is_main": false
+                },
+                {
+                  "order": 264,
+                  "page": 109,
+                  "ru": "отталкивающий",
+                  "en": "repulsive",
+                  "transcription": "[ri' pAlsIv]",
+                  "is_main": false
+                },
+                {
+                  "order": 265,
+                  "page": 109,
+                  "ru": "отвратительный",
+                  "en": "abominable",
+                  "transcription": "[э' bomInэb(э )l]",
+                  "is_main": false
+                },
+                {
+                  "order": 266,
+                  "page": 109,
+                  "ru": "страшный",
+                  "en": "fearful",
+                  "transcription": "[fтэf(э)]",
+                  "is_main": false
+                }
+              ]
+            },
+            {
+              "number": 4,
+              "subsection": {
+                "ru": "Оттенки эмоции",
+                "en": "Shades of Emotion"
+              },
+              "subsection_ocr": {
+                "ru": "Оттенки эмоции",
+                "en": "Shades of Emotion"
+              },
+              "entries": [
+                {
+                  "order": 267,
+                  "page": 109,
+                  "ru": "взволнованный",
+                  "en": "excited",
+                  "transcription": "[rk' sartid]",
+                  "is_main": true
+                },
+                {
+                  "order": 268,
+                  "page": 109,
+                  "ru": "взволнованный",
+                  "en": "agitated",
+                  "transcription": "[edgItertrd]",
+                  "is_main": false
+                },
+                {
+                  "order": 269,
+                  "page": 109,
+                  "ru": "взволнованный",
+                  "en": "uneasy",
+                  "transcription": "[An'i:zI]",
+                  "is_main": false
+                },
+                {
+                  "order": 270,
+                  "page": 109,
+                  "ru": "растроганный",
+                  "en": "moved",
+                  "transcription": "[mu:vd]",
+                  "is_main": false
+                },
+                {
+                  "order": 271,
+                  "page": 109,
+                  "ru": "испуганный",
+                  "en": "frightened",
+                  "transcription": "[frartnd]",
+                  "is_main": true
+                },
+                {
+                  "order": 272,
+                  "page": 109,
+                  "ru": "испуганный",
+                  "en": "scared",
+                  "transcription": "[skead]",
+                  "is_main": false
+                },
+                {
+                  "order": 273,
+                  "page": 109,
+                  "ru": "испуганный",
+                  "en": "startled",
+                  "transcription": "[sta tld]",
+                  "is_main": false
+                },
+                {
+                  "order": 274,
+                  "page": 109,
+                  "ru": "удивленный",
+                  "en": "surprised",
+                  "transcription": "[sэ praizd]",
+                  "is_main": true
+                },
+                {
+                  "order": 275,
+                  "page": 109,
+                  "ru": "удивленный",
+                  "en": "astonished",
+                  "transcription": "[э' stonIJt]",
+                  "is_main": false
+                },
+                {
+                  "order": 276,
+                  "page": 109,
+                  "ru": "удивленный",
+                  "en": "amazed",
+                  "transcription": "[э' merzd]",
+                  "is_main": false
+                },
+                {
+                  "order": 277,
+                  "page": 109,
+                  "ru": "сердитый",
+                  "en": "angry",
+                  "transcription": "[angri]",
+                  "is_main": true
+                },
+                {
+                  "order": 278,
+                  "page": 109,
+                  "ru": "сердитый",
+                  "en": "CrOsS",
+                  "transcription": "[kros]",
+                  "is_main": false
+                },
+                {
+                  "order": 279,
+                  "page": 109,
+                  "ru": "обиженный",
+                  "en": "hurt",
+                  "transcription": "[hз:t]",
+                  "is_main": true
+                },
+                {
+                  "order": 280,
+                  "page": 109,
+                  "ru": "оскорбленный 311й",
+                  "en": "offended",
+                  "transcription": "[э'fendrd]",
+                  "is_main": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "section": {
+            "ru": "Мораль, поведение",
+            "en": "Moral Behaviour"
+          },
+          "subsections": [
+            {
+              "number": 1,
+              "subsection": {
+                "ru": "Основные характеристики",
+                "en": "Main Properties"
+              },
+              "subsection_ocr": {
+                "ru": "Основные",
+                "en": ""
+              },
+              "entries": [
+                {
+                  "order": 281,
+                  "page": 110,
+                  "ru": "приличный",
+                  "en": "decent",
+                  "transcription": "[di:s(э)nt]",
+                  "is_main": true
+                },
+                {
+                  "order": 282,
+                  "page": 110,
+                  "ru": "приличный",
+                  "en": "seemly",
+                  "transcription": "[si:mlr]",
+                  "is_main": false
+                },
+                {
+                  "order": 283,
+                  "page": 110,
+                  "ru": "благонравный",
+                  "en": "well-behaved [welbI hervd]",
+                  "transcription": "",
+                  "is_main": false
+                },
+                {
+                  "order": 284,
+                  "page": 110,
+                  "ru": "благородный",
+                  "en": "noble",
+                  "transcription": "[nэub(э)l]",
+                  "is_main": false
+                },
+                {
+                  "order": 285,
+                  "page": 110,
+                  "ru": "достойный",
+                  "en": "worthy",
+                  "transcription": "[wз:д1]",
+                  "is_main": false
+                },
+                {
+                  "order": 286,
+                  "page": 110,
+                  "ru": "честный",
+                  "en": "honest",
+                  "transcription": "[onIst]",
+                  "is_main": true
+                },
+                {
+                  "order": 287,
+                  "page": 110,
+                  "ru": "честный / справедливый",
+                  "en": "fair",
+                  "transcription": "[fеэ]",
+                  "is_main": false
+                },
+                {
+                  "order": 288,
+                  "page": 110,
+                  "ru": "искренний",
+                  "en": "sincere",
+                  "transcription": "[sIn's1э]",
+                  "is_main": false
+                },
+                {
+                  "order": 289,
+                  "page": 110,
+                  "ru": "нечестный",
+                  "en": "dishonest",
+                  "transcription": "[dIs' onIst]",
+                  "is_main": true
+                },
+                {
+                  "order": 290,
+                  "page": 110,
+                  "ru": "лживый",
+                  "en": "lying",
+                  "transcription": "[lamn]",
+                  "is_main": false
+                },
+                {
+                  "order": 291,
+                  "page": 110,
+                  "ru": "непорядочный",
+                  "en": "indecent",
+                  "transcription": "[mn' di:s(э)nt]",
+                  "is_main": false
+                },
+                {
+                  "order": 292,
+                  "page": 110,
+                  "ru": "подлый",
+                  "en": "mean",
+                  "transcription": "[mi:n]",
+                  "is_main": false
+                },
+                {
+                  "order": 293,
+                  "page": 110,
+                  "ru": "подлый",
+                  "en": "base",
+                  "transcription": "[berz]",
+                  "is_main": false
+                },
+                {
+                  "order": 294,
+                  "page": 110,
+                  "ru": "подлый",
+                  "en": "vile",
+                  "transcription": "[vanl]",
+                  "is_main": false
+                },
+                {
+                  "order": 295,
+                  "page": 110,
+                  "ru": "невиновный",
+                  "en": "innocent",
+                  "transcription": "[ Inas(э nt]",
+                  "is_main": true
+                },
+                {
+                  "order": 296,
+                  "page": 110,
+                  "ru": "преступный",
+                  "en": "criminal",
+                  "transcription": "[krImin(Э)]",
+                  "is_main": false
+                },
+                {
+                  "order": 297,
+                  "page": 110,
+                  "ru": "виновный",
+                  "en": "guilty",
+                  "transcription": "[grlti]",
+                  "is_main": false
+                }
+              ]
+            },
+            {
+              "number": 2,
+              "subsection": {
+                "ru": "Отношение к другим людям",
+                "en": "Attitude to Other People"
+              },
+              "subsection_ocr": {
+                "ru": "Отношение к другим людям",
+                "en": "Attitude to Other People"
+              },
+              "entries": [
+                {
+                  "order": 298,
+                  "page": 110,
+                  "ru": "добрый",
+                  "en": "good",
+                  "transcription": "[gud]",
+                  "is_main": true
+                },
+                {
+                  "order": 299,
+                  "page": 110,
+                  "ru": "добрый",
+                  "en": "kind",
+                  "transcription": "[kamnd]",
+                  "is_main": false
+                },
+                {
+                  "order": 300,
+                  "page": 110,
+                  "ru": "дружеский",
+                  "en": "friendly",
+                  "transcription": "[frendl]",
+                  "is_main": false
+                },
+                {
+                  "order": 301,
+                  "page": 110,
+                  "ru": "эгоистичный [selfiл",
+                  "en": "selfish",
+                  "transcription": "",
+                  "is_main": false
+                },
+                {
+                  "order": 302,
+                  "page": 110,
+                  "ru": "злой",
+                  "en": "bad",
+                  "transcription": "[bad]",
+                  "is_main": false
+                },
+                {
+                  "order": 303,
+                  "page": 110,
+                  "ru": "злой",
+                  "en": "evil",
+                  "transcription": "[i:vl]",
+                  "is_main": false
+                },
+                {
+                  "order": 304,
+                  "page": 110,
+                  "ru": "враждебный",
+                  "en": "hostile",
+                  "transcription": "[hustail]",
+                  "is_main": false
+                },
+                {
+                  "order": 305,
+                  "page": 110,
+                  "ru": "жестокий",
+                  "en": "atrocious",
+                  "transcription": "[э'traufos]",
+                  "is_main": false
+                },
+                {
+                  "order": 306,
+                  "page": 110,
+                  "ru": "жестокий",
+                  "en": "ferocious",
+                  "transcription": "[fэ rauJas]",
+                  "is_main": false
+                },
+                {
+                  "order": 307,
+                  "page": 110,
+                  "ru": "послушный",
+                  "en": "docile",
+                  "transcription": "[dousarl]",
+                  "is_main": false
+                },
+                {
+                  "order": 308,
+                  "page": 110,
+                  "ru": "послушный [э bi:diэnt]",
+                  "en": "obedient",
+                  "transcription": "",
+                  "is_main": false
+                },
+                {
+                  "order": 309,
+                  "page": 111,
+                  "ru": "непослушный art",
+                  "en": "disobedient",
+                  "transcription": "[dIsэ' bi:dront]",
+                  "is_main": true
+                },
+                {
+                  "order": 310,
+                  "page": 111,
+                  "ru": "верный",
+                  "en": "true",
+                  "transcription": "[tru:]",
+                  "is_main": true
+                },
+                {
+                  "order": 311,
+                  "page": 111,
+                  "ru": "верный",
+                  "en": "faithful",
+                  "transcription": "[fe1 f(o)l]",
+                  "is_main": false
+                },
+                {
+                  "order": 312,
+                  "page": 111,
+                  "ru": "надежный",
+                  "en": "reliable",
+                  "transcription": "[r1'lатэb(э)]",
+                  "is_main": false
+                },
+                {
+                  "order": 313,
+                  "page": 111,
+                  "ru": "преданный",
+                  "en": "devoted",
+                  "transcription": "[di'voutrd]",
+                  "is_main": false
+                },
+                {
+                  "order": 314,
+                  "page": 111,
+                  "ru": "предательский",
+                  "en": "traitorous",
+                  "transcription": "[treIt(@)ros]",
+                  "is_main": false
+                },
+                {
+                  "order": 315,
+                  "page": 111,
+                  "ru": "предательский",
+                  "en": "treacherous",
+                  "transcription": "[tretЛ(э)ros]",
+                  "is_main": false
+                },
+                {
+                  "order": 316,
+                  "page": 111,
+                  "ru": "непостоянный",
+                  "en": "unstable",
+                  "transcription": "[An' sterbl]",
+                  "is_main": false
+                },
+                {
+                  "order": 317,
+                  "page": 111,
+                  "ru": "капризный",
+                  "en": "fickle",
+                  "transcription": "[frkl]",
+                  "is_main": false
+                },
+                {
+                  "order": 318,
+                  "page": 111,
+                  "ru": "переменный",
+                  "en": "changeable",
+                  "transcription": "[tJeIndзэb(э)l]",
+                  "is_main": false
+                },
+                {
+                  "order": 319,
+                  "page": 111,
+                  "ru": "щедрый",
+                  "en": "generous",
+                  "transcription": "[dзen(э )rэs]",
+                  "is_main": true
+                },
+                {
+                  "order": 320,
+                  "page": 111,
+                  "ru": "расточительный",
+                  "en": "wasteful",
+                  "transcription": "[weIstf(o)l]",
+                  "is_main": false
+                },
+                {
+                  "order": 321,
+                  "page": 111,
+                  "ru": "бескорыстный [an' selfтл",
+                  "en": "unselfish",
+                  "transcription": "",
+                  "is_main": true
+                },
+                {
+                  "order": 322,
+                  "page": 111,
+                  "ru": "бережливый",
+                  "en": "thrifty",
+                  "transcription": "[errftr]",
+                  "is_main": false
+                },
+                {
+                  "order": 323,
+                  "page": 111,
+                  "ru": "скупой",
+                  "en": "close-fisted",
+                  "transcription": "[klэuz' frstrd]",
+                  "is_main": false
+                },
+                {
+                  "order": 324,
+                  "page": 111,
+                  "ru": "жадный",
+                  "en": "avid",
+                  "transcription": "[evrd]",
+                  "is_main": false
+                },
+                {
+                  "order": 325,
+                  "page": 111,
+                  "ru": "жадный",
+                  "en": "greedy",
+                  "transcription": "[gri:dr]",
+                  "is_main": false
+                },
+                {
+                  "order": 326,
+                  "page": 111,
+                  "ru": "порочный",
+                  "en": "ill-natured",
+                  "transcription": "[IlnertЛrd]",
+                  "is_main": true
+                },
+                {
+                  "order": 327,
+                  "page": 111,
+                  "ru": "порочный",
+                  "en": "vicious",
+                  "transcription": "[vIJэs]",
+                  "is_main": false
+                }
+              ]
+            },
+            {
+              "number": 3,
+              "subsection": {
+                "ru": "Качества в общении",
+                "en": "Qualities in Intercourse"
+              },
+              "subsection_ocr": {
+                "ru": "Качества в общении",
+                "en": "Qualities in Intercourse"
+              },
+              "entries": [
+                {
+                  "order": 328,
+                  "page": 111,
+                  "ru": "разговорчивый",
+                  "en": "talkative",
+                  "transcription": "[tэ:kotiv]",
+                  "is_main": true
+                },
+                {
+                  "order": 329,
+                  "page": 111,
+                  "ru": "общительный",
+                  "en": "communicable",
+                  "transcription": "[kэ' mju:nikobl]",
+                  "is_main": false
+                },
+                {
+                  "order": 330,
+                  "page": 111,
+                  "ru": "общительный",
+                  "en": "sociable",
+                  "transcription": "[sauJ(т)эb(э)l]",
+                  "is_main": false
+                },
+                {
+                  "order": 331,
+                  "page": 111,
+                  "ru": "молчаливый",
+                  "en": "taciturn",
+                  "transcription": "[tesItз:n]",
+                  "is_main": false
+                },
+                {
+                  "order": 332,
+                  "page": 111,
+                  "ru": "замкнутый, сдержанный",
+                  "en": "reserved",
+                  "transcription": "[ri' zз:vd]",
+                  "is_main": false
+                },
+                {
+                  "order": 333,
+                  "page": 111,
+                  "ru": "вежливый",
+                  "en": "polite",
+                  "transcription": "[рэ'lart]",
+                  "is_main": true
+                },
+                {
+                  "order": 334,
+                  "page": 111,
+                  "ru": "вежливый",
+                  "en": "civil",
+                  "transcription": "[sIv(э)l]",
+                  "is_main": false
+                },
+                {
+                  "order": 335,
+                  "page": 111,
+                  "ru": "вежливый",
+                  "en": "gentle",
+                  "transcription": "[dsentl]",
+                  "is_main": false
+                },
+                {
+                  "order": 336,
+                  "page": 111,
+                  "ru": "мягкий",
+                  "en": "mild",
+                  "transcription": "[marld]",
+                  "is_main": false
+                },
+                {
+                  "order": 337,
+                  "page": 111,
+                  "ru": "обходительный",
+                  "en": "suave",
+                  "transcription": "[swa:v]",
+                  "is_main": true
+                },
+                {
+                  "order": 338,
+                  "page": 111,
+                  "ru": "грубый",
+                  "en": "rude",
+                  "transcription": "[ru:d]",
+                  "is_main": false
+                },
+                {
+                  "order": 339,
+                  "page": 111,
+                  "ru": "грубый",
+                  "en": "rough",
+                  "transcription": "[rAf]",
+                  "is_main": false
+                },
+                {
+                  "order": 340,
+                  "page": 111,
+                  "ru": "строгий",
+                  "en": "strict",
+                  "transcription": "[strrkt]",
+                  "is_main": false
+                },
+                {
+                  "order": 341,
+                  "page": 111,
+                  "ru": "строгий, суровый",
+                  "en": "severe",
+                  "transcription": "[sI v1э]",
+                  "is_main": false
+                },
+                {
+                  "order": 342,
+                  "page": 111,
+                  "ru": "строгий; суровый",
+                  "en": "rigorous",
+                  "transcription": "[rIgэrэs]",
+                  "is_main": false
+                }
+              ]
+            },
+            {
+              "number": 4,
+              "subsection": {
+                "ru": "Качества в действиях",
+                "en": "Qualities in Actions"
+              },
+              "subsection_ocr": {
+                "ru": "Качества в",
+                "en": ""
+              },
+              "entries": [
+                {
+                  "order": 343,
+                  "page": 112,
+                  "ru": "смелый",
+                  "en": "brave",
+                  "transcription": "[brerv]",
+                  "is_main": true
+                },
+                {
+                  "order": 344,
+                  "page": 112,
+                  "ru": "смелый",
+                  "en": "audacious",
+                  "transcription": "[э:' derJэs]",
+                  "is_main": false
+                },
+                {
+                  "order": 345,
+                  "page": 112,
+                  "ru": "храбрый",
+                  "en": "plucky",
+                  "transcription": "[plAki]",
+                  "is_main": false
+                },
+                {
+                  "order": 346,
+                  "page": 112,
+                  "ru": "храбрый",
+                  "en": "courageous",
+                  "transcription": "[kэ reId3os]",
+                  "is_main": false
+                },
+                {
+                  "order": 347,
+                  "page": 112,
+                  "ru": "трусливый",
+                  "en": "cowardly",
+                  "transcription": "[kauedl1]",
+                  "is_main": false
+                },
+                {
+                  "order": 348,
+                  "page": 112,
+                  "ru": "робкий / боязливый",
+                  "en": "timorous",
+                  "transcription": "[tim(э)ros]",
+                  "is_main": false
+                },
+                {
+                  "order": 349,
+                  "page": 112,
+                  "ru": "робкий / застенчивый",
+                  "en": "timid \"C",
+                  "transcription": "[tImid]",
+                  "is_main": false
+                },
+                {
+                  "order": 350,
+                  "page": 112,
+                  "ru": "скромный",
+                  "en": "modest",
+                  "transcription": "[modrst]",
+                  "is_main": false
+                },
+                {
+                  "order": 351,
+                  "page": 112,
+                  "ru": "стыдливый",
+                  "en": "bashful",
+                  "transcription": "[beJfal]",
+                  "is_main": false
+                },
+                {
+                  "order": 352,
+                  "page": 112,
+                  "ru": "робкий 1стеснительный",
+                  "en": "shy",
+                  "transcription": "[Jат]",
+                  "is_main": false
+                },
+                {
+                  "order": 353,
+                  "page": 112,
+                  "ru": "гордый",
+                  "en": "proud",
+                  "transcription": "[praud]",
+                  "is_main": false
+                },
+                {
+                  "order": 354,
+                  "page": 112,
+                  "ru": "высокомерный",
+                  "en": "haughty",
+                  "transcription": "[hэ:t]",
+                  "is_main": false
+                },
+                {
+                  "order": 355,
+                  "page": 112,
+                  "ru": "высокомерный",
+                  "en": "arrogant",
+                  "transcription": "[eгэgэnt]",
+                  "is_main": false
+                },
+                {
+                  "order": 356,
+                  "page": 112,
+                  "ru": "высокомерный",
+                  "en": "light-minded [lart manndid",
+                  "transcription": "",
+                  "is_main": false
+                },
+                {
+                  "order": 357,
+                  "page": 112,
+                  "ru": "наглый",
+                  "en": "insolent",
+                  "transcription": "['Insэlэnt]",
+                  "is_main": false
+                },
+                {
+                  "order": 358,
+                  "page": 112,
+                  "ru": "разумный",
+                  "en": "reasonable",
+                  "transcription": "[ri:z(э)nэb(o)l]",
+                  "is_main": true
+                },
+                {
+                  "order": 359,
+                  "page": 112,
+                  "ru": "рациональный",
+                  "en": "rational",
+                  "transcription": "[rеЛ(э nэl]",
+                  "is_main": false
+                },
+                {
+                  "order": 360,
+                  "page": 112,
+                  "ru": "осторожный",
+                  "en": "cautious",
+                  "transcription": "[kэ: Jэs]",
+                  "is_main": false
+                },
+                {
+                  "order": 361,
+                  "page": 112,
+                  "ru": "неразумный",
+                  "en": "imprudent",
+                  "transcription": "[mm' pru:d(э)nt]",
+                  "is_main": false
+                },
+                {
+                  "order": 362,
+                  "page": 112,
+                  "ru": "неосторожный",
+                  "en": "incautious",
+                  "transcription": "[mn'kэ:Jэs]",
+                  "is_main": false
+                },
+                {
+                  "order": 363,
+                  "page": 112,
+                  "ru": "бездумный",
+                  "en": "thoughtless",
+                  "transcription": "[''э:tlIs]",
+                  "is_main": false
+                },
+                {
+                  "order": 364,
+                  "page": 112,
+                  "ru": "поспешный [reл",
+                  "en": "rash",
+                  "transcription": "",
+                  "is_main": false
+                },
+                {
+                  "order": 365,
+                  "page": 112,
+                  "ru": "поспешный",
+                  "en": "hasty",
+                  "transcription": "[hersti]",
+                  "is_main": false
+                },
+                {
+                  "order": 366,
+                  "page": 112,
+                  "ru": "опрометчивый",
+                  "en": "impulsive",
+                  "transcription": "[Im' pAlsIv]",
+                  "is_main": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "section": {
+            "ru": "Абстрактные прилагательные",
+            "en": "Abstract Adjectives"
+          },
+          "subsections": [
+            {
+              "number": 1,
+              "subsection": {
+                "ru": "Классификация",
+                "en": "Classification"
+              },
+              "subsection_ocr": {
+                "ru": "Классификация",
+                "en": "Classification"
+              },
+              "entries": [
+                {
+                  "order": 367,
+                  "page": 112,
+                  "ru": "определенный",
+                  "en": "certain",
+                  "transcription": "[sз:tn]",
+                  "is_main": true
+                },
+                {
+                  "order": 368,
+                  "page": 112,
+                  "ru": "общий",
+                  "en": "common",
+                  "transcription": "[komэn]",
+                  "is_main": true
+                },
+                {
+                  "order": 369,
+                  "page": 113,
+                  "ru": "общий",
+                  "en": "general",
+                  "transcription": "[dsen(э)гэ]",
+                  "is_main": false
+                },
+                {
+                  "order": 370,
+                  "page": 113,
+                  "ru": "типичный",
+                  "en": "typical",
+                  "transcription": "[tiprk(o)l]",
+                  "is_main": false
+                },
+                {
+                  "order": 371,
+                  "page": 113,
+                  "ru": "единичный",
+                  "en": "single",
+                  "transcription": "[sIng(э)l]",
+                  "is_main": false
+                },
+                {
+                  "order": 372,
+                  "page": 113,
+                  "ru": "отдельный",
+                  "en": "separate",
+                  "transcription": "[sep(э)rIt]",
+                  "is_main": false
+                },
+                {
+                  "order": 373,
+                  "page": 113,
+                  "ru": "особенный",
+                  "en": "particular",
+                  "transcription": "[рэ'trkjula]",
+                  "is_main": false
+                },
+                {
+                  "order": 374,
+                  "page": 113,
+                  "ru": "специальный",
+                  "en": "special",
+                  "transcription": "[speJ(э)l]",
+                  "is_main": false
+                },
+                {
+                  "order": 375,
+                  "page": 113,
+                  "ru": "главный",
+                  "en": "main",
+                  "transcription": "[memn]",
+                  "is_main": false
+                },
+                {
+                  "order": 376,
+                  "page": 113,
+                  "ru": "главный",
+                  "en": "chief",
+                  "transcription": "[tJi:f]",
+                  "is_main": false
+                },
+                {
+                  "order": 377,
+                  "page": 113,
+                  "ru": "главный осt",
+                  "en": "principal",
+                  "transcription": "[prunsIp(o)l]",
+                  "is_main": false
+                },
+                {
+                  "order": 378,
+                  "page": 113,
+                  "ru": "основной",
+                  "en": "basic",
+                  "transcription": "[bersrk]",
+                  "is_main": false
+                },
+                {
+                  "order": 379,
+                  "page": 113,
+                  "ru": "второстепенный",
+                  "en": "secondary",
+                  "transcription": "[sekond(@)rI]",
+                  "is_main": false
+                },
+                {
+                  "order": 380,
+                  "page": 113,
+                  "ru": "сложный",
+                  "en": "complex",
+                  "transcription": "[kompleks]",
+                  "is_main": true
+                },
+                {
+                  "order": 381,
+                  "page": 113,
+                  "ru": "простой",
+                  "en": "simple",
+                  "transcription": "[sImp(o)l]",
+                  "is_main": false
+                }
+              ]
+            },
+            {
+              "number": 2,
+              "subsection": {
+                "ru": "Качество",
+                "en": "Quality"
+              },
+              "subsection_ocr": {
+                "ru": "Качество",
+                "en": "Quality"
+              },
+              "entries": [
+                {
+                  "order": 382,
+                  "page": 113,
+                  "ru": "равный; одинаковый",
+                  "en": "equal",
+                  "transcription": "[i:kwal]",
+                  "is_main": true
+                },
+                {
+                  "order": 383,
+                  "page": 113,
+                  "ru": "тот же самый",
+                  "en": "the same",
+                  "transcription": "[дэ 'serm]",
+                  "is_main": false
+                },
+                {
+                  "order": 384,
+                  "page": 113,
+                  "ru": "различный } |",
+                  "en": "different ?",
+                  "transcription": "[d f(э)rэnt]",
+                  "is_main": true
+                },
+                {
+                  "order": 385,
+                  "page": 113,
+                  "ru": "различный",
+                  "en": "various",
+                  "transcription": "[ve(э)rIos]",
+                  "is_main": false
+                },
+                {
+                  "order": 386,
+                  "page": 113,
+                  "ru": "похожий",
+                  "en": "similar",
+                  "transcription": "[sIm(э)lэ]",
+                  "is_main": false
+                },
+                {
+                  "order": 387,
+                  "page": 113,
+                  "ru": "важный",
+                  "en": "important ixrro",
+                  "transcription": "[Im рэ:t(э nt]",
+                  "is_main": true
+                },
+                {
+                  "order": 388,
+                  "page": 113,
+                  "ru": "значительный",
+                  "en": "significant",
+                  "transcription": "[sIg nifrkont]",
+                  "is_main": false
+                },
+                {
+                  "order": 389,
+                  "page": 113,
+                  "ru": "существенный",
+                  "en": "essential",
+                  "transcription": "[rsen/(э)l]",
+                  "is_main": false
+                },
+                {
+                  "order": 390,
+                  "page": 113,
+                  "ru": "незначительный",
+                  "en": "insignificant",
+                  "transcription": "[InsIg nifikont]",
+                  "is_main": false
+                },
+                {
+                  "order": 391,
+                  "page": 113,
+                  "ru": "качественный",
+                  "en": "high-quality",
+                  "transcription": "[har'kwoliti]",
+                  "is_main": true
+                },
+                {
+                  "order": 392,
+                  "page": 113,
+                  "ru": "оптимальный",
+                  "en": "optimum",
+                  "transcription": "[optimэm]",
+                  "is_main": false
+                },
+                {
+                  "order": 393,
+                  "page": 113,
+                  "ru": "усовершенствованный",
+                  "en": "sophisticated",
+                  "transcription": "[sэ'fistikertrd]",
+                  "is_main": false
+                },
+                {
+                  "order": 394,
+                  "page": 113,
+                  "ru": "передовой",
+                  "en": "advanced",
+                  "transcription": "[эd va:nst]",
+                  "is_main": false
+                },
+                {
+                  "order": 395,
+                  "page": 113,
+                  "ru": "уступающий",
+                  "en": "inferior",
+                  "transcription": "[mn'fi(э)rIэ]",
+                  "is_main": false
+                },
+                {
+                  "order": 396,
+                  "page": 113,
+                  "ru": "дефектный",
+                  "en": "defective",
+                  "transcription": "[dr'fektrv]",
+                  "is_main": false
+                },
+                {
+                  "order": 397,
+                  "page": 113,
+                  "ru": "испорченный",
+                  "en": "spoiled",
+                  "transcription": "[spэild]",
+                  "is_main": false
+                },
+                {
+                  "order": 398,
+                  "page": 113,
+                  "ru": "забракованный",
+                  "en": "rejected",
+                  "transcription": "[ri' dsektrd]",
+                  "is_main": false
+                },
+                {
+                  "order": 399,
+                  "page": 113,
+                  "ru": "естественный",
+                  "en": "natural",
+                  "transcription": "[natJэr(э)]",
+                  "is_main": true
+                },
+                {
+                  "order": 400,
+                  "page": 113,
+                  "ru": "искусственный la:tr'f1/(э)l]",
+                  "en": "artificial",
+                  "transcription": "",
+                  "is_main": false
+                },
+                {
+                  "order": 401,
+                  "page": 113,
+                  "ru": "трудный",
+                  "en": "difficult",
+                  "transcription": "[difrk(o)lt]",
+                  "is_main": true
+                },
+                {
+                  "order": 402,
+                  "page": 113,
+                  "ru": "легкий",
+                  "en": "easy",
+                  "transcription": "[i:zI]",
+                  "is_main": false
+                }
+              ]
+            },
+            {
+              "number": 3,
+              "subsection": {
+                "ru": "Количество",
+                "en": "Quantity"
+              },
+              "subsection_ocr": {
+                "ru": "Количество",
+                "en": "Quantity"
+              },
+              "entries": [
+                {
+                  "order": 403,
+                  "page": 114,
+                  "ru": "максимальный",
+                  "en": "maximum",
+                  "transcription": "[maksImom]",
+                  "is_main": false
+                },
+                {
+                  "order": 404,
+                  "page": 114,
+                  "ru": "минимальный",
+                  "en": "minimum",
+                  "transcription": "[mmnImom]",
+                  "is_main": false
+                },
+                {
+                  "order": 405,
+                  "page": 114,
+                  "ru": "средний",
+                  "en": "average",
+                  "transcription": "[ev(э)rid3]",
+                  "is_main": false
+                },
+                {
+                  "order": 406,
+                  "page": 114,
+                  "ru": "достаточный",
+                  "en": "sufficient",
+                  "transcription": "[sэ' fr (э)nt]",
+                  "is_main": false
+                },
+                {
+                  "order": 407,
+                  "page": 114,
+                  "ru": "недостаточный [insэ frj(э)nt]",
+                  "en": "insufficient",
+                  "transcription": "",
+                  "is_main": false
+                },
+                {
+                  "order": 408,
+                  "page": 114,
+                  "ru": "избыточный",
+                  "en": "excessive",
+                  "transcription": "[rk' sesIv]",
+                  "is_main": false
+                },
+                {
+                  "order": 409,
+                  "page": 114,
+                  "ru": "лишний избыточный",
+                  "en": "redundant",
+                  "transcription": "[ri' dAndant]",
+                  "is_main": false
+                },
+                {
+                  "order": 410,
+                  "page": 114,
+                  "ru": "лишний",
+                  "en": "superfluous",
+                  "transcription": "[s(j)u: рз fluas]",
+                  "is_main": false
+                },
+                {
+                  "order": 411,
+                  "page": 114,
+                  "ru": "многочисленный",
+                  "en": "numerous",
+                  "transcription": "[nju:m(э)rэs]",
+                  "is_main": true
+                },
+                {
+                  "order": 412,
+                  "page": 114,
+                  "ru": "немногочисленный",
+                  "en": "not numerous",
+                  "transcription": "[not 'nju:m(э)rэs]",
+                  "is_main": false
+                },
+                {
+                  "order": 413,
+                  "page": 114,
+                  "ru": "полный",
+                  "en": "full",
+                  "transcription": "[ful]",
+                  "is_main": true
+                },
+                {
+                  "order": 414,
+                  "page": 114,
+                  "ru": "пустой",
+                  "en": "empty",
+                  "transcription": "[empti]",
+                  "is_main": false
+                }
+              ]
+            },
+            {
+              "number": 4,
+              "subsection": {
+                "ru": "Категория",
+                "en": "Category"
+              },
+              "subsection_ocr": {
+                "ru": "Категория",
+                "en": "Category"
+              },
+              "entries": [
+                {
+                  "order": 415,
+                  "page": 114,
+                  "ru": "относительный",
+                  "en": "relative",
+                  "transcription": "[relэtrv]",
+                  "is_main": true
+                },
+                {
+                  "order": 416,
+                  "page": 114,
+                  "ru": "абсолютный",
+                  "en": "absolute",
+                  "transcription": "[ebsolu:t]",
+                  "is_main": false
+                },
+                {
+                  "order": 417,
+                  "page": 114,
+                  "ru": "положительный",
+                  "en": "positive",
+                  "transcription": "[pozItiv]",
+                  "is_main": true
+                },
+                {
+                  "order": 418,
+                  "page": 114,
+                  "ru": "отрицательный",
+                  "en": "negative",
+                  "transcription": "[negotiv]",
+                  "is_main": false
+                },
+                {
+                  "order": 419,
+                  "page": 114,
+                  "ru": "реальный",
+                  "en": "real",
+                  "transcription": "[rIэl]",
+                  "is_main": true
+                },
+                {
+                  "order": 420,
+                  "page": 114,
+                  "ru": "фактический",
+                  "en": "actual",
+                  "transcription": "[' ektJuэl]",
+                  "is_main": false
+                },
+                {
+                  "order": 421,
+                  "page": 114,
+                  "ru": "практический",
+                  "en": "practical",
+                  "transcription": "[prektrk(э)l]",
+                  "is_main": false
+                },
+                {
+                  "order": 422,
+                  "page": 114,
+                  "ru": "условный",
+                  "en": "conditiona]",
+                  "transcription": "[kэn' d (э)nal]",
+                  "is_main": false
+                },
+                {
+                  "order": 423,
+                  "page": 114,
+                  "ru": "предполагаемый",
+                  "en": "hypothetical",
+                  "transcription": "[hатрэ' etrk(э)l]",
+                  "is_main": false
+                },
+                {
+                  "order": 424,
+                  "page": 114,
+                  "ru": "предполагаемый",
+                  "en": "assumed",
+                  "transcription": "[э'sju:md]",
+                  "is_main": false
+                },
+                {
+                  "order": 425,
+                  "page": 114,
+                  "ru": "возможный",
+                  "en": "possible",
+                  "transcription": "[pusэb(э)l]",
+                  "is_main": false
+                },
+                {
+                  "order": 426,
+                  "page": 114,
+                  "ru": "возможный",
+                  "en": "probable",
+                  "transcription": "[probэb(э)l]",
+                  "is_main": false
+                },
+                {
+                  "order": 427,
+                  "page": 114,
+                  "ru": "желательный",
+                  "en": "desirable",
+                  "transcription": "[dr'zar(э) эbl]",
+                  "is_main": false
+                },
+                {
+                  "order": 428,
+                  "page": 114,
+                  "ru": "теоретический",
+                  "en": "theoretical",
+                  "transcription": "[,81э retrk(э)l]",
+                  "is_main": false
+                },
+                {
+                  "order": 429,
+                  "page": 114,
+                  "ru": "воображаемый",
+                  "en": "imaginary",
+                  "transcription": "[rmads(o )n(э)ri]",
+                  "is_main": false
+                },
+                {
+                  "order": 430,
+                  "page": 114,
+                  "ru": "фантастический",
+                  "en": "fantastic",
+                  "transcription": "[fen' testrk]",
+                  "is_main": false
+                },
+                {
+                  "order": 431,
+                  "page": 114,
+                  "ru": "закономерный",
+                  "en": "regular",
+                  "transcription": "[regjula]",
+                  "is_main": true
+                },
+                {
+                  "order": 432,
+                  "page": 114,
+                  "ru": "случайный",
+                  "en": "occasional",
+                  "transcription": "[э'ke13(э)nэl]",
+                  "is_main": false
+                },
+                {
+                  "order": 433,
+                  "page": 114,
+                  "ru": "необходимый",
+                  "en": "necessary",
+                  "transcription": "[nesIs(э)ri]",
+                  "is_main": false
+                },
+                {
+                  "order": 434,
+                  "page": 115,
+                  "ru": "неизбежный",
+                  "en": "inevitable",
+                  "transcription": "[1 nevItэb(э)l]",
+                  "is_main": false
+                }
+              ]
+            },
+            {
+              "number": 5,
+              "subsection": {
+                "ru": "Соответствие",
+                "en": "Accordance"
+              },
+              "subsection_ocr": {
+                "ru": "Соответствие",
+                "en": "Accordance"
+              },
+              "entries": [
+                {
+                  "order": 435,
+                  "page": 115,
+                  "ru": "правильный",
+                  "en": "correct",
+                  "transcription": "[kэ rekt]",
+                  "is_main": true
+                },
+                {
+                  "order": 436,
+                  "page": 115,
+                  "ru": "верный",
+                  "en": "true",
+                  "transcription": "[tru:]",
+                  "is_main": false
+                },
+                {
+                  "order": 437,
+                  "page": 115,
+                  "ru": "точный",
+                  "en": "precise",
+                  "transcription": "[prr' saIs]",
+                  "is_main": false
+                },
+                {
+                  "order": 438,
+                  "page": 115,
+                  "ru": "логичный",
+                  "en": "logical",
+                  "transcription": "[ludsrk(o)l]",
+                  "is_main": false
+                },
+                {
+                  "order": 439,
+                  "page": 115,
+                  "ru": "подходящий",
+                  "en": "appropriate",
+                  "transcription": "[э' prouprIIt]",
+                  "is_main": true
+                },
+                {
+                  "order": 440,
+                  "page": 115,
+                  "ru": "подходящий",
+                  "en": "suitable",
+                  "transcription": "[s(i)u:tэb(o)l]",
+                  "is_main": false
+                },
+                {
+                  "order": 441,
+                  "page": 115,
+                  "ru": "приемлемый",
+                  "en": "acceptable",
+                  "transcription": "[эk ' septэb(э)l]",
+                  "is_main": false
+                },
+                {
+                  "order": 442,
+                  "page": 115,
+                  "ru": "удовлетворительный",
+                  "en": "satisfactory SRR&",
+                  "transcription": "[setIs' fekt(э )rI]",
+                  "is_main": false
+                },
+                {
+                  "order": 443,
+                  "page": 115,
+                  "ru": "неправильный",
+                  "en": "wrong",
+                  "transcription": "[ron]",
+                  "is_main": true
+                },
+                {
+                  "order": 444,
+                  "page": 115,
+                  "ru": "ложный",
+                  "en": "false",
+                  "transcription": "[fэ:ls]",
+                  "is_main": false
+                },
+                {
+                  "order": 445,
+                  "page": 115,
+                  "ru": "нелогичный",
+                  "en": "illogical",
+                  "transcription": "[1lodsIkal]",
+                  "is_main": false
+                },
+                {
+                  "order": 446,
+                  "page": 115,
+                  "ru": "приблизительный",
+                  "en": "approximate",
+                  "transcription": "[э' proksImit]",
+                  "is_main": false
+                },
+                {
+                  "order": 447,
+                  "page": 115,
+                  "ru": "абсурдный",
+                  "en": "absurd",
+                  "transcription": "[эb' sз:d]",
+                  "is_main": false
+                },
+                {
+                  "order": 448,
+                  "page": 115,
+                  "ru": "неуместный",
+                  "en": "inappropriate",
+                  "transcription": "[Inэ prouprnIt]",
+                  "is_main": false
+                },
+                {
+                  "order": 449,
+                  "page": 115,
+                  "ru": "неуместный [aut эv",
+                  "en": "out of place pleIs]",
+                  "transcription": "",
+                  "is_main": false
+                },
+                {
+                  "order": 450,
+                  "page": 115,
+                  "ru": "законный",
+                  "en": "legal",
+                  "transcription": "[li:gэ]",
+                  "is_main": true
+                },
+                {
+                  "order": 451,
+                  "page": 115,
+                  "ru": "законный",
+                  "en": "lawful",
+                  "transcription": "[1э:f(э)]",
+                  "is_main": false
+                },
+                {
+                  "order": 452,
+                  "page": 115,
+                  "ru": "незаконный",
+                  "en": "illegal",
+                  "transcription": "[,'li:g(э)l]",
+                  "is_main": false
+                },
+                {
+                  "order": 453,
+                  "page": 115,
+                  "ru": "стандартный",
+                  "en": "standard",
+                  "transcription": "['stendod]",
+                  "is_main": false
+                },
+                {
+                  "order": 454,
+                  "page": 115,
+                  "ru": "нестандартный",
+                  "en": "non-standard",
+                  "transcription": "[non' stendad]",
+                  "is_main": false
+                },
+                {
+                  "order": 455,
+                  "page": 115,
+                  "ru": "надежный",
+                  "en": "reliable",
+                  "transcription": "[rr' 1атэb(э)]",
+                  "is_main": true
+                },
+                {
+                  "order": 456,
+                  "page": 115,
+                  "ru": "ненадежный",
+                  "en": "unreliable",
+                  "transcription": "[Anrr'larb(э)l]",
+                  "is_main": false
+                }
+              ]
+            },
+            {
+              "number": 6,
+              "subsection": {
+                "ru": "Выгода",
+                "en": "Advantage"
+              },
+              "subsection_ocr": {
+                "ru": "Выгода",
+                "en": "Advantage"
+              },
+              "entries": [
+                {
+                  "order": 457,
+                  "page": 115,
+                  "ru": "выгодный",
+                  "en": "advantageous",
+                  "transcription": "[edvэn' terdЗэs]",
+                  "is_main": true
+                },
+                {
+                  "order": 458,
+                  "page": 115,
+                  "ru": "доходный",
+                  "en": "profitable",
+                  "transcription": "[profitэb(э)l]",
+                  "is_main": false
+                },
+                {
+                  "order": 459,
+                  "page": 115,
+                  "ru": "невыгодный",
+                  "en": "disadvantageous",
+                  "transcription": "[drsadvon' terdgэs]",
+                  "is_main": false
+                },
+                {
+                  "order": 460,
+                  "page": 115,
+                  "ru": "недоходный",
+                  "en": "unprofitable",
+                  "transcription": "[An profrtob(э)l]",
+                  "is_main": false
+                },
+                {
+                  "order": 461,
+                  "page": 115,
+                  "ru": "эффективный",
+                  "en": "efficient",
+                  "transcription": "[rf (э nt]",
+                  "is_main": true
+                },
+                {
+                  "order": 462,
+                  "page": 115,
+                  "ru": "действительный в силе)",
+                  "en": "valid",
+                  "transcription": "[velrd]",
+                  "is_main": false
+                },
+                {
+                  "order": 463,
+                  "page": 115,
+                  "ru": "полезный",
+                  "en": "useful",
+                  "transcription": "[ju:sf(o)l]",
+                  "is_main": false
+                },
+                {
+                  "order": 464,
+                  "page": 116,
+                  "ru": "безвредный",
+                  "en": "harmless",
+                  "transcription": "[ha:mlrs]",
+                  "is_main": false
+                },
+                {
+                  "order": 465,
+                  "page": 116,
+                  "ru": "бесполезный",
+                  "en": "useless",
+                  "transcription": "[ju:slrs]",
+                  "is_main": false
+                },
+                {
+                  "order": 466,
+                  "page": 116,
+                  "ru": "вредный",
+                  "en": "harmful",
+                  "transcription": "[ha:mf(э)]",
+                  "is_main": false
+                },
+                {
+                  "order": 467,
+                  "page": 116,
+                  "ru": "недействительный эзивы1о: invalid",
+                  "en": "",
+                  "transcription": "[mn'velrd]",
+                  "is_main": false
+                },
+                {
+                  "order": 468,
+                  "page": 116,
+                  "ru": "дешевый",
+                  "en": "cheap",
+                  "transcription": "[tJi:p]",
+                  "is_main": true
+                },
+                {
+                  "order": 469,
+                  "page": 116,
+                  "ru": "дорогой",
+                  "en": "expensive",
+                  "transcription": "[#k'spensIv]",
+                  "is_main": false
+                },
+                {
+                  "order": 470,
+                  "page": 116,
+                  "ru": "бесплатный",
+                  "en": "free of charge",
+                  "transcription": "[fri: эv tJa:d3]",
+                  "is_main": false
+                },
+                {
+                  "order": 471,
+                  "page": 116,
+                  "ru": "бесценный",
+                  "en": "priceless",
+                  "transcription": "[praIslIs]",
+                  "is_main": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "section": {
+            "ru": "Состояние / статус",
+            "en": "Condition / Status"
+          },
+          "subsections": [
+            {
+              "number": 1,
+              "subsection": {
+                "ru": "Физическое состояние",
+                "en": "Physical Condition"
+              },
+              "subsection_ocr": {
+                "ru": "Физическое состояние",
+                "en": "Physical Condition"
+              },
+              "entries": [
+                {
+                  "order": 472,
+                  "page": 116,
+                  "ru": "здоровый",
+                  "en": "healthy",
+                  "transcription": "[hel ]",
+                  "is_main": true
+                },
+                {
+                  "order": 473,
+                  "page": 116,
+                  "ru": "здоровый и сильный",
+                  "en": "robust",
+                  "transcription": "[rэu'bAst]",
+                  "is_main": false
+                },
+                {
+                  "order": 474,
+                  "page": 116,
+                  "ru": "сильный",
+                  "en": "strong",
+                  "transcription": "[stron]",
+                  "is_main": true
+                },
+                {
+                  "order": 475,
+                  "page": 116,
+                  "ru": "энергичный; сильный",
+                  "en": "vigorous",
+                  "transcription": "[vIg(э)rэs]",
+                  "is_main": false
+                },
+                {
+                  "order": 476,
+                  "page": 116,
+                  "ru": "бодрый",
+                  "en": "cheerful",
+                  "transcription": "[tЛэf(э)]",
+                  "is_main": false
+                },
+                {
+                  "order": 477,
+                  "page": 116,
+                  "ru": "больной",
+                  "en": "sick V5}",
+                  "transcription": "[sIk]",
+                  "is_main": true
+                },
+                {
+                  "order": 478,
+                  "page": 116,
+                  "ru": "больной",
+                  "en": "ill K39f1",
+                  "transcription": "[1l]",
+                  "is_main": false
+                },
+                {
+                  "order": 479,
+                  "page": 116,
+                  "ru": "слабый",
+                  "en": "weak bf4:2",
+                  "transcription": "[wi:k]",
+                  "is_main": true
+                },
+                {
+                  "order": 480,
+                  "page": 116,
+                  "ru": "сонливый",
+                  "en": "drowsy",
+                  "transcription": "[drauzI]",
+                  "is_main": false
+                },
+                {
+                  "order": 481,
+                  "page": 116,
+                  "ru": "сонливый",
+                  "en": "sleepy",
+                  "transcription": "[sli:pi]",
+                  "is_main": false
+                },
+                {
+                  "order": 482,
+                  "page": 116,
+                  "ru": "усталый",
+                  "en": "tired",
+                  "transcription": "[taэd]",
+                  "is_main": false
+                },
+                {
+                  "order": 483,
+                  "page": 116,
+                  "ru": "очень усталый",
+                  "en": "exhausted",
+                  "transcription": "[1g zosstid]",
+                  "is_main": false
+                },
+                {
+                  "order": 484,
+                  "page": 116,
+                  "ru": "жирный",
+                  "en": "fat",
+                  "transcription": "[fet]",
+                  "is_main": true
+                },
+                {
+                  "order": 485,
+                  "page": 116,
+                  "ru": "худощавый",
+                  "en": "lean",
+                  "transcription": "[li:n]",
+                  "is_main": false
+                },
+                {
+                  "order": 486,
+                  "page": 116,
+                  "ru": "стройный",
+                  "en": "slim",
+                  "transcription": "[slim]",
+                  "is_main": false
+                },
+                {
+                  "order": 487,
+                  "page": 116,
+                  "ru": "исхудалый",
+                  "en": "emaciated",
+                  "transcription": "[1merfrentid]",
+                  "is_main": false
+                }
+              ]
+            },
+            {
+              "number": 2,
+              "subsection": {
+                "ru": "Финансовое положение",
+                "en": "Financial Status"
+              },
+              "subsection_ocr": {
+                "ru": "Финансовое положение",
+                "en": "Financial Status"
+              },
+              "entries": [
+                {
+                  "order": 488,
+                  "page": 116,
+                  "ru": "богатый [ritл",
+                  "en": "rich",
+                  "transcription": "",
+                  "is_main": true
+                },
+                {
+                  "order": 489,
+                  "page": 116,
+                  "ru": "благосостоятельный",
+                  "en": "well-to-do",
+                  "transcription": "[welto' du:]",
+                  "is_main": false
+                },
+                {
+                  "order": 490,
+                  "page": 117,
+                  "ru": "хорошо одетый",
+                  "en": "well-dressed",
+                  "transcription": "[,wel drest]",
+                  "is_main": true
+                },
+                {
+                  "order": 491,
+                  "page": 117,
+                  "ru": "оборванный",
+                  "en": "ragged",
+                  "transcription": "[regid]",
+                  "is_main": false
+                },
+                {
+                  "order": 492,
+                  "page": 117,
+                  "ru": "сытый",
+                  "en": "full",
+                  "transcription": "[ful]",
+                  "is_main": false
+                },
+                {
+                  "order": 493,
+                  "page": 117,
+                  "ru": "голодный",
+                  "en": "hungry",
+                  "transcription": "[hAngrI]",
+                  "is_main": false
+                },
+                {
+                  "order": 494,
+                  "page": 117,
+                  "ru": "жаждущий",
+                  "en": "thirsty V,L",
+                  "transcription": "[{з:str]",
+                  "is_main": false
+                },
+                {
+                  "order": 495,
+                  "page": 117,
+                  "ru": "молодой",
+                  "en": "young",
+                  "transcription": "[jAn]",
+                  "is_main": true
+                },
+                {
+                  "order": 496,
+                  "page": 117,
+                  "ru": "взрослый",
+                  "en": "grown-up",
+                  "transcription": "[groun 'кp]",
+                  "is_main": false
+                },
+                {
+                  "order": 497,
+                  "page": 117,
+                  "ru": "зрелый",
+                  "en": "mature",
+                  "transcription": "[mэ' tJua]",
+                  "is_main": false
+                },
+                {
+                  "order": 498,
+                  "page": 117,
+                  "ru": "неженатый",
+                  "en": "single",
+                  "transcription": "[sIng(э)l]",
+                  "is_main": true
+                },
+                {
+                  "order": 499,
+                  "page": 117,
+                  "ru": "женатый замужем",
+                  "en": "married",
+                  "transcription": "[merrd]",
+                  "is_main": false
+                },
+                {
+                  "order": 500,
+                  "page": 117,
+                  "ru": "разведенный",
+                  "en": "divorced",
+                  "transcription": "[drvэ:st]",
+                  "is_main": false
+                },
+                {
+                  "order": 501,
+                  "page": 117,
+                  "ru": "беременная",
+                  "en": "pregnant",
+                  "transcription": "[pregnэnt]",
+                  "is_main": false
+                }
+              ]
+            },
+            {
+              "number": 4,
+              "subsection": {
+                "ru": "Применение",
+                "en": "Application"
+              },
+              "subsection_ocr": {
+                "ru": "Применение",
+                "en": "Application"
+              },
+              "entries": [
+                {
+                  "order": 502,
+                  "page": 117,
+                  "ru": "удобный",
+                  "en": "comfortable",
+                  "transcription": "[kAmf(э )tэbl]",
+                  "is_main": true
+                },
+                {
+                  "order": 503,
+                  "page": 117,
+                  "ru": "неудобный",
+                  "en": "uncomfortable",
+                  "transcription": "[An'kAmf(э)tэbl]",
+                  "is_main": false
+                },
+                {
+                  "order": 504,
+                  "page": 117,
+                  "ru": "удобный",
+                  "en": "convenient",
+                  "transcription": "[kэn' vi:nIэnt]",
+                  "is_main": false
+                },
+                {
+                  "order": 505,
+                  "page": 117,
+                  "ru": "неудобный",
+                  "en": "inconvenient",
+                  "transcription": "[mnkэn'vi:mэnt]",
+                  "is_main": false
+                },
+                {
+                  "order": 506,
+                  "page": 117,
+                  "ru": "готовый",
+                  "en": "ready",
+                  "transcription": "[redr]",
+                  "is_main": true
+                },
+                {
+                  "order": 507,
+                  "page": 117,
+                  "ru": "завершенный",
+                  "en": "complete",
+                  "transcription": "[kэm' pli:t]",
+                  "is_main": false
+                },
+                {
+                  "order": 508,
+                  "page": 117,
+                  "ru": "исправный",
+                  "en": "intact",
+                  "transcription": "[intekt]",
+                  "is_main": false
+                },
+                {
+                  "order": 509,
+                  "page": 117,
+                  "ru": "в хорошем состоянии",
+                  "en": "in good repair",
+                  "transcription": "[mn 'gud ri реэ]",
+                  "is_main": false
+                },
+                {
+                  "order": 510,
+                  "page": 117,
+                  "ru": "незавершенный неполный",
+                  "en": "incomplete",
+                  "transcription": "[Inkom pli:t]",
+                  "is_main": false
+                },
+                {
+                  "order": 511,
+                  "page": 117,
+                  "ru": "поврежденный",
+                  "en": "damaged",
+                  "transcription": "[damidsd]",
+                  "is_main": false
+                },
+                {
+                  "order": 512,
+                  "page": 117,
+                  "ru": "испорченный",
+                  "en": "spoilt",
+                  "transcription": "[spэIlt]",
+                  "is_main": false
+                },
+                {
+                  "order": 513,
+                  "page": 117,
+                  "ru": "приготовленный (0 пище)",
+                  "en": "cooked Nn",
+                  "transcription": "[kukt]",
+                  "is_main": true
+                },
+                {
+                  "order": 514,
+                  "page": 117,
+                  "ru": "жареный",
+                  "en": "fried k",
+                  "transcription": "[frard]",
+                  "is_main": false
+                },
+                {
+                  "order": 515,
+                  "page": 117,
+                  "ru": "печеный",
+                  "en": "baked y",
+                  "transcription": "[berkt]",
+                  "is_main": false
+                },
+                {
+                  "order": 516,
+                  "page": 117,
+                  "ru": "сырой (невареный)",
+                  "en": "raw",
+                  "transcription": "[тэ:]",
+                  "is_main": false
+                },
+                {
+                  "order": 517,
+                  "page": 117,
+                  "ru": "упакованный",
+                  "en": "packed up",
+                  "transcription": "[pakt' ^p]",
+                  "is_main": false
+                },
+                {
+                  "order": 518,
+                  "page": 117,
+                  "ru": "свободный",
+                  "en": "free",
+                  "transcription": "[fri:]",
+                  "is_main": true
+                },
+                {
+                  "order": 519,
+                  "page": 117,
+                  "ru": "свободный",
+                  "en": "",
+                  "transcription": "[verkont]",
+                  "is_main": false
+                },
+                {
+                  "order": 520,
+                  "page": 118,
+                  "ru": "занятый (о мссте)",
+                  "en": "occupied",
+                  "transcription": "[okjupand]",
+                  "is_main": false
+                },
+                {
+                  "order": 521,
+                  "page": 118,
+                  "ru": "занятый (чем-либо)",
+                  "en": "busy",
+                  "transcription": "[brzI]",
+                  "is_main": false
+                },
+                {
+                  "order": 522,
+                  "page": 118,
+                  "ru": "занятый",
+                  "en": "engaged",
+                  "transcription": "[mn' gerdsd]",
+                  "is_main": false
+                },
+                {
+                  "order": 523,
+                  "page": 118,
+                  "ru": "чистый",
+                  "en": "clean",
+                  "transcription": "[kli:n]",
+                  "is_main": true
+                },
+                {
+                  "order": 524,
+                  "page": 118,
+                  "ru": "грязный",
+                  "en": "dirty",
+                  "transcription": "[dз:tr]",
+                  "is_main": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "theme": {
+        "ru": "Существительные",
+        "en": "Nouns"
+      },
+      "sections": [
+        {
+          "section": {
+            "ru": "Мир",
+            "en": "World"
+          },
+          "subsections": [
+            {
+              "number": 1,
+              "subsection": {
+                "ru": "Небо",
+                "en": "Sky"
+              },
+              "subsection_ocr": {
+                "ru": "Небо",
+                "en": "Sky"
+              },
+              "entries": [
+                {
+                  "order": 525,
+                  "page": 118,
+                  "ru": "небо",
+                  "en": "sky",
+                  "transcription": "[skan]",
+                  "is_main": true
+                },
+                {
+                  "order": 526,
+                  "page": 118,
+                  "ru": "воздух",
+                  "en": "air",
+                  "transcription": "[еэ]",
+                  "is_main": true
+                },
+                {
+                  "order": 527,
+                  "page": 118,
+                  "ru": "облако",
+                  "en": "cloud",
+                  "transcription": "[klaud]",
+                  "is_main": false
+                },
+                {
+                  "order": 528,
+                  "page": 118,
+                  "ru": "солнце",
+                  "en": "sun",
+                  "transcription": "[sAn]",
+                  "is_main": true
+                },
+                {
+                  "order": 529,
+                  "page": 118,
+                  "ru": "звезда",
+                  "en": "star",
+                  "transcription": "[sta:]",
+                  "is_main": false
+                },
+                {
+                  "order": 530,
+                  "page": 118,
+                  "ru": "луна",
+                  "en": "moon",
+                  "transcription": "[mu:n]",
+                  "is_main": false
+                },
+                {
+                  "order": 531,
+                  "page": 118,
+                  "ru": "планета",
+                  "en": "planet",
+                  "transcription": "[plenmt]",
+                  "is_main": false
+                }
+              ]
+            },
+            {
+              "number": 2,
+              "subsection": {
+                "ru": "Земля",
+                "en": "Earth"
+              },
+              "subsection_ocr": {
+                "ru": "Земля",
+                "en": "Earth"
+              },
+              "entries": [
+                {
+                  "order": 532,
+                  "page": 118,
+                  "ru": "земля",
+                  "en": "earth",
+                  "transcription": "[з:0]",
+                  "is_main": true
+                },
+                {
+                  "order": 533,
+                  "page": 118,
+                  "ru": "почва",
+                  "en": "soil",
+                  "transcription": "[sэт]",
+                  "is_main": false
+                },
+                {
+                  "order": 534,
+                  "page": 118,
+                  "ru": "суша",
+                  "en": "land",
+                  "transcription": "[lend]",
+                  "is_main": false
+                },
+                {
+                  "order": 535,
+                  "page": 118,
+                  "ru": "континент",
+                  "en": "continent",
+                  "transcription": "[kontInant]",
+                  "is_main": true
+                },
+                {
+                  "order": 536,
+                  "page": 118,
+                  "ru": "полуостров",
+                  "en": "peninsula",
+                  "transcription": "[pI ninsjula]",
+                  "is_main": false
+                },
+                {
+                  "order": 537,
+                  "page": 118,
+                  "ru": "остров",
+                  "en": "island",
+                  "transcription": "[аlэnd]",
+                  "is_main": false
+                },
+                {
+                  "order": 538,
+                  "page": 118,
+                  "ru": "берег",
+                  "en": "shore",
+                  "transcription": "[Jэ:]",
+                  "is_main": true
+                },
+                {
+                  "order": 539,
+                  "page": 118,
+                  "ru": "берег реки",
+                  "en": "bank",
+                  "transcription": "[bank]",
+                  "is_main": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

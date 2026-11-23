@@ -1,4 +1,5 @@
 {
+  "theme": {"ru": "Глаголы", "en": "Verbs"},
   "sections": [
     {"ru": "Глаголы стадии", "en": "Verbs of Stage", "subsections": [
       {"num": 1, "ru": "Начало", "en": "Beginning"},

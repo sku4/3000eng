@@ -1,19 +1,23 @@
 # CLAUDE.md — 3000eng
 
-Проект: распознавание фото книги «Словарь-минимум с логической структурой» (раздел
-«Глаголы», стр. 77–99) в структурированный JSON-словарь. Отвечать пользователю на русском.
+Проект: распознавание фото книги «Словарь-минимум с логической структурой» в
+структурированный JSON-словарь. Книга = несколько частей речи (тем): Глаголы
+(стр. 77–99), Прилагательные (стр. 100–117), Существительные (стр. 118+). Темы
+накапливаются в одном `dictionary.json` через слияние. Отвечать пользователю на русском.
 
 ## Пайплайн
 
 ```
-foto (*.jpg) ──ocr_all.py──▶ ocr_raw.json ──parse6.py──▶ events.json ──build_json.py──▶ dictionary.json
+foto (*.jpg) ──ocr_all.py──▶ ocr_raw.json ──parse6.py──▶ events.json ──build_json.py──▶ <theme>_dict.json ──merge_dicts.py──▶ dictionary.json
 ```
 
-Скрипты параметризованы, мастер-команда — `run.sh`:
+Каждая тема собирается отдельно (`build_json.py`), затем сливается в общий словарь
+(`merge_dicts.py`). Мастер-команда `run.sh` покрывает OCR→parse→build одной темы:
 
 ```bash
-./run.sh [INPUT_DIR] [OUTPUT_JSON]          # раздел «Глаголы» (с canonical overlay)
-CANONICAL= ./run.sh ./nouns/ dict_nouns.json # другой раздел (overlay отключён)
+CANONICAL=canonical_adjectives.json ./run.sh ./photos/ adj_dict.json   # тема с overlay
+CANONICAL= ./run.sh ./photos/ some_dict.json                           # тема без overlay
+python merge_dicts.py --inputs dictionary.json adj_dict.json --output dictionary.json   # слияние
 ```
 
 `run.sh` создаёт `./venv` и ставит `easyocr pillow scipy` (модели ~100 МБ качаются при
@@ -23,25 +27,35 @@ CANONICAL= ./run.sh ./nouns/ dict_nouns.json # другой раздел (overla
 ### Пошагово (без run.sh)
 
 ```bash
-/tmp/ocrvenv/bin/python ocr_all.py   --input . --output ocr_raw.json
-/tmp/ocrvenv/bin/python parse6.py    --input ocr_raw.json --output events.json --img-dir .
-/tmp/ocrvenv/bin/python build_json.py --input events.json --output dictionary.json --canonical canonical_verbs.json
+/tmp/ocrvenv/bin/python ocr_all.py    --input . --output ocr_raw.json
+/tmp/ocrvenv/bin/python parse6.py     --input ocr_raw.json --output events.json --img-dir .
+/tmp/ocrvenv/bin/python build_json.py --input events.json --output adj_dict.json --canonical canonical_adjectives.json
+/tmp/ocrvenv/bin/python merge_dicts.py --inputs verbs_dict.json adj_dict.json --output dictionary.json
 ```
 
 `ocr_raw.json` (сырой OCR с координатами боксов) и `events.json` сохраняем — позволяют
-пересобрать `dictionary.json` без повторного OCR (OCR ~30–40 с/фото на CPU).
+пересобрать dict без повторного OCR (OCR ~30–40 с/фото на CPU).
 
 ## Файлы
 
 | Файл | Назначение |
 |---|---|
-| `dictionary.json` | **итог** — не править руками, генерится |
+| `dictionary.json` | **итог** (все темы) — не править руками, генерится |
 | `ocr_all.py` | easyocr (ru+en, gpu=False) → `ocr_raw.json` с {W,H,items:[{text,conf,x0,y0,x1,y1,ink,h,w}]} |
-| `parse6.py` | кластеризация в строки → классификация колонок → события + **толщина штриха** |
-| `build_json.py` | дерево разделов/подразделов, нормализация, `is_main`, `page`, `order` |
-| `canonical_verbs.json` | overlay чистых названий (9 разделов, 50 подразделов) — только для «Глаголы» |
-| `run.sh` | мастер-скрипт |
+| `parse6.py` | кластеризация в строки → классификация → события + **толщина штриха** |
+| `build_json.py` | дерево одной темы (multi-theme схема), нормализация, `is_main`, `page`, `order` |
+| `merge_dicts.py` | слияние dict-файлов тем в один, перенумерация `order` |
+| `canonical_verbs.json` | overlay чистых названий для темы «Глаголы» (9 разделов) |
+| `canonical_adjectives.json` | overlay чистых названий для темы «Прилагательные» (7 разделов) |
+| `verbs_dict.json`, `adj_dict.json` | промежуточные dict по темам (входы для merge) |
+| `run.sh` | мастер-скрипт (одна тема) |
 | `README.md` | документация для пользователя |
+
+## Схема `dictionary.json` (multi-theme)
+
+`{"book":..., "themes":[{"theme":{ru,en}, "sections":[{"section":{ru,en},"subsections":[{"number", "subsection":{ru,en}, "subsection_ocr":{ru,en}, "entries":[{order,page,ru,en,transcription,is_main}]}]}]}]}`.
+Старая одно-темная схема (`theme`+`sections` на верхнем уровне) поддерживается
+`merge_dicts.py` как вход (автоконвертация).
 
 ## Ключевые решения (НЕ ломать)
 
@@ -52,9 +66,8 @@ CANONICAL= ./run.sh ./nouns/ dict_nouns.json # другой раздел (overla
 - Абсолютная толщина зависит от снимка → порог **нормируется по странице**:
   `is_main = stroke / median_stroke(page) ≥ BOLD_RATIO` (`1.30` в `build_json.py`).
   Медиана — по ru-боксам базового текста страницы (отфильтрованы блобы 1–12 px).
-- **Не** использовать erosion-survival (старая метрика — не разделяет: `prepare` 0.667
-  ниже нежирного `become` 0.676). **Не** использовать эвристику «первое слово подраздела»
-  (давала ~108/591 бессмысленно). Чисто пиксельная метрика → ~115/591.
+- **Не** использовать erosion-survival (старая метрика — не разделяет). **Не** использовать
+  эвристику «первое слово подраздела». Чисто пиксельная метрика.
 - Проверочный эталон (стр.77–78, подтверждён пользователем): start, grow, prepare,
   continue, put off, repeat, finish, break, cease, move (10/10, без ложных). На этих
   страницах чистый разрыв: жирные ratio ≥1.36, нежирные ≤1.24.
@@ -63,31 +76,43 @@ CANONICAL= ./run.sh ./nouns/ dict_nouns.json # другой раздел (overla
 - `fix_ru` (в `build_json.py`): русский в **нижний регистр**; `(ся`→`(ся)`; `(+прил...)`→
   `(+прил.)`; `(+adj...)`→`(+adj.)`; очистка от мусорных цифр.
 - `fix_en`: мини-словарь `EN_FIX` частых OCR-ошибок (`g0`→`go`, `CrOSS`→`cross`,
-  `tumn`→`turn`, `IOW`→`row`, …) — **пополняй при новых ошибках**.
+  `tumn`→`turn`, …) — **пополняй при новых ошибках**.
 
-### Структура страницы (3 колонки)
-- ru-слово: `x < 0.20·W`; en-перевод: `0.26·W ≤ x < 0.64·W`, латиница без кириллицы;
-  транскрипция: `x ≥ 0.64·W` или в `[...]`.
-- Строки кластеризуются по разрыву Y > 20 px (`LINE_GAP`).
-- Бегущий колонтитул/титул отсекаются: `y < 0.10·H` и ключевые слова `TITLE_KEYS`.
-- Номер страницы — отдельная цифра при `y > 0.78·H`; «блуждающий» номер (подраздел-индекс
-  вместо номера) отсекается `is_pagenum_stray` при `y > 0.90·H`.
-- Подразделы — по нумерации `N.`/`N` (`NUM_HEAD`, `NUM_HEAD_T`); разделы — по ключам
-  `SECTION_KEYS = ['Глаголы','Бытовые','Рабочие']` при `x > 0.18·W`.
-- Плотные регионы (перевод над/под русским): pending/trailing-логика — если у текущей
-  записи уже есть en, следующая en-строка относится к следующему ru-слову, иначе к текущему.
+### Лейаут и классификация (parse6.py)
+- **Запись = строка с транскрипцией**: ru в колонке записей (авто-определение плотнейшего
+  cyr-x бина на странице) ИЛИ центрированная пара ru+en с транскрипцией (жирное главное
+  слово группы, напр. «Цвет/Colour [..]»). Единое правило для глаголов и прилагательных.
+- **Транскрипция — только в скобках `[...]`**. Голое латинское слово в правой колонке
+  (напр. «Ability» из «Absence of Ability») — часть перевода, не транскрипция. OCR часто
+  клеит en+транскрипцию в один бокс («Colour [kАlэ]») — `classify` разделяет их.
+- **Тема** — по ключевым словам `Прилагательные`/`Существительные`/`Глаголы` (`is_theme`);
+  **подраздел** — по нумерации `N.`/`N`, но numbox срабатывает **только для крайнего левого
+  токена** строки (иначе мусорная цифра в заголовке станет номером).
+- **Разделы** в `build_json.py` определяются по **сбросу нумерации подразделов**
+  (нумерация в книге сбрасывается в каждом разделе), НЕ по событиям section из parse
+  (они могут быть спурными от раздробленных заголовков). События section из parse только
+  сбрасывают pending (чтобы en заголовка не утёк в следующую запись).
+- Строки кластеризуются по разрыву Y > 20 px (`LINE_GAP`). Бегущий колонтитул/титул
+  отсекаются (`y < 0.10·H`, `TITLE_KEYS`). Номер страницы — цифра при `y > 0.78·H`;
+  блуждающий номер отсекается `is_pagenum_stray` при `y > 0.90·H`.
+- Плотные регионы (перевод над/под русским): pending/trailing-логика. `lookahead_en` не
+  берёт строки с транскрипцией (чтобы не съесть перевод записи как en заголовка).
 
 ### Overlay
-- `canonical_verbs.json` привязан к разделу «Глаголы». Сопоставление по **порядку**
-  разделов (n-й в файле ↔ n-й в overlay) и **номеру** подраздела внутри раздела.
-- Для других частей книги — `CANONICAL=` (названия из OCR как есть) или свой overlay.
+- `canonical_*.json` несёт поле `theme`; `build_json` применяет overlay только к
+  совпадающей по имени теме (можно безопасно передавать overlay глаголов при сборе
+  прилагательных — он не применится). Сопоставление разделов по **порядку**, подразделов
+  по **номеру** внутри раздела.
+- Для темы без overlay — `CANONICAL=` (названия из OCR).
 
 ## Известные ограничения
 
 - **Транскрипции** содержат ошибки IPA (`ə`→`э`, `ʃ`→`J`, `ɪ`→`1`/`I`, `ŋ`→`Л`).
   Транскрипция ориентировочная; основной результат — пары `ru`↔`en`.
-- На стыке страниц в плотных регионах отдельные записи могут слияться или получить
-  ошибочный перевод — править в `parse6.py` (классификация/flush), не руками в JSON.
+- Если OCR не прочитал номер+название подраздела, весь подраздел теряется (напр. в
+  «Состояние» потерян sub 3 «Биологическое и семейное положение», стр. 117).
+- На стыке страниц в плотных регионах отдельные записи могут слипаться или получать
+  ошибочный en — править в `parse6.py` (classify/flush), не руками в JSON.
 - `dictionary.json` **не содержит** служебных полей (`bold_score`, `stroke`) — только
   `{order, page, ru, en, transcription, is_main}`.
 
@@ -95,7 +120,7 @@ CANONICAL= ./run.sh ./nouns/ dict_nouns.json # другой раздел (overla
 
 - Новые OCR-ошибки английских слов → `EN_FIX` в `build_json.py`.
 - Порог жирности → `BOLD_RATIO` в `build_json.py`.
-- Лейаут/колонки/заголовки → `parse6.py` (`classify`, константы `LINE_GAP`,
-  пороги по `x/W`, `y/H`).
-- Чистые названия для нового раздела → новый `canonical_*.json` по формату
-  `canonical_verbs.json`.
+- Лейаут/колонки/заголовки → `parse6.py` (`classify`, константы `LINE_GAP`, пороги).
+- Чистые названия для новой темы → новый `canonical_*.json` по формату
+  `canonical_adjectives.json` (с полем `theme`).
+- Слияние тем → `merge_dicts.py --inputs a.json b.json --output dictionary.json`.

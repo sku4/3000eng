@@ -32,7 +32,15 @@ def has_bracket(t): return '[' in t or ']' in t
 TITLE_KEYS=['Словарь','минимум','структур','логическ','лозическ','лоzической',
             'сирукmур','спрукиур','сирукиур','сируктурой']
 SECTION_KEYS=['Глаголы','Бытовые','Рабочие']
+# Part-of-speech themes. Глаголы matched exactly (section titles like "Глаголы
+# стадии" must NOT be treated as theme); Прилагательные/Существительные matched
+# as substrings (no section title contains them).
+THEME_RU_VERBS={'Глаголы','Глааолы','Глааолъ','Глаголъ'}
+THEME_RU_SUB=['Прилагательные','Существительные']
+THEME_EN={'Adjectives','Nouns','Verbs'}
 def is_title(t): return any(k in t for k in TITLE_KEYS)
+def is_theme(ru_txt,en_txt):
+    return (ru_txt in THEME_RU_VERBS) or any(k in ru_txt for k in THEME_RU_SUB) or (en_txt in THEME_EN)
 
 def page_number(items,H):
     c=[(it['y0'],int(it['text'])) for it in items
@@ -44,8 +52,9 @@ NUM_HEAD_T=re.compile(r'^\s*(\d{1,2})\s*[\.\)\s]\s*(\D.*?)\s*$')
 def numbox(t):
     t=t.strip()
     m=NUM_HEAD_T.match(t)
-    if m and (cyr(m.group(2)) or lat(m.group(2))): return int(m.group(1)), m.group(2)
-    if NUM_HEAD.match(t): return int(NUM_HEAD.match(t).group(1)), None
+    if m and (cyr(m.group(2)) or lat(m.group(2))) and int(m.group(1))>=1: return int(m.group(1)), m.group(2)
+    m2=NUM_HEAD.match(t)
+    if m2 and int(m2.group(1))>=1: return int(m2.group(1)), None
     return None,None
 def starts_with_number(t):
     m=re.match(r'^\s*(\d{1,2})\s*[\.\)\s]', t)
@@ -122,37 +131,69 @@ def main():
 
         def classify(line):
             ru=[]; en=[]; tr=[]; num=None; sec=False; head=None
-            for it in line:
+            items=sorted(line,key=lambda x:x['x0'])
+            for idx,it in enumerate(items):
                 t=it['text'].strip()
-                if is_title(t): continue
-                if is_pagenum_stray(it,H,t): continue
+                if not t or is_title(t) or is_pagenum_stray(it,H,t): continue
                 if any(k in t for k in SECTION_KEYS) and it['x0']>0.18*W:
                     sec=True; ru.append((it['x0'],t)); continue
-                nb,rest=numbox(t)
-                if nb is not None and it['ink']>0.08 and it['x0']>0.10*W and not is_pagenum_stray(it,H,t):
-                    num=nb
-                    if rest: ru.append((it['x0'],rest))
-                    continue
+                # subsection number: only the leading (leftmost) token of the line,
+                # so a stray digit buried in a centered title ("Эмоция … 1 …") can't
+                # masquerade as a subsection index.
+                if idx==0:
+                    nb,rest=numbox(t)
+                    if nb is not None and it['ink']>0.08 and it['x0']>0.10*W:
+                        num=nb
+                        if rest: ru.append((it['x0'],rest))
+                        continue
+                # transcription is always bracketed on the page; a bare Latin word
+                # in the right column (e.g. "Ability" of "Absence of Ability") is a
+                # wrapped translation, NOT transcription. OCR often bundles the en
+                # word and its transcription into one box ("Colour [kАlэ]"), so split
+                # the bracketed part from any leading en/ru word.
                 if has_bracket(t):
-                    tr.append((it['x0'],t,it)); continue
-                if it['x0']<0.62*W and cyr(t) and starts_with_number(t) is None:
-                    ru.append((it['x0'],t))
-                    if head is None and it['x0']<0.20*W: head=it
+                    brackets=re.findall(r'\[[^\]]*\]',t)
+                    rest=re.sub(r'\[[^\]]*\]',' ',t).strip(' ;:,.\'"')
+                    if rest:
+                        if cyr(rest):
+                            ru.append((it['x0'],rest))
+                            if head is None: head=it
+                        elif lat(rest):
+                            en.append((it['x0'],rest,it))
+                    for b in brackets:
+                        tr.append((it['x0'],b,it))
                     continue
-                if 0.26*W<=it['x0']<0.64*W and lat(t) and not cyr(t):
+                if cyr(t) and starts_with_number(t) is None:
+                    ru.append((it['x0'],t))
+                    if head is None: head=it     # ru headword (any column) for stroke scoring
+                    continue
+                if lat(t) and not cyr(t):
                     en.append((it['x0'],t,it)); continue
-                if it['x0']>=0.64*W and it['ink']>0.1 and (lat(t) or cyr(t)):
-                    tr.append((it['x0'],t,it)); continue
+                # stray digits / right-column cyr noise: ignore
             return ru,en,tr,num,sec,head
 
         L=[(line,classify(line)) for line in lines]
+
+        # Auto-detect the entry (left) column on this page = the densest cyr-x bin.
+        # Robust across photos of different scale/crop and across book parts where
+        # headwords sit at different x (verbs vs adjectives). Bold group headwords
+        # that are centered are caught separately via the transcription rule.
+        import collections as _coll
+        _cyr_xs=[it['x0'] for it in items if cyr(it['text'].strip()) and it['x0']<0.30*W]
+        _bw=0.04*W
+        if _cyr_xs:
+            _bins=[int(x//_bw) for x in _cyr_xs]
+            entry_x=_coll.Counter(_bins).most_common(1)[0][0]*_bw
+        else:
+            entry_x=0.0
+        def in_entry_col(ru): return bool(ru) and any(x[0] < entry_x+_bw for x in ru)
 
         def lookahead_en(i,base_y):
             for j in range(i+1,len(L)):
                 yj=min(it['y0'] for it in L[j][0])
                 if yj-base_y>170: break
                 ruj,enj,trj,numj,secj,_h=L[j][1]
-                if enj and not ruj and numj is None and not secj:
+                if enj and not ruj and numj is None and not secj and not trj:
                     consumed.add(j); return enj,yj,j
                 if ruj or numj is not None or secj: break
             return None,None,None
@@ -184,41 +225,79 @@ def main():
             if y<0.10*H: continue                      # running header / title zone
             if i in consumed: continue
             if not ru and not en and not tr and not sec and num is None: continue
-            if sec:
-                flush()
-                ru_txt=clean(" ".join(x[1] for x in sorted(ru)))
-                en_txt=clean(" ".join(x[1] for x in sorted(pending['en']+en)))
-                if not en_txt:
-                    la,yj,j=lookahead_en(i,y)
-                    if la: en_txt=clean(" ".join(x[1] for x in sorted(la)))
-                pending={'en':[],'tr':[],'ru':[]}
-                if ru_txt.strip() in ('Глаголы','Глааолы','Глааолъ','Глаголъ'):
-                    events.append({'type':'theme','page':page,'y':y,'ru':'Глаголы','en':en_txt or 'Verbs'})
-                else:
-                    events.append({'type':'section','page':page,'y':y,'ru':ru_txt,'en':en_txt})
+
+            ru_txt=clean(" ".join(x[1] for x in sorted(ru)))
+            en_txt=clean(" ".join(x[1] for x in sorted(pending['en']+en)))
+
+            # 1) part-of-speech theme (Прилагательные / Существительные / Глаголы)
+            if not sec and num is None and is_theme(ru_txt,en_txt):
+                flush(); pending={'en':[],'tr':[],'ru':[]}
+                events.append({'type':'theme','page':page,'y':y,'ru':ru_txt,'en':en_txt})
                 state['cur']=None; continue
+
+            # An entry line: ru in the entry (left) column, OR a centered ru+en pair
+            # carrying a transcription = bold group headword (Цвет/Colour [..]).
+            # On a real entry line any digit is noise, not a subsection number.
+            is_entry_line = in_entry_col(ru) or (bool(tr) and ru and en)
+            if is_entry_line and num is not None and not sec:
+                num=None
+
+            # 2) subsection header "N. Title" (numbered, not an entry line)
             if num is not None:
                 flush()
                 ru_txt=clean(" ".join(x[1] for x in sorted(ru+pending['ru'])))
                 en_txt=clean(" ".join(x[1] for x in sorted(pending['en']+en)))
                 pending={'en':[],'tr':[],'ru':[]}
-                if not ru_txt and events and events[-1].get('type')=='entry':
-                    prev=events.pop(); ru_txt=prev.get('ru',''); en_txt=prev.get('en','')
-                elif not en_txt:
-                    la,yj,j=lookahead_en(i,y)
+                if not en_txt:
+                    la,_,_=lookahead_en(i,y)
                     if la: en_txt=clean(" ".join(x[1] for x in sorted(la)))
                 if ru_txt or en_txt:
                     events.append({'type':'sub','page':page,'y':y,'num':num,'ru':ru_txt,'en':en_txt})
                 state['cur']=None; continue
-            if ru and any(x[0]<0.20*W for x in ru):
+
+            # 3) verbs section keyword (compat — "Глаголы стадии" etc.)
+            if sec:
                 flush()
-                en_items=[tup[2] for tup in (pending['en']+en)]
+                ru_txt=clean(" ".join(x[1] for x in sorted(ru)))
+                en_txt=clean(" ".join(x[1] for x in sorted(pending['en']+en)))
+                if not en_txt:
+                    la,_,_=lookahead_en(i,y)
+                    if la: en_txt=clean(" ".join(x[1] for x in sorted(la)))
+                pending={'en':[],'tr':[],'ru':[]}
+                events.append({'type':'section','page':page,'y':y,'ru':ru_txt,'en':en_txt})
+                state['cur']=None; continue
+
+            # 4) entry (left-column ru, or centered bold pair with transcription)
+            if is_entry_line:
+                flush()
+                own_en=clean(" ".join(x[1] for x in sorted(en)))
+                if own_en:
+                    use_en=own_en; en_items=[tup[2] for tup in en]
+                else:
+                    use_en=clean(" ".join(x[1] for x in sorted(pending['en'])))
+                    en_items=[tup[2] for tup in pending['en']]
                 state['cur']={'type':'entry','page':page,'y':y,
                               'ru':clean(" ".join(x[1] for x in sorted(ru))),
-                              'en':clean(" ".join(x[1] for x in sorted(pending['en']+en))),
+                              'en':use_en,
                               'tr':clean(" ".join(x[1] for x in sorted(pending['tr']+tr))),
                               'head':head,'en_items':en_items}
                 pending={'en':[],'tr':[],'ru':[]}; continue
+
+            # 5) centered cyr header without number/transcription = section title.
+            # Flush + clear pending so the title's en does not leak into the next
+            # entry. (build_json infers section boundaries by subsection-number
+            # reset, so the emitted section event is mostly a side effect.)
+            if ru:
+                flush()
+                if not en_txt:
+                    la,_,_=lookahead_en(i,y)
+                    if la: en_txt=clean(" ".join(x[1] for x in sorted(la)))
+                pending={'en':[],'tr':[],'ru':[]}
+                events.append({'type':'section','page':page,'y':y,'ru':ru_txt,'en':en_txt})
+                state['cur']=None; continue
+
+            # 6) trailing en/tr (dense regions: translation/transcription on a line
+            # below the ru headword)
             if en or tr:
                 c=state['cur']
                 if c is not None and not c.get('en') and en:
@@ -230,6 +309,9 @@ def main():
                 else:
                     if en: pending['en'].extend(en)
                     if tr: pending['tr'].extend(tr)
+                continue
+            # 7) noise line: clear pending so it does not leak into the next entry
+            pending={'en':[],'tr':[],'ru':[]}
         flush()
 
     events.sort(key=lambda e:(e['page'] if e['page'] else 9999, e['y']))
