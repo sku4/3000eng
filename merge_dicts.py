@@ -34,6 +34,7 @@ def main():
     for th in themes:
         for s in th['sections']:
             for ss in s['subsections']:
+                ss.pop('subsection_ocr', None)   # service field, not in final dict
                 for e in ss['entries']:
                     e['order']=order; order+=1
 

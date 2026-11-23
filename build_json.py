@@ -2,7 +2,7 @@
 """Assemble the structured dictionary tree from parsed events.
 
 Reads events.json (from parse6.py), writes dictionary.json:
-  {book, theme, sections[{section, subsections[{number, subsection, subsection_ocr, entries}]}]}
+  {book, themes:[{theme, sections[{section, subsections[{number, subsection, entries}]}]}]}
 
 Section/subsection titles come from OCR by default. To override with clean canonical
 titles for a known part of the book, pass --canonical CANONICAL_JSON (see
@@ -126,9 +126,7 @@ def main():
             if cc and sec_idx<len(cc['sections']):
                 sub_canon=cc['sections'][sec_idx]['subs'].get(num)
             title={"ru":sub_canon['ru'],"en":sub_canon['en']} if sub_canon else {"ru":e.get('ru',''),"en":e.get('en','')}
-            cur_sub_obj={"number":num,"subsection":title,
-                         "subsection_ocr":{"ru":e.get('ru',''),"en":e.get('en','')},
-                         "entries":[]}
+            cur_sub_obj={"number":num,"subsection":title,"entries":[]}
             cur_sec_obj['subsections'].append(cur_sub_obj)
             prev_sub_num=num
         elif t=='entry':

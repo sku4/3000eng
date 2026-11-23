@@ -53,7 +53,7 @@ python merge_dicts.py --inputs dictionary.json adj_dict.json --output dictionary
 
 ## Схема `dictionary.json` (multi-theme)
 
-`{"book":..., "themes":[{"theme":{ru,en}, "sections":[{"section":{ru,en},"subsections":[{"number", "subsection":{ru,en}, "subsection_ocr":{ru,en}, "entries":[{order,page,ru,en,transcription,is_main}]}]}]}]}`.
+`{"book":..., "themes":[{"theme":{ru,en}, "sections":[{"section":{ru,en},"subsections":[{"number", "subsection":{ru,en}, "entries":[{order,page,ru,en,transcription,is_main}]}]}]}]}`.
 Старая одно-темная схема (`theme`+`sections` на верхнем уровне) поддерживается
 `merge_dicts.py` как вход (автоконвертация).
 
