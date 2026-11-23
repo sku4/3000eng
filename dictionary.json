@@ -1,0 +1,5459 @@
+{
+  "book": "Словарь-минимум с логической структурой",
+  "theme": {
+    "ru": "Глаголы",
+    "en": "Verbs"
+  },
+  "sections": [
+    {
+      "section": {
+        "ru": "Глаголы стадии",
+        "en": "Verbs of Stage"
+      },
+      "subsections": [
+        {
+          "number": 1,
+          "subsection": {
+            "ru": "Начало",
+            "en": "Beginning"
+          },
+          "subsection_ocr": {
+            "ru": "Начало",
+            "en": "Beginning"
+          },
+          "entries": [
+            {
+              "order": 0,
+              "page": 77,
+              "ru": "начинать (ся)",
+              "en": "start",
+              "transcription": "[sta:t]",
+              "is_main": true
+            },
+            {
+              "order": 1,
+              "page": 77,
+              "ru": "начинать (ся)",
+              "en": "begin",
+              "transcription": "[b1' gIn]",
+              "is_main": false
+            },
+            {
+              "order": 2,
+              "page": 77,
+              "ru": "появляться",
+              "en": "appear",
+              "transcription": "[э'р1э]",
+              "is_main": false
+            },
+            {
+              "order": 3,
+              "page": 77,
+              "ru": "становиться (+прил.)",
+              "en": "grow (+adj)",
+              "transcription": "[grэu]",
+              "is_main": true
+            },
+            {
+              "order": 4,
+              "page": 77,
+              "ru": "становиться",
+              "en": "become",
+              "transcription": "[br'kAm]",
+              "is_main": false
+            },
+            {
+              "order": 5,
+              "page": 78,
+              "ru": "становиться (+прил.)",
+              "en": "get (+adj)",
+              "transcription": "[get]",
+              "is_main": false
+            },
+            {
+              "order": 6,
+              "page": 78,
+              "ru": "готовиться",
+              "en": "prepare",
+              "transcription": "[pri' реэ]",
+              "is_main": true
+            },
+            {
+              "order": 7,
+              "page": 78,
+              "ru": "опаздывать",
+              "en": "be late",
+              "transcription": "[bI 'leIt]",
+              "is_main": false
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "subsection": {
+            "ru": "Продолжение",
+            "en": "Continuation"
+          },
+          "subsection_ocr": {
+            "ru": "Продолжение",
+            "en": "Continuation"
+          },
+          "entries": [
+            {
+              "order": 8,
+              "page": 78,
+              "ru": "продолжать(ся)",
+              "en": "continue",
+              "transcription": "[kon tInju:]",
+              "is_main": true
+            },
+            {
+              "order": 9,
+              "page": 78,
+              "ru": "продолжать",
+              "en": "go on",
+              "transcription": "[gэu 'Dn]",
+              "is_main": false
+            },
+            {
+              "order": 10,
+              "page": 78,
+              "ru": "длиться",
+              "en": "last",
+              "transcription": "[la:st]",
+              "is_main": false
+            },
+            {
+              "order": 11,
+              "page": 78,
+              "ru": "занимать (время)",
+              "en": "take",
+              "transcription": "[terk]",
+              "is_main": false
+            },
+            {
+              "order": 12,
+              "page": 78,
+              "ru": "задерживать",
+              "en": "delay",
+              "transcription": "[drle1]",
+              "is_main": false
+            },
+            {
+              "order": 13,
+              "page": 78,
+              "ru": "откладывать",
+              "en": "put off",
+              "transcription": "[put of]",
+              "is_main": true
+            },
+            {
+              "order": 14,
+              "page": 78,
+              "ru": "откладывать",
+              "en": "postpone",
+              "transcription": "[pэust рэun]",
+              "is_main": false
+            },
+            {
+              "order": 15,
+              "page": 78,
+              "ru": "повторять",
+              "en": "repeat",
+              "transcription": "[rrpr:t]",
+              "is_main": true
+            },
+            {
+              "order": 16,
+              "page": 78,
+              "ru": "возобновлять",
+              "en": "resume",
+              "transcription": "[rr'zju:m]",
+              "is_main": false
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "subsection": {
+            "ru": "Завершение",
+            "en": "End"
+          },
+          "subsection_ocr": {
+            "ru": "Завершение_",
+            "en": "End"
+          },
+          "entries": [
+            {
+              "order": 17,
+              "page": 78,
+              "ru": "завершать(ся)",
+              "en": "finish",
+              "transcription": "[fmmЛ",
+              "is_main": true
+            },
+            {
+              "order": 18,
+              "page": 78,
+              "ru": "завершать(ся)",
+              "en": "end",
+              "transcription": "[end]",
+              "is_main": false
+            },
+            {
+              "order": 19,
+              "page": 78,
+              "ru": "завершать",
+              "en": "complete",
+              "transcription": "[kэm' pli:t]",
+              "is_main": false
+            },
+            {
+              "order": 20,
+              "page": 78,
+              "ru": "прерывать",
+              "en": "break",
+              "transcription": "[brerk]",
+              "is_main": true
+            },
+            {
+              "order": 21,
+              "page": 78,
+              "ru": "прерывать",
+              "en": "interrupt",
+              "transcription": "[Intэ' rApt]",
+              "is_main": false
+            },
+            {
+              "order": 22,
+              "page": 78,
+              "ru": "приостанавливать",
+              "en": "suspend",
+              "transcription": "[sэ' spend]",
+              "is_main": false
+            },
+            {
+              "order": 23,
+              "page": 78,
+              "ru": "переставать",
+              "en": "cease",
+              "transcription": "[si:z]",
+              "is_main": true
+            },
+            {
+              "order": 24,
+              "page": 78,
+              "ru": "прекращать",
+              "en": "stop",
+              "transcription": "[stop]",
+              "is_main": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section": {
+        "ru": "Глаголы движения",
+        "en": "Verbs of Movement"
+      },
+      "subsections": [
+        {
+          "number": 1,
+          "subsection": {
+            "ru": "Виды движений",
+            "en": "Ways of Movement"
+          },
+          "subsection_ocr": {
+            "ru": "Виды движений",
+            "en": "Ways of Movement"
+          },
+          "entries": [
+            {
+              "order": 25,
+              "page": 78,
+              "ru": "двигать(ся)",
+              "en": "move",
+              "transcription": "[mu:v]",
+              "is_main": true
+            },
+            {
+              "order": 26,
+              "page": 78,
+              "ru": "останавливать(ся)",
+              "en": "stop",
+              "transcription": "[stop]",
+              "is_main": false
+            },
+            {
+              "order": 27,
+              "page": 79,
+              "ru": "идти ехать",
+              "en": "go",
+              "transcription": "[gэu]",
+              "is_main": true
+            },
+            {
+              "order": 28,
+              "page": 79,
+              "ru": "скользить",
+              "en": "slide",
+              "transcription": "[slard]",
+              "is_main": true
+            },
+            {
+              "order": 29,
+              "page": 79,
+              "ru": "катить(ся)",
+              "en": "roll",
+              "transcription": "[rol]",
+              "is_main": false
+            },
+            {
+              "order": 30,
+              "page": 79,
+              "ru": "поворачивать(ся)",
+              "en": "turn",
+              "transcription": "[tз:n]",
+              "is_main": false
+            },
+            {
+              "order": 31,
+              "page": 79,
+              "ru": "гнуть",
+              "en": "bend",
+              "transcription": "[bend]",
+              "is_main": false
+            },
+            {
+              "order": 32,
+              "page": 79,
+              "ru": "махать рукой",
+              "en": "wave",
+              "transcription": "[werv]",
+              "is_main": false
+            },
+            {
+              "order": 33,
+              "page": 79,
+              "ru": "трясти(сь",
+              "en": "shake",
+              "transcription": "[Jerk]",
+              "is_main": false
+            },
+            {
+              "order": 34,
+              "page": 79,
+              "ru": "раскачиваться",
+              "en": "swing",
+              "transcription": "[swIn]",
+              "is_main": false
+            },
+            {
+              "order": 35,
+              "page": 79,
+              "ru": "плыть",
+              "en": "swim",
+              "transcription": "[swIm]",
+              "is_main": false
+            },
+            {
+              "order": 36,
+              "page": 79,
+              "ru": "вращаться",
+              "en": "rotate",
+              "transcription": "[rэu' tert]",
+              "is_main": false
+            },
+            {
+              "order": 37,
+              "page": 79,
+              "ru": "кататься на лыжах",
+              "en": "ski",
+              "transcription": "[ski:]",
+              "is_main": true
+            },
+            {
+              "order": 38,
+              "page": 79,
+              "ru": "кататься на коньках",
+              "en": "skate",
+              "transcription": "[skert]",
+              "is_main": false
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "subsection": {
+            "ru": "Движение вверх / вниз",
+            "en": "Upward / Downward Movement"
+          },
+          "subsection_ocr": {
+            "ru": "Движение вверх вНиз",
+            "en": "Upward Downward Movement"
+          },
+          "entries": [
+            {
+              "order": 39,
+              "page": 79,
+              "ru": "поднимать",
+              "en": "raise",
+              "transcription": "[rerz]",
+              "is_main": true
+            },
+            {
+              "order": 40,
+              "page": 79,
+              "ru": "поднимать",
+              "en": "lift",
+              "transcription": "[Irft]",
+              "is_main": false
+            },
+            {
+              "order": 41,
+              "page": 79,
+              "ru": "подниматься",
+              "en": "rise",
+              "transcription": "[ramz]",
+              "is_main": true
+            },
+            {
+              "order": 42,
+              "page": 79,
+              "ru": "взбираться",
+              "en": "climb",
+              "transcription": "[klamm]",
+              "is_main": false
+            },
+            {
+              "order": 43,
+              "page": 79,
+              "ru": "восходить",
+              "en": "ascend",
+              "transcription": "[э'send]",
+              "is_main": false
+            },
+            {
+              "order": 44,
+              "page": 79,
+              "ru": "опускать",
+              "en": "lower",
+              "transcription": "[lэчэ]",
+              "is_main": true
+            },
+            {
+              "order": 45,
+              "page": 79,
+              "ru": "опускаться",
+              "en": "sink",
+              "transcription": "[sInk]",
+              "is_main": false
+            },
+            {
+              "order": 46,
+              "page": 79,
+              "ru": "ронять падать",
+              "en": "drop",
+              "transcription": "[drop]",
+              "is_main": false
+            },
+            {
+              "order": 47,
+              "page": 79,
+              "ru": "падать",
+              "en": "fall",
+              "transcription": "[fэ:1]",
+              "is_main": true
+            },
+            {
+              "order": 48,
+              "page": 79,
+              "ru": "спускаться",
+              "en": "descend",
+              "transcription": "[dr'send]",
+              "is_main": false
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "subsection": {
+            "ru": "Скорость",
+            "en": "Speed"
+          },
+          "subsection_ocr": {
+            "ru": "Скорость",
+            "en": "Speed"
+          },
+          "entries": [
+            {
+              "order": 49,
+              "page": 79,
+              "ru": "спешить",
+              "en": "hurry",
+              "transcription": "[harI]",
+              "is_main": true
+            },
+            {
+              "order": 50,
+              "page": 79,
+              "ru": "лететь",
+              "en": "fly",
+              "transcription": "[flaт]",
+              "is_main": true
+            },
+            {
+              "order": 51,
+              "page": 79,
+              "ru": "скакать ехать",
+              "en": "ride",
+              "transcription": "[rard]",
+              "is_main": false
+            },
+            {
+              "order": 52,
+              "page": 79,
+              "ru": "бежать",
+              "en": "run",
+              "transcription": "[rAn]",
+              "is_main": false
+            },
+            {
+              "order": 53,
+              "page": 79,
+              "ru": "ползти",
+              "en": "creep",
+              "transcription": "[kri:p]",
+              "is_main": true
+            },
+            {
+              "order": 54,
+              "page": 79,
+              "ru": "ползти",
+              "en": "crawl",
+              "transcription": "[krэ:l]",
+              "is_main": false
+            },
+            {
+              "order": 55,
+              "page": 79,
+              "ru": "идти ехать",
+              "en": "go",
+              "transcription": "[gэu]",
+              "is_main": true
+            },
+            {
+              "order": 56,
+              "page": 79,
+              "ru": "идти / гулять",
+              "en": "walk",
+              "transcription": "[wэ:k]",
+              "is_main": false
+            },
+            {
+              "order": 57,
+              "page": 80,
+              "ru": "ускорять",
+              "en": "speed up",
+              "transcription": "[spi:d ^p]",
+              "is_main": false
+            },
+            {
+              "order": 58,
+              "page": 80,
+              "ru": "тормозить",
+              "en": "brake",
+              "transcription": "[brerk]",
+              "is_main": false
+            },
+            {
+              "order": 59,
+              "page": 80,
+              "ru": "замедлять",
+              "en": "slow down",
+              "transcription": "['slau 'daun]",
+              "is_main": false
+            }
+          ]
+        },
+        {
+          "number": 4,
+          "subsection": {
+            "ru": "Преследование",
+            "en": "Pursuit"
+          },
+          "subsection_ocr": {
+            "ru": "Преследование",
+            "en": "Pursuit"
+          },
+          "entries": [
+            {
+              "order": 60,
+              "page": 80,
+              "ru": "преследовать",
+              "en": "pursue",
+              "transcription": "[рэ' sju:]",
+              "is_main": false
+            },
+            {
+              "order": 61,
+              "page": 80,
+              "ru": "гнать",
+              "en": "drive",
+              "transcription": "[draIv]",
+              "is_main": false
+            },
+            {
+              "order": 62,
+              "page": 80,
+              "ru": "догонять",
+              "en": "catch up",
+              "transcription": "[katJ Аp]",
+              "is_main": false
+            },
+            {
+              "order": 63,
+              "page": 80,
+              "ru": "перегонять",
+              "en": "surpass",
+              "transcription": "[sз: pa:s]",
+              "is_main": false
+            },
+            {
+              "order": 64,
+              "page": 80,
+              "ru": "оставлять позади",
+              "en": "leave behind",
+              "transcription": "[li:v br 'hamnd]",
+              "is_main": false
+            },
+            {
+              "order": 65,
+              "page": 80,
+              "ru": "схватить",
+              "en": "catch",
+              "transcription": "[ketЛ",
+              "is_main": true
+            },
+            {
+              "order": 66,
+              "page": 80,
+              "ru": "убежать",
+              "en": "escape",
+              "transcription": "[rskerp]",
+              "is_main": true
+            },
+            {
+              "order": 67,
+              "page": 80,
+              "ru": "спасаться бегством",
+              "en": "flee",
+              "transcription": "[fli:]",
+              "is_main": false
+            },
+            {
+              "order": 68,
+              "page": 80,
+              "ru": "избегать",
+              "en": "avoid",
+              "transcription": "[э'vэId]",
+              "is_main": false
+            }
+          ]
+        },
+        {
+          "number": 5,
+          "subsection": {
+            "ru": "Цикл движений от начальной до конечной точки",
+            "en": "Movement from Start to Finish"
+          },
+          "subsection_ocr": {
+            "ru": "Цикл движений от начальной до конечной точки движения",
+            "en": "Movement from Start to Finish"
+          },
+          "entries": [
+            {
+              "order": 69,
+              "page": 80,
+              "ru": "отправляться",
+              "en": "depart",
+              "transcription": "[drpa:t]",
+              "is_main": true
+            },
+            {
+              "order": 70,
+              "page": 80,
+              "ru": "отправляться",
+              "en": "start",
+              "transcription": "[sta:t]",
+              "is_main": false
+            },
+            {
+              "order": 71,
+              "page": 80,
+              "ru": "отправляться",
+              "en": "leave",
+              "transcription": "[Irv]",
+              "is_main": false
+            },
+            {
+              "order": 72,
+              "page": 80,
+              "ru": "выходить",
+              "en": "go out",
+              "transcription": "[gэu 'aut]",
+              "is_main": false
+            },
+            {
+              "order": 73,
+              "page": 80,
+              "ru": "продвигаться",
+              "en": "advance",
+              "transcription": "[эdva:ns]",
+              "is_main": false
+            },
+            {
+              "order": 74,
+              "page": 80,
+              "ru": "встречать(ся)",
+              "en": "meet",
+              "transcription": "[mi:t]",
+              "is_main": false
+            },
+            {
+              "order": 75,
+              "page": 80,
+              "ru": "встречаться",
+              "en": "come across",
+              "transcription": "['kAm э'krDs]",
+              "is_main": false
+            },
+            {
+              "order": 76,
+              "page": 80,
+              "ru": "следовать",
+              "en": "follow",
+              "transcription": "['folau]",
+              "is_main": false
+            },
+            {
+              "order": 77,
+              "page": 80,
+              "ru": "идти (вдоль)",
+              "en": "go (along)",
+              "transcription": "[gэu (э'lun)]",
+              "is_main": false
+            },
+            {
+              "order": 78,
+              "page": 80,
+              "ru": "пересекать",
+              "en": "cross",
+              "transcription": "[krDs]",
+              "is_main": false
+            },
+            {
+              "order": 79,
+              "page": 80,
+              "ru": "врезаться в)",
+              "en": "run (into)",
+              "transcription": "[r^n(' Intэ)]",
+              "is_main": false
+            },
+            {
+              "order": 80,
+              "page": 80,
+              "ru": "проходить мимо",
+              "en": "pass",
+              "transcription": "[pa:s]",
+              "is_main": true
+            },
+            {
+              "order": 81,
+              "page": 80,
+              "ru": "повернуть налево)",
+              "en": "turn (left)",
+              "transcription": "[tз:n' (left)]",
+              "is_main": false
+            },
+            {
+              "order": 82,
+              "page": 80,
+              "ru": "прибывать",
+              "en": "arrive",
+              "transcription": "[э' raтv]",
+              "is_main": true
+            },
+            {
+              "order": 83,
+              "page": 80,
+              "ru": "приходить",
+              "en": "come",
+              "transcription": "[kAm]",
+              "is_main": false
+            },
+            {
+              "order": 84,
+              "page": 80,
+              "ru": "достигать",
+              "en": "reach",
+              "transcription": "[ri:tЛ",
+              "is_main": false
+            },
+            {
+              "order": 85,
+              "page": 81,
+              "ru": "достигать",
+              "en": "attain",
+              "transcription": "[э'tein]",
+              "is_main": false
+            },
+            {
+              "order": 86,
+              "page": 81,
+              "ru": "возвращаться",
+              "en": "return",
+              "transcription": "[rr' tз:n]",
+              "is_main": false
+            },
+            {
+              "order": 87,
+              "page": 81,
+              "ru": "входить вводить",
+              "en": "enter",
+              "transcription": "[entэ]",
+              "is_main": true
+            },
+            {
+              "order": 88,
+              "page": 81,
+              "ru": "входить",
+              "en": "go in",
+              "transcription": "[gэu In]",
+              "is_main": false
+            }
+          ]
+        },
+        {
+          "number": 6,
+          "subsection": {
+            "ru": "Движение в воде",
+            "en": "Movement in Water"
+          },
+          "subsection_ocr": {
+            "ru": "Движение в воде",
+            "en": "Movement in Water"
+          },
+          "entries": [
+            {
+              "order": 89,
+              "page": 81,
+              "ru": "течь",
+              "en": "flow",
+              "transcription": "[flэu]",
+              "is_main": true
+            },
+            {
+              "order": 90,
+              "page": 81,
+              "ru": "плавать",
+              "en": "swim",
+              "transcription": "[swIm]",
+              "is_main": true
+            },
+            {
+              "order": 91,
+              "page": 81,
+              "ru": "не тонуть",
+              "en": "float",
+              "transcription": "[flэut]",
+              "is_main": false
+            },
+            {
+              "order": 92,
+              "page": 81,
+              "ru": "грести",
+              "en": "row",
+              "transcription": "[rэu]",
+              "is_main": false
+            },
+            {
+              "order": 93,
+              "page": 81,
+              "ru": "идти под парусом",
+              "en": "sail",
+              "transcription": "[serl]",
+              "is_main": false
+            },
+            {
+              "order": 94,
+              "page": 81,
+              "ru": "нырять 'лi {",
+              "en": "dive",
+              "transcription": "[darv]",
+              "is_main": true
+            },
+            {
+              "order": 95,
+              "page": 81,
+              "ru": "нырять, окунаться",
+              "en": "plunge",
+              "transcription": "[plands]",
+              "is_main": false
+            },
+            {
+              "order": 96,
+              "page": 81,
+              "ru": "погружаться",
+              "en": "sink",
+              "transcription": "[sInk]",
+              "is_main": false
+            },
+            {
+              "order": 97,
+              "page": 81,
+              "ru": "тонуть",
+              "en": "drown",
+              "transcription": "[draun]",
+              "is_main": false
+            },
+            {
+              "order": 98,
+              "page": 81,
+              "ru": "всплывать",
+              "en": "emerge",
+              "transcription": "[rmз:d3]",
+              "is_main": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section": {
+        "ru": "Глаголы наличия и количества",
+        "en": "Verbs of Presence and Quantity"
+      },
+      "subsections": [
+        {
+          "number": 1,
+          "subsection": {
+            "ru": "Наличие / принадлежность",
+            "en": "Presence / Belonging"
+          },
+          "subsection_ocr": {
+            "ru": "Наличие принадлежность",
+            "en": "Presence Belonging"
+          },
+          "entries": [
+            {
+              "order": 99,
+              "page": 81,
+              "ru": "существовать",
+              "en": "exist",
+              "transcription": "[Ig'zIst]",
+              "is_main": true
+            },
+            {
+              "order": 100,
+              "page": 81,
+              "ru": "быть",
+              "en": "be",
+              "transcription": "[bi:]",
+              "is_main": false
+            },
+            {
+              "order": 101,
+              "page": 81,
+              "ru": "имеется",
+              "en": "there is",
+              "transcription": "[деэг' Iz]",
+              "is_main": false
+            },
+            {
+              "order": 102,
+              "page": 81,
+              "ru": "хватит",
+              "en": "that will do",
+              "transcription": "[дet wIl 'du:]",
+              "is_main": false
+            },
+            {
+              "order": 103,
+              "page": 81,
+              "ru": "присутствовать",
+              "en": "be present",
+              "transcription": "[bI 'prez(э )nt] ? N 0",
+              "is_main": false
+            },
+            {
+              "order": 104,
+              "page": 81,
+              "ru": "быть в наличии",
+              "en": "be available",
+              "transcription": "[br э'verlэbl]",
+              "is_main": false
+            },
+            {
+              "order": 105,
+              "page": 81,
+              "ru": "владеть",
+              "en": "possess",
+              "transcription": "[рэ' zes]",
+              "is_main": true
+            },
+            {
+              "order": 106,
+              "page": 81,
+              "ru": "имсть",
+              "en": "have",
+              "transcription": "[hav]",
+              "is_main": false
+            },
+            {
+              "order": 107,
+              "page": 82,
+              "ru": "достаточном кол-ве",
+              "en": "have sufficient enough",
+              "transcription": "[hav 1'nAf] [bI sэ'frJэnt]",
+              "is_main": false
+            },
+            {
+              "order": 108,
+              "page": 82,
+              "ru": "иметь b",
+              "en": "be",
+              "transcription": "",
+              "is_main": false
+            },
+            {
+              "order": 109,
+              "page": 82,
+              "ru": "достаточным",
+              "en": "",
+              "transcription": "[br'lon]",
+              "is_main": false
+            },
+            {
+              "order": 110,
+              "page": 82,
+              "ru": "быть",
+              "en": "belong",
+              "transcription": "",
+              "is_main": false
+            },
+            {
+              "order": 111,
+              "page": 82,
+              "ru": "принадлежать",
+              "en": "contain",
+              "transcription": "[kэn' temn]",
+              "is_main": false
+            },
+            {
+              "order": 112,
+              "page": 82,
+              "ru": "содержать",
+              "en": "include",
+              "transcription": "[In'klu:d]",
+              "is_main": false
+            },
+            {
+              "order": 113,
+              "page": 82,
+              "ru": "включать",
+              "en": "Lack",
+              "transcription": "",
+              "is_main": false
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "subsection": {
+            "ru": "Нехватка",
+            "en": "Lack"
+          },
+          "subsection_ocr": {
+            "ru": "Нехватка",
+            "en": "need"
+          },
+          "entries": [
+            {
+              "order": 114,
+              "page": 82,
+              "ru": "нуждаться",
+              "en": "require",
+              "transcription": "[rr'kwa1э]",
+              "is_main": false
+            },
+            {
+              "order": 115,
+              "page": 82,
+              "ru": "требовать",
+              "en": "be necessary",
+              "transcription": "[br' nesIs(э)rI]",
+              "is_main": false
+            },
+            {
+              "order": 116,
+              "page": 82,
+              "ru": "быть необходимым",
+              "en": "lack",
+              "transcription": "[Iek]",
+              "is_main": true
+            },
+            {
+              "order": 117,
+              "page": 82,
+              "ru": "не хватать",
+              "en": "be absent",
+              "transcription": "[br 'ebsent]",
+              "is_main": false
+            },
+            {
+              "order": 118,
+              "page": 82,
+              "ru": "отсутствовать",
+              "en": "empty",
+              "transcription": "[emptr]",
+              "is_main": false
+            },
+            {
+              "order": 119,
+              "page": 82,
+              "ru": "опорожнять",
+              "en": "be empty",
+              "transcription": "[b 'emptr]",
+              "is_main": false
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "subsection": {
+            "ru": "Добавление / избыток",
+            "en": "Addition / Excess"
+          },
+          "subsection_ocr": {
+            "ru": "быть пустым",
+            "en": "Addition"
+          },
+          "entries": [
+            {
+              "order": 120,
+              "page": 82,
+              "ru": "собирать(ся)",
+              "en": "gather",
+              "transcription": "[gедэ]",
+              "is_main": false
+            },
+            {
+              "order": 121,
+              "page": 82,
+              "ru": "собирать",
+              "en": "collect",
+              "transcription": "[kэ'lekt]",
+              "is_main": false
+            },
+            {
+              "order": 122,
+              "page": 82,
+              "ru": "добавлять",
+              "en": "add",
+              "transcription": "[ed]",
+              "is_main": false
+            },
+            {
+              "order": 123,
+              "page": 82,
+              "ru": "наполнять",
+              "en": "fill",
+              "transcription": "[fil]",
+              "is_main": false
+            },
+            {
+              "order": 124,
+              "page": 82,
+              "ru": "быть полным",
+              "en": "be full",
+              "transcription": "[br 'ful]",
+              "is_main": false
+            },
+            {
+              "order": 125,
+              "page": 82,
+              "ru": "накапливать",
+              "en": "accumulate",
+              "transcription": "[э'kju:mjulent]",
+              "is_main": false
+            },
+            {
+              "order": 126,
+              "page": 82,
+              "ru": "быть в избытке",
+              "en": "be in excess",
+              "transcription": "[br In Ik'ses]",
+              "is_main": true
+            },
+            {
+              "order": 127,
+              "page": 82,
+              "ru": "быть в избытке",
+              "en": "be in surplus",
+              "transcription": "[br In 'sз plos]",
+              "is_main": false
+            }
+          ]
+        },
+        {
+          "number": 4,
+          "subsection": {
+            "ru": "Сокращение / остаток",
+            "en": "Shortening / Remainder"
+          },
+          "subsection_ocr": {
+            "ru": "Сокращение остаток",
+            "en": "Shortening Remainder"
+          },
+          "entries": [
+            {
+              "order": 128,
+              "page": 82,
+              "ru": "сокращать",
+              "en": "reduce",
+              "transcription": "[re' dju:s]",
+              "is_main": true
+            },
+            {
+              "order": 129,
+              "page": 82,
+              "ru": "исключать",
+              "en": "exclude",
+              "transcription": "[rk' sklu:d]",
+              "is_main": false
+            },
+            {
+              "order": 130,
+              "page": 82,
+              "ru": "устранять",
+              "en": "eliminate",
+              "transcription": "[rlrmmnert]",
+              "is_main": false
+            },
+            {
+              "order": 131,
+              "page": 82,
+              "ru": "терять",
+              "en": "lose",
+              "transcription": "[lu:z]",
+              "is_main": false
+            },
+            {
+              "order": 132,
+              "page": 83,
+              "ru": "обходиться (без)",
+              "en": "do without",
+              "transcription": "[du: WI 'дaut]",
+              "is_main": false
+            },
+            {
+              "order": 133,
+              "page": 83,
+              "ru": "тратить",
+              "en": "spend",
+              "transcription": "[spend]",
+              "is_main": false
+            },
+            {
+              "order": 134,
+              "page": 83,
+              "ru": "потреблять",
+              "en": "consume",
+              "transcription": "[kэn' sju:m]",
+              "is_main": false
+            },
+            {
+              "order": 135,
+              "page": 83,
+              "ru": "портить",
+              "en": "spoil",
+              "transcription": "[spэтl]",
+              "is_main": false
+            },
+            {
+              "order": 136,
+              "page": 83,
+              "ru": "повреждать",
+              "en": "damage",
+              "transcription": "[demid3]",
+              "is_main": false
+            }
+          ]
+        },
+        {
+          "number": 5,
+          "subsection": {
+            "ru": "Сохранение",
+            "en": "Preservation"
+          },
+          "subsection_ocr": {
+            "ru": "Сохранение",
+            "en": "Preservation"
+          },
+          "entries": [
+            {
+              "order": 137,
+              "page": 83,
+              "ru": "оставаться",
+              "en": "remain",
+              "transcription": "[ri'memn]",
+              "is_main": false
+            },
+            {
+              "order": 138,
+              "page": 83,
+              "ru": "оставаться",
+              "en": "be left",
+              "transcription": "[bi 'left]",
+              "is_main": false
+            },
+            {
+              "order": 139,
+              "page": 83,
+              "ru": "удерживать",
+              "en": "keep",
+              "transcription": "[ki:p]",
+              "is_main": false
+            },
+            {
+              "order": 140,
+              "page": 83,
+              "ru": "поддерживать",
+              "en": "maintain",
+              "transcription": "[mэn'tern]",
+              "is_main": false
+            },
+            {
+              "order": 141,
+              "page": 83,
+              "ru": "сохранять",
+              "en": "preserve",
+              "transcription": "[prr' zз:v]",
+              "is_main": false
+            },
+            {
+              "order": 142,
+              "page": 83,
+              "ru": "сохранять за собой",
+              "en": "retain",
+              "transcription": "[rr'temn]",
+              "is_main": false
+            },
+            {
+              "order": 143,
+              "page": 83,
+              "ru": "хранить",
+              "en": "store",
+              "transcription": "[stэ:]",
+              "is_main": false
+            }
+          ]
+        },
+        {
+          "number": 6,
+          "subsection": {
+            "ru": "Положение",
+            "en": "Position"
+          },
+          "subsection_ocr": {
+            "ru": "Положение",
+            "en": "Position"
+          },
+          "entries": [
+            {
+              "order": 144,
+              "page": 83,
+              "ru": "класть",
+              "en": "put",
+              "transcription": "[put]",
+              "is_main": false
+            },
+            {
+              "order": 145,
+              "page": 83,
+              "ru": "помещать",
+              "en": "place",
+              "transcription": "[plers]",
+              "is_main": false
+            },
+            {
+              "order": 146,
+              "page": 83,
+              "ru": "класть",
+              "en": "set",
+              "transcription": "[set]",
+              "is_main": false
+            },
+            {
+              "order": 147,
+              "page": 83,
+              "ru": "положить",
+              "en": "lay",
+              "transcription": "[let]",
+              "is_main": false
+            },
+            {
+              "order": 148,
+              "page": 83,
+              "ru": "находиться",
+              "en": "be situated",
+              "transcription": "[br sItJuertid]",
+              "is_main": false
+            },
+            {
+              "order": 149,
+              "page": 83,
+              "ru": "находиться",
+              "en": "be located",
+              "transcription": "[br lэ'kertid]",
+              "is_main": false
+            },
+            {
+              "order": 150,
+              "page": 83,
+              "ru": "пребывать",
+              "en": "stay",
+              "transcription": "[ster]",
+              "is_main": false
+            },
+            {
+              "order": 151,
+              "page": 83,
+              "ru": "лежать",
+              "en": "lie",
+              "transcription": "[laт]",
+              "is_main": false
+            },
+            {
+              "order": 152,
+              "page": 83,
+              "ru": "висеть вешать",
+              "en": "hang",
+              "transcription": "[hen]",
+              "is_main": false
+            },
+            {
+              "order": 153,
+              "page": 83,
+              "ru": "стоять ставить",
+              "en": "stand",
+              "transcription": "[stend]",
+              "is_main": false
+            },
+            {
+              "order": 154,
+              "page": 83,
+              "ru": "определять местонахож-",
+              "en": "locate",
+              "transcription": "[lэu'kert]",
+              "is_main": false
+            },
+            {
+              "order": 155,
+              "page": 83,
+              "ru": "ложиться",
+              "en": "lie down",
+              "transcription": "[laт 'daun]",
+              "is_main": false
+            },
+            {
+              "order": 156,
+              "page": 83,
+              "ru": "вставать",
+              "en": "stand up",
+              "transcription": "['stend Аp]",
+              "is_main": false
+            },
+            {
+              "order": 157,
+              "page": 83,
+              "ru": "сидеть",
+              "en": "sit",
+              "transcription": "[sIt]",
+              "is_main": false
+            },
+            {
+              "order": 158,
+              "page": 83,
+              "ru": "посадить",
+              "en": "seat",
+              "transcription": "[si:t]",
+              "is_main": true
+            },
+            {
+              "order": 159,
+              "page": 83,
+              "ru": "садиться",
+              "en": "sit down",
+              "transcription": "['sit 'daun]",
+              "is_main": false
+            },
+            {
+              "order": 160,
+              "page": 83,
+              "ru": "садиться",
+              "en": "seat oneself",
+              "transcription": "[sI:t won'self]",
+              "is_main": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section": {
+        "ru": "Бытовые глаголы",
+        "en": "Verbs of Everyday Life"
+      },
+      "subsections": [
+        {
+          "number": 1,
+          "subsection": {
+            "ru": "Жить",
+            "en": "Live"
+          },
+          "subsection_ocr": {
+            "ru": "Жить",
+            "en": "Live"
+          },
+          "entries": [
+            {
+              "order": 161,
+              "page": 84,
+              "ru": "рождать",
+              "en": "bear",
+              "transcription": "[bea]",
+              "is_main": false
+            },
+            {
+              "order": 162,
+              "page": 84,
+              "ru": "родить",
+              "en": "give birth",
+              "transcription": "[gIv 'b3:0]",
+              "is_main": false
+            },
+            {
+              "order": 163,
+              "page": 84,
+              "ru": "родиться",
+              "en": "be born",
+              "transcription": "[bI 'bэ:n]",
+              "is_main": false
+            },
+            {
+              "order": 164,
+              "page": 84,
+              "ru": "жить",
+              "en": "live",
+              "transcription": "[Irv]",
+              "is_main": true
+            },
+            {
+              "order": 165,
+              "page": 84,
+              "ru": "быть живым",
+              "en": "be alive",
+              "transcription": "[bI э 'larv]",
+              "is_main": false
+            },
+            {
+              "order": 166,
+              "page": 84,
+              "ru": "дышать",
+              "en": "breathe",
+              "transcription": "[bri:]",
+              "is_main": false
+            },
+            {
+              "order": 167,
+              "page": 84,
+              "ru": "называть",
+              "en": "name",
+              "transcription": "[nerm]",
+              "is_main": false
+            },
+            {
+              "order": 168,
+              "page": 84,
+              "ru": "жениться",
+              "en": "marry",
+              "transcription": "[meri]",
+              "is_main": false
+            },
+            {
+              "order": 169,
+              "page": 84,
+              "ru": "проживать",
+              "en": "dwell",
+              "transcription": "[dwel]",
+              "is_main": false
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "subsection": {
+            "ru": "Работать",
+            "en": "Work"
+          },
+          "subsection_ocr": {
+            "ru": "Работать",
+            "en": "Work"
+          },
+          "entries": [
+            {
+              "order": 170,
+              "page": 84,
+              "ru": "работать",
+              "en": "work",
+              "transcription": "[wз:k]",
+              "is_main": false
+            },
+            {
+              "order": 171,
+              "page": 84,
+              "ru": "поступать на работу",
+              "en": "take a job",
+              "transcription": "[terk э 'dgbb]",
+              "is_main": false
+            },
+            {
+              "order": 172,
+              "page": 84,
+              "ru": "принимать",
+              "en": "employ",
+              "transcription": "[mm'plэr]",
+              "is_main": false
+            },
+            {
+              "order": 173,
+              "page": 84,
+              "ru": "увольнять",
+              "en": "dismiss",
+              "transcription": "[dIs' mis]",
+              "is_main": false
+            },
+            {
+              "order": 174,
+              "page": 84,
+              "ru": "зарабатывать",
+              "en": "earn",
+              "transcription": "[з:n]",
+              "is_main": true
+            },
+            {
+              "order": 175,
+              "page": 84,
+              "ru": "платить",
+              "en": "pay",
+              "transcription": "[peт]",
+              "is_main": false
+            },
+            {
+              "order": 176,
+              "page": 84,
+              "ru": "тратить",
+              "en": "spend",
+              "transcription": "[spend]",
+              "is_main": false
+            },
+            {
+              "order": 177,
+              "page": 84,
+              "ru": "экономить",
+              "en": "economize",
+              "transcription": "[1'konэmarz]",
+              "is_main": false
+            },
+            {
+              "order": 178,
+              "page": 84,
+              "ru": "сберегать",
+              "en": "save",
+              "transcription": "[serv]",
+              "is_main": true
+            },
+            {
+              "order": 179,
+              "page": 84,
+              "ru": "быть бережливым",
+              "en": "be thrifty",
+              "transcription": "[br 'errftr]",
+              "is_main": false
+            },
+            {
+              "order": 180,
+              "page": 84,
+              "ru": "тратить непроизводительно",
+              "en": "waste",
+              "transcription": "[werst]",
+              "is_main": false
+            },
+            {
+              "order": 181,
+              "page": 84,
+              "ru": "отдыхать",
+              "en": "rest",
+              "transcription": "[rest]",
+              "is_main": true
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "subsection": {
+            "ru": "Есть / Пить",
+            "en": "Eat / Drink"
+          },
+          "subsection_ocr": {
+            "ru": "Есть ПИТЬ",
+            "en": "Eat Drink"
+          },
+          "entries": [
+            {
+              "order": 182,
+              "page": 84,
+              "ru": "есть",
+              "en": "eat",
+              "transcription": "[i:t]",
+              "is_main": true
+            },
+            {
+              "order": 183,
+              "page": 84,
+              "ru": "быть голодным",
+              "en": "be hungry",
+              "transcription": "[br 'hAngri]",
+              "is_main": false
+            },
+            {
+              "order": 184,
+              "page": 84,
+              "ru": "кормить",
+              "en": "feed",
+              "transcription": "[fi:d]",
+              "is_main": false
+            },
+            {
+              "order": 185,
+              "page": 85,
+              "ru": "кусать",
+              "en": "bite",
+              "transcription": "[bart]",
+              "is_main": false
+            },
+            {
+              "order": 186,
+              "page": 85,
+              "ru": "жевать",
+              "en": "chew",
+              "transcription": "[tJu:]",
+              "is_main": false
+            },
+            {
+              "order": 187,
+              "page": 85,
+              "ru": "глотать",
+              "en": "swallow 15m",
+              "transcription": "[swolou]",
+              "is_main": false
+            },
+            {
+              "order": 188,
+              "page": 85,
+              "ru": "пить",
+              "en": "drink ' z $",
+              "transcription": "[drink]",
+              "is_main": true
+            },
+            {
+              "order": 189,
+              "page": 85,
+              "ru": "хотеть пить",
+              "en": "be thirsty",
+              "transcription": "[br ' з:str]",
+              "is_main": false
+            },
+            {
+              "order": 190,
+              "page": 85,
+              "ru": "готовить (пищу)",
+              "en": "cook",
+              "transcription": "[kuk]",
+              "is_main": true
+            },
+            {
+              "order": 191,
+              "page": 85,
+              "ru": "печь",
+              "en": "bake",
+              "transcription": "[berk]",
+              "is_main": false
+            },
+            {
+              "order": 192,
+              "page": 85,
+              "ru": "жарить",
+              "en": "fry",
+              "transcription": "[fral]",
+              "is_main": false
+            },
+            {
+              "order": 193,
+              "page": 85,
+              "ru": "кипятить кипеть",
+              "en": "boil",
+              "transcription": "[bэт]]",
+              "is_main": false
+            },
+            {
+              "order": 194,
+              "page": 85,
+              "ru": "тушить (овощи, мясо)",
+              "en": "stew",
+              "transcription": "[stju:]",
+              "is_main": false
+            }
+          ]
+        },
+        {
+          "number": 4,
+          "subsection": {
+            "ru": "Одеваться",
+            "en": "Dress"
+          },
+          "subsection_ocr": {
+            "ru": "Одеваться",
+            "en": "Dress"
+          },
+          "entries": [
+            {
+              "order": 195,
+              "page": 85,
+              "ru": "носить",
+              "en": "wear",
+              "transcription": "[weэ]",
+              "is_main": false
+            },
+            {
+              "order": 196,
+              "page": 85,
+              "ru": "одевать(ся)",
+              "en": "dress",
+              "transcription": "[dres]",
+              "is_main": false
+            },
+            {
+              "order": 197,
+              "page": 85,
+              "ru": "одевать",
+              "en": "put on",
+              "transcription": "['put on]",
+              "is_main": false
+            },
+            {
+              "order": 198,
+              "page": 85,
+              "ru": "снимать",
+              "en": "take off",
+              "transcription": "[terk 'of]",
+              "is_main": false
+            },
+            {
+              "order": 199,
+              "page": 85,
+              "ru": "стирать",
+              "en": "wash",
+              "transcription": "[woЛ",
+              "is_main": false
+            },
+            {
+              "order": 200,
+              "page": 85,
+              "ru": "стирать и гладить",
+              "en": "launder",
+              "transcription": "[1э nda]",
+              "is_main": false
+            },
+            {
+              "order": 201,
+              "page": 85,
+              "ru": "гладить",
+              "en": "iron",
+              "transcription": "[атэn]",
+              "is_main": false
+            },
+            {
+              "order": 202,
+              "page": 85,
+              "ru": "заказывать",
+              "en": "order",
+              "transcription": "[э:dэ]",
+              "is_main": false
+            },
+            {
+              "order": 203,
+              "page": 85,
+              "ru": "шить",
+              "en": "sew",
+              "transcription": "[sэu]",
+              "is_main": false
+            },
+            {
+              "order": 204,
+              "page": 85,
+              "ru": "кроить",
+              "en": "cut out",
+              "transcription": "['kAt 'aut]",
+              "is_main": false
+            },
+            {
+              "order": 205,
+              "page": 85,
+              "ru": "хорошо сидеть (об одежде)",
+              "en": "fit",
+              "transcription": "[frt]",
+              "is_main": false
+            },
+            {
+              "order": 206,
+              "page": 85,
+              "ru": "идти (об одежде)",
+              "en": "suit",
+              "transcription": "[sju:t]",
+              "is_main": false
+            },
+            {
+              "order": 207,
+              "page": 85,
+              "ru": "быть в моде",
+              "en": "be in fashion",
+              "transcription": "[bI In 'feJ(э)n]",
+              "is_main": false
+            },
+            {
+              "order": 208,
+              "page": 85,
+              "ru": "выйти из моды",
+              "en": "be out of fashion",
+              "transcription": "[br aut эV 'feЛ(э)n]",
+              "is_main": false
+            }
+          ]
+        },
+        {
+          "number": 5,
+          "subsection": {
+            "ru": "Спать / приводить себя в порядок",
+            "en": "Sleep / Tidy Oneself up"
+          },
+          "subsection_ocr": {
+            "ru": "Спать приводить себя в порядок",
+            "en": "Sleep Tidy Oneself up"
+          },
+          "entries": [
+            {
+              "order": 209,
+              "page": 85,
+              "ru": "спать",
+              "en": "sleep",
+              "transcription": "[sli:p]",
+              "is_main": false
+            },
+            {
+              "order": 210,
+              "page": 85,
+              "ru": "уснуть",
+              "en": "fall asleep",
+              "transcription": "[fэ:] э'sli:p]",
+              "is_main": false
+            },
+            {
+              "order": 211,
+              "page": 85,
+              "ru": "ложиться спать",
+              "en": "go to bed",
+              "transcription": "[gou tэ 'bed]",
+              "is_main": false
+            },
+            {
+              "order": 212,
+              "page": 85,
+              "ru": "будить просыпаться",
+              "en": "awake",
+              "transcription": "[э' werk]",
+              "is_main": true
+            },
+            {
+              "order": 213,
+              "page": 86,
+              "ru": "будить просыпаться",
+              "en": "wake",
+              "transcription": "[werk]",
+              "is_main": false
+            },
+            {
+              "order": 214,
+              "page": 86,
+              "ru": "вставать",
+              "en": "get up",
+              "transcription": "[get' ^p]",
+              "is_main": false
+            },
+            {
+              "order": 215,
+              "page": 86,
+              "ru": "вставать из постели",
+              "en": "get out of bed",
+              "transcription": "['get aut эV bed]",
+              "is_main": false
+            },
+            {
+              "order": 216,
+              "page": 86,
+              "ru": "умываться",
+              "en": "wash oneself",
+              "transcription": "[wof won'self]",
+              "is_main": true
+            },
+            {
+              "order": 217,
+              "page": 86,
+              "ru": "зубы",
+              "en": "brush teeth",
+              "transcription": "[brAJ 'ti:0]",
+              "is_main": false
+            },
+            {
+              "order": 218,
+              "page": 86,
+              "ru": "чистить",
+              "en": "comb one's hair",
+              "transcription": "[koum",
+              "is_main": false
+            },
+            {
+              "order": 219,
+              "page": 86,
+              "ru": "причесываться",
+              "en": "",
+              "transcription": "WAnZ 'heэ]",
+              "is_main": false
+            },
+            {
+              "order": 220,
+              "page": 86,
+              "ru": "вытираться",
+              "en": "dry oneself",
+              "transcription": "[draI won' self]",
+              "is_main": false
+            },
+            {
+              "order": 221,
+              "page": 86,
+              "ru": "бриться",
+              "en": "shave",
+              "transcription": "[Jerv]",
+              "is_main": false
+            },
+            {
+              "order": 222,
+              "page": 86,
+              "ru": "подкрашиваться",
+              "en": "makeup",
+              "transcription": "[merk' кp]",
+              "is_main": false
+            },
+            {
+              "order": 223,
+              "page": 86,
+              "ru": "делать прическу",
+              "en": "do one s hair",
+              "transcription": "[du: WAnZ 'hea]",
+              "is_main": false
+            },
+            {
+              "order": 224,
+              "page": 86,
+              "ru": "делать завивку",
+              "en": "perm",
+              "transcription": "[рз:m]",
+              "is_main": false
+            }
+          ]
+        },
+        {
+          "number": 6,
+          "subsection": {
+            "ru": "Болеть",
+            "en": "Be Ill"
+          },
+          "subsection_ocr": {
+            "ru": "Болеть",
+            "en": "Be Ill"
+          },
+          "entries": [
+            {
+              "order": 225,
+              "page": 86,
+              "ru": "болеть",
+              "en": "be ill",
+              "transcription": "[br 'rl]",
+              "is_main": false
+            },
+            {
+              "order": 226,
+              "page": 86,
+              "ru": "болеть",
+              "en": "be sick",
+              "transcription": "[bI 'srk]",
+              "is_main": false
+            },
+            {
+              "order": 227,
+              "page": 86,
+              "ru": "причинять боль / болеть",
+              "en": "ache",
+              "transcription": "[erk]",
+              "is_main": false
+            },
+            {
+              "order": 228,
+              "page": 86,
+              "ru": "простудиться",
+              "en": "catch a cold",
+              "transcription": "[ketJ э 'kould]",
+              "is_main": true
+            },
+            {
+              "order": 229,
+              "page": 86,
+              "ru": "кашлять",
+              "en": "cough",
+              "transcription": "[kof]",
+              "is_main": false
+            },
+            {
+              "order": 230,
+              "page": 86,
+              "ru": "чихать",
+              "en": "sneeze",
+              "transcription": "[sni:z]",
+              "is_main": false
+            },
+            {
+              "order": 231,
+              "page": 86,
+              "ru": "выздоравливать",
+              "en": "recover",
+              "transcription": "[rr'kAvэ]",
+              "is_main": true
+            },
+            {
+              "order": 232,
+              "page": 86,
+              "ru": "лечить",
+              "en": "treat",
+              "transcription": "[tri:t]",
+              "is_main": false
+            },
+            {
+              "order": 233,
+              "page": 86,
+              "ru": "излечивать",
+              "en": "cure",
+              "transcription": "[kjua]",
+              "is_main": false
+            },
+            {
+              "order": 234,
+              "page": 86,
+              "ru": "заживать заживлять",
+              "en": "heal",
+              "transcription": "[hi:l]",
+              "is_main": false
+            },
+            {
+              "order": 235,
+              "page": 86,
+              "ru": "слабеть",
+              "en": "weaken",
+              "transcription": "[wi:kon]",
+              "is_main": false
+            },
+            {
+              "order": 236,
+              "page": 86,
+              "ru": "умирать",
+              "en": "die",
+              "transcription": "[daт]",
+              "is_main": false
+            },
+            {
+              "order": 237,
+              "page": 86,
+              "ru": "хоронить",
+              "en": "bury",
+              "transcription": "[berr]",
+              "is_main": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section": {
+        "ru": "Глаголы чувства",
+        "en": "Verbs of Feeling"
+      },
+      "subsections": [
+        {
+          "number": 1,
+          "subsection": {
+            "ru": "Хорошее отношение",
+            "en": "Good Attitude"
+          },
+          "subsection_ocr": {
+            "ru": "Хорошее отношение",
+            "en": "Good Attitude"
+          },
+          "entries": [
+            {
+              "order": 238,
+              "page": 86,
+              "ru": "любить",
+              "en": "love",
+              "transcription": "[IAv]",
+              "is_main": true
+            },
+            {
+              "order": 239,
+              "page": 86,
+              "ru": "влюбиться",
+              "en": "fall in love",
+              "transcription": "[fэ:l mn 'lAv]",
+              "is_main": false
+            },
+            {
+              "order": 240,
+              "page": 87,
+              "ru": "любить",
+              "en": "be fond of",
+              "transcription": "[bI 'fond эv]",
+              "is_main": false
+            },
+            {
+              "order": 241,
+              "page": 87,
+              "ru": "любить нравиться",
+              "en": "like",
+              "transcription": "[laтk]",
+              "is_main": false
+            },
+            {
+              "order": 242,
+              "page": 87,
+              "ru": "предпочитать",
+              "en": "prefer",
+              "transcription": "[prr' 'fз:]",
+              "is_main": false
+            },
+            {
+              "order": 243,
+              "page": 87,
+              "ru": "уважать",
+              "en": "respect",
+              "transcription": "[ri'spekt]",
+              "is_main": false
+            },
+            {
+              "order": 244,
+              "page": 87,
+              "ru": "ценить",
+              "en": "esteem",
+              "transcription": "[rsti:m]",
+              "is_main": false
+            },
+            {
+              "order": 245,
+              "page": 87,
+              "ru": "хвалить",
+              "en": "praise",
+              "transcription": "[prerz]",
+              "is_main": false
+            },
+            {
+              "order": 246,
+              "page": 87,
+              "ru": "восхищаться",
+              "en": "admire",
+              "transcription": "[эd mamэ]",
+              "is_main": false
+            },
+            {
+              "order": 247,
+              "page": 87,
+              "ru": "обожать llijt4ъ",
+              "en": "adore",
+              "transcription": "[э'dэ:]",
+              "is_main": false
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "subsection": {
+            "ru": "Плохое отношение",
+            "en": "Bad Attitude"
+          },
+          "subsection_ocr": {
+            "ru": "Плохое отношение",
+            "en": "Bad Attitude"
+          },
+          "entries": [
+            {
+              "order": 248,
+              "page": 87,
+              "ru": "ненавидеть",
+              "en": "hate",
+              "transcription": "[hert]",
+              "is_main": false
+            },
+            {
+              "order": 249,
+              "page": 87,
+              "ru": "ненавидеть",
+              "en": "detest",
+              "transcription": "[dr'test]",
+              "is_main": false
+            },
+            {
+              "order": 250,
+              "page": 87,
+              "ru": "нелюбить",
+              "en": "dislike",
+              "transcription": "[drs'lark]",
+              "is_main": false
+            },
+            {
+              "order": 251,
+              "page": 87,
+              "ru": "не обращать внимания",
+              "en": "disregard",
+              "transcription": "[dIsrr' ga:d]",
+              "is_main": false
+            },
+            {
+              "order": 252,
+              "page": 87,
+              "ru": "ссориться",
+              "en": "quarrel",
+              "transcription": "[kworal]",
+              "is_main": false
+            },
+            {
+              "order": 253,
+              "page": 87,
+              "ru": "бранить",
+              "en": "scold",
+              "transcription": "[skould]",
+              "is_main": false
+            },
+            {
+              "order": 254,
+              "page": 87,
+              "ru": "упрекать",
+              "en": "reproach",
+              "transcription": "[rr' proutЛ",
+              "is_main": false
+            },
+            {
+              "order": 255,
+              "page": 87,
+              "ru": "обвинять",
+              "en": "accuse",
+              "transcription": "[э'kju:z]",
+              "is_main": false
+            },
+            {
+              "order": 256,
+              "page": 87,
+              "ru": "завидовать",
+              "en": "envy",
+              "transcription": "[envr]",
+              "is_main": false
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "subsection": {
+            "ru": "Горе / радость",
+            "en": "Grief / Joy"
+          },
+          "subsection_ocr": {
+            "ru": "Горе радость",
+            "en": "Grief Joy"
+          },
+          "entries": [
+            {
+              "order": 257,
+              "page": 87,
+              "ru": "страдать",
+              "en": "suffer",
+              "transcription": "[sAfa]",
+              "is_main": false
+            },
+            {
+              "order": 258,
+              "page": 87,
+              "ru": "терпеть",
+              "en": "endure",
+              "transcription": "[mn' djua]",
+              "is_main": false
+            },
+            {
+              "order": 259,
+              "page": 87,
+              "ru": "вынести",
+              "en": "bear",
+              "transcription": "[beэ]",
+              "is_main": false
+            },
+            {
+              "order": 260,
+              "page": 87,
+              "ru": "выстоять",
+              "en": "stand",
+              "transcription": "[stend]",
+              "is_main": false
+            },
+            {
+              "order": 261,
+              "page": 87,
+              "ru": "сдаваться",
+              "en": "give up (in)",
+              "transcription": "[gIv '^р ('In)]",
+              "is_main": false
+            },
+            {
+              "order": 262,
+              "page": 87,
+              "ru": "капитулировать",
+              "en": "surrender",
+              "transcription": "[sэ' renda]",
+              "is_main": false
+            },
+            {
+              "order": 263,
+              "page": 87,
+              "ru": "жаловаться",
+              "en": "complain",
+              "transcription": "[kom' pleIn]",
+              "is_main": false
+            },
+            {
+              "order": 264,
+              "page": 87,
+              "ru": "плакать",
+              "en": "weep",
+              "transcription": "[wi:p]",
+              "is_main": false
+            },
+            {
+              "order": 265,
+              "page": 87,
+              "ru": "плакать кричать",
+              "en": "cry",
+              "transcription": "[krar]",
+              "is_main": false
+            },
+            {
+              "order": 266,
+              "page": 87,
+              "ru": "беспокоиться",
+              "en": "worry",
+              "transcription": "[wArr]",
+              "is_main": false
+            },
+            {
+              "order": 267,
+              "page": 87,
+              "ru": "утешать",
+              "en": "comfort",
+              "transcription": "[kAmfot]",
+              "is_main": false
+            },
+            {
+              "order": 268,
+              "page": 87,
+              "ru": "успокоиться",
+              "en": "calm down",
+              "transcription": "['ka:m daun]",
+              "is_main": false
+            },
+            {
+              "order": 269,
+              "page": 87,
+              "ru": "смеяться",
+              "en": "laugh",
+              "transcription": "[la:f]",
+              "is_main": true
+            },
+            {
+              "order": 270,
+              "page": 88,
+              "ru": "улыбаться",
+              "en": "smile",
+              "transcription": "[smarl]",
+              "is_main": false
+            },
+            {
+              "order": 271,
+              "page": 88,
+              "ru": "радоваться, веселиться",
+              "en": "rejoice",
+              "transcription": "[rr'dзэIs]",
+              "is_main": false
+            },
+            {
+              "order": 272,
+              "page": 88,
+              "ru": "наслаждаться",
+              "en": "enjoy",
+              "transcription": "[In' dЗэт]",
+              "is_main": false
+            }
+          ]
+        },
+        {
+          "number": 4,
+          "subsection": {
+            "ru": "Гордость / скромность",
+            "en": "Pride / Modesty"
+          },
+          "subsection_ocr": {
+            "ru": "Гордость скромность",
+            "en": "Pride"
+          },
+          "entries": [
+            {
+              "order": 273,
+              "page": 88,
+              "ru": "гордиться",
+              "en": "be proud",
+              "transcription": "[br 'praud]",
+              "is_main": true
+            },
+            {
+              "order": 274,
+              "page": 88,
+              "ru": "хвастаться",
+              "en": "boast",
+              "transcription": "[boust]",
+              "is_main": false
+            },
+            {
+              "order": 275,
+              "page": 88,
+              "ru": "зазнаваться",
+              "en": "put on airs",
+              "transcription": "[put on 'еэz]",
+              "is_main": false
+            },
+            {
+              "order": 276,
+              "page": 88,
+              "ru": "быть наглым",
+              "en": "be insolent",
+              "transcription": "[br 'Insэlэnt]",
+              "is_main": false
+            },
+            {
+              "order": 277,
+              "page": 88,
+              "ru": "быть дерзким, нахальным",
+              "en": "be impudent",
+              "transcription": "[br 'Imjudont]",
+              "is_main": false
+            },
+            {
+              "order": 278,
+              "page": 88,
+              "ru": "скромничать",
+              "en": "be modest",
+              "transcription": "[br 'modest]",
+              "is_main": true
+            },
+            {
+              "order": 279,
+              "page": 88,
+              "ru": "робеть",
+              "en": "be shy",
+              "transcription": "[bI 'Jа1]",
+              "is_main": false
+            }
+          ]
+        },
+        {
+          "number": 5,
+          "subsection": {
+            "ru": "Уверенность / сомнение",
+            "en": "Confidence / Doubt"
+          },
+          "subsection_ocr": {
+            "ru": "Уверенность сомнение",
+            "en": "Confidence"
+          },
+          "entries": [
+            {
+              "order": 280,
+              "page": 88,
+              "ru": "надеяться",
+              "en": "hope",
+              "transcription": "[hэuр]",
+              "is_main": true
+            },
+            {
+              "order": 281,
+              "page": 88,
+              "ru": "верить",
+              "en": "believe",
+              "transcription": "[br'li:v]",
+              "is_main": true
+            },
+            {
+              "order": 282,
+              "page": 88,
+              "ru": "полагаться",
+              "en": "rely",
+              "transcription": "[rr'la ]",
+              "is_main": false
+            },
+            {
+              "order": 283,
+              "page": 88,
+              "ru": "быть уверенным",
+              "en": "be sure",
+              "transcription": "[bI ' Juэ]",
+              "is_main": false
+            },
+            {
+              "order": 284,
+              "page": 88,
+              "ru": "сомневаться",
+              "en": "doubt",
+              "transcription": "[daut]",
+              "is_main": true
+            },
+            {
+              "order": 285,
+              "page": 88,
+              "ru": "колебаться",
+              "en": "hesitate",
+              "transcription": "[hezrtert]",
+              "is_main": false
+            },
+            {
+              "order": 286,
+              "page": 88,
+              "ru": "подозревать",
+              "en": "suspect",
+              "transcription": "[sэ'spekt]",
+              "is_main": false
+            }
+          ]
+        },
+        {
+          "number": 6,
+          "subsection": {
+            "ru": "Старание / лень",
+            "en": "Diligence / Laziness"
+          },
+          "subsection_ocr": {
+            "ru": "Старание лень",
+            "en": "Diligence"
+          },
+          "entries": [
+            {
+              "order": 287,
+              "page": 88,
+              "ru": "заботиться",
+              "en": "care",
+              "transcription": "[keэ]",
+              "is_main": true
+            },
+            {
+              "order": 288,
+              "page": 88,
+              "ru": "стараться сделать все",
+              "en": "try to do one s best",
+              "transcription": "[trar tэ 'du: WAIZ",
+              "is_main": false
+            },
+            {
+              "order": 289,
+              "page": 88,
+              "ru": "возможное",
+              "en": "",
+              "transcription": "best]",
+              "is_main": false
+            },
+            {
+              "order": 290,
+              "page": 88,
+              "ru": "лениться",
+              "en": "be Jazy",
+              "transcription": "[br 'leIzI]",
+              "is_main": true
+            },
+            {
+              "order": 291,
+              "page": 88,
+              "ru": "не заботиться",
+              "en": "neglect",
+              "transcription": "[nr' glekt]",
+              "is_main": false
+            },
+            {
+              "order": 292,
+              "page": 88,
+              "ru": "увиливать",
+              "en": "shirk",
+              "transcription": "[Jз:k]",
+              "is_main": false
+            },
+            {
+              "order": 293,
+              "page": 88,
+              "ru": "уставать; быть уставшим",
+              "en": "be tired",
+              "transcription": "[br 'taтod]",
+              "is_main": true
+            },
+            {
+              "order": 294,
+              "page": 88,
+              "ru": "уставать",
+              "en": "get tired",
+              "transcription": "[get 'ta ad]",
+              "is_main": false
+            }
+          ]
+        },
+        {
+          "number": 7,
+          "subsection": {
+            "ru": "Оттенки эмоции",
+            "en": "Shades of Emotion"
+          },
+          "subsection_ocr": {
+            "ru": "Оттенки эмоции",
+            "en": "Shades of Emotion"
+          },
+          "entries": [
+            {
+              "order": 295,
+              "page": 89,
+              "ru": "возбуждать",
+              "en": "excite",
+              "transcription": "[rk' sart]",
+              "is_main": false
+            },
+            {
+              "order": 296,
+              "page": 89,
+              "ru": "волновать",
+              "en": "agitate",
+              "transcription": "[edgItert]",
+              "is_main": false
+            },
+            {
+              "order": 297,
+              "page": 89,
+              "ru": "глубоко тронуть",
+              "en": "move",
+              "transcription": "[mu:v]",
+              "is_main": false
+            },
+            {
+              "order": 298,
+              "page": 89,
+              "ru": "пугать",
+              "en": "frighten",
+              "transcription": "[framtn]",
+              "is_main": false
+            },
+            {
+              "order": 299,
+              "page": 89,
+              "ru": "бояться",
+              "en": "fear",
+              "transcription": "[f1э]",
+              "is_main": false
+            },
+            {
+              "order": 300,
+              "page": 89,
+              "ru": "пугать",
+              "en": "scare",
+              "transcription": "[skea]",
+              "is_main": false
+            },
+            {
+              "order": 301,
+              "page": 89,
+              "ru": "удивлять",
+              "en": "surprise",
+              "transcription": "[sэ' prarz]",
+              "is_main": false
+            },
+            {
+              "order": 302,
+              "page": 89,
+              "ru": "удивлять",
+              "en": "astonish 531}",
+              "transcription": "[эs' tonЛ",
+              "is_main": false
+            },
+            {
+              "order": 303,
+              "page": 89,
+              "ru": "удивлять amaze паwf",
+              "en": "",
+              "transcription": "[э'merz]",
+              "is_main": false
+            },
+            {
+              "order": 304,
+              "page": 89,
+              "ru": "обижать",
+              "en": "hurt",
+              "transcription": "[hз:t]",
+              "is_main": false
+            },
+            {
+              "order": 305,
+              "page": 89,
+              "ru": "оскорблять .х <",
+              "en": "offend",
+              "transcription": "[э' fend]",
+              "is_main": false
+            },
+            {
+              "order": 306,
+              "page": 89,
+              "ru": "баньсердитым",
+              "en": "wound",
+              "transcription": "[waund]",
+              "is_main": false
+            },
+            {
+              "order": 307,
+              "page": 89,
+              "ru": "быть",
+              "en": "be angry",
+              "transcription": "[br 'engri]",
+              "is_main": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section": {
+        "ru": "Глаголы восприятия и мышления",
+        "en": "Verbs of Perception and Thinking"
+      },
+      "subsections": [
+        {
+          "number": 1,
+          "subsection": {
+            "ru": "Восприятие мира",
+            "en": "Perception of the World"
+          },
+          "subsection_ocr": {
+            "ru": "Восприятие мира",
+            "en": "Perception of the World"
+          },
+          "entries": [
+            {
+              "order": 308,
+              "page": 89,
+              "ru": "чувствовать",
+              "en": "feel",
+              "transcription": "[fi:l]",
+              "is_main": false
+            },
+            {
+              "order": 309,
+              "page": 89,
+              "ru": "видеть",
+              "en": "see",
+              "transcription": "[si:]",
+              "is_main": false
+            },
+            {
+              "order": 310,
+              "page": 89,
+              "ru": "слышать",
+              "en": "hear",
+              "transcription": "[h1э]",
+              "is_main": false
+            },
+            {
+              "order": 311,
+              "page": 89,
+              "ru": "следить; наблюдать",
+              "en": "watch",
+              "transcription": "[wotЛ]",
+              "is_main": false
+            },
+            {
+              "order": 312,
+              "page": 89,
+              "ru": "наблюдать",
+              "en": "observe",
+              "transcription": "[эb' zз:v]",
+              "is_main": false
+            },
+            {
+              "order": 313,
+              "page": 89,
+              "ru": "смотреть",
+              "en": "look",
+              "transcription": "[luk]",
+              "is_main": false
+            },
+            {
+              "order": 314,
+              "page": 89,
+              "ru": "различать",
+              "en": "distinguish",
+              "transcription": "[drs' tingwiJ",
+              "is_main": false
+            },
+            {
+              "order": 315,
+              "page": 89,
+              "ru": "слушать",
+              "en": "listen",
+              "transcription": "[Irs(э)n]",
+              "is_main": false
+            },
+            {
+              "order": 316,
+              "page": 89,
+              "ru": "узнавать",
+              "en": "recognize",
+              "transcription": "[rekognaIz]",
+              "is_main": true
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "subsection": {
+            "ru": "Обучение",
+            "en": "Instruction"
+          },
+          "subsection_ocr": {
+            "ru": "Обучение",
+            "en": "Instruction"
+          },
+          "entries": [
+            {
+              "order": 317,
+              "page": 89,
+              "ru": "изучать",
+              "en": "learn",
+              "transcription": "[Iз:n]",
+              "is_main": true
+            },
+            {
+              "order": 318,
+              "page": 90,
+              "ru": "изучать",
+              "en": "study",
+              "transcription": "[stAdr]",
+              "is_main": false
+            },
+            {
+              "order": 319,
+              "page": 90,
+              "ru": "заучивать",
+              "en": "memorize",
+              "transcription": "[memorarz]",
+              "is_main": false
+            },
+            {
+              "order": 320,
+              "page": 90,
+              "ru": "учить наизусть",
+              "en": "learn by heart",
+              "transcription": "[Iз:n baI 'ha:t]",
+              "is_main": false
+            },
+            {
+              "order": 321,
+              "page": 90,
+              "ru": "понимать",
+              "en": "understand",
+              "transcription": "[Andэ' stend]",
+              "is_main": false
+            },
+            {
+              "order": 322,
+              "page": 90,
+              "ru": "обучать",
+              "en": "teach",
+              "transcription": "[ti:tЛ",
+              "is_main": false
+            },
+            {
+              "order": 323,
+              "page": 90,
+              "ru": "обучать",
+              "en": "train",
+              "transcription": "[tremn]",
+              "is_main": false
+            },
+            {
+              "order": 324,
+              "page": 90,
+              "ru": "объяснять",
+              "en": "explain",
+              "transcription": "[Ik'splern]",
+              "is_main": false
+            },
+            {
+              "order": 325,
+              "page": 90,
+              "ru": "знать",
+              "en": "know",
+              "transcription": "[nэu]",
+              "is_main": false
+            },
+            {
+              "order": 326,
+              "page": 90,
+              "ru": "помнит",
+              "en": "remember",
+              "transcription": "[rr' membэ]",
+              "is_main": false
+            },
+            {
+              "order": 327,
+              "page": 90,
+              "ru": "помнить",
+              "en": "bear in mind",
+              "transcription": "[beorIn maind]",
+              "is_main": false
+            },
+            {
+              "order": 328,
+              "page": 90,
+              "ru": "значить",
+              "en": "mean",
+              "transcription": "[mi:n]",
+              "is_main": false
+            },
+            {
+              "order": 329,
+              "page": 90,
+              "ru": "забывать",
+              "en": "forget",
+              "transcription": "[fэ' get]",
+              "is_main": false
+            },
+            {
+              "order": 330,
+              "page": 90,
+              "ru": "ошибиться",
+              "en": "make a mistake",
+              "transcription": "[merk э mIs' terk]",
+              "is_main": false
+            },
+            {
+              "order": 331,
+              "page": 90,
+              "ru": "ошибаться",
+              "en": "err",
+              "transcription": "[з:]",
+              "is_main": false
+            },
+            {
+              "order": 332,
+              "page": 90,
+              "ru": "проверять",
+              "en": "examine",
+              "transcription": "[rk' zemmn]",
+              "is_main": false
+            },
+            {
+              "order": 333,
+              "page": 90,
+              "ru": "исправлять",
+              "en": "correct",
+              "transcription": "[kэ' rekt]",
+              "is_main": false
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "subsection": {
+            "ru": "Учебные операции",
+            "en": "Learning Operations"
+          },
+          "subsection_ocr": {
+            "ru": "Учебные операции",
+            "en": "Learning Operations"
+          },
+          "entries": [
+            {
+              "order": 334,
+              "page": 90,
+              "ru": "читать",
+              "en": "read",
+              "transcription": "[ri:d]",
+              "is_main": true
+            },
+            {
+              "order": 335,
+              "page": 90,
+              "ru": "писать",
+              "en": "write",
+              "transcription": "[rart]",
+              "is_main": false
+            },
+            {
+              "order": 336,
+              "page": 90,
+              "ru": "считать",
+              "en": "count",
+              "transcription": "[kaunt]",
+              "is_main": true
+            },
+            {
+              "order": 337,
+              "page": 90,
+              "ru": "прибавлять",
+              "en": "add",
+              "transcription": "[ed]",
+              "is_main": false
+            },
+            {
+              "order": 338,
+              "page": 90,
+              "ru": "вычитать",
+              "en": "subtract",
+              "transcription": "[sэb' trekt]",
+              "is_main": false
+            },
+            {
+              "order": 339,
+              "page": 90,
+              "ru": "умножать",
+              "en": "multiply",
+              "transcription": "[mAltiplai]",
+              "is_main": false
+            },
+            {
+              "order": 340,
+              "page": 90,
+              "ru": "делить",
+              "en": "divide",
+              "transcription": "[drvaid]",
+              "is_main": false
+            },
+            {
+              "order": 341,
+              "page": 90,
+              "ru": "вычислять",
+              "en": "calculate",
+              "transcription": "[kalkjulert]",
+              "is_main": false
+            },
+            {
+              "order": 342,
+              "page": 90,
+              "ru": "выражать",
+              "en": "express",
+              "transcription": "[rk 'spres]",
+              "is_main": true
+            },
+            {
+              "order": 343,
+              "page": 90,
+              "ru": "описывать",
+              "en": "describe",
+              "transcription": "[drs krarb]",
+              "is_main": false
+            },
+            {
+              "order": 344,
+              "page": 90,
+              "ru": "рассказывать",
+              "en": "relate",
+              "transcription": "[rrlent]",
+              "is_main": false
+            },
+            {
+              "order": 345,
+              "page": 90,
+              "ru": "пересказать",
+              "en": "retell",
+              "transcription": "[rr'tel]",
+              "is_main": false
+            },
+            {
+              "order": 346,
+              "page": 90,
+              "ru": "переводить",
+              "en": "translate",
+              "transcription": "[trans' lert]",
+              "is_main": false
+            }
+          ]
+        },
+        {
+          "number": 4,
+          "subsection": {
+            "ru": "Логические операции",
+            "en": "Logical Operations"
+          },
+          "subsection_ocr": {
+            "ru": "Логические операции",
+            "en": "Logical Operations"
+          },
+          "entries": [
+            {
+              "order": 347,
+              "page": 90,
+              "ru": "думать",
+              "en": "think",
+              "transcription": "[6 nk]",
+              "is_main": true
+            },
+            {
+              "order": 348,
+              "page": 91,
+              "ru": "передумать",
+              "en": "change one's mind",
+              "transcription": "[tJeind3 WAnz",
+              "is_main": false
+            },
+            {
+              "order": 349,
+              "page": 91,
+              "ru": "принимать вo внимание",
+              "en": "take into account",
+              "transcription": "[teik Intэ э'kaunt] mamnd]",
+              "is_main": false
+            },
+            {
+              "order": 350,
+              "page": 91,
+              "ru": "сравнивать",
+              "en": "compare",
+              "transcription": "[kom' реэ]",
+              "is_main": false
+            },
+            {
+              "order": 351,
+              "page": 91,
+              "ru": "анализировать",
+              "en": "analyse",
+              "transcription": "['enэlamz]",
+              "is_main": false
+            },
+            {
+              "order": 352,
+              "page": 91,
+              "ru": "обрабатывать данные",
+              "en": "process data",
+              "transcription": "[prэusэs 'derta]",
+              "is_main": false
+            },
+            {
+              "order": 353,
+              "page": 91,
+              "ru": "делать вывод",
+              "en": "conclude",
+              "transcription": "[kэn'klu:d]",
+              "is_main": false
+            },
+            {
+              "order": 354,
+              "page": 91,
+              "ru": "исследовать",
+              "en": "research",
+              "transcription": "[rr' sз tЛ",
+              "is_main": true
+            },
+            {
+              "order": 355,
+              "page": 91,
+              "ru": "рассматривать",
+              "en": "consider",
+              "transcription": "[kэn'sIdэ]",
+              "is_main": false
+            },
+            {
+              "order": 356,
+              "page": 91,
+              "ru": "предполагать",
+              "en": "suppose",
+              "transcription": "[sэ' pэuz]",
+              "is_main": false
+            },
+            {
+              "order": 357,
+              "page": 91,
+              "ru": "ожидать",
+              "en": "expect",
+              "transcription": "[rk' spekt]",
+              "is_main": false
+            },
+            {
+              "order": 358,
+              "page": 91,
+              "ru": "расследовать",
+              "en": "inquire",
+              "transcription": "[In'kwa1a]",
+              "is_main": false
+            },
+            {
+              "order": 359,
+              "page": 91,
+              "ru": "открывать",
+              "en": "discover",
+              "transcription": "[drs'kAvэ]",
+              "is_main": false
+            },
+            {
+              "order": 360,
+              "page": 91,
+              "ru": "выяснять",
+              "en": "find out Uf8",
+              "transcription": "[famnd 'aut]",
+              "is_main": false
+            },
+            {
+              "order": 361,
+              "page": 91,
+              "ru": "экспериментировать",
+              "en": "experiment",
+              "transcription": "[rk' sperImэnt]",
+              "is_main": false
+            },
+            {
+              "order": 362,
+              "page": 91,
+              "ru": "доказывать",
+              "en": "prove",
+              "transcription": "[pru:v]",
+              "is_main": true
+            },
+            {
+              "order": 363,
+              "page": 91,
+              "ru": "убеждать",
+              "en": "convince",
+              "transcription": "[kэn'vIns]",
+              "is_main": false
+            },
+            {
+              "order": 364,
+              "page": 91,
+              "ru": "решать",
+              "en": "decide",
+              "transcription": "[dr'sard]",
+              "is_main": true
+            },
+            {
+              "order": 365,
+              "page": 91,
+              "ru": "изобретать",
+              "en": "invent",
+              "transcription": "[mn'vent]",
+              "is_main": false
+            },
+            {
+              "order": 366,
+              "page": 91,
+              "ru": "разработать",
+              "en": "develop",
+              "transcription": "[drvelэр]",
+              "is_main": false
+            },
+            {
+              "order": 367,
+              "page": 91,
+              "ru": "настроиться",
+              "en": "make up one' s mind",
+              "transcription": "[merk Аp WAnZ",
+              "is_main": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section": {
+        "ru": "Рабочие операции",
+        "en": "Working Operations"
+      },
+      "subsections": [
+        {
+          "number": 1,
+          "subsection": {
+            "ru": "Работать / делать",
+            "en": "Work / Do"
+          },
+          "subsection_ocr": {
+            "ru": "Работать делать",
+            "en": "Work"
+          },
+          "entries": [
+            {
+              "order": 368,
+              "page": 91,
+              "ru": "работать",
+              "en": "work",
+              "transcription": "[wз:k]",
+              "is_main": true
+            },
+            {
+              "order": 369,
+              "page": 91,
+              "ru": "делать",
+              "en": "do",
+              "transcription": "[du:]",
+              "is_main": true
+            },
+            {
+              "order": 370,
+              "page": 91,
+              "ru": "выполнять",
+              "en": "carry out",
+              "transcription": "[kerI 'aut]",
+              "is_main": false
+            },
+            {
+              "order": 371,
+              "page": 91,
+              "ru": "выполнять",
+              "en": "perform",
+              "transcription": "[рэ'fэ:m]",
+              "is_main": false
+            },
+            {
+              "order": 372,
+              "page": 91,
+              "ru": "выполнять",
+              "en": "fulfil",
+              "transcription": "[ful' frl]",
+              "is_main": false
+            },
+            {
+              "order": 373,
+              "page": 91,
+              "ru": "проводить",
+              "en": "conduct",
+              "transcription": "[kэn' dAkt]",
+              "is_main": false
+            },
+            {
+              "order": 374,
+              "page": 91,
+              "ru": "делать",
+              "en": "make",
+              "transcription": "[merk]",
+              "is_main": true
+            },
+            {
+              "order": 375,
+              "page": 91,
+              "ru": "изготовлять",
+              "en": "manufacture",
+              "transcription": "[manju' faktJэ]",
+              "is_main": false
+            },
+            {
+              "order": 376,
+              "page": 92,
+              "ru": "производить",
+              "en": "produce",
+              "transcription": "[рrэ' dju:s]",
+              "is_main": false
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "subsection": {
+            "ru": "Готовить / проверять",
+            "en": "Prepare / Control"
+          },
+          "subsection_ocr": {
+            "ru": "Готовить проверять",
+            "en": "Prepare / Control"
+          },
+          "entries": [
+            {
+              "order": 377,
+              "page": 92,
+              "ru": "готовить",
+              "en": "prepare",
+              "transcription": "[prr реэ]",
+              "is_main": true
+            },
+            {
+              "order": 378,
+              "page": 92,
+              "ru": "ремонтировать",
+              "en": "repair",
+              "transcription": "[rr реэ]",
+              "is_main": false
+            },
+            {
+              "order": 379,
+              "page": 92,
+              "ru": "настраивать",
+              "en": "fit",
+              "transcription": "[frt]",
+              "is_main": false
+            },
+            {
+              "order": 380,
+              "page": 92,
+              "ru": "настраивать",
+              "en": "adjust",
+              "transcription": "[э' dgAst]",
+              "is_main": false
+            },
+            {
+              "order": 381,
+              "page": 92,
+              "ru": "проверять",
+              "en": "control",
+              "transcription": "[kon' troul]",
+              "is_main": true
+            },
+            {
+              "order": 382,
+              "page": 92,
+              "ru": "испытывать",
+              "en": "test",
+              "transcription": "[test]",
+              "is_main": false
+            },
+            {
+              "order": 383,
+              "page": 92,
+              "ru": "перепроверять",
+              "en": "verify",
+              "transcription": "[verrfar]",
+              "is_main": false
+            },
+            {
+              "order": 384,
+              "page": 92,
+              "ru": "заменять",
+              "en": "replace",
+              "transcription": "[ri' pleIs]",
+              "is_main": false
+            },
+            {
+              "order": 385,
+              "page": 92,
+              "ru": "ставить вместо",
+              "en": "substitute",
+              "transcription": "[sAbstrtju:t]",
+              "is_main": false
+            },
+            {
+              "order": 386,
+              "page": 92,
+              "ru": "собирать",
+              "en": "assemble",
+              "transcription": "[э' semb(э)l]",
+              "is_main": false
+            },
+            {
+              "order": 387,
+              "page": 92,
+              "ru": "разбирать",
+              "en": "disassemble",
+              "transcription": "[drsэ' sembl]",
+              "is_main": false
+            },
+            {
+              "order": 388,
+              "page": 92,
+              "ru": "использовать",
+              "en": "use",
+              "transcription": "[ju:z]",
+              "is_main": true
+            },
+            {
+              "order": 389,
+              "page": 92,
+              "ru": "применять",
+              "en": "apply",
+              "transcription": "[э'plai]",
+              "is_main": false
+            },
+            {
+              "order": 390,
+              "page": 92,
+              "ru": "действовать",
+              "en": "act",
+              "transcription": "[ekt]",
+              "is_main": false
+            },
+            {
+              "order": 391,
+              "page": 92,
+              "ru": "функционировать",
+              "en": "function",
+              "transcription": "[fAnkЛ(э)n]",
+              "is_main": false
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "subsection": {
+            "ru": "Брать (и другие операции рукой)",
+            "en": "Take (and Other Manual Operations)"
+          },
+          "subsection_ocr": {
+            "ru": "Брать (и другие операции рукой)",
+            "en": "Take (and Other Manual Operations)"
+          },
+          "entries": [
+            {
+              "order": 392,
+              "page": 92,
+              "ru": "брать",
+              "en": "take",
+              "transcription": "[terk]",
+              "is_main": true
+            },
+            {
+              "order": 393,
+              "page": 92,
+              "ru": "хватать",
+              "en": "seize",
+              "transcription": "[si:z]",
+              "is_main": false
+            },
+            {
+              "order": 394,
+              "page": 92,
+              "ru": "хватать",
+              "en": "catch",
+              "transcription": "[katЛ]",
+              "is_main": false
+            },
+            {
+              "order": 395,
+              "page": 92,
+              "ru": "держать",
+              "en": "keep",
+              "transcription": "[ki:p]",
+              "is_main": true
+            },
+            {
+              "order": 396,
+              "page": 92,
+              "ru": "держать",
+              "en": "hold",
+              "transcription": "[hould]",
+              "is_main": false
+            },
+            {
+              "order": 397,
+              "page": 92,
+              "ru": "касаться",
+              "en": "touch",
+              "transcription": "[ttЛ",
+              "is_main": false
+            },
+            {
+              "order": 398,
+              "page": 92,
+              "ru": "бросать",
+              "en": "throw",
+              "transcription": "[Orэu]",
+              "is_main": true
+            },
+            {
+              "order": 399,
+              "page": 92,
+              "ru": "бросать",
+              "en": "cast",
+              "transcription": "[ka:st]",
+              "is_main": false
+            },
+            {
+              "order": 400,
+              "page": 92,
+              "ru": "ронять",
+              "en": "drop",
+              "transcription": "[drop] 'fэ:l]",
+              "is_main": false
+            },
+            {
+              "order": 401,
+              "page": 92,
+              "ru": "ронять",
+              "en": "let fall",
+              "transcription": "[skata] ['let",
+              "is_main": false
+            },
+            {
+              "order": 402,
+              "page": 92,
+              "ru": "разбрасывать",
+              "en": "scatter",
+              "transcription": "[prk p]",
+              "is_main": false
+            },
+            {
+              "order": 403,
+              "page": 92,
+              "ru": "поднять (c пола)",
+              "en": "pick up",
+              "transcription": "",
+              "is_main": true
+            },
+            {
+              "order": 404,
+              "page": 93,
+              "ru": "тянуть",
+              "en": "pull",
+              "transcription": "[pul]",
+              "is_main": false
+            },
+            {
+              "order": 405,
+              "page": 93,
+              "ru": "толкать",
+              "en": "push",
+              "transcription": "[рUЛ",
+              "is_main": false
+            }
+          ]
+        },
+        {
+          "number": 4,
+          "subsection": {
+            "ru": "Соединять / закреплять",
+            "en": "Connect / Fix"
+          },
+          "subsection_ocr": {
+            "ru": "Соединять закреплять",
+            "en": "Connect"
+          },
+          "entries": [
+            {
+              "order": 406,
+              "page": 93,
+              "ru": "присоединять",
+              "en": "attach",
+              "transcription": "[э'tatЛ",
+              "is_main": true
+            },
+            {
+              "order": 407,
+              "page": 93,
+              "ru": "соединять",
+              "en": "connect",
+              "transcription": "[kэ' nekt]",
+              "is_main": false
+            },
+            {
+              "order": 408,
+              "page": 93,
+              "ru": "завязывать; привязывать",
+              "en": "fix tie",
+              "transcription": "закреплять 1512] [frks] [ta]",
+              "is_main": true
+            },
+            {
+              "order": 409,
+              "page": 93,
+              "ru": "привязывать",
+              "en": "bind",
+              "transcription": "[bamnd]",
+              "is_main": false
+            },
+            {
+              "order": 410,
+              "page": 93,
+              "ru": "прикручивать (гайкой",
+              "en": "screw",
+              "transcription": "[skru:]",
+              "is_main": false
+            },
+            {
+              "order": 411,
+              "page": 93,
+              "ru": "приклеить",
+              "en": "stick",
+              "transcription": "[strk]",
+              "is_main": false
+            },
+            {
+              "order": 412,
+              "page": 93,
+              "ru": "приварить",
+              "en": "weld",
+              "transcription": "[weld]",
+              "is_main": false
+            },
+            {
+              "order": 413,
+              "page": 93,
+              "ru": "прибить гвоздем",
+              "en": "nail",
+              "transcription": "[nerl]",
+              "is_main": false
+            },
+            {
+              "order": 414,
+              "page": 93,
+              "ru": "отсоединить развязать",
+              "en": "undo",
+              "transcription": "[An' du:]",
+              "is_main": true
+            },
+            {
+              "order": 415,
+              "page": 93,
+              "ru": "отвязать",
+              "en": "unfasten",
+              "transcription": "[An' fa:s(э)n]",
+              "is_main": false
+            }
+          ]
+        },
+        {
+          "number": 5,
+          "subsection": {
+            "ru": "Закрывать / открывать",
+            "en": "Close / Open"
+          },
+          "subsection_ocr": {
+            "ru": "Закрывать открывать",
+            "en": "Close"
+          },
+          "entries": [
+            {
+              "order": 416,
+              "page": 93,
+              "ru": "закрывать",
+              "en": "shut",
+              "transcription": "[Jxt]",
+              "is_main": true
+            },
+            {
+              "order": 417,
+              "page": 93,
+              "ru": "закрывать",
+              "en": "close",
+              "transcription": "[klэuz]",
+              "is_main": false
+            },
+            {
+              "order": 418,
+              "page": 93,
+              "ru": "накрывать",
+              "en": "cover",
+              "transcription": "[kAvэ]",
+              "is_main": false
+            },
+            {
+              "order": 419,
+              "page": 93,
+              "ru": "запирать",
+              "en": "lock",
+              "transcription": "[lbk]",
+              "is_main": false
+            },
+            {
+              "order": 420,
+              "page": 93,
+              "ru": "завернуть",
+              "en": "envelop",
+              "transcription": "[mn'velэp]",
+              "is_main": false
+            },
+            {
+              "order": 421,
+              "page": 93,
+              "ru": "завернуть",
+              "en": "wrap",
+              "transcription": "[rep]",
+              "is_main": false
+            },
+            {
+              "order": 422,
+              "page": 93,
+              "ru": "открывать ;м #",
+              "en": "open",
+              "transcription": "[эчрэn]",
+              "is_main": true
+            },
+            {
+              "order": 423,
+              "page": 93,
+              "ru": "прятать",
+              "en": "hide",
+              "transcription": "[hard]",
+              "is_main": false
+            },
+            {
+              "order": 424,
+              "page": 93,
+              "ru": "отложить",
+              "en": "put away",
+              "transcription": "[put э'weт]",
+              "is_main": false
+            },
+            {
+              "order": 425,
+              "page": 93,
+              "ru": "искать",
+              "en": "search",
+              "transcription": "[sз:tЛ",
+              "is_main": true
+            },
+            {
+              "order": 426,
+              "page": 93,
+              "ru": "находить",
+              "en": "find",
+              "transcription": "[famnd]",
+              "is_main": false
+            }
+          ]
+        },
+        {
+          "number": 6,
+          "subsection": {
+            "ru": "Разрушать / делить на части",
+            "en": "Destroy / Divide into Parts"
+          },
+          "subsection_ocr": {
+            "ru": "Разрушать 1делить на части",
+            "en": "Destroy Divide into Parts"
+          },
+          "entries": [
+            {
+              "order": 427,
+              "page": 93,
+              "ru": "ломать",
+              "en": "break",
+              "transcription": "[brerk]",
+              "is_main": true
+            },
+            {
+              "order": 428,
+              "page": 94,
+              "ru": "разрушать",
+              "en": "destroy",
+              "transcription": "[dIs' trэI]",
+              "is_main": false
+            },
+            {
+              "order": 429,
+              "page": 94,
+              "ru": "разрушать",
+              "en": "demolish",
+              "transcription": "[drmolЛ",
+              "is_main": false
+            },
+            {
+              "order": 430,
+              "page": 94,
+              "ru": "резать",
+              "en": "cut",
+              "transcription": "[kAt]",
+              "is_main": false
+            },
+            {
+              "order": 431,
+              "page": 94,
+              "ru": "пилить",
+              "en": "saw",
+              "transcription": "[sэ:]",
+              "is_main": false
+            },
+            {
+              "order": 432,
+              "page": 94,
+              "ru": "раскалывать",
+              "en": "split",
+              "transcription": "[split]",
+              "is_main": false
+            },
+            {
+              "order": 433,
+              "page": 94,
+              "ru": "молоть шлифовать",
+              "en": "grind",
+              "transcription": "[gramnd]",
+              "is_main": false
+            },
+            {
+              "order": 434,
+              "page": 94,
+              "ru": "рвать",
+              "en": "tear",
+              "transcription": "[teэ]",
+              "is_main": false
+            },
+            {
+              "order": 435,
+              "page": 94,
+              "ru": "скрести",
+              "en": "scrape",
+              "transcription": "[skrerp]",
+              "is_main": true
+            },
+            {
+              "order": 436,
+              "page": 94,
+              "ru": "царапать",
+              "en": "scratch",
+              "transcription": "[skratЛ]",
+              "is_main": false
+            },
+            {
+              "order": 437,
+              "page": 94,
+              "ru": "тереть",
+              "en": "rub",
+              "transcription": "[rAb]",
+              "is_main": false
+            }
+          ]
+        },
+        {
+          "number": 7,
+          "subsection": {
+            "ru": "Операции с водой",
+            "en": "Operations with Water"
+          },
+          "subsection_ocr": {
+            "ru": "Операции с водой",
+            "en": "Operations with Water"
+          },
+          "entries": [
+            {
+              "order": 438,
+              "page": 94,
+              "ru": "лить",
+              "en": "pour",
+              "transcription": "[рэ:]",
+              "is_main": true
+            },
+            {
+              "order": 439,
+              "page": 94,
+              "ru": "проливать просыпать",
+              "en": "spill",
+              "transcription": "[spil]",
+              "is_main": false
+            },
+            {
+              "order": 440,
+              "page": 94,
+              "ru": "поливать",
+              "en": "water",
+              "transcription": "[wota]",
+              "is_main": false
+            },
+            {
+              "order": 441,
+              "page": 94,
+              "ru": "смачивать",
+              "en": "moisten",
+              "transcription": "[moIs(э )n]",
+              "is_main": false
+            },
+            {
+              "order": 442,
+              "page": 94,
+              "ru": "мыть",
+              "en": "wash",
+              "transcription": "[woЛ",
+              "is_main": true
+            },
+            {
+              "order": 443,
+              "page": 94,
+              "ru": "сушить",
+              "en": "dry",
+              "transcription": "[drar]",
+              "is_main": false
+            },
+            {
+              "order": 444,
+              "page": 94,
+              "ru": "растворять",
+              "en": "dissolve",
+              "transcription": "[dr' zolv]",
+              "is_main": true
+            },
+            {
+              "order": 445,
+              "page": 94,
+              "ru": "разбавлять",
+              "en": "dilute",
+              "transcription": "[dar'l(j)u:t]",
+              "is_main": false
+            },
+            {
+              "order": 446,
+              "page": 94,
+              "ru": "смешивать",
+              "en": "mix",
+              "transcription": "[miks]",
+              "is_main": false
+            },
+            {
+              "order": 447,
+              "page": 94,
+              "ru": "фильтровать",
+              "en": "filter",
+              "transcription": "[frltэ]",
+              "is_main": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section": {
+        "ru": "Глаголы общения",
+        "en": "Verbs of Intercourse"
+      },
+      "subsections": [
+        {
+          "number": 1,
+          "subsection": {
+            "ru": "Говорить",
+            "en": "Speak"
+          },
+          "subsection_ocr": {
+            "ru": "Говорить",
+            "en": "Speak"
+          },
+          "entries": [
+            {
+              "order": 448,
+              "page": 94,
+              "ru": "говорить",
+              "en": "speak",
+              "transcription": "[spi:k]",
+              "is_main": true
+            },
+            {
+              "order": 449,
+              "page": 94,
+              "ru": "говорить",
+              "en": "talk",
+              "transcription": "[tэ:k]",
+              "is_main": false
+            },
+            {
+              "order": 450,
+              "page": 94,
+              "ru": "сказать",
+              "en": "say",
+              "transcription": "[se1]",
+              "is_main": false
+            },
+            {
+              "order": 451,
+              "page": 94,
+              "ru": "сказать",
+              "en": "tell",
+              "transcription": "[tel]",
+              "is_main": false
+            },
+            {
+              "order": 452,
+              "page": 94,
+              "ru": "произносить",
+              "en": "pronounce",
+              "transcription": "[рrэ nauns]",
+              "is_main": false
+            },
+            {
+              "order": 453,
+              "page": 94,
+              "ru": "шептать",
+              "en": "whisper",
+              "transcription": "[wIspэ]",
+              "is_main": true
+            },
+            {
+              "order": 454,
+              "page": 95,
+              "ru": "кричать",
+              "en": "cry",
+              "transcription": "[krar]",
+              "is_main": false
+            },
+            {
+              "order": 455,
+              "page": 95,
+              "ru": "заикаться",
+              "en": "stammer",
+              "transcription": "[stemэ]",
+              "is_main": false
+            },
+            {
+              "order": 456,
+              "page": 95,
+              "ru": "молчать",
+              "en": "be silent",
+              "transcription": "[br 'sarlэnt]",
+              "is_main": false
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "subsection": {
+            "ru": "Обращаться",
+            "en": "Address"
+          },
+          "subsection_ocr": {
+            "ru": "Обращаться",
+            "en": "Address"
+          },
+          "entries": [
+            {
+              "order": 457,
+              "page": 95,
+              "ru": "обращаться",
+              "en": "address",
+              "transcription": "[э' dres]",
+              "is_main": true
+            },
+            {
+              "order": 458,
+              "page": 95,
+              "ru": "беседовать",
+              "en": "have a conversation",
+              "transcription": "[hav э",
+              "is_main": false
+            },
+            {
+              "order": 459,
+              "page": 95,
+              "ru": "информировать",
+              "en": "inform",
+              "transcription": "[In' fэ m] konvэ' ser (э)n]",
+              "is_main": true
+            },
+            {
+              "order": 460,
+              "page": 95,
+              "ru": "заявлять",
+              "en": "state",
+              "transcription": "[stert]",
+              "is_main": false
+            },
+            {
+              "order": 461,
+              "page": 95,
+              "ru": "умалчивать",
+              "en": "withhold",
+              "transcription": "[wIo'hould]",
+              "is_main": false
+            },
+            {
+              "order": 462,
+              "page": 95,
+              "ru": "объявлять",
+              "en": "announce",
+              "transcription": "[э' nauns]",
+              "is_main": false
+            },
+            {
+              "order": 463,
+              "page": 95,
+              "ru": "спрашивать просить",
+              "en": "ask",
+              "transcription": "[a:sk]",
+              "is_main": true
+            },
+            {
+              "order": 464,
+              "page": 95,
+              "ru": "просить запрашивать",
+              "en": "request",
+              "transcription": "[rr'kwest]",
+              "is_main": false
+            },
+            {
+              "order": 465,
+              "page": 95,
+              "ru": "просить",
+              "en": "beg",
+              "transcription": "[beg]",
+              "is_main": false
+            },
+            {
+              "order": 466,
+              "page": 95,
+              "ru": "требовать",
+              "en": "demand",
+              "transcription": "[dr'ma:nd]",
+              "is_main": true
+            },
+            {
+              "order": 467,
+              "page": 95,
+              "ru": "приказывать",
+              "en": "order",
+              "transcription": "[э:dэ]",
+              "is_main": false
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "subsection": {
+            "ru": "Отвечать",
+            "en": "Answer"
+          },
+          "subsection_ocr": {
+            "ru": "Отвечать",
+            "en": "Answer"
+          },
+          "entries": [
+            {
+              "order": 468,
+              "page": 95,
+              "ru": "отвечать",
+              "en": "answer",
+              "transcription": "[a:nsa]",
+              "is_main": true
+            },
+            {
+              "order": 469,
+              "page": 95,
+              "ru": "отвечать",
+              "en": "reply",
+              "transcription": "[rI plar]",
+              "is_main": false
+            },
+            {
+              "order": 470,
+              "page": 95,
+              "ru": "объяснять",
+              "en": "explain",
+              "transcription": "[rk'splein]",
+              "is_main": true
+            },
+            {
+              "order": 471,
+              "page": 95,
+              "ru": "показывать",
+              "en": "show",
+              "transcription": "[Jэu]",
+              "is_main": false
+            },
+            {
+              "order": 472,
+              "page": 95,
+              "ru": "советовать",
+              "en": "advise",
+              "transcription": "[эd' varz]",
+              "is_main": true
+            },
+            {
+              "order": 473,
+              "page": 95,
+              "ru": "предлагать идею)",
+              "en": "suggest",
+              "transcription": "[sэ' dsest]",
+              "is_main": false
+            },
+            {
+              "order": 474,
+              "page": 95,
+              "ru": "предлагать",
+              "en": "propose",
+              "transcription": "[prэ' pэuz]",
+              "is_main": false
+            },
+            {
+              "order": 475,
+              "page": 95,
+              "ru": "предупреждать",
+              "en": "wam",
+              "transcription": "[wэ:n]",
+              "is_main": false
+            },
+            {
+              "order": 476,
+              "page": 95,
+              "ru": "приказывать",
+              "en": "order",
+              "transcription": "[э:dэ]",
+              "is_main": false
+            },
+            {
+              "order": 477,
+              "page": 95,
+              "ru": "запрещать",
+              "en": "prohibit",
+              "transcription": "[prэ 'hibrt]",
+              "is_main": false
+            },
+            {
+              "order": 478,
+              "page": 95,
+              "ru": "запрещать",
+              "en": "forbid",
+              "transcription": "[fэ'bid]",
+              "is_main": false
+            },
+            {
+              "order": 479,
+              "page": 95,
+              "ru": "помогать",
+              "en": "help",
+              "transcription": "[help]",
+              "is_main": true
+            },
+            {
+              "order": 480,
+              "page": 95,
+              "ru": "помогать",
+              "en": "assist",
+              "transcription": "[э'sIst]",
+              "is_main": false
+            },
+            {
+              "order": 481,
+              "page": 95,
+              "ru": "способствовать",
+              "en": "contribute",
+              "transcription": "[kэn' trIbju:t]",
+              "is_main": false
+            }
+          ]
+        },
+        {
+          "number": 4,
+          "subsection": {
+            "ru": "Брать",
+            "en": "Take"
+          },
+          "subsection_ocr": {
+            "ru": "Брать",
+            "en": "Take"
+          },
+          "entries": [
+            {
+              "order": 482,
+              "page": 96,
+              "ru": "принимать",
+              "en": "accept",
+              "transcription": "[эk' sept]",
+              "is_main": true
+            },
+            {
+              "order": 483,
+              "page": 96,
+              "ru": "брать",
+              "en": "take",
+              "transcription": "[terk]",
+              "is_main": false
+            },
+            {
+              "order": 484,
+              "page": 96,
+              "ru": "получать",
+              "en": "get",
+              "transcription": "[get]",
+              "is_main": false
+            },
+            {
+              "order": 485,
+              "page": 96,
+              "ru": "получать",
+              "en": "receive",
+              "transcription": "[rr'si:v]",
+              "is_main": false
+            },
+            {
+              "order": 486,
+              "page": 96,
+              "ru": "брать взаймы",
+              "en": "borrow",
+              "transcription": "[burэu]",
+              "is_main": true
+            },
+            {
+              "order": 487,
+              "page": 96,
+              "ru": "нанимать",
+              "en": "hire",
+              "transcription": "[hа1э]",
+              "is_main": false
+            },
+            {
+              "order": 488,
+              "page": 96,
+              "ru": "брать или давать напрокат",
+              "en": "lease",
+              "transcription": "[li:z]",
+              "is_main": false
+            },
+            {
+              "order": 489,
+              "page": 96,
+              "ru": "брать или давать в аренду",
+              "en": "rent",
+              "transcription": "[rent]",
+              "is_main": false
+            },
+            {
+              "order": 490,
+              "page": 96,
+              "ru": "покупать",
+              "en": "buy",
+              "transcription": "[bax]",
+              "is_main": true
+            }
+          ]
+        },
+        {
+          "number": 5,
+          "subsection": {
+            "ru": "Давать",
+            "en": "Give"
+          },
+          "subsection_ocr": {
+            "ru": "Давать",
+            "en": "Give"
+          },
+          "entries": [
+            {
+              "order": 491,
+              "page": 96,
+              "ru": "предлагать",
+              "en": "offer",
+              "transcription": "[ofэ]",
+              "is_main": true
+            },
+            {
+              "order": 492,
+              "page": 96,
+              "ru": "предлагать",
+              "en": "suggest",
+              "transcription": "[sэ' dzest]",
+              "is_main": false
+            },
+            {
+              "order": 493,
+              "page": 96,
+              "ru": "отвергать",
+              "en": "reject",
+              "transcription": "[rr' dsekt]",
+              "is_main": false
+            },
+            {
+              "order": 494,
+              "page": 96,
+              "ru": "давать",
+              "en": "give",
+              "transcription": "[gIv]",
+              "is_main": true
+            },
+            {
+              "order": 495,
+              "page": 96,
+              "ru": "снабжать",
+              "en": "provide",
+              "transcription": "[prэ' vard]",
+              "is_main": false
+            },
+            {
+              "order": 496,
+              "page": 96,
+              "ru": "снабжать",
+              "en": "supply",
+              "transcription": "[sэ' plaт]",
+              "is_main": false
+            },
+            {
+              "order": 497,
+              "page": 96,
+              "ru": "дарить",
+              "en": "present (with)",
+              "transcription": "[prr' zent (wio)]",
+              "is_main": true
+            },
+            {
+              "order": 498,
+              "page": 96,
+              "ru": "продавать",
+              "en": "sell",
+              "transcription": "[sel]",
+              "is_main": false
+            },
+            {
+              "order": 499,
+              "page": 96,
+              "ru": "давать на время",
+              "en": "lend",
+              "transcription": "[lend]",
+              "is_main": false
+            },
+            {
+              "order": 500,
+              "page": 96,
+              "ru": "подкупать",
+              "en": "bribe",
+              "transcription": "[braib]",
+              "is_main": false
+            }
+          ]
+        },
+        {
+          "number": 6,
+          "subsection": {
+            "ru": "Визит / этикет",
+            "en": "Visit / Etiquette"
+          },
+          "subsection_ocr": {
+            "ru": "Визит этикет",
+            "en": "Visit / Etiquette"
+          },
+          "entries": [
+            {
+              "order": 501,
+              "page": 96,
+              "ru": "приглашать",
+              "en": "invite",
+              "transcription": "[mn'vant]",
+              "is_main": true
+            },
+            {
+              "order": 502,
+              "page": 96,
+              "ru": "звать",
+              "en": "call",
+              "transcription": "[kэ:]]",
+              "is_main": false
+            },
+            {
+              "order": 503,
+              "page": 96,
+              "ru": "ждать",
+              "en": "wait",
+              "transcription": "[wert]",
+              "is_main": false
+            },
+            {
+              "order": 504,
+              "page": 96,
+              "ru": "принимать (гостей)",
+              "en": "receive",
+              "transcription": "[rr'si:v]",
+              "is_main": false
+            },
+            {
+              "order": 505,
+              "page": 96,
+              "ru": "тепло встречать",
+              "en": "welcome",
+              "transcription": "[welkom]",
+              "is_main": false
+            },
+            {
+              "order": 506,
+              "page": 96,
+              "ru": "пожать руку",
+              "en": "shake hands",
+              "transcription": "[Jerk 'hands]",
+              "is_main": false
+            },
+            {
+              "order": 507,
+              "page": 96,
+              "ru": "посещать",
+              "en": "visit",
+              "transcription": "[vIzIt]",
+              "is_main": true
+            },
+            {
+              "order": 508,
+              "page": 97,
+              "ru": "представлять",
+              "en": "introduce",
+              "transcription": "LIntrэ' dju:s]",
+              "is_main": false
+            },
+            {
+              "order": 509,
+              "page": 97,
+              "ru": "представлять",
+              "en": "present (to)",
+              "transcription": "[prr' zent (,tэ)]",
+              "is_main": false
+            },
+            {
+              "order": 510,
+              "page": 97,
+              "ru": "приветствовать",
+              "en": "greet",
+              "transcription": "[gri:t] 6 {",
+              "is_main": false
+            },
+            {
+              "order": 511,
+              "page": 97,
+              "ru": "знакомиться",
+              "en": "nc make acquaintance",
+              "transcription": "[merk",
+              "is_main": false
+            },
+            {
+              "order": 512,
+              "page": 97,
+              "ru": "быть знакомым",
+              "en": "be acquainted",
+              "transcription": "[bI э kweintid] э 'kweInt(o)ns]",
+              "is_main": false
+            },
+            {
+              "order": 513,
+              "page": 97,
+              "ru": "извиняться",
+              "en": "apologize",
+              "transcription": "[э' pulэdgarz]",
+              "is_main": false
+            },
+            {
+              "order": 514,
+              "page": 97,
+              "ru": "извинять",
+              "en": "excuse",
+              "transcription": "[rk'skju:z]",
+              "is_main": false
+            },
+            {
+              "order": 515,
+              "page": 97,
+              "ru": "прощать",
+              "en": "forgive",
+              "transcription": "[fэ' gIv]",
+              "is_main": false
+            },
+            {
+              "order": 516,
+              "page": 97,
+              "ru": "прощать",
+              "en": "pardon",
+              "transcription": "[pa:dn]",
+              "is_main": false
+            },
+            {
+              "order": 517,
+              "page": 97,
+              "ru": "поздравлять",
+              "en": "congratulate",
+              "transcription": "[ken' gretjulert]",
+              "is_main": false
+            },
+            {
+              "order": 518,
+              "page": 97,
+              "ru": "прощаться",
+              "en": "say good bye",
+              "transcription": "[seI gud 'ba1]",
+              "is_main": false
+            },
+            {
+              "order": 519,
+              "page": 97,
+              "ru": "благодарить",
+              "en": "thank",
+              "transcription": "[fжnk]",
+              "is_main": false
+            },
+            {
+              "order": 520,
+              "page": 97,
+              "ru": "уходить (из гостей",
+              "en": "take leave",
+              "transcription": "[terk 'li:v]",
+              "is_main": true
+            },
+            {
+              "order": 521,
+              "page": 97,
+              "ru": "уходить из гостей)",
+              "en": "leave",
+              "transcription": "[li:v]",
+              "is_main": false
+            },
+            {
+              "order": 522,
+              "page": 97,
+              "ru": "провожать домой",
+              "en": "see home",
+              "transcription": "[si: 'houm]",
+              "is_main": false
+            }
+          ]
+        },
+        {
+          "number": 7,
+          "subsection": {
+            "ru": "Нарушение этикета / наказание",
+            "en": "Breach of Etiquette / Punishment"
+          },
+          "subsection_ocr": {
+            "ru": "Нарушение этикета наказание",
+            "en": "Breach of Etiquette /Punishment"
+          },
+          "entries": [
+            {
+              "order": 523,
+              "page": 97,
+              "ru": "мешать беспокоить",
+              "en": "disturb",
+              "transcription": "[dIs' tз:b]",
+              "is_main": false
+            },
+            {
+              "order": 524,
+              "page": 97,
+              "ru": "беспокоить",
+              "en": "trouble",
+              "transcription": "[trAbl]",
+              "is_main": false
+            },
+            {
+              "order": 525,
+              "page": 97,
+              "ru": "беспокоить",
+              "en": "bother",
+              "transcription": "[buдa]",
+              "is_main": false
+            },
+            {
+              "order": 526,
+              "page": 97,
+              "ru": "оскорблять",
+              "en": "offend",
+              "transcription": "[э'fend]",
+              "is_main": false
+            },
+            {
+              "order": 527,
+              "page": 97,
+              "ru": "обижать",
+              "en": "hurt",
+              "transcription": "[hз:t]",
+              "is_main": false
+            },
+            {
+              "order": 528,
+              "page": 97,
+              "ru": "клеветать",
+              "en": "slander",
+              "transcription": "[slenda]",
+              "is_main": false
+            },
+            {
+              "order": 529,
+              "page": 97,
+              "ru": "лгать",
+              "en": "lie",
+              "transcription": "[lат]",
+              "is_main": false
+            },
+            {
+              "order": 530,
+              "page": 97,
+              "ru": "воровать",
+              "en": "steal",
+              "transcription": "[sti:l]",
+              "is_main": false
+            },
+            {
+              "order": 531,
+              "page": 97,
+              "ru": "причинять ущерб",
+              "en": "cause losses",
+              "transcription": "[kэ:z 'losiz]",
+              "is_main": false
+            },
+            {
+              "order": 532,
+              "page": 97,
+              "ru": "привлекать к суду",
+              "en": "bring to trial",
+              "transcription": "[brIn tэ 'traлэl]",
+              "is_main": true
+            },
+            {
+              "order": 533,
+              "page": 97,
+              "ru": "давать показания",
+              "en": "give evidence",
+              "transcription": "[giv 'evid(э ns]",
+              "is_main": false
+            },
+            {
+              "order": 534,
+              "page": 97,
+              "ru": "судить",
+              "en": "judge",
+              "transcription": "[d3Аd3]",
+              "is_main": false
+            },
+            {
+              "order": 535,
+              "page": 97,
+              "ru": "расследовать",
+              "en": "investigate",
+              "transcription": "[mn'vestrgert]",
+              "is_main": false
+            },
+            {
+              "order": 536,
+              "page": 97,
+              "ru": "выносить приговор",
+              "en": "sentence",
+              "transcription": "[sentons]",
+              "is_main": false
+            },
+            {
+              "order": 537,
+              "page": 97,
+              "ru": "признать виновным",
+              "en": "convict",
+              "transcription": "[kэn'vIkt]",
+              "is_main": false
+            },
+            {
+              "order": 538,
+              "page": 97,
+              "ru": "оправдать",
+              "en": "acquit V",
+              "transcription": "[э'kwIt]",
+              "is_main": false
+            },
+            {
+              "order": 539,
+              "page": 98,
+              "ru": "наказывать",
+              "en": "punish",
+              "transcription": "[pAnЛ",
+              "is_main": false
+            },
+            {
+              "order": 540,
+              "page": 98,
+              "ru": "сажать в тюрьму",
+              "en": "confine",
+              "transcription": "[kэn' faIn]",
+              "is_main": false
+            },
+            {
+              "order": 541,
+              "page": 98,
+              "ru": "сажать в тюрьму",
+              "en": "imprison",
+              "transcription": "[mm' prIz(э)n]",
+              "is_main": false
+            },
+            {
+              "order": 542,
+              "page": 98,
+              "ru": "сажать в тюрьму",
+              "en": "put into prison",
+              "transcription": "[put Intэ",
+              "is_main": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section": {
+        "ru": "Глаголы борьбы",
+        "en": "Verbs of Fighting"
+      },
+      "subsections": [
+        {
+          "number": 1,
+          "subsection": {
+            "ru": "Нападать",
+            "en": "Attack"
+          },
+          "subsection_ocr": {
+            "ru": "Нападать",
+            "en": "Attack"
+          },
+          "entries": [
+            {
+              "order": 543,
+              "page": 98,
+              "ru": "угрожать",
+              "en": "threaten",
+              "transcription": "[{retn]",
+              "is_main": true
+            },
+            {
+              "order": 544,
+              "page": 98,
+              "ru": "угрожать",
+              "en": "menace",
+              "transcription": "[menIs]",
+              "is_main": false
+            },
+            {
+              "order": 545,
+              "page": 98,
+              "ru": "вооружаться",
+              "en": "arm oneself",
+              "transcription": "[a:m won' self]",
+              "is_main": true
+            },
+            {
+              "order": 546,
+              "page": 98,
+              "ru": "разоружать",
+              "en": "disarm",
+              "transcription": "[drs' a:m]",
+              "is_main": false
+            },
+            {
+              "order": 547,
+              "page": 98,
+              "ru": "вести войну",
+              "en": "wage war",
+              "transcription": "[werd3'wэ:]",
+              "is_main": false
+            },
+            {
+              "order": 548,
+              "page": 98,
+              "ru": "развязать войну",
+              "en": "unleash war",
+              "transcription": "[An'li:[ ' wэ:]",
+              "is_main": false
+            },
+            {
+              "order": 549,
+              "page": 98,
+              "ru": "быть в состоянии войны",
+              "en": "be at war",
+              "transcription": "[bI эt wэ:]",
+              "is_main": false
+            },
+            {
+              "order": 550,
+              "page": 98,
+              "ru": "нападать",
+              "en": "attack",
+              "transcription": "[э'tek]",
+              "is_main": false
+            },
+            {
+              "order": 551,
+              "page": 98,
+              "ru": "вторгаться",
+              "en": "invade",
+              "transcription": "[mn'verd] Аж",
+              "is_main": false
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "subsection": {
+            "ru": "Защищаться",
+            "en": "Defend Oneself"
+          },
+          "subsection_ocr": {
+            "ru": "Защищаться",
+            "en": "Defend Oneself"
+          },
+          "entries": [
+            {
+              "order": 552,
+              "page": 98,
+              "ru": "бороться",
+              "en": "struggle",
+              "transcription": "[strAg]]",
+              "is_main": true
+            },
+            {
+              "order": 553,
+              "page": 98,
+              "ru": "сражаться",
+              "en": "fight",
+              "transcription": "[fait]",
+              "is_main": false
+            },
+            {
+              "order": 554,
+              "page": 98,
+              "ru": "сопротивляться",
+              "en": "resist",
+              "transcription": "[rr' zIst]",
+              "is_main": false
+            },
+            {
+              "order": 555,
+              "page": 98,
+              "ru": "защищать",
+              "en": "defend",
+              "transcription": "[dr'fend]",
+              "is_main": true
+            },
+            {
+              "order": 556,
+              "page": 98,
+              "ru": "спасать",
+              "en": "save",
+              "transcription": "[serv]",
+              "is_main": false
+            },
+            {
+              "order": 557,
+              "page": 98,
+              "ru": "спасать",
+              "en": "rescue",
+              "transcription": "[reskju:]",
+              "is_main": false
+            },
+            {
+              "order": 558,
+              "page": 98,
+              "ru": "освобождать",
+              "en": "liberate",
+              "transcription": "[IтbэreIt]",
+              "is_main": true
+            },
+            {
+              "order": 559,
+              "page": 98,
+              "ru": "изгнать",
+              "en": "expel",
+              "transcription": "[rk 'spel]",
+              "is_main": false
+            },
+            {
+              "order": 560,
+              "page": 98,
+              "ru": "изгнать",
+              "en": "drive out",
+              "transcription": "[drarv'aut]",
+              "is_main": false
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "subsection": {
+            "ru": "Военные операции",
+            "en": "Field Operations"
+          },
+          "subsection_ocr": {
+            "ru": "Военные операции",
+            "en": "Field Operations"
+          },
+          "entries": [
+            {
+              "order": 561,
+              "page": 99,
+              "ru": "победить выиграть",
+              "en": "win",
+              "transcription": "[wIn]",
+              "is_main": false
+            },
+            {
+              "order": 562,
+              "page": 99,
+              "ru": "превосходить",
+              "en": "be superior",
+              "transcription": "[bI sju: рr(э)гIэ]",
+              "is_main": false
+            },
+            {
+              "order": 563,
+              "page": 99,
+              "ru": "завоевывать",
+              "en": "conquer",
+              "transcription": "[konka]",
+              "is_main": false
+            },
+            {
+              "order": 564,
+              "page": 99,
+              "ru": "оккупировать",
+              "en": "occupy",
+              "transcription": "[okjupax]",
+              "is_main": false
+            },
+            {
+              "order": 565,
+              "page": 99,
+              "ru": "покорять",
+              "en": "subjugate",
+              "transcription": "[sAbdsugert]",
+              "is_main": false
+            },
+            {
+              "order": 566,
+              "page": 99,
+              "ru": "покорять",
+              "en": "subdue",
+              "transcription": "[sэb' dju:]",
+              "is_main": false
+            },
+            {
+              "order": 567,
+              "page": 99,
+              "ru": "нанести поражение",
+              "en": "defeat",
+              "transcription": "[dr'fi:t]",
+              "is_main": false
+            },
+            {
+              "order": 568,
+              "page": 99,
+              "ru": "преодолеть",
+              "en": "overcome",
+              "transcription": "[эuvэ'kAm]",
+              "is_main": false
+            },
+            {
+              "order": 569,
+              "page": 99,
+              "ru": "захватить",
+              "en": "capture",
+              "transcription": "[kaptЛэ]",
+              "is_main": false
+            },
+            {
+              "order": 570,
+              "page": 99,
+              "ru": "проигрывать",
+              "en": "lose",
+              "transcription": "[lu:z]",
+              "is_main": false
+            },
+            {
+              "order": 571,
+              "page": 99,
+              "ru": "уступать",
+              "en": "be inferior",
+              "transcription": "[br In' fт(э)г1э]",
+              "is_main": false
+            },
+            {
+              "order": 572,
+              "page": 99,
+              "ru": "терпсть поражение",
+              "en": "be defeated",
+              "transcription": "[bI dr'fi:tid]",
+              "is_main": false
+            },
+            {
+              "order": 573,
+              "page": 99,
+              "ru": "терпсть поражение",
+              "en": "suffer defeat",
+              "transcription": "[sАfэ dr'fi:t]",
+              "is_main": false
+            },
+            {
+              "order": 574,
+              "page": 99,
+              "ru": "сдаться",
+              "en": "surrender",
+              "transcription": "[sэ' renda]",
+              "is_main": false
+            },
+            {
+              "order": 575,
+              "page": 99,
+              "ru": "быть окруженным",
+              "en": "be encircled",
+              "transcription": "[br In'sз:kl(э d]",
+              "is_main": false
+            },
+            {
+              "order": 576,
+              "page": 99,
+              "ru": "быть военнопленным",
+              "en": "be a prisoner of war",
+              "transcription": "[br э' prIz(э)nэr эv",
+              "is_main": false
+            },
+            {
+              "order": 577,
+              "page": 99,
+              "ru": "покориться",
+              "en": "submit",
+              "transcription": "[sэb' mit] Wэ:]",
+              "is_main": false
+            },
+            {
+              "order": 578,
+              "page": 99,
+              "ru": "поддаться",
+              "en": "yield",
+              "transcription": "[ji:ld]",
+              "is_main": false
+            }
+          ]
+        },
+        {
+          "number": 4,
+          "subsection": {
+            "ru": "Действия с оружием",
+            "en": "Actions with Weapons"
+          },
+          "subsection_ocr": {
+            "ru": "Действия c оружием",
+            "en": "Actions with Weapons"
+          },
+          "entries": [
+            {
+              "order": 579,
+              "page": 99,
+              "ru": "стрелять",
+              "en": "shoot 0433",
+              "transcription": "[Ju:t]",
+              "is_main": true
+            },
+            {
+              "order": 580,
+              "page": 99,
+              "ru": "целиться",
+              "en": "aim",
+              "transcription": "[erm]",
+              "is_main": false
+            },
+            {
+              "order": 581,
+              "page": 99,
+              "ru": "направлять",
+              "en": "point",
+              "transcription": "[poInt]",
+              "is_main": false
+            },
+            {
+              "order": 582,
+              "page": 99,
+              "ru": "попасть",
+              "en": "hit",
+              "transcription": "[hit]",
+              "is_main": false
+            },
+            {
+              "order": 583,
+              "page": 99,
+              "ru": "промахнуться",
+              "en": "miss",
+              "transcription": "[mIs]",
+              "is_main": false
+            },
+            {
+              "order": 584,
+              "page": 99,
+              "ru": "ранить",
+              "en": "wound",
+              "transcription": "[wu:nd]",
+              "is_main": true
+            },
+            {
+              "order": 585,
+              "page": 99,
+              "ru": "убить",
+              "en": "kill",
+              "transcription": "[kil]",
+              "is_main": false
+            },
+            {
+              "order": 586,
+              "page": 99,
+              "ru": "взрываться",
+              "en": "burst",
+              "transcription": "[bз:st]",
+              "is_main": true
+            },
+            {
+              "order": 587,
+              "page": 99,
+              "ru": "взрываться",
+              "en": "explode",
+              "transcription": "[rk' sploud]",
+              "is_main": false
+            },
+            {
+              "order": 588,
+              "page": 99,
+              "ru": "взрывать",
+              "en": "blow up",
+              "transcription": "[blэu '^p]",
+              "is_main": false
+            },
+            {
+              "order": 589,
+              "page": 99,
+              "ru": "обстреливать",
+              "en": "fire (shells)",
+              "transcription": "[fалэ(' Jelz)]",
+              "is_main": false
+            },
+            {
+              "order": 590,
+              "page": 99,
+              "ru": "бомбить",
+              "en": "bomb",
+              "transcription": "[bom]",
+              "is_main": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
