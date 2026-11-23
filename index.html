@@ -69,6 +69,7 @@
     .breadcrumb-mini .crumb-item { display: inline-block; }
     .breadcrumb-mini .crumb-sub { font-weight: 400; font-size: .92rem; }
     .breadcrumb-mini .crumb-sep { margin: 0 .75rem; }
+    .breadcrumb-mini .dot-sep { font-weight: 900; font-size: 1.15em; margin: 0 .25em; }
     .block-list { text-align: start; }
     .topbar {
       position: sticky; top: 0; z-index: 1020;
@@ -375,9 +376,9 @@
     const sub = current.sub;
     const dir = settings.dir;
 
-    const themeName = (dir === 'en-ru') ? `${sec.themeRu} / ${sec.themeEn}` : `${sec.themeEn} / ${sec.themeRu}`;
-    const secName   = (dir === 'en-ru') ? `${sec.secRu} / ${sec.secEn}`     : `${sec.secEn} / ${sec.secRu}`;
-    const subName   = sub.subsection ? ((dir === 'en-ru') ? `${sub.subsection.ru} / ${sub.subsection.en}` : `${sub.subsection.en} / ${sub.subsection.ru}`) : '';
+    const themeName = `${sec.themeRu}<span class="dot-sep">·</span>${sec.themeEn}`;
+    const secName   = `${sec.secRu}<span class="dot-sep">·</span>${sec.secEn}`;
+    const subName   = sub.subsection ? `${sub.subsection.ru}<span class="dot-sep">·</span>${sub.subsection.en}` : '';
 
     blockCrumbs.innerHTML =
       `<span class="crumb-line"><span class="crumb-item"><i class="bi bi-folder2-open"></i> ${themeName}</span>` +
