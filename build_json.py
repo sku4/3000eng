@@ -164,7 +164,7 @@ def main():
             # bold), as the thickest stroke width normalized per page.
             is_main = ratio is not None and ratio>=BOLD_RATIO
             entry={"order":order,"page":e.get('page'),"ru":ru,"en":en,
-                   "transcription":tr,"is_main":bool(is_main)}
+                   "tran":tr,"is_main":bool(is_main)}
             order+=1
             if cur_sub_obj is not None: cur_sub_obj['entries'].append(entry)
 

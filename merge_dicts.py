@@ -16,6 +16,7 @@ Usage:
 """
 import argparse, json
 from build_json import clean_en
+from ipa import transcribe
 
 def to_themes(d):
     if 'themes' in d:
@@ -90,6 +91,13 @@ OVERRIDES=[
     {"page":116,"ru":"богатый [ritл","set_ru":"богатый","set_en":"rich","set_tr":"[rItЛ]"},
     {"page":117,"ru":"свободный","tr_contains":"verkont","set_ru":"свободный, вакантный",
      "set_en":"vacant","set_tr":"[verkont]"},
+    # === en recovery: translations lost / garbled beyond clean_en (needed so IPA
+    # can be generated from a correct English headword) ===
+    {"page":88,"ru":"лениться","set_en":"be lazy"},                 # OCR "be jazy"
+    {"page":95,"ru":"предупреждать","set_en":"warn"},               # OCR "wam"
+    {"page":115,"ru":"невыгодный","set_en":"disadvantageous"},      # OCR garbage
+    {"page":106,"ru":"внимательный","tr_contains":"еэf","set_en":"careful"},   # en was empty
+    {"page":114,"ru":"условный","tr_contains":"kэn","set_en":"conditional"},   # en was empty
 ]
 INSERTS=[
     {"page":108,"after_ru":"печальный","ru":"огорченный","en":"sorry","tr":"[sorI]"},
@@ -113,7 +121,7 @@ def _match(entry, page, ru=None, ru_contains=None, en_contains=None, tr_contains
         return False
     if en_contains is not None and en_contains not in entry.get('en',''):
         return False
-    if tr_contains is not None and tr_contains not in entry.get('transcription',''):
+    if tr_contains is not None and tr_contains not in entry.get('tran',''):
         return False
     return True
 
@@ -136,7 +144,7 @@ def apply_corrections(themes):
         ss,e=hits[0]
         if 'set_ru' in spec: e['ru']=spec['set_ru']
         if 'set_en' in spec: e['en']=spec['set_en']
-        if 'set_tr' in spec: e['transcription']=spec['set_tr']
+        if 'set_tr' in spec: e['tran']=spec['set_tr']
     # 2) deletes
     for spec in DELETES:
         for th in themes:
@@ -157,7 +165,7 @@ def apply_corrections(themes):
                     for i,e in enumerate(ss['entries']):
                         if e.get('page')==spec['page'] and e.get('ru')==spec['after_ru']:
                             new={"order":-1,"page":spec['page'],"ru":spec['ru'],
-                                 "en":spec['en'],"transcription":spec.get('tr',''),"is_main":False}
+                                 "en":spec['en'],"tran":spec.get('tr',''),"is_main":False}
                             ss['entries'].insert(i+1,new)
                             done=True
                             break
@@ -176,15 +184,30 @@ def main():
         d=json.load(open(path,encoding="utf-8"))
         themes.extend(to_themes(d))
 
-    # strip OCR noise + drop service fields
+    # strip OCR noise + drop service fields + normalize key transcription -> tran
     for th in themes:
         for s in th['sections']:
             for ss in s['subsections']:
                 ss.pop('subsection_ocr', None)
                 for e in ss['entries']:
                     e['en']=clean_en(e.get('en',''))
+                    if 'transcription' in e:
+                        if 'tran' not in e: e['tran']=e.pop('transcription')
+                        else: e.pop('transcription')
 
     apply_corrections(themes)
+
+    # Replace every OCR-mangled transcription with a correct IPA transcription
+    # generated from the (now cleaned / corrected) English headword via CMUdict
+    # (British non-rhotic RP — see ipa.py). Entries whose en still can't be
+    # resolved keep their OCR transcription as a fallback.
+    for th in themes:
+        for s in th['sections']:
+            for ss in s['subsections']:
+                for e in ss['entries']:
+                    ipa=transcribe(e.get('en',''))
+                    if ipa:
+                        e['tran']=ipa
 
     # renumber order contiguously
     order=0

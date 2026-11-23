@@ -44,7 +44,8 @@ python merge_dicts.py --inputs dictionary.json adj_dict.json --output dictionary
 | `ocr_all.py` | easyocr (ru+en, gpu=False) → `ocr_raw.json` с {W,H,items:[{text,conf,x0,y0,x1,y1,ink,h,w}]} |
 | `parse6.py` | кластеризация в строки → классификация → события + **толщина штриха** |
 | `build_json.py` | дерево одной темы (multi-theme схема), нормализация, `is_main`, `page`, `order` |
-| `merge_dicts.py` | слияние dict-файлов тем в один, перенумерация `order` |
+| `merge_dicts.py` | слияние dict-файлов тем в один, очистка en, карта исправлений, перенумерация `order`, генерация IPA |
+| `ipa.py` | корректная IPA-транскрипция из en (CMUdict → брит. RP, неротическое) |
 | `canonical_verbs.json` | overlay чистых названий для темы «Глаголы» (9 разделов) |
 | `canonical_adjectives.json` | overlay чистых названий для темы «Прилагательные» (7 разделов) |
 | `verbs_dict.json`, `adj_dict.json` | промежуточные dict по темам (входы для merge) |
@@ -53,7 +54,7 @@ python merge_dicts.py --inputs dictionary.json adj_dict.json --output dictionary
 
 ## Схема `dictionary.json` (multi-theme)
 
-`{"book":..., "themes":[{"theme":{ru,en}, "sections":[{"section":{ru,en},"subsections":[{"number", "subsection":{ru,en}, "entries":[{order,page,ru,en,transcription,is_main}]}]}]}]}`.
+`{"book":..., "themes":[{"theme":{ru,en}, "sections":[{"section":{ru,en},"subsections":[{"number", "subsection":{ru,en}, "entries":[{order,page,ru,en,tran,is_main}]}]}]}]}`.
 Старая одно-темная схема (`theme`+`sections` на верхнем уровне) поддерживается
 `merge_dicts.py` как вход (автоконвертация).
 
@@ -127,21 +128,41 @@ python merge_dicts.py --inputs dictionary.json adj_dict.json --output dictionary
   по **номеру** внутри раздела.
 - Для темы без overlay — `CANONICAL=` (названия из OCR).
 
+### Транскрипция (ключ `tran`) — генерируется, не из OCR
+- В `dictionary.json` поле `tran` — **корректная IPA** (брит. RP, неротическое),
+  сгенерированная из en-перевода в `ipa.py` через CMUdict (ARPABET → IPA с
+  удалением поствокального R, чтобы совпасть с книгой: `start`=[ˈstɑːt],
+  `turn`=[ˈtɜːn], `warn`=[ˈwɔːn], `go`=[ˈɡrəʊ]-нет [ˈɡəʊ]). Не повторный OCR.
+- Генерация идёт в `merge_dicts.py` **после** карты исправлений (OVERRIDES могут
+  поправить en — напр. `be jazy`→`be lazy` — и тогда IPA строится уже с
+  правильного слова). Старое OCR-поле `transcription` переименовано в `tran` и
+  перезаписывается IPA; записи с пустым/неразрешимым en оставляют OCR-вариант
+  как fallback (таких в текущем словаре 0).
+- Слова вне CMUdict покрыты: `_FALLBACK_ARPA` (брит. написания `analyse`,
+  `colourless`, `skilful`, `odourless`, `spoilt`, `seemly`, `perm`,
+  `particoloured`, `dexterous`, `impudent`, `incautious`, `unfasten`,
+  `unselfish`, `unskilful`) и разбиением гифенованных композитов
+  (`absent-minded`, `hard-hearted`, …). Cot-caught: AO без R → LOT /ɒ/
+  (`cross`, `belong`, `off`), слова THOUGHT без R перечислены в
+  `_THOUGHT_NO_R` → /ɔː/ (`all`, `law`, `small`, `walk`, …).
+- Скобки со словами сохраняются в IPA: `run (into)`→`[ˈrʌn (ˈɪntu)]`;
+  грамматические маркеры `(+adj)`/`(+прил.)` dropped (не произносятся).
+
 ## Известные ограничения
 
-- **Транскрипции** содержат ошибки IPA (`ə`→`э`, `ʃ`→`J`, `ɪ`→`1`/`I`, `ŋ`→`Л`).
-  Транскрипция ориентировочная; основной результат — пары `ru`↔`en`.
 - На стыке страниц в плотных регионах отдельные записи могут слипаться или получать
   ошибочный en — править в `parse6.py` (classify/flush), не руками в JSON.
 - `dictionary.json` **не содержит** служебных полей (`bold_score`, `stroke`,
-  `subsection_ocr`) — только `{order, page, ru, en, transcription, is_main}`
+  `subsection_ocr`) — только `{order, page, ru, en, tran, is_main}`
   (+ `number`/`subsection` на уровне подраздела).
 
 ## Где что править
 
 - Новые OCR-ошибки английских слов → `EN_FIX` в `build_json.py`.
-- Сдвинутые переводы (en на чужой строке), потерянные/слипшиеся записи → карта
-  `OVERRIDES`/`INSERTS`/`DELETES` в `merge_dicts.py`.
+- Сдвинутые переводы (en на чужой строке), потерянные/слипшиеся записи, мусор в en
+  → карта `OVERRIDES`/`INSERTS`/`DELETES` в `merge_dicts.py` (применяется до IPA).
+- IPA-транскрипция слова → `ipa.py` (`_FALLBACK_ARPA` для слов вне CMUdict,
+  `_THOUGHT_NO_R` для cot-caught, `_VOWEL_R` для R-слияния).
 - Порог жирности → `BOLD_RATIO` в `build_json.py`.
 - Лейаут/колонки/заголовки → `parse6.py` (`classify`, константы `LINE_GAP`, пороги).
 - Чистые названия для новой темы → новый `canonical_*.json` по формату

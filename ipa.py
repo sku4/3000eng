@@ -1,0 +1,197 @@
+#!/usr/bin/env python3
+"""Generate British RP (non-rhotic) IPA transcriptions from CMUdict.
+
+Used by merge_dicts.py to replace OCR-mangled transcriptions with correct IPA.
+CMUdict ships US-rhotic ARPABET; we post-process to non-rhotic RP to match the
+book's convention (the book prints non-rhotic transcriptions: start=[sta:t],
+turn=[tз:n], warn=[wэ:n] — no post-vocalic R).
+
+Public API: transcribe(en) -> "[...]" IPA string (or "" if unresolvable).
+"""
+import re
+import pronouncing as pr
+
+# --- ARPABET -> IPA ------------------------------------------------------------
+# Base vowel IPA (no following R). AO default is LOT /ɒ/; THOUGHT words without
+# R are listed in _THOUGHT_NO_R and mapped to /ɔː/.
+_VOWEL = {
+    'AA': 'ɒ', 'AE': 'æ', 'AH': 'ʌ', 'AO': 'ɒ', 'AW': 'aʊ', 'AY': 'aɪ',
+    'EH': 'e', 'ER': 'ɜː', 'EY': 'eɪ', 'IH': 'ɪ', 'IY': 'i', 'OW': 'əʊ',
+    'OY': 'ɔɪ', 'UH': 'ʊ', 'UW': 'u',
+}
+# vowel + following non-prevocalic R -> RP long/centering vowel
+_VOWEL_R = {
+    'AA': 'ɑː', 'AE': 'eə', 'AH': 'ɜː', 'AO': 'ɔː', 'AW': 'aʊə', 'AY': 'aɪə',
+    'EH': 'eə', 'ER': 'ɜː', 'EY': 'eɪə', 'IH': 'ɪə', 'IY': 'ɪə', 'OW': 'əʊ',
+    'OY': 'ɔɪə', 'UH': 'ʊə', 'UW': 'ʊə',
+}
+_CONS = {
+    'B': 'b', 'CH': 'tʃ', 'D': 'd', 'DH': 'ð', 'F': 'f', 'G': 'ɡ', 'HH': 'h',
+    'JH': 'dʒ', 'K': 'k', 'L': 'l', 'M': 'm', 'N': 'n', 'NG': 'ŋ', 'P': 'p',
+    'R': 'r', 'S': 's', 'SH': 'ʃ', 'T': 't', 'TH': 'θ', 'V': 'v', 'W': 'w',
+    'Y': 'j', 'Z': 'z', 'ZH': 'ʒ',
+}
+# Stressed tense vowels get a length mark (the book used [i:], [u:]).
+_LONG_WHEN_STRESSED = {'IY': 'iː', 'UW': 'uː'}
+# THOUGHT lexical-set words whose ARPABET is AO WITHOUT a following R — these
+# keep /ɔː/ in RP; every other AO-without-R word is LOT /ɒ/.
+_THOUGHT_NO_R = {
+    'all', 'ball', 'bald', 'bawl', 'call', 'crawl', 'draw', 'draws', 'drawing',
+    'drawn', 'flaw', 'flaws', 'fall', 'falls', 'fallen', 'false', 'fault',
+    'halt', 'hall', 'mall', 'small', 'tall', 'wall', 'walk', 'walks', 'walking',
+    'talk', 'talks', 'talking', 'chalk', 'law', 'laws', 'claw', 'raw', 'straw',
+    'saw', 'yawn', 'yawns', 'dawn', 'caught', 'bought', 'brought', 'taught',
+    'thought', 'thoughts', 'fought', 'ought', 'aught', 'daughter', 'slaughter',
+    'assault', 'exhausted', 'broad', 'abroad',
+}
+
+# Hand-written ARPABET for words CMUdict lacks (British spellings / absent).
+_FALLBACK_ARPA = {
+    'analyse': 'AE1 N AH0 L AY2 Z',
+    'colourless': 'K AH1 L ER0 L AH0 S',
+    'odourless': 'OW1 D ER0 L AH0 S',
+    'skilful': 'S K IH1 L F AH0 L',
+    'unskilful': 'AH2 N S K IH1 L F AH0 L',
+    'dexterous': 'D EH1 K S T R AH0 S',
+    'impudent': 'IH1 M P Y AH0 D AH0 N T',
+    'incautious': 'IH2 N K AO1 SH AH0 S',
+    'seemly': 'S IY1 M L IY0',
+    'spoilt': 'S P OY1 L T',
+    'unfasten': 'AH2 N F AE1 S AH0 N',
+    'unselfish': 'AH2 N S EH1 L F IH0 SH',
+    'perm': 'P ER1 M',
+    'particoloured': 'P AA2 R T IY0 K AH1 L ER0 D',
+}
+
+def _arpabet(word):
+    """Return ARPABET phone list for a single lowercase word, or []."""
+    if word in _FALLBACK_ARPA:
+        return _FALLBACK_ARPA[word].split()
+    phones = pr.phones_for_word(word)
+    return phones[0].split() if phones else []
+
+def _vowel_ipa(base, stress, word):
+    if base == 'AH':
+        return 'ə' if stress in (0, None) else 'ʌ'
+    if base == 'ER':
+        return 'ə' if stress in (0, None) else 'ɜː'
+    if base == 'AO':
+        # THOUGHT words (all, law, small, walk, …) keep /ɔː/; every other
+        # AO-without-R word is LOT /ɒ/ in RP (cross, belong, off, long, …).
+        return 'ɔː' if word in _THOUGHT_NO_R else 'ɒ'
+    if stress in (1, 2) and base in _LONG_WHEN_STRESSED:
+        return _LONG_WHEN_STRESSED[base]
+    return _VOWEL[base]
+
+def _vowel_r_ipa(base, stress):
+    # merged with a following non-prevocalic R
+    if base in ('AH', 'ER'):
+        return 'ɜː' if stress in (1, 2) else 'ə'
+    return _VOWEL_R.get(base, _VOWEL.get(base, ''))
+
+def _phones_to_ipa(tokens, word=''):
+    segs = []
+    for tok in tokens:
+        m = re.match(r'([A-Z]+)([012]?)', tok)
+        if not m:
+            continue
+        base = m.group(1)
+        stress = int(m.group(2)) if m.group(2) else None
+        segs.append({'base': base, 'stress': stress})
+    n = len(segs)
+    res = []  # {'ipa','vowel','stress','base'}
+    for i, s in enumerate(segs):
+        base, stress = s['base'], s['stress']
+        if base == 'R':
+            nxt_vowel = i + 1 < n and segs[i + 1]['base'] in _VOWEL
+            if nxt_vowel:
+                res.append({'ipa': 'r', 'vowel': False, 'stress': None})
+            else:
+                if res and res[-1]['vowel']:
+                    v = res.pop()
+                    long = _vowel_r_ipa(v.get('base'), v.get('stress'))
+                    res.append({'ipa': long, 'vowel': True, 'stress': v.get('stress')})
+                # else: stray R with no vowel -> drop
+            continue
+        if base in _VOWEL:
+            res.append({'ipa': _vowel_ipa(base, stress, word),
+                        'vowel': True, 'stress': stress, 'base': base})
+            # ER bundles its own R (no separate R token in ARPABET); before a
+            # vowel that R links, so emit a linking r (interrupt -> /ˌɪntəˈrʌpt/).
+            nxt_vowel = i + 1 < n and segs[i + 1]['base'] in _VOWEL
+            if base == 'ER' and nxt_vowel:
+                res.append({'ipa': 'r', 'vowel': False, 'stress': None})
+        else:
+            c = _CONS.get(base)
+            if c:
+                res.append({'ipa': c, 'vowel': False, 'stress': None})
+    # assemble with stress mark before each stressed syllable's onset
+    out = []
+    onset_start = 0
+    after_vowel = True
+    for r in res:
+        if r['vowel']:
+            if r['stress'] == 1:
+                out.insert(onset_start, 'ˈ')
+            elif r['stress'] == 2:
+                out.insert(onset_start, 'ˌ')
+            out.append(r['ipa'])
+            after_vowel = True
+        else:
+            if after_vowel:
+                onset_start = len(out)
+                after_vowel = False
+            out.append(r['ipa'])
+    return ''.join(out)
+
+def _transcribe_word(word):
+    w = word.lower().strip(" ;:,.\"'`()-")
+    if not w:
+        return ''
+    toks = _arpabet(w)
+    if not toks:
+        # try splitting a hyphenated compound (absent-minded -> absent + minded)
+        if '-' in w:
+            parts = [_transcribe_word(p) for p in w.split('-')]
+            if all(parts):
+                return ''.join(parts)
+        return ''
+    return _phones_to_ipa(toks, w)
+
+def transcribe(en):
+    """Return "[ipa]" for an English phrase, or "" if it cannot be resolved.
+    Parenthesized words — (into), (along), (left) — are transcribed and kept in
+    parens. Grammatical markers — (+adj), (+прил.) — are dropped (not spoken)."""
+    if not en:
+        return ''
+    s = re.sub(r'\(\+adj[\.)]*\)', '', en)
+    s = re.sub(r'\(\+прил[\.)]*\)', '', s)
+    pieces = []
+    i = 0
+    n = len(s)
+    while i < n:
+        ch = s[i]
+        if ch == '(':
+            j = s.find(')', i)
+            inner = s[i + 1:j] if j != -1 else s[i + 1:]
+            ipa = _transcribe_word(inner)
+            if ipa:
+                pieces.append('(' + ipa + ')')
+            i = (j + 1) if j != -1 else n
+        elif ch.isalpha() or ch in "'-":
+            j = i
+            while j < n and (s[j].isalpha() or s[j] in "'-"):
+                j += 1
+            ipa = _transcribe_word(s[i:j])
+            if ipa:
+                pieces.append(ipa)
+            i = j
+        else:
+            i += 1
+    ipa = ' '.join(pieces)
+    return '[' + ipa + ']' if ipa else ''
+
+if __name__ == '__main__':
+    import sys
+    for w in sys.argv[1:]:
+        print(w, '->', transcribe(w))
