@@ -33,18 +33,21 @@ def clean_en(s):
     """Drop residual OCR-noise fragments from an English translation and normalize
     case. Noise = tokens carrying digits, bare single letters, mixed-case 2-letter
     blobs, or stray symbols; real translations are lowercase alphabetic words
-    (optionally with -/'). Title-case words (e.g. OCR "Size") are lowercased."""
+    (optionally with -/'). Title-case words (e.g. OCR "Size") are lowercased.
+    Parenthesized words — "(into)", "(along)", "(left)", "(with)", "(+adj)" —
+    are preserved (only the core inside the parens is noise-checked)."""
     out=[]
     for tok in s.split():
-        c=tok.strip(" ;:,.\"'`")
-        if not c: continue
-        if re.search(r'\d', c): continue
-        if not re.fullmatch(r"[A-Za-z][A-Za-z'\-]*[A-Za-z]?|[A-Za-z]", c): continue
-        if len(c)==1 and c not in ('a','I','O'): continue
-        if len(c)==2 and c[0].isupper() and c[1].islower(): continue
-        if len(c)>=2 and c[0].isupper() and c[1:].islower() and c.isalpha():
-            c=c.lower()
-        out.append(c)
+        core=tok.strip(" ;:,.\"'`()+")   # strip parens/+ for the noise check
+        if not core: continue
+        if re.search(r'\d', core): continue
+        if not re.fullmatch(r"[A-Za-z][A-Za-z'\-]*[A-Za-z]?|[A-Za-z]", core): continue
+        if len(core)==1 and core not in ('a','I','O'): continue
+        if len(core)==2 and core[0].isupper() and core[1].islower(): continue
+        keep=tok.strip(" ;:,.\"'`")      # keep parentheses/+ in the output
+        if len(core)>=2 and core[0].isupper() and core[1:].islower() and core.isalpha():
+            keep=keep.lower()
+        out.append(keep)
     return re.sub(r'\s+',' ', ' '.join(out)).strip(' ;:,.\'"')
 
 def fix_ru(s):

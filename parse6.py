@@ -35,8 +35,10 @@ def is_lat_noise(t):
     holds stray symbols. Real English translations are lowercase alphabetic
     words (optionally with hyphen/apostrophe). Used to keep page-margin crud
     out of the en column. A multi-word token (with internal spaces) is kept —
-    clean_en in build_json filters it per word."""
-    c=t.strip(" ;:,.\"'`")
+    clean_en in build_json filters it per word. Parenthesized words like
+    "(into)", "(along)", "(+adj)" are NOT noise — the core inside the parens
+    is checked."""
+    c=t.strip(" ;:,.\"'`()+")      # strip parens/+ too, so "(into)" → "into"
     if not c: return True
     if re.search(r'\s', c): return False     # multi-word box → keep, filter later
     if re.search(r'\d', c): return True
