@@ -78,8 +78,9 @@
     .stage {
       min-height: calc(100vh - 56px);
     }
+    .arrow { display: inline-block; transform: translateY(-2px); }
     @media (max-width: 575.98px) {
-      .topbar .burger-btn { left: .5rem !important; }
+      .topbar .burger-btn { right: .5rem !important; }
     }
   </style>
 </head>
@@ -88,7 +89,7 @@
 <!-- Верхняя панель: бургер (настройки, слева) + табы направления (по центру) -->
 <header class="topbar">
   <div class="container position-relative d-flex justify-content-center align-items-center gap-3 py-2">
-    <button class="btn btn-outline-secondary btn-sm d-flex align-items-center gap-1 position-absolute start-0 burger-btn" type="button"
+    <button class="btn btn-outline-secondary btn-sm d-flex align-items-center gap-1 position-absolute end-0 burger-btn" type="button"
             data-bs-toggle="offcanvas" data-bs-target="#settingsDrawer" aria-controls="settingsDrawer">
       <i class="bi bi-list fs-5"></i>
       <span class="d-none d-sm-inline">Settings</span>
@@ -96,10 +97,10 @@
 
     <ul class="nav nav-pills" id="dirTabs" role="tablist">
       <li class="nav-item" role="presentation">
-        <button class="nav-link" id="tab-en-ru" type="button" data-dir="en-ru">EN → RU</button>
+        <button class="nav-link" id="tab-en-ru" type="button" data-dir="en-ru">EN <span class="arrow">→</span> RU</button>
       </li>
       <li class="nav-item" role="presentation">
-        <button class="nav-link" id="tab-ru-en" type="button" data-dir="ru-en">RU → EN</button>
+        <button class="nav-link" id="tab-ru-en" type="button" data-dir="ru-en">RU <span class="arrow">→</span> EN</button>
       </li>
     </ul>
   </div>
@@ -143,7 +144,7 @@
 </main>
 
 <!-- Боковое меню настроек -->
-<div class="offcanvas offcanvas-start" tabindex="-1" id="settingsDrawer" aria-labelledby="settingsLabel">
+<div class="offcanvas offcanvas-end" tabindex="-1" id="settingsDrawer" aria-labelledby="settingsLabel">
   <div class="offcanvas-header border-bottom">
     <h5 class="offcanvas-title" id="settingsLabel">Settings</h5>
     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -154,9 +155,9 @@
       <label class="form-label fw-semibold mb-2">Translation direction</label>
       <div class="btn-group w-100" role="group">
         <input type="radio" class="btn-check" name="dirRadio" id="dirEnRu" value="en-ru">
-        <label class="btn btn-outline-primary" for="dirEnRu">EN → RU</label>
+        <label class="btn btn-outline-primary" for="dirEnRu">EN <span class="arrow">→</span> RU</label>
         <input type="radio" class="btn-check" name="dirRadio" id="dirRuEn" value="ru-en">
-        <label class="btn btn-outline-primary" for="dirRuEn">RU → EN</label>
+        <label class="btn btn-outline-primary" for="dirRuEn">RU <span class="arrow">→</span> EN</label>
       </div>
     </div>
 
