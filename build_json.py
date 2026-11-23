@@ -20,10 +20,32 @@ import argparse, json, re
 
 EN_FIX={'g0':'go','G0':'go','CrOSS':'cross','Jast':'last','tumn':'turn','IOW':'row',
         'WAnZ':"one's","won's":"one's",'WAIZ':"ways",'mam':'man','rard':'raɪd',
-        'go On':'go on','g0 On':'go on'}
+        'go On':'go on','g0 On':'go on',
+        # context one-off: on p108 the en column drifted a row, so "оптимистический"
+        # picked up "sad" (which belongs to "печальный"). No real "sad" exists in the
+        # recognized pages, so a global replace is safe here; revisit if грустный/печальный=sad.
+        'sad':'optimistic'}
 def fix_en(s):
     for k,v in EN_FIX.items(): s=s.replace(k,v)
     return re.sub(r'\s+',' ',s).strip(' ;:,.\'"')
+
+def clean_en(s):
+    """Drop residual OCR-noise fragments from an English translation and normalize
+    case. Noise = tokens carrying digits, bare single letters, mixed-case 2-letter
+    blobs, or stray symbols; real translations are lowercase alphabetic words
+    (optionally with -/'). Title-case words (e.g. OCR "Size") are lowercased."""
+    out=[]
+    for tok in s.split():
+        c=tok.strip(" ;:,.\"'`")
+        if not c: continue
+        if re.search(r'\d', c): continue
+        if not re.fullmatch(r"[A-Za-z][A-Za-z'\-]*[A-Za-z]?|[A-Za-z]", c): continue
+        if len(c)==1 and c not in ('a','I','O'): continue
+        if len(c)==2 and c[0].isupper() and c[1].islower(): continue
+        if len(c)>=2 and c[0].isupper() and c[1:].islower() and c.isalpha():
+            c=c.lower()
+        out.append(c)
+    return re.sub(r'\s+',' ', ' '.join(out)).strip(' ;:,.\'"')
 
 def fix_ru(s):
     s=re.sub(r'^\d+\s*','',s)                 # leading stray digit
@@ -130,7 +152,7 @@ def main():
             cur_sec_obj['subsections'].append(cur_sub_obj)
             prev_sub_num=num
         elif t=='entry':
-            ru=fix_ru(e.get('ru','')); en=fix_en(e.get('en','')); tr=e.get('tr','')
+            ru=fix_ru(e.get('ru','')); en=clean_en(fix_en(e.get('en',''))); tr=e.get('tr','')
             if not ru and not en: continue
             st=e.get('stroke'); med=page_med.get(e.get('page'))
             ratio=(st/med) if (st and med) else None

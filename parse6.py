@@ -29,8 +29,26 @@ def cyr(t): return bool(re.search('[А-Яа-яЁё]', t))
 def lat(t): return bool(re.search('[A-Za-z]', t))
 def alnum(t): return any(ch.isalnum() for ch in t)
 def has_bracket(t): return '[' in t or ']' in t
-TITLE_KEYS=['Словарь','минимум','структур','логическ','лозическ','лоzической',
-            'сирукmур','спрукиур','сирукиур','сируктурой']
+def is_lat_noise(t):
+    """OCR noise fragment that merely looks Latin: carries a digit, is a bare
+    single letter (not a real word), a mixed-case 2-letter blob like "Nn", or
+    holds stray symbols. Real English translations are lowercase alphabetic
+    words (optionally with hyphen/apostrophe). Used to keep page-margin crud
+    out of the en column. A multi-word token (with internal spaces) is kept —
+    clean_en in build_json filters it per word."""
+    c=t.strip(" ;:,.\"'`")
+    if not c: return True
+    if re.search(r'\s', c): return False     # multi-word box → keep, filter later
+    if re.search(r'\d', c): return True
+    if not re.fullmatch(r"[A-Za-z][A-Za-z'\-]*[A-Za-z]?|[A-Za-z]", c): return True
+    if len(c)==1 and c not in ('a','I','O'): return True
+    if len(c)==2 and c[0].isupper() and c[1].islower(): return True
+    return False
+TITLE_KEYS=['Словарь','минимум','структур','сирукmур','спрукиур','сирукиур','сируктурой']
+# Note: do NOT add 'логическ' here — it matches real dictionary words like
+# "Биологический", "Технологический", "Психологический" and eats their headers.
+# The book title row is already skipped by the y<0.10·H running-header zone and
+# by the keys above.
 SECTION_KEYS=['Глаголы','Бытовые','Рабочие']
 # Part-of-speech themes. Глаголы matched exactly (section titles like "Глаголы
 # стадии" must NOT be treated as theme); Прилагательные/Существительные matched
@@ -142,7 +160,11 @@ def main():
                 # masquerade as a subsection index.
                 if idx==0:
                     nb,rest=numbox(t)
-                    if nb is not None and it['ink']>0.08 and it['x0']>0.10*W:
+                    # x0 gate is just a left-margin guard; real subsection headers
+                    # may sit as far left as the entry column (~0.07·W), so use a
+                    # loose 0.05·W. The leftmost-token + numbox-regex + ink checks
+                    # are what actually prevent false subsection numbers.
+                    if nb is not None and it['ink']>0.08 and it['x0']>0.05*W:
                         num=nb
                         if rest: ru.append((it['x0'],rest))
                         continue
@@ -158,7 +180,7 @@ def main():
                         if cyr(rest):
                             ru.append((it['x0'],rest))
                             if head is None: head=it
-                        elif lat(rest):
+                        elif lat(rest) and not is_lat_noise(rest):
                             en.append((it['x0'],rest,it))
                     for b in brackets:
                         tr.append((it['x0'],b,it))
@@ -168,7 +190,9 @@ def main():
                     if head is None: head=it     # ru headword (any column) for stroke scoring
                     continue
                 if lat(t) and not cyr(t):
-                    en.append((it['x0'],t,it)); continue
+                    if not is_lat_noise(t):
+                        en.append((it['x0'],t,it))
+                    continue
                 # stray digits / right-column cyr noise: ignore
             return ru,en,tr,num,sec,head
 
@@ -288,6 +312,18 @@ def main():
             # entry. (build_json infers section boundaries by subsection-number
             # reset, so the emitted section event is mostly a side effect.)
             if ru:
+                # A cyr line carrying a single lowercase English word, with no
+                # transcription and not in the entry column, is a misclustered
+                # entry: OCR jitter split one visual line across two y-clusters
+                # (e.g. "свободный, вакантный / vacant / [..]" → "свободный"
+                # cluster + "вакантный vacant" cluster). Real section titles carry
+                # multi-word or Title-case en, so this never catches them.
+                if en_txt and len(en_txt.split())==1 and en_txt.islower() and en_txt.isalpha():
+                    flush()
+                    state['cur']={'type':'entry','page':page,'y':y,
+                                  'ru':ru_txt,'en':en_txt,'tr':'',
+                                  'head':head,'en_items':[tup[2] for tup in en]}
+                    pending={'en':[],'tr':[],'ru':[]}; continue
                 flush()
                 if not en_txt:
                     la,_,_=lookahead_en(i,y)

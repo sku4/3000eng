@@ -12,6 +12,7 @@ Usage:
     python merge_dicts.py --inputs dictionary_verbs.json adj_dict.json --output dictionary.json
 """
 import argparse, json
+from build_json import clean_en
 
 def to_themes(d):
     if 'themes' in d:
@@ -36,6 +37,7 @@ def main():
             for ss in s['subsections']:
                 ss.pop('subsection_ocr', None)   # service field, not in final dict
                 for e in ss['entries']:
+                    e['en']=clean_en(e.get('en',''))   # strip OCR noise from inputs built earlier
                     e['order']=order; order+=1
 
     tree={"book":args.book,"themes":themes}

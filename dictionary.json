@@ -1025,7 +1025,7 @@
                   "order": 113,
                   "page": 82,
                   "ru": "включать",
-                  "en": "Lack",
+                  "en": "lack",
                   "transcription": "",
                   "is_main": false
                 }
@@ -1697,7 +1697,7 @@
                   "order": 187,
                   "page": 85,
                   "ru": "глотать",
-                  "en": "swallow 15m",
+                  "en": "swallow",
                   "transcription": "[swolou]",
                   "is_main": false
                 },
@@ -1705,7 +1705,7 @@
                   "order": 188,
                   "page": 85,
                   "ru": "пить",
-                  "en": "drink ' z $",
+                  "en": "drink",
                   "transcription": "[drink]",
                   "is_main": true
                 },
@@ -2610,7 +2610,7 @@
                   "order": 290,
                   "page": 88,
                   "ru": "лениться",
-                  "en": "be Jazy",
+                  "en": "be jazy",
                   "transcription": "[br 'leIzI]",
                   "is_main": true
                 },
@@ -2715,7 +2715,7 @@
                   "order": 302,
                   "page": 89,
                   "ru": "удивлять",
-                  "en": "astonish 531}",
+                  "en": "astonish",
                   "transcription": "[эs' tonЛ",
                   "is_main": false
                 },
@@ -3223,7 +3223,7 @@
                   "order": 360,
                   "page": 91,
                   "ru": "выяснять",
-                  "en": "find out Uf8",
+                  "en": "find out",
                   "transcription": "[famnd 'aut]",
                   "is_main": false
                 },
@@ -4789,7 +4789,7 @@
                   "order": 538,
                   "page": 97,
                   "ru": "оправдать",
-                  "en": "acquit V",
+                  "en": "acquit",
                   "transcription": "[э'kwIt]",
                   "is_main": false
                 },
@@ -5161,7 +5161,7 @@
                   "order": 579,
                   "page": 99,
                   "ru": "стрелять",
-                  "en": "shoot 0433",
+                  "en": "shoot",
                   "transcription": "[Ju:t]",
                   "is_main": true
                 },
@@ -5282,7 +5282,7 @@
                   "order": 591,
                   "page": 100,
                   "ru": "цвет",
-                  "en": "Colour",
+                  "en": "colour",
                   "transcription": "[kАlэ]",
                   "is_main": false
                 },
@@ -5306,7 +5306,7 @@
                   "order": 594,
                   "page": 100,
                   "ru": "желтый",
-                  "en": "1y yellow",
+                  "en": "yellow",
                   "transcription": "[jelэu]",
                   "is_main": false
                 },
@@ -5322,7 +5322,7 @@
                   "order": 596,
                   "page": 100,
                   "ru": "синий",
-                  "en": "d ) blue",
+                  "en": "blue",
                   "transcription": "[blu:]",
                   "is_main": false
                 },
@@ -5458,7 +5458,7 @@
                   "order": 613,
                   "page": 100,
                   "ru": "отчетливый",
-                  "en": "distinct e",
+                  "en": "distinct",
                   "transcription": "[drs'tmnkt]",
                   "is_main": false
                 },
@@ -5466,7 +5466,7 @@
                   "order": 614,
                   "page": 100,
                   "ru": "размер",
-                  "en": "Size 8s",
+                  "en": "size",
                   "transcription": "[saIz]",
                   "is_main": true
                 },
@@ -5562,7 +5562,7 @@
                   "order": 626,
                   "page": 101,
                   "ru": "узкий",
-                  "en": "narrow : }",
+                  "en": "narrow",
                   "transcription": "[nerou]",
                   "is_main": true
                 },
@@ -5586,7 +5586,7 @@
                   "order": 629,
                   "page": 101,
                   "ru": "мелкий; тонкий, изящный",
-                  "en": "fine ; ! y",
+                  "en": "fine",
                   "transcription": "[famn]",
                   "is_main": false
                 },
@@ -5787,7 +5787,7 @@
                   "order": 653,
                   "page": 102,
                   "ru": "температура",
-                  "en": "Temperature",
+                  "en": "temperature",
                   "transcription": "[temp(э)гэtЛэ]",
                   "is_main": false
                 },
@@ -5835,7 +5835,7 @@
                   "order": 659,
                   "page": 102,
                   "ru": "поверхность",
-                  "en": "Surface",
+                  "en": "surface",
                   "transcription": "[ sз:frs]",
                   "is_main": false
                 },
@@ -5907,7 +5907,7 @@
                   "order": 668,
                   "page": 102,
                   "ru": "влажность",
-                  "en": "Humidity",
+                  "en": "humidity",
                   "transcription": "[hju: midrtr]",
                   "is_main": false
                 },
@@ -6012,7 +6012,7 @@
                   "order": 680,
                   "page": 103,
                   "ru": "острый",
-                  "en": "3s { pungent",
+                  "en": "pungent",
                   "transcription": "[pAndЗ(э nt]",
                   "is_main": false
                 }
@@ -6295,7 +6295,7 @@
                   "order": 711,
                   "page": 104,
                   "ru": "маленький",
-                  "en": "little i",
+                  "en": "little",
                   "transcription": "[Imtl]",
                   "is_main": false
                 },
@@ -6376,7 +6376,7 @@
                   "order": 720,
                   "page": 104,
                   "ru": "современный",
-                  "en": "contemporary [kon",
+                  "en": "contemporary",
                   "transcription": "",
                   "is_main": false
                 },
@@ -6424,7 +6424,7 @@
                   "order": 726,
                   "page": 104,
                   "ru": "предварительный",
-                  "en": "preliminary [prr teImas]",
+                  "en": "preliminary",
                   "transcription": "",
                   "is_main": false
                 },
@@ -6892,7 +6892,7 @@
                   "order": 779,
                   "page": 106,
                   "ru": "внимательный",
-                  "en": "carefu]",
+                  "en": "careful",
                   "transcription": "[kеэf(э)l]",
                   "is_main": false
                 },
@@ -7175,7 +7175,7 @@
                   "order": 810,
                   "page": 108,
                   "ru": "хорошем настроении",
-                  "en": "B optimistic",
+                  "en": "optimistic",
                   "transcription": "[opti mIstik] [harsprritid]",
                   "is_main": false
                 },
@@ -7183,7 +7183,7 @@
                   "order": 811,
                   "page": 108,
                   "ru": "оптимистический",
-                  "en": "sad",
+                  "en": "optimistic",
                   "transcription": "[sed]",
                   "is_main": true
                 },
@@ -7199,7 +7199,7 @@
                   "order": 813,
                   "page": 108,
                   "ru": "расстроенный",
-                  "en": "upset }N",
+                  "en": "upset",
                   "transcription": "[Аp' set]",
                   "is_main": false
                 },
@@ -7320,7 +7320,7 @@
                   "order": 827,
                   "page": 108,
                   "ru": "удивительный [sэ",
-                  "en": "surprising praIzIn]",
+                  "en": "surprising",
                   "transcription": "",
                   "is_main": true
                 },
@@ -7722,7 +7722,7 @@
                   "order": 874,
                   "page": 110,
                   "ru": "благонравный",
-                  "en": "well-behaved [welbI hervd]",
+                  "en": "well-behaved",
                   "transcription": "",
                   "is_main": false
                 },
@@ -8277,7 +8277,7 @@
                   "order": 940,
                   "page": 112,
                   "ru": "робкий / застенчивый",
-                  "en": "timid \"C",
+                  "en": "timid",
                   "transcription": "[tImid]",
                   "is_main": false
                 },
@@ -8333,7 +8333,7 @@
                   "order": 947,
                   "page": 112,
                   "ru": "высокомерный",
-                  "en": "light-minded [lart manndid",
+                  "en": "light-minded manndid",
                   "transcription": "",
                   "is_main": false
                 },
@@ -8583,7 +8583,7 @@
                   "order": 975,
                   "page": 113,
                   "ru": "различный } |",
-                  "en": "different ?",
+                  "en": "different",
                   "transcription": "[d f(э)rэnt]",
                   "is_main": true
                 },
@@ -8905,7 +8905,7 @@
                   "order": 1013,
                   "page": 114,
                   "ru": "условный",
-                  "en": "conditiona]",
+                  "en": "conditional",
                   "transcription": "[kэn' d (э)nal]",
                   "is_main": false
                 },
@@ -9074,7 +9074,7 @@
                   "order": 1033,
                   "page": 115,
                   "ru": "удовлетворительный",
-                  "en": "satisfactory SRR&",
+                  "en": "satisfactory",
                   "transcription": "[setIs' fekt(э )rI]",
                   "is_main": false
                 },
@@ -9130,7 +9130,7 @@
                   "order": 1040,
                   "page": 115,
                   "ru": "неуместный [aut эv",
-                  "en": "out of place pleIs]",
+                  "en": "out of place",
                   "transcription": "",
                   "is_main": false
                 },
@@ -9380,7 +9380,7 @@
                   "order": 1068,
                   "page": 116,
                   "ru": "больной",
-                  "en": "sick V5}",
+                  "en": "sick",
                   "transcription": "[sIk]",
                   "is_main": true
                 },
@@ -9388,7 +9388,7 @@
                   "order": 1069,
                   "page": 116,
                   "ru": "больной",
-                  "en": "ill K39f1",
+                  "en": "ill",
                   "transcription": "[1l]",
                   "is_main": false
                 },
@@ -9396,7 +9396,7 @@
                   "order": 1070,
                   "page": 116,
                   "ru": "слабый",
-                  "en": "weak bf4:2",
+                  "en": "weak",
                   "transcription": "[wi:k]",
                   "is_main": true
                 },
@@ -9525,10 +9525,19 @@
                   "order": 1085,
                   "page": 117,
                   "ru": "жаждущий",
-                  "en": "thirsty V,L",
+                  "en": "thirsty",
                   "transcription": "[{з:str]",
                   "is_main": false
-                },
+                }
+              ]
+            },
+            {
+              "number": 3,
+              "subsection": {
+                "ru": "Биологическое и семейное положение",
+                "en": "Biological and Family Status"
+              },
+              "entries": [
                 {
                   "order": 1086,
                   "page": 117,
@@ -9686,7 +9695,7 @@
                   "order": 1104,
                   "page": 117,
                   "ru": "приготовленный (0 пище)",
-                  "en": "cooked Nn",
+                  "en": "cooked",
                   "transcription": "[kukt]",
                   "is_main": true
                 },
@@ -9694,7 +9703,7 @@
                   "order": 1105,
                   "page": 117,
                   "ru": "жареный",
-                  "en": "fried k",
+                  "en": "fried",
                   "transcription": "[frard]",
                   "is_main": false
                 },
@@ -9702,7 +9711,7 @@
                   "order": 1106,
                   "page": 117,
                   "ru": "печеный",
-                  "en": "baked y",
+                  "en": "baked",
                   "transcription": "[berkt]",
                   "is_main": false
                 },
@@ -9740,6 +9749,14 @@
                 },
                 {
                   "order": 1111,
+                  "page": 117,
+                  "ru": "вакантный",
+                  "en": "vacant",
+                  "transcription": "",
+                  "is_main": false
+                },
+                {
+                  "order": 1112,
                   "page": 118,
                   "ru": "занятый (о мссте)",
                   "en": "occupied",
@@ -9747,7 +9764,7 @@
                   "is_main": false
                 },
                 {
-                  "order": 1112,
+                  "order": 1113,
                   "page": 118,
                   "ru": "занятый (чем-либо)",
                   "en": "busy",
@@ -9755,7 +9772,7 @@
                   "is_main": false
                 },
                 {
-                  "order": 1113,
+                  "order": 1114,
                   "page": 118,
                   "ru": "занятый",
                   "en": "engaged",
@@ -9763,7 +9780,7 @@
                   "is_main": false
                 },
                 {
-                  "order": 1114,
+                  "order": 1115,
                   "page": 118,
                   "ru": "чистый",
                   "en": "clean",
@@ -9771,7 +9788,7 @@
                   "is_main": true
                 },
                 {
-                  "order": 1115,
+                  "order": 1116,
                   "page": 118,
                   "ru": "грязный",
                   "en": "dirty",
@@ -9804,7 +9821,7 @@
               },
               "entries": [
                 {
-                  "order": 1116,
+                  "order": 1117,
                   "page": 118,
                   "ru": "небо",
                   "en": "sky",
@@ -9812,7 +9829,7 @@
                   "is_main": true
                 },
                 {
-                  "order": 1117,
+                  "order": 1118,
                   "page": 118,
                   "ru": "воздух",
                   "en": "air",
@@ -9820,7 +9837,7 @@
                   "is_main": true
                 },
                 {
-                  "order": 1118,
+                  "order": 1119,
                   "page": 118,
                   "ru": "облако",
                   "en": "cloud",
@@ -9828,7 +9845,7 @@
                   "is_main": false
                 },
                 {
-                  "order": 1119,
+                  "order": 1120,
                   "page": 118,
                   "ru": "солнце",
                   "en": "sun",
@@ -9836,7 +9853,7 @@
                   "is_main": true
                 },
                 {
-                  "order": 1120,
+                  "order": 1121,
                   "page": 118,
                   "ru": "звезда",
                   "en": "star",
@@ -9844,7 +9861,7 @@
                   "is_main": false
                 },
                 {
-                  "order": 1121,
+                  "order": 1122,
                   "page": 118,
                   "ru": "луна",
                   "en": "moon",
@@ -9852,7 +9869,7 @@
                   "is_main": false
                 },
                 {
-                  "order": 1122,
+                  "order": 1123,
                   "page": 118,
                   "ru": "планета",
                   "en": "planet",
@@ -9869,7 +9886,7 @@
               },
               "entries": [
                 {
-                  "order": 1123,
+                  "order": 1124,
                   "page": 118,
                   "ru": "земля",
                   "en": "earth",
@@ -9877,7 +9894,7 @@
                   "is_main": true
                 },
                 {
-                  "order": 1124,
+                  "order": 1125,
                   "page": 118,
                   "ru": "почва",
                   "en": "soil",
@@ -9885,7 +9902,7 @@
                   "is_main": false
                 },
                 {
-                  "order": 1125,
+                  "order": 1126,
                   "page": 118,
                   "ru": "суша",
                   "en": "land",
@@ -9893,7 +9910,7 @@
                   "is_main": false
                 },
                 {
-                  "order": 1126,
+                  "order": 1127,
                   "page": 118,
                   "ru": "континент",
                   "en": "continent",
@@ -9901,7 +9918,7 @@
                   "is_main": true
                 },
                 {
-                  "order": 1127,
+                  "order": 1128,
                   "page": 118,
                   "ru": "полуостров",
                   "en": "peninsula",
@@ -9909,7 +9926,7 @@
                   "is_main": false
                 },
                 {
-                  "order": 1128,
+                  "order": 1129,
                   "page": 118,
                   "ru": "остров",
                   "en": "island",
@@ -9917,7 +9934,7 @@
                   "is_main": false
                 },
                 {
-                  "order": 1129,
+                  "order": 1130,
                   "page": 118,
                   "ru": "берег",
                   "en": "shore",
@@ -9925,7 +9942,7 @@
                   "is_main": true
                 },
                 {
-                  "order": 1130,
+                  "order": 1131,
                   "page": 118,
                   "ru": "берег реки",
                   "en": "bank",

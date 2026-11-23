@@ -19,16 +19,12 @@
                 "ru": "Глаз",
                 "en": "Eye"
               },
-              "subsection_ocr": {
-                "ru": "Глаз",
-                "en": "Eye"
-              },
               "entries": [
                 {
                   "order": 0,
                   "page": 100,
                   "ru": "цвет",
-                  "en": "Colour",
+                  "en": "colour",
                   "transcription": "[kАlэ]",
                   "is_main": false
                 },
@@ -52,7 +48,7 @@
                   "order": 3,
                   "page": 100,
                   "ru": "желтый",
-                  "en": "1y yellow",
+                  "en": "yellow",
                   "transcription": "[jelэu]",
                   "is_main": false
                 },
@@ -68,7 +64,7 @@
                   "order": 5,
                   "page": 100,
                   "ru": "синий",
-                  "en": "d ) blue",
+                  "en": "blue",
                   "transcription": "[blu:]",
                   "is_main": false
                 },
@@ -204,7 +200,7 @@
                   "order": 22,
                   "page": 100,
                   "ru": "отчетливый",
-                  "en": "distinct e",
+                  "en": "distinct",
                   "transcription": "[drs'tmnkt]",
                   "is_main": false
                 },
@@ -212,7 +208,7 @@
                   "order": 23,
                   "page": 100,
                   "ru": "размер",
-                  "en": "Size 8s",
+                  "en": "size",
                   "transcription": "[saIz]",
                   "is_main": true
                 },
@@ -308,7 +304,7 @@
                   "order": 35,
                   "page": 101,
                   "ru": "узкий",
-                  "en": "narrow : }",
+                  "en": "narrow",
                   "transcription": "[nerou]",
                   "is_main": true
                 },
@@ -332,7 +328,7 @@
                   "order": 38,
                   "page": 101,
                   "ru": "мелкий; тонкий, изящный",
-                  "en": "fine ; ! y",
+                  "en": "fine",
                   "transcription": "[famn]",
                   "is_main": false
                 },
@@ -528,16 +524,12 @@
                 "ru": "Кожа",
                 "en": "Skin"
               },
-              "subsection_ocr": {
-                "ru": "Кожа",
-                "en": "Skin"
-              },
               "entries": [
                 {
                   "order": 62,
                   "page": 102,
                   "ru": "температура",
-                  "en": "Temperature",
+                  "en": "temperature",
                   "transcription": "[temp(э)гэtЛэ]",
                   "is_main": false
                 },
@@ -585,7 +577,7 @@
                   "order": 68,
                   "page": 102,
                   "ru": "поверхность",
-                  "en": "Surface",
+                  "en": "surface",
                   "transcription": "[ sз:frs]",
                   "is_main": false
                 },
@@ -657,7 +649,7 @@
                   "order": 77,
                   "page": 102,
                   "ru": "влажность",
-                  "en": "Humidity",
+                  "en": "humidity",
                   "transcription": "[hju: midrtr]",
                   "is_main": false
                 },
@@ -690,10 +682,6 @@
             {
               "number": 3,
               "subsection": {
-                "ru": "Язык",
-                "en": "Tongue"
-              },
-              "subsection_ocr": {
                 "ru": "Язык",
                 "en": "Tongue"
               },
@@ -766,7 +754,7 @@
                   "order": 89,
                   "page": 103,
                   "ru": "острый",
-                  "en": "3s { pungent",
+                  "en": "pungent",
                   "transcription": "[pAndЗ(э nt]",
                   "is_main": false
                 }
@@ -775,10 +763,6 @@
             {
               "number": 4,
               "subsection": {
-                "ru": "Ухо",
-                "en": "Ear"
-              },
-              "subsection_ocr": {
                 "ru": "Ухо",
                 "en": "Ear"
               },
@@ -879,10 +863,6 @@
                 "ru": "Нос",
                 "en": "Nose"
               },
-              "subsection_ocr": {
-                "ru": "Ноc",
-                "en": "Nose"
-              },
               "entries": [
                 {
                   "order": 101,
@@ -953,10 +933,6 @@
             {
               "number": 1,
               "subsection": {
-                "ru": "Основные признаки",
-                "en": "Main Properties"
-              },
-              "subsection_ocr": {
                 "ru": "Основные признаки",
                 "en": "Main Properties"
               },
@@ -1061,7 +1037,7 @@
                   "order": 120,
                   "page": 104,
                   "ru": "маленький",
-                  "en": "little i",
+                  "en": "little",
                   "transcription": "[Imtl]",
                   "is_main": false
                 },
@@ -1094,10 +1070,6 @@
             {
               "number": 2,
               "subsection": {
-                "ru": "Стадии",
-                "en": "Stages"
-              },
-              "subsection_ocr": {
                 "ru": "Стадии",
                 "en": "Stages"
               },
@@ -1146,7 +1118,7 @@
                   "order": 129,
                   "page": 104,
                   "ru": "современный",
-                  "en": "contemporary [kon",
+                  "en": "contemporary",
                   "transcription": "",
                   "is_main": false
                 },
@@ -1194,7 +1166,7 @@
                   "order": 135,
                   "page": 104,
                   "ru": "предварительный",
-                  "en": "preliminary [prr teImas]",
+                  "en": "preliminary",
                   "transcription": "",
                   "is_main": false
                 },
@@ -1260,10 +1232,6 @@
               "number": 3,
               "subsection": {
                 "ru": "Непрерывность, частотность",
-                "en": "Continuity / Frequency"
-              },
-              "subsection_ocr": {
-                "ru": "Непрерывность частотность",
                 "en": "Continuity / Frequency"
               },
               "entries": [
@@ -1403,10 +1371,6 @@
                 "ru": "Способность",
                 "en": "Ability"
               },
-              "subsection_ocr": {
-                "ru": "Способность",
-                "en": "Ability"
-              },
               "entries": [
                 {
                   "order": 158,
@@ -1501,10 +1465,6 @@
             {
               "number": 2,
               "subsection": {
-                "ru": "Отсутствие способности",
-                "en": "Absence of Ability"
-              },
-              "subsection_ocr": {
                 "ru": "Отсутствие способности",
                 "en": "Absence of Ability"
               },
@@ -1605,10 +1565,6 @@
                 "ru": "Прилежание, внимательность",
                 "en": "Diligence, Attention"
               },
-              "subsection_ocr": {
-                "ru": "Прилежание внимательность",
-                "en": "Diligence_ Attention"
-              },
               "entries": [
                 {
                   "order": 180,
@@ -1678,7 +1634,7 @@
                   "order": 188,
                   "page": 106,
                   "ru": "внимательный",
-                  "en": "carefu]",
+                  "en": "",
                   "transcription": "[kеэf(э)l]",
                   "is_main": false
                 },
@@ -1713,10 +1669,6 @@
               "subsection": {
                 "ru": "Умение / опыт",
                 "en": "Skill / Experience"
-              },
-              "subsection_ocr": {
-                "ru": "Умение / опыт",
-                "en": "Skill Experience"
               },
               "entries": [
                 {
@@ -1804,10 +1756,6 @@
             {
               "number": 1,
               "subsection": {
-                "ru": "Характер",
-                "en": "Character"
-              },
-              "subsection_ocr": {
                 "ru": "Характер",
                 "en": "Character"
               },
@@ -1900,10 +1848,6 @@
                 "ru": "Настроение",
                 "en": "Frame of Mind, Mood"
               },
-              "subsection_ocr": {
-                "ru": "Настроение",
-                "en": "Frame of Mind, Mood"
-              },
               "entries": [
                 {
                   "order": 211,
@@ -1973,7 +1917,7 @@
                   "order": 219,
                   "page": 108,
                   "ru": "хорошем настроении",
-                  "en": "B optimistic",
+                  "en": "optimistic",
                   "transcription": "[opti mIstik] [harsprritid]",
                   "is_main": false
                 },
@@ -1981,7 +1925,7 @@
                   "order": 220,
                   "page": 108,
                   "ru": "оптимистический",
-                  "en": "sad",
+                  "en": "optimistic",
                   "transcription": "[sed]",
                   "is_main": true
                 },
@@ -1997,7 +1941,7 @@
                   "order": 222,
                   "page": 108,
                   "ru": "расстроенный",
-                  "en": "upset }N",
+                  "en": "upset",
                   "transcription": "[Аp' set]",
                   "is_main": false
                 },
@@ -2024,10 +1968,6 @@
               "subsection": {
                 "ru": "Эмоциональная оценка",
                 "en": "Emotional Estimation"
-              },
-              "subsection_ocr": {
-                "ru": "Эмоциональная оценка",
-                "en": "Emotional Estimation 6"
               },
               "entries": [
                 {
@@ -2122,7 +2062,7 @@
                   "order": 236,
                   "page": 108,
                   "ru": "удивительный [sэ",
-                  "en": "surprising praIzIn]",
+                  "en": "surprising",
                   "transcription": "",
                   "is_main": true
                 },
@@ -2374,10 +2314,6 @@
                 "ru": "Оттенки эмоции",
                 "en": "Shades of Emotion"
               },
-              "subsection_ocr": {
-                "ru": "Оттенки эмоции",
-                "en": "Shades of Emotion"
-              },
               "entries": [
                 {
                   "order": 267,
@@ -2507,10 +2443,6 @@
                 "ru": "Основные характеристики",
                 "en": "Main Properties"
               },
-              "subsection_ocr": {
-                "ru": "Основные",
-                "en": ""
-              },
               "entries": [
                 {
                   "order": 281,
@@ -2532,7 +2464,7 @@
                   "order": 283,
                   "page": 110,
                   "ru": "благонравный",
-                  "en": "well-behaved [welbI hervd]",
+                  "en": "well-behaved",
                   "transcription": "",
                   "is_main": false
                 },
@@ -2653,10 +2585,6 @@
             {
               "number": 2,
               "subsection": {
-                "ru": "Отношение к другим людям",
-                "en": "Attitude to Other People"
-              },
-              "subsection_ocr": {
                 "ru": "Отношение к другим людям",
                 "en": "Attitude to Other People"
               },
@@ -2909,10 +2837,6 @@
                 "ru": "Качества в общении",
                 "en": "Qualities in Intercourse"
               },
-              "subsection_ocr": {
-                "ru": "Качества в общении",
-                "en": "Qualities in Intercourse"
-              },
               "entries": [
                 {
                   "order": 328,
@@ -3042,10 +2966,6 @@
                 "ru": "Качества в действиях",
                 "en": "Qualities in Actions"
               },
-              "subsection_ocr": {
-                "ru": "Качества в",
-                "en": ""
-              },
               "entries": [
                 {
                   "order": 343,
@@ -3099,7 +3019,7 @@
                   "order": 349,
                   "page": 112,
                   "ru": "робкий / застенчивый",
-                  "en": "timid \"C",
+                  "en": "timid",
                   "transcription": "[tImid]",
                   "is_main": false
                 },
@@ -3155,7 +3075,7 @@
                   "order": 356,
                   "page": 112,
                   "ru": "высокомерный",
-                  "en": "light-minded [lart manndid",
+                  "en": "light-minded manndid",
                   "transcription": "",
                   "is_main": false
                 },
@@ -3252,10 +3172,6 @@
             {
               "number": 1,
               "subsection": {
-                "ru": "Классификация",
-                "en": "Classification"
-              },
-              "subsection_ocr": {
                 "ru": "Классификация",
                 "en": "Classification"
               },
@@ -3388,10 +3304,6 @@
                 "ru": "Качество",
                 "en": "Quality"
               },
-              "subsection_ocr": {
-                "ru": "Качество",
-                "en": "Quality"
-              },
               "entries": [
                 {
                   "order": 382,
@@ -3413,7 +3325,7 @@
                   "order": 384,
                   "page": 113,
                   "ru": "различный } |",
-                  "en": "different ?",
+                  "en": "different",
                   "transcription": "[d f(э)rэnt]",
                   "is_main": true
                 },
@@ -3569,10 +3481,6 @@
                 "ru": "Количество",
                 "en": "Quantity"
               },
-              "subsection_ocr": {
-                "ru": "Количество",
-                "en": "Quantity"
-              },
               "entries": [
                 {
                   "order": 403,
@@ -3678,10 +3586,6 @@
                 "ru": "Категория",
                 "en": "Category"
               },
-              "subsection_ocr": {
-                "ru": "Категория",
-                "en": "Category"
-              },
               "entries": [
                 {
                   "order": 415,
@@ -3743,7 +3647,7 @@
                   "order": 422,
                   "page": 114,
                   "ru": "условный",
-                  "en": "conditiona]",
+                  "en": "",
                   "transcription": "[kэn' d (э)nal]",
                   "is_main": false
                 },
@@ -3851,10 +3755,6 @@
                 "ru": "Соответствие",
                 "en": "Accordance"
               },
-              "subsection_ocr": {
-                "ru": "Соответствие",
-                "en": "Accordance"
-              },
               "entries": [
                 {
                   "order": 435,
@@ -3916,7 +3816,7 @@
                   "order": 442,
                   "page": 115,
                   "ru": "удовлетворительный",
-                  "en": "satisfactory SRR&",
+                  "en": "satisfactory",
                   "transcription": "[setIs' fekt(э )rI]",
                   "is_main": false
                 },
@@ -3972,7 +3872,7 @@
                   "order": 449,
                   "page": 115,
                   "ru": "неуместный [aut эv",
-                  "en": "out of place pleIs]",
+                  "en": "out of place",
                   "transcription": "",
                   "is_main": false
                 },
@@ -4040,10 +3940,6 @@
                 "ru": "Выгода",
                 "en": "Advantage"
               },
-              "subsection_ocr": {
-                "ru": "Выгода",
-                "en": "Advantage"
-              },
               "entries": [
                 {
                   "order": 457,
@@ -4065,7 +3961,7 @@
                   "order": 459,
                   "page": 115,
                   "ru": "невыгодный",
-                  "en": "disadvantageous",
+                  "en": "dioptimisticvantageous",
                   "transcription": "[drsadvon' terdgэs]",
                   "is_main": false
                 },
@@ -4181,10 +4077,6 @@
                 "ru": "Физическое состояние",
                 "en": "Physical Condition"
               },
-              "subsection_ocr": {
-                "ru": "Физическое состояние",
-                "en": "Physical Condition"
-              },
               "entries": [
                 {
                   "order": 472,
@@ -4230,7 +4122,7 @@
                   "order": 477,
                   "page": 116,
                   "ru": "больной",
-                  "en": "sick V5}",
+                  "en": "sick",
                   "transcription": "[sIk]",
                   "is_main": true
                 },
@@ -4238,7 +4130,7 @@
                   "order": 478,
                   "page": 116,
                   "ru": "больной",
-                  "en": "ill K39f1",
+                  "en": "ill",
                   "transcription": "[1l]",
                   "is_main": false
                 },
@@ -4246,7 +4138,7 @@
                   "order": 479,
                   "page": 116,
                   "ru": "слабый",
-                  "en": "weak bf4:2",
+                  "en": "weak",
                   "transcription": "[wi:k]",
                   "is_main": true
                 },
@@ -4322,10 +4214,6 @@
                 "ru": "Финансовое положение",
                 "en": "Financial Status"
               },
-              "subsection_ocr": {
-                "ru": "Финансовое положение",
-                "en": "Financial Status"
-              },
               "entries": [
                 {
                   "order": 488,
@@ -4379,10 +4267,19 @@
                   "order": 494,
                   "page": 117,
                   "ru": "жаждущий",
-                  "en": "thirsty V,L",
+                  "en": "thirsty",
                   "transcription": "[{з:str]",
                   "is_main": false
-                },
+                }
+              ]
+            },
+            {
+              "number": 3,
+              "subsection": {
+                "ru": "Биологическое и семейное положение",
+                "en": "Biological and Family Status"
+              },
+              "entries": [
                 {
                   "order": 495,
                   "page": 117,
@@ -4444,10 +4341,6 @@
             {
               "number": 4,
               "subsection": {
-                "ru": "Применение",
-                "en": "Application"
-              },
-              "subsection_ocr": {
                 "ru": "Применение",
                 "en": "Application"
               },
@@ -4544,7 +4437,7 @@
                   "order": 513,
                   "page": 117,
                   "ru": "приготовленный (0 пище)",
-                  "en": "cooked Nn",
+                  "en": "cooked",
                   "transcription": "[kukt]",
                   "is_main": true
                 },
@@ -4552,7 +4445,7 @@
                   "order": 514,
                   "page": 117,
                   "ru": "жареный",
-                  "en": "fried k",
+                  "en": "fried",
                   "transcription": "[frard]",
                   "is_main": false
                 },
@@ -4560,7 +4453,7 @@
                   "order": 515,
                   "page": 117,
                   "ru": "печеный",
-                  "en": "baked y",
+                  "en": "baked",
                   "transcription": "[berkt]",
                   "is_main": false
                 },
@@ -4598,6 +4491,14 @@
                 },
                 {
                   "order": 520,
+                  "page": 117,
+                  "ru": "вакантный",
+                  "en": "vacant",
+                  "transcription": "",
+                  "is_main": false
+                },
+                {
+                  "order": 521,
                   "page": 118,
                   "ru": "занятый (о мссте)",
                   "en": "occupied",
@@ -4605,7 +4506,7 @@
                   "is_main": false
                 },
                 {
-                  "order": 521,
+                  "order": 522,
                   "page": 118,
                   "ru": "занятый (чем-либо)",
                   "en": "busy",
@@ -4613,7 +4514,7 @@
                   "is_main": false
                 },
                 {
-                  "order": 522,
+                  "order": 523,
                   "page": 118,
                   "ru": "занятый",
                   "en": "engaged",
@@ -4621,7 +4522,7 @@
                   "is_main": false
                 },
                 {
-                  "order": 523,
+                  "order": 524,
                   "page": 118,
                   "ru": "чистый",
                   "en": "clean",
@@ -4629,7 +4530,7 @@
                   "is_main": true
                 },
                 {
-                  "order": 524,
+                  "order": 525,
                   "page": 118,
                   "ru": "грязный",
                   "en": "dirty",
@@ -4660,13 +4561,9 @@
                 "ru": "Небо",
                 "en": "Sky"
               },
-              "subsection_ocr": {
-                "ru": "Небо",
-                "en": "Sky"
-              },
               "entries": [
                 {
-                  "order": 525,
+                  "order": 526,
                   "page": 118,
                   "ru": "небо",
                   "en": "sky",
@@ -4674,7 +4571,7 @@
                   "is_main": true
                 },
                 {
-                  "order": 526,
+                  "order": 527,
                   "page": 118,
                   "ru": "воздух",
                   "en": "air",
@@ -4682,7 +4579,7 @@
                   "is_main": true
                 },
                 {
-                  "order": 527,
+                  "order": 528,
                   "page": 118,
                   "ru": "облако",
                   "en": "cloud",
@@ -4690,7 +4587,7 @@
                   "is_main": false
                 },
                 {
-                  "order": 528,
+                  "order": 529,
                   "page": 118,
                   "ru": "солнце",
                   "en": "sun",
@@ -4698,7 +4595,7 @@
                   "is_main": true
                 },
                 {
-                  "order": 529,
+                  "order": 530,
                   "page": 118,
                   "ru": "звезда",
                   "en": "star",
@@ -4706,7 +4603,7 @@
                   "is_main": false
                 },
                 {
-                  "order": 530,
+                  "order": 531,
                   "page": 118,
                   "ru": "луна",
                   "en": "moon",
@@ -4714,7 +4611,7 @@
                   "is_main": false
                 },
                 {
-                  "order": 531,
+                  "order": 532,
                   "page": 118,
                   "ru": "планета",
                   "en": "planet",
@@ -4729,13 +4626,9 @@
                 "ru": "Земля",
                 "en": "Earth"
               },
-              "subsection_ocr": {
-                "ru": "Земля",
-                "en": "Earth"
-              },
               "entries": [
                 {
-                  "order": 532,
+                  "order": 533,
                   "page": 118,
                   "ru": "земля",
                   "en": "earth",
@@ -4743,7 +4636,7 @@
                   "is_main": true
                 },
                 {
-                  "order": 533,
+                  "order": 534,
                   "page": 118,
                   "ru": "почва",
                   "en": "soil",
@@ -4751,7 +4644,7 @@
                   "is_main": false
                 },
                 {
-                  "order": 534,
+                  "order": 535,
                   "page": 118,
                   "ru": "суша",
                   "en": "land",
@@ -4759,7 +4652,7 @@
                   "is_main": false
                 },
                 {
-                  "order": 535,
+                  "order": 536,
                   "page": 118,
                   "ru": "континент",
                   "en": "continent",
@@ -4767,7 +4660,7 @@
                   "is_main": true
                 },
                 {
-                  "order": 536,
+                  "order": 537,
                   "page": 118,
                   "ru": "полуостров",
                   "en": "peninsula",
@@ -4775,7 +4668,7 @@
                   "is_main": false
                 },
                 {
-                  "order": 537,
+                  "order": 538,
                   "page": 118,
                   "ru": "остров",
                   "en": "island",
@@ -4783,7 +4676,7 @@
                   "is_main": false
                 },
                 {
-                  "order": 538,
+                  "order": 539,
                   "page": 118,
                   "ru": "берег",
                   "en": "shore",
@@ -4791,7 +4684,7 @@
                   "is_main": true
                 },
                 {
-                  "order": 539,
+                  "order": 540,
                   "page": 118,
                   "ru": "берег реки",
                   "en": "bank",
