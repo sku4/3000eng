@@ -78,7 +78,7 @@
     .stage {
       min-height: calc(100vh - 56px);
     }
-    .arrow { display: inline-block; transform: translateY(-2px); }
+    .arrow-sm { font-size: .8em; vertical-align: -.05em; }
     @media (max-width: 575.98px) {
       .topbar .burger-btn { right: .5rem !important; }
     }
@@ -97,16 +97,16 @@
 
     <ul class="nav nav-pills" id="dirTabs" role="tablist">
       <li class="nav-item" role="presentation">
-        <button class="nav-link" id="tab-en-ru" type="button" data-dir="en-ru">EN <span class="arrow">→</span> RU</button>
+        <button class="nav-link" id="tab-en-ru" type="button" data-dir="en-ru">EN <i class="bi bi-arrow-right arrow-sm"></i> RU</button>
       </li>
       <li class="nav-item" role="presentation">
-        <button class="nav-link" id="tab-ru-en" type="button" data-dir="ru-en">RU <span class="arrow">→</span> EN</button>
+        <button class="nav-link" id="tab-ru-en" type="button" data-dir="ru-en">RU <i class="bi bi-arrow-right arrow-sm"></i> EN</button>
       </li>
     </ul>
   </div>
 </header>
 
-<main class="stage d-flex flex-column align-items-center justify-content-center px-3 py-4 gap-4">
+<main class="stage d-flex flex-column align-items-center justify-content-start px-3 pt-5 pb-4 gap-4">
 
   <!-- Карточка со словом -->
   <section class="word-card card shadow-sm border-0 rounded-4 text-center">
@@ -155,9 +155,9 @@
       <label class="form-label fw-semibold mb-2">Translation direction</label>
       <div class="btn-group w-100" role="group">
         <input type="radio" class="btn-check" name="dirRadio" id="dirEnRu" value="en-ru">
-        <label class="btn btn-outline-primary" for="dirEnRu">EN <span class="arrow">→</span> RU</label>
+        <label class="btn btn-outline-primary" for="dirEnRu">EN <i class="bi bi-arrow-right arrow-sm"></i> RU</label>
         <input type="radio" class="btn-check" name="dirRadio" id="dirRuEn" value="ru-en">
-        <label class="btn btn-outline-primary" for="dirRuEn">RU <span class="arrow">→</span> EN</label>
+        <label class="btn btn-outline-primary" for="dirRuEn">RU <i class="bi bi-arrow-right arrow-sm"></i> EN</label>
       </div>
     </div>
 
@@ -386,12 +386,20 @@
   // ---------- Действия ----------
   function reveal() {
     if (!current) return;
+    if (revealed) {
+      // свернуть: скрыть перевод, транскрипцию ответа (RU→EN) и блок раздела
+      revealed = false;
+      wordHidden.classList.add('d-none');
+      if (settings.dir === 'ru-en') wordTran.classList.add('d-none');
+      blockPanel.classList.add('d-none');
+      revealBtn.innerHTML = '<i class="bi bi-eye"></i>&nbsp;Show translation';
+      return;
+    }
     revealed = true;
     wordHidden.classList.remove('d-none');
     // при RU→EN показываем транскрипцию английского ответа после раскрытия
     if (settings.dir === 'ru-en' && current.entry.tran) wordTran.classList.remove('d-none');
-    revealBtn.disabled = true;
-    revealBtn.innerHTML = '<i class="bi bi-eye-slash"></i>&nbsp;Shown';
+    revealBtn.innerHTML = '<i class="bi bi-eye-slash"></i>&nbsp;Hide';
     renderBlock();
     blockPanel.classList.remove('d-none');
   }
