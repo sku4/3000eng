@@ -79,6 +79,12 @@
       min-height: calc(100vh - 56px);
     }
     .arrow-sm { font-size: .8em; vertical-align: -.05em; }
+    #nextBtn:hover, #nextBtn:active, #nextBtn:focus, #nextBtn:focus-visible {
+      background-color: transparent;
+      color: var(--bs-primary, #0d6efd);
+      border-color: var(--bs-primary, #0d6efd);
+      box-shadow: none;
+    }
     @media (max-width: 575.98px) {
       .topbar .burger-btn { right: .5rem !important; }
     }
@@ -116,11 +122,7 @@
 
       <div class="word-main" id="wordMain">—</div>
 
-      <div class="word-tran d-none" id="wordTran"></div>
-
-      <div class="word-hidden d-none" id="wordHidden"></div>
-
-      <div class="d-flex flex-wrap gap-2 justify-content-center mt-2">
+      <div class="d-flex flex-wrap gap-2 justify-content-center mt-2" id="btnRow">
         <button class="btn btn-primary" id="revealBtn">
           <i class="bi bi-eye"></i>&nbsp;Show translation
         </button>
@@ -128,6 +130,9 @@
           <i class="bi bi-shuffle"></i>&nbsp;Next word
         </button>
       </div>
+
+      <div class="word-tran d-none" id="wordTran"></div>
+      <div class="word-hidden d-none" id="wordHidden"></div>
     </div>
   </section>
 
@@ -321,6 +326,17 @@
     }
   }
 
+  // Размещение блока транскрипции: EN→RU — над кнопками (после слова-вопроса),
+  // RU→EN — в самом низу (после ответа), чтобы кнопки не прыгали при раскрытии.
+  function placeTran(dir) {
+    const btnRow = $('btnRow');
+    if (dir === 'en-ru') {
+      btnRow.parentNode.insertBefore(wordTran, btnRow);
+    } else {
+      wordHidden.parentNode.insertBefore(wordTran, wordHidden.nextSibling);
+    }
+  }
+
   function showCurrent() {
     if (!current) {
       wordMain.textContent = '—';
@@ -341,6 +357,9 @@
     wordTran.textContent = e.tran || '';
     // транскрипция — только когда английское слово показано как вопрос (EN→RU)
     wordTran.classList.toggle('d-none', !(dir === 'en-ru' && e.tran));
+    // EN→RU: произношение вопроса над кнопками (статично);
+    // RU→EN: произношение ответа под кнопками (появляется на раскрытии, не двигая кнопки)
+    placeTran(dir);
     revealed = false;
     revealBtn.disabled = false;
     revealBtn.innerHTML = '<i class="bi bi-eye"></i>&nbsp;Show translation';
@@ -399,7 +418,7 @@
     wordHidden.classList.remove('d-none');
     // при RU→EN показываем транскрипцию английского ответа после раскрытия
     if (settings.dir === 'ru-en' && current.entry.tran) wordTran.classList.remove('d-none');
-    revealBtn.innerHTML = '<i class="bi bi-eye-slash"></i>&nbsp;Hide';
+    revealBtn.innerHTML = '<i class="bi bi-eye-slash"></i>&nbsp;Hide translation';
     renderBlock();
     blockPanel.classList.remove('d-none');
   }
