@@ -61,6 +61,57 @@ _FALLBACK_ARPA = {
     'unselfish': 'AH2 N S EH1 L F IH0 SH',
     'perm': 'P ER1 M',
     'particoloured': 'P AA2 R T IY0 K AH1 L ER0 D',
+    # --- Существительные: композиты и британские написания вне CMUdict
+    # (выверенный RP ARPABET; неротический пост-процессинг отрисует их сам) ---
+    'aeroplane': 'EH1 R OW0 P L EY1 N',
+    'airhostess': 'EH1 R HH OW1 S T AH0 S',
+    'ardour': 'AA1 R D ER0',
+    'bedclothes': 'B EH1 D K L OW2 DH Z',
+    'besom': 'B IY1 Z AH0 M',
+    'cashdesk': 'K AE1 SH D EH0 S K',
+    'coalmine': 'K OW1 L M AY0 N',
+    'cravat': 'K R AH0 V AE1 T',
+    'crucian': 'K R UW1 SH AH0 N',
+    'currant': 'K AH1 R AH0 N T',
+    'diffidence': 'D IH1 F IH0 D AH0 N S',
+    'earache': 'IY1 R EY1 K',
+    'earlobe': 'IY1 R L OW0 B',
+    'forenoon': 'F AO1 R N UW1 N',
+    'giddiness': 'G IH1 D IY0 N AH0 S',
+    'gosling': 'G AA1 Z L IH0 NG',
+    'greengrocery': 'G R IY1 N G R OW1 S ER0 IY0',
+    'groats': 'G R OW1 T S',
+    'hoarfrost': 'HH AO1 R F R AO2 S T',
+    'impertinence': 'IH2 M P ER1 T AH0 N AH0 N S',
+    'impudence': 'IH1 M P Y AH0 D AH0 N S',
+    'longjump': 'L AO1 NG JH AH1 M P',
+    'motorway': 'M OW1 T ER0 W EY1',
+    'offence': 'AH0 F EH1 N S',
+    'overestimation': 'OW1 V ER0 EH2 S T AH0 M EY1 SH AH0 N',
+    'pasty': 'P AE1 S T IY0',
+    'perfective': 'P ER0 F EH1 K T IH0 V',
+    'pillowcase': 'P IH1 L OW0 K EY1 S',
+    'plimsolls': 'P L IH1 M S AH0 L Z',
+    'poste': 'P OW1 S T',
+    'precipitations': 'P R IH0 S IH2 P IH0 T EY1 SH AH0 N Z',
+    'preposition': 'P R IY2 P AH0 Z IH1 SH AH0 N',
+    'pyjamas': 'P AH0 JH AA1 M AH0 Z',
+    'quadrangle': 'K W AA1 D R AE2 NG G AH0 L',
+    'rancour': 'R AE1 NG K ER0',
+    'restante': 'R IH0 S T AO1 N T',
+    'rhombus': 'R AA1 M B AH0 S',
+    'roadmarking': 'R OW1 D M AA1 R K IH0 NG',
+    'snowdrop': 'S N OW1 D R AO2 P',
+    'tactlessness': 'T AE1 K T L AH0 S N AH0 S',
+    'tinned': 'T IH1 N D',
+    'toothache': 'T UW1 TH EY1 K',
+    'trolleybus': 'T R AA1 L IY0 B AH1 S',
+    'underclothes': 'AH1 N D ER0 K L OW1 DH Z',
+    'underestimation': 'AH1 N D ER0 EH2 S T AH0 M EY1 SH AH0 N',
+    'urbanity': 'ER0 B AE1 N IH0 T IY0',
+    'vcr': 'V IY1 S IY0 AA1 R',
+    'waggon': 'W AE1 G AH0 N',
+    'windscreen': 'W AY1 N D S K R IY1 N',
 }
 
 def _arpabet(word):
@@ -150,6 +201,13 @@ def _transcribe_word(word):
         return ''
     toks = _arpabet(w)
     if not toks:
+        # possessive 's: butcher's, hairdresser's, one's -> base + /z/ (or /ɪz/
+        # after sibilants). CMUdict covers butcher's/barber's directly; this
+        # catches the rest (hairdresser's) whose base is in the dict.
+        if w.endswith("'s") and len(w) > 3:
+            base = _transcribe_word(w[:-2])
+            if base:
+                return base + ('ɪz' if base.endswith(('s', 'ʃ', 'tʃ', 'z', 'ʒ', 'θ')) else 'z')
         # try splitting a hyphenated compound (absent-minded -> absent + minded)
         if '-' in w:
             parts = [_transcribe_word(p) for p in w.split('-')]
