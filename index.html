@@ -49,7 +49,7 @@
       break-inside: avoid;
     }
     .block-list .w .ru {
-      flex: 0 0 42%;
+      flex: 0 0 52%;
       min-width: 0;
       overflow-wrap: anywhere;
     }
@@ -61,8 +61,11 @@
     .block-list .cur {
       background: #fff3cd;
       border-radius: .25rem;
-      padding: .05rem .25rem;
-      margin-left: -.25rem;
+      margin-left: -.45rem;
+    }
+    .block-list .cur .ru {
+      padding-left: .45rem;
+      flex: 0 0 53%;
     }
     .breadcrumb-mini { font-size: .8rem; margin: 0; text-align: start; }
     .breadcrumb-mini .crumb-line { display: block; line-height: 1.5; }
@@ -438,6 +441,19 @@
   }
 
   // ---------- Применение настроек ----------
+  // Дизейблим пункты, выходящие за выбранный диапазон:
+  // в "from" — значения > to, в "to" — значения < from.
+  function updateRangeOptions() {
+    const from = parseInt(secFromSel.value, 10) || 0;
+    const to   = parseInt(secToSel.value, 10)   || 0;
+    Array.from(secFromSel.options).forEach(opt => {
+      opt.disabled = parseInt(opt.value, 10) > to;
+    });
+    Array.from(secToSel.options).forEach(opt => {
+      opt.disabled = parseInt(opt.value, 10) < from;
+    });
+  }
+
   function applySettingsToUI() {
     applyDirectionUI();
     const max = SECTIONS.length - 1;
@@ -445,6 +461,7 @@
     settings.secTo   = clampInt(settings.secTo,   0, max);
     secFromSel.value = String(settings.secFrom);
     secToSel.value   = String(settings.secTo);
+    updateRangeOptions();
   }
   function clampInt(v, lo, hi) {
     v = parseInt(v, 10);
@@ -471,6 +488,7 @@
     settings.secFrom = from;
     settings.secTo = to;
     saveSettings();
+    updateRangeOptions();
     rebuildPool();
     next();
   }
