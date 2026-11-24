@@ -73,8 +73,9 @@
     .breadcrumb-mini .bi-folder2-open { margin-right: .35rem; }
     .breadcrumb-mini .crumb-sub { font-weight: 400; font-size: .92rem; }
     .breadcrumb-mini .crumb-sep { margin: 0 .75rem; }
-    .breadcrumb-mini .dot-sep { font-weight: 900; font-size: 1.15em; margin: 0 .25em; }
+    .breadcrumb-mini .dot-sep { margin: 0 .4em; }
     #promptLabel .dot-sep { margin: 0 .4em; }
+    #promptLabel .crumb-sep { margin: 0 .5rem; }
     .block-list { text-align: start; }
     .topbar {
       position: sticky; top: 0; z-index: 1020;
@@ -98,6 +99,15 @@
 
     /* --- Поиск --- */
     .topbar .search-btn { left: 1rem; }
+    .topbar .search-btn:hover,
+    .topbar .search-btn:focus,
+    .topbar .search-btn:active,
+    .topbar .search-btn:focus-visible {
+      background-color: transparent;
+      color: var(--bs-secondary-color, #6c757d);
+      border-color: var(--bs-secondary-border-subtle, #dee2e6);
+      box-shadow: none;
+    }
     .topbar .burger-btn { right: 1rem; }
     #dirTabs { transition: opacity .2s ease; }
     .topbar.search-open #dirTabs { opacity: 0; pointer-events: none; }
@@ -609,11 +619,13 @@
     const shown = (dir === 'en-ru') ? e.en : e.ru;
     const hidden = (dir === 'en-ru') ? e.ru : e.en;
 
-    // Подпись над словом — название подраздела: «Горе / радость·Grief / Joy»
+    // Подпись над словом — раздел › подраздел
     const sub = current.sub;
     if (sub && sub.subsection && sub.subsection.ru) {
+      const secName = `${sub.secRu}<span class="dot-sep">·</span>${sub.secEn}`;
+      const subName = `${sub.subsection.ru}<span class="dot-sep">·</span>${sub.subsection.en}`;
       promptLabel.innerHTML =
-        `${sub.subsection.ru}<span class="dot-sep">·</span>${sub.subsection.en}`;
+        `${secName}<span class="text-secondary crumb-sep">›</span>${subName}`;
     } else {
       promptLabel.textContent = '';
     }
