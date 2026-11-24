@@ -74,6 +74,7 @@
     .breadcrumb-mini .crumb-sub { font-weight: 400; font-size: .92rem; }
     .breadcrumb-mini .crumb-sep { margin: 0 .75rem; }
     .breadcrumb-mini .dot-sep { font-weight: 900; font-size: 1.15em; margin: 0 .25em; }
+    #promptLabel .dot-sep { margin: 0 .4em; }
     .block-list { text-align: start; }
     .topbar {
       position: sticky; top: 0; z-index: 1020;
@@ -123,7 +124,7 @@
   <section class="word-card card shadow-sm border-0 rounded-4 text-center">
     <div class="card-body py-5 px-4 d-flex flex-column align-items-center justify-content-center gap-4">
 
-      <div class="text-uppercase text-secondary small fw-semibold" id="promptLabel">English</div>
+      <div class="text-secondary small" id="promptLabel">English</div>
 
       <div class="word-main" id="wordMain">—</div>
 
@@ -322,12 +323,10 @@
   function applyDirectionUI() {
     const dir = settings.dir;
     if (dir === 'en-ru') {
-      promptLabel.textContent = 'English';
       $('tab-en-ru').classList.add('active');
       $('tab-ru-en').classList.remove('active');
       $('dirEnRu').checked = true;
     } else {
-      promptLabel.textContent = 'Russian';
       $('tab-ru-en').classList.add('active');
       $('tab-en-ru').classList.remove('active');
       $('dirRuEn').checked = true;
@@ -351,6 +350,7 @@
       wordHidden.classList.add('d-none');
       wordTran.classList.add('d-none');
       blockPanel.classList.add('d-none');
+      promptLabel.textContent = '';
       poolInfo.textContent = 'No words in the selected range.';
       return;
     }
@@ -358,6 +358,15 @@
     const e = current.entry;
     const shown = (dir === 'en-ru') ? e.en : e.ru;
     const hidden = (dir === 'en-ru') ? e.ru : e.en;
+
+    // Подпись над словом — название подраздела: «Горе / радость·Grief / Joy»
+    const sub = current.sub;
+    if (sub && sub.subsection && sub.subsection.ru) {
+      promptLabel.innerHTML =
+        `${sub.subsection.ru}<span class="dot-sep">·</span>${sub.subsection.en}`;
+    } else {
+      promptLabel.textContent = '';
+    }
 
     wordMain.textContent = shown || '—';
     wordHidden.textContent = hidden || '—';
