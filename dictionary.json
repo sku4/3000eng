@@ -680,7 +680,7 @@
                   "page": 80,
                   "ru": "продвигаться",
                   "en": "advance",
-                  "is_main": false,
+                  "is_main": true,
                   "tran": "[əˈdvæns]"
                 },
                 {
@@ -760,7 +760,7 @@
                   "page": 80,
                   "ru": "приходить",
                   "en": "come",
-                  "is_main": false,
+                  "is_main": true,
                   "tran": "[ˈkʌm]"
                 },
                 {
@@ -800,7 +800,7 @@
                   "page": 81,
                   "ru": "входить",
                   "en": "go in",
-                  "is_main": false,
+                  "is_main": true,
                   "tran": "[ˈɡəʊ ɪn]"
                 }
               ]
@@ -865,7 +865,7 @@
                   "page": 81,
                   "ru": "нырять, окунаться",
                   "en": "plunge",
-                  "is_main": false,
+                  "is_main": true,
                   "tran": "[ˈplʌndʒ]"
                 },
                 {
@@ -873,7 +873,7 @@
                   "page": 81,
                   "ru": "погружаться",
                   "en": "sink",
-                  "is_main": false,
+                  "is_main": true,
                   "tran": "[ˈsɪŋk]"
                 },
                 {
@@ -994,7 +994,7 @@
                   "page": 82,
                   "ru": "принадлежать",
                   "en": "belong",
-                  "is_main": false,
+                  "is_main": true,
                   "tran": "[bɪˈlɒŋ]"
                 },
                 {
@@ -1002,7 +1002,7 @@
                   "page": 82,
                   "ru": "содержать",
                   "en": "contain",
-                  "is_main": false,
+                  "is_main": true,
                   "tran": "[kəˈnteɪn]"
                 },
                 {
@@ -1027,7 +1027,7 @@
                   "page": 82,
                   "ru": "нуждаться",
                   "en": "require",
-                  "is_main": false,
+                  "is_main": true,
                   "tran": "[ˌriːˈkwaɪə]"
                 },
                 {
@@ -1067,7 +1067,7 @@
                   "page": 82,
                   "ru": "опорожнять",
                   "en": "empty",
-                  "is_main": false,
+                  "is_main": true,
                   "tran": "[ˈempti]"
                 }
               ]
@@ -1084,7 +1084,7 @@
                   "page": 82,
                   "ru": "собирать(ся)",
                   "en": "gather",
-                  "is_main": false,
+                  "is_main": true,
                   "tran": "[ˈɡæðə]"
                 },
                 {
@@ -1116,7 +1116,7 @@
                   "page": 82,
                   "ru": "быть полным",
                   "en": "be full",
-                  "is_main": false,
+                  "is_main": true,
                   "tran": "[ˈbiː ˈfʊl]"
                 },
                 {
@@ -1213,7 +1213,7 @@
                   "page": 83,
                   "ru": "портить",
                   "en": "spoil",
-                  "is_main": false,
+                  "is_main": true,
                   "tran": "[ˈspɔɪl]"
                 },
                 {
@@ -1238,7 +1238,7 @@
                   "page": 83,
                   "ru": "оставаться",
                   "en": "remain",
-                  "is_main": false,
+                  "is_main": true,
                   "tran": "[rɪˈmeɪn]"
                 },
                 {
@@ -1254,7 +1254,7 @@
                   "page": 83,
                   "ru": "удерживать",
                   "en": "keep",
-                  "is_main": false,
+                  "is_main": true,
                   "tran": "[ˈkiːp]"
                 },
                 {
@@ -1286,7 +1286,7 @@
                   "page": 83,
                   "ru": "хранить",
                   "en": "store",
-                  "is_main": false,
+                  "is_main": true,
                   "tran": "[ˈstɔː]"
                 }
               ]
@@ -1335,7 +1335,7 @@
                   "page": 83,
                   "ru": "находиться",
                   "en": "be situated",
-                  "is_main": false,
+                  "is_main": true,
                   "tran": "[ˈbiː ˈsɪˌtʃueɪtɪd]"
                 },
                 {
@@ -1391,7 +1391,7 @@
                   "page": 83,
                   "ru": "ложиться",
                   "en": "lie down",
-                  "is_main": false,
+                  "is_main": true,
                   "tran": "[ˈlaɪ ˈdaʊn]"
                 },
                 {
@@ -1456,7 +1456,7 @@
                   "page": 84,
                   "ru": "рождать",
                   "en": "bear",
-                  "is_main": false,
+                  "is_main": true,
                   "tran": "[ˈbeə]"
                 },
                 {
@@ -1545,7 +1545,7 @@
                   "page": 84,
                   "ru": "поступать на работу",
                   "en": "take a job",
-                  "is_main": false,
+                  "is_main": true,
                   "tran": "[ˈteɪk ə ˈdʒɒb]"
                 },
                 {
@@ -1714,7 +1714,7 @@
                   "page": 85,
                   "ru": "печь",
                   "en": "bake",
-                  "is_main": false,
+                  "is_main": true,
                   "tran": "[ˈbeɪk]"
                 },
                 {
@@ -1787,7 +1787,7 @@
                   "page": 85,
                   "ru": "стирать",
                   "en": "wash",
-                  "is_main": false,
+                  "is_main": true,
                   "tran": "[ˈwɒʃ]"
                 },
                 {
@@ -2013,7 +2013,7 @@
                   "page": 86,
                   "ru": "болеть",
                   "en": "be ill",
-                  "is_main": false,
+                  "is_main": true,
                   "tran": "[ˈbiː ˈɪl]"
                 },
                 {
@@ -2069,7 +2069,7 @@
                   "page": 86,
                   "ru": "лечить",
                   "en": "treat",
-                  "is_main": false,
+                  "is_main": true,
                   "tran": "[ˈtriːt]"
                 },
                 {
@@ -2166,7 +2166,7 @@
                   "page": 87,
                   "ru": "предпочитать",
                   "en": "prefer",
-                  "is_main": false,
+                  "is_main": true,
                   "tran": "[prəˈfɜː]"
                 },
                 {
@@ -2174,7 +2174,7 @@
                   "page": 87,
                   "ru": "уважать",
                   "en": "respect",
-                  "is_main": false,
+                  "is_main": true,
                   "tran": "[rɪˈspekt]"
                 },
                 {
@@ -2198,7 +2198,7 @@
                   "page": 87,
                   "ru": "восхищаться",
                   "en": "admire",
-                  "is_main": false,
+                  "is_main": true,
                   "tran": "[æˈdmaɪə]"
                 },
                 {
@@ -2287,7 +2287,7 @@
                   "page": 87,
                   "ru": "завидовать",
                   "en": "envy",
-                  "is_main": false,
+                  "is_main": true,
                   "tran": "[ˈenvi]"
                 }
               ]
@@ -2304,7 +2304,7 @@
                   "page": 87,
                   "ru": "страдать",
                   "en": "suffer",
-                  "is_main": false,
+                  "is_main": true,
                   "tran": "[ˈsʌfə]"
                 },
                 {
@@ -2320,7 +2320,7 @@
                   "page": 87,
                   "ru": "вынести",
                   "en": "bear",
-                  "is_main": false,
+                  "is_main": true,
                   "tran": "[ˈbeə]"
                 },
                 {
@@ -2352,7 +2352,7 @@
                   "page": 87,
                   "ru": "жаловаться",
                   "en": "complain",
-                  "is_main": false,
+                  "is_main": true,
                   "tran": "[kəˈmpleɪn]"
                 },
                 {
@@ -2636,7 +2636,7 @@
                   "page": 89,
                   "ru": "возбуждать",
                   "en": "excite",
-                  "is_main": false,
+                  "is_main": true,
                   "tran": "[ɪˈksaɪt]"
                 },
                 {
@@ -2660,7 +2660,7 @@
                   "page": 89,
                   "ru": "пугать",
                   "en": "frighten",
-                  "is_main": false,
+                  "is_main": true,
                   "tran": "[ˈfraɪtən]"
                 },
                 {
@@ -2684,7 +2684,7 @@
                   "page": 89,
                   "ru": "удивлять",
                   "en": "surprise",
-                  "is_main": false,
+                  "is_main": true,
                   "tran": "[səˈpraɪz]"
                 },
                 {
@@ -2708,7 +2708,7 @@
                   "page": 89,
                   "ru": "обижать",
                   "en": "hurt",
-                  "is_main": false,
+                  "is_main": true,
                   "tran": "[ˈhɜːt]"
                 },
                 {
@@ -2749,7 +2749,7 @@
                   "page": 89,
                   "ru": "чувствовать",
                   "en": "feel",
-                  "is_main": false,
+                  "is_main": true,
                   "tran": "[ˈfiːl]"
                 },
                 {
@@ -2870,7 +2870,7 @@
                   "page": 90,
                   "ru": "обучать",
                   "en": "teach",
-                  "is_main": false,
+                  "is_main": true,
                   "tran": "[ˈtiːtʃ]"
                 },
                 {
@@ -2894,7 +2894,7 @@
                   "page": 90,
                   "ru": "знать",
                   "en": "know",
-                  "is_main": false,
+                  "is_main": true,
                   "tran": "[ˈnəʊ]"
                 },
                 {
@@ -2934,7 +2934,7 @@
                   "page": 90,
                   "ru": "ошибиться",
                   "en": "make a mistake",
-                  "is_main": false,
+                  "is_main": true,
                   "tran": "[ˈmeɪk ə mɪˈsteɪk]"
                 },
                 {
@@ -3232,7 +3232,7 @@
                   "page": 91,
                   "ru": "изобретать",
                   "en": "invent",
-                  "is_main": false,
+                  "is_main": true,
                   "tran": "[ˌɪˈnvent]"
                 },
                 {
@@ -3426,7 +3426,7 @@
                   "page": 92,
                   "ru": "собирать",
                   "en": "assemble",
-                  "is_main": false,
+                  "is_main": true,
                   "tran": "[əˈsembəl]"
                 },
                 {
@@ -3814,7 +3814,7 @@
                   "page": 94,
                   "ru": "резать",
                   "en": "cut",
-                  "is_main": false,
+                  "is_main": true,
                   "tran": "[ˈkʌt]"
                 },
                 {
@@ -3943,7 +3943,7 @@
                   "page": 94,
                   "ru": "разбавлять",
                   "en": "dilute",
-                  "is_main": false,
+                  "is_main": true,
                   "tran": "[daɪˈluːt]"
                 },
                 {
@@ -4048,7 +4048,7 @@
                   "page": 95,
                   "ru": "молчать",
                   "en": "be silent",
-                  "is_main": false,
+                  "is_main": true,
                   "tran": "[ˈbiː ˈsaɪlənt]"
                 }
               ]
@@ -4549,7 +4549,7 @@
                   "page": 97,
                   "ru": "извиняться",
                   "en": "apologize",
-                  "is_main": false,
+                  "is_main": true,
                   "tran": "[əˈpɒləˌdʒaɪz]"
                 },
                 {
@@ -4638,7 +4638,7 @@
                   "page": 97,
                   "ru": "мешать беспокоить",
                   "en": "disturb",
-                  "is_main": false,
+                  "is_main": true,
                   "tran": "[dɪˈstɜːb]"
                 },
                 {
@@ -4662,7 +4662,7 @@
                   "page": 97,
                   "ru": "оскорблять",
                   "en": "offend",
-                  "is_main": false,
+                  "is_main": true,
                   "tran": "[əˈfend]"
                 },
                 {
@@ -4847,7 +4847,7 @@
                   "page": 98,
                   "ru": "вести войну",
                   "en": "wage war",
-                  "is_main": false,
+                  "is_main": true,
                   "tran": "[ˈweɪdʒ ˈwɔː]"
                 },
                 {
@@ -4855,7 +4855,7 @@
                   "page": 98,
                   "ru": "развязать войну",
                   "en": "unleash war",
-                  "is_main": false,
+                  "is_main": true,
                   "tran": "[əˈnliːʃ ˈwɔː]"
                 },
                 {
@@ -4871,7 +4871,7 @@
                   "page": 98,
                   "ru": "нападать",
                   "en": "attack",
-                  "is_main": false,
+                  "is_main": true,
                   "tran": "[əˈtæk]"
                 },
                 {
@@ -4977,7 +4977,7 @@
                   "page": 99,
                   "ru": "победить выиграть",
                   "en": "win",
-                  "is_main": false,
+                  "is_main": true,
                   "tran": "[ˈwɪn]"
                 },
                 {
@@ -5041,7 +5041,7 @@
                   "page": 99,
                   "ru": "захватить",
                   "en": "capture",
-                  "is_main": false,
+                  "is_main": true,
                   "tran": "[ˈkæptʃə]"
                 },
                 {
@@ -5049,7 +5049,7 @@
                   "page": 99,
                   "ru": "проигрывать",
                   "en": "lose",
-                  "is_main": false,
+                  "is_main": true,
                   "tran": "[ˈluːz]"
                 },
                 {
@@ -5081,7 +5081,7 @@
                   "page": 99,
                   "ru": "сдаться",
                   "en": "surrender",
-                  "is_main": false,
+                  "is_main": true,
                   "tran": "[səˈrendə]"
                 },
                 {
@@ -5251,7 +5251,7 @@
                   "page": 100,
                   "ru": "цвет",
                   "en": "colour",
-                  "is_main": false,
+                  "is_main": true,
                   "tran": "[ˈkʌlə]"
                 },
                 {
@@ -5403,7 +5403,7 @@
                   "page": 100,
                   "ru": "бледный",
                   "en": "pale",
-                  "is_main": false,
+                  "is_main": true,
                   "tran": "[ˈpeɪl]"
                 },
                 {
@@ -5467,7 +5467,7 @@
                   "page": 101,
                   "ru": "широкий",
                   "en": "wide",
-                  "is_main": false,
+                  "is_main": true,
                   "tran": "[ˈwaɪd]"
                 },
                 {
@@ -5804,7 +5804,7 @@
                   "page": 102,
                   "ru": "поверхность",
                   "en": "surface",
-                  "is_main": false,
+                  "is_main": true,
                   "tran": "[ˈsɜːfəs]"
                 },
                 {
@@ -5941,7 +5941,7 @@
                   "page": 102,
                   "ru": "сладкий",
                   "en": "sweet",
-                  "is_main": false,
+                  "is_main": true,
                   "tran": "[ˈswiːt]"
                 },
                 {
@@ -6022,7 +6022,7 @@
                   "page": 103,
                   "ru": "тихий",
                   "en": "calm",
-                  "is_main": false,
+                  "is_main": true,
                   "tran": "[ˈkɒm]"
                 },
                 {
@@ -6466,7 +6466,7 @@
                   "page": 105,
                   "ru": "постоянный",
                   "en": "constant",
-                  "is_main": false,
+                  "is_main": true,
                   "tran": "[ˈkɒnstənt]"
                 },
                 {
@@ -6700,7 +6700,7 @@
                   "page": 106,
                   "ru": "глупый",
                   "en": "silly",
-                  "is_main": false,
+                  "is_main": true,
                   "tran": "[ˈsɪli]"
                 },
                 {
@@ -7225,7 +7225,7 @@
                   "page": 108,
                   "ru": "приятный",
                   "en": "pleasant",
-                  "is_main": false,
+                  "is_main": true,
                   "tran": "[ˈplezənt]"
                 },
                 {
@@ -7345,7 +7345,7 @@
                   "page": 108,
                   "ru": "трогательный",
                   "en": "touching",
-                  "is_main": false,
+                  "is_main": true,
                   "tran": "[ˈtʌtʃɪŋ]"
                 },
                 {
@@ -7361,7 +7361,7 @@
                   "page": 108,
                   "ru": "шокирующий",
                   "en": "shocking",
-                  "is_main": false,
+                  "is_main": true,
                   "tran": "[ˈʃɒkɪŋ]"
                 },
                 {
@@ -7715,7 +7715,7 @@
                   "page": 110,
                   "ru": "благородный",
                   "en": "noble",
-                  "is_main": false,
+                  "is_main": true,
                   "tran": "[ˈnəʊbəl]"
                 },
                 {
@@ -7852,7 +7852,7 @@
                   "page": 110,
                   "ru": "дружеский",
                   "en": "friendly",
-                  "is_main": false,
+                  "is_main": true,
                   "tran": "[ˈfrendli]"
                 },
                 {
@@ -7860,7 +7860,7 @@
                   "page": 110,
                   "ru": "эгоистичный",
                   "en": "selfish",
-                  "is_main": false,
+                  "is_main": true,
                   "tran": "[ˈselfɪʃ]"
                 },
                 {
@@ -7996,7 +7996,7 @@
                   "page": 111,
                   "ru": "переменный",
                   "en": "changeable",
-                  "is_main": false,
+                  "is_main": true,
                   "tran": "[ˈtʃeɪndʒəbəl]"
                 },
                 {
@@ -8109,7 +8109,7 @@
                   "page": 111,
                   "ru": "молчаливый",
                   "en": "taciturn",
-                  "is_main": false,
+                  "is_main": true,
                   "tran": "[ˈtæsɪˌtɜːn]"
                 },
                 {
@@ -8117,7 +8117,7 @@
                   "page": 111,
                   "ru": "замкнутый, сдержанный",
                   "en": "reserved",
-                  "is_main": false,
+                  "is_main": true,
                   "tran": "[rɪˈzɜːvd]"
                 },
                 {
@@ -8302,7 +8302,7 @@
                   "page": 112,
                   "ru": "высокомерный",
                   "en": "haughty",
-                  "is_main": false,
+                  "is_main": true,
                   "tran": "[ˈhɒti]"
                 },
                 {
@@ -8350,7 +8350,7 @@
                   "page": 112,
                   "ru": "осторожный",
                   "en": "cautious",
-                  "is_main": false,
+                  "is_main": true,
                   "tran": "[ˈkɒʃəs]"
                 },
                 {
@@ -8487,7 +8487,7 @@
                   "page": 113,
                   "ru": "главный",
                   "en": "main",
-                  "is_main": false,
+                  "is_main": true,
                   "tran": "[ˈmeɪn]"
                 },
                 {
@@ -8729,7 +8729,7 @@
                   "page": 114,
                   "ru": "максимальный",
                   "en": "maximum",
-                  "is_main": false,
+                  "is_main": true,
                   "tran": "[ˈmæksəməm]"
                 },
                 {
@@ -8753,7 +8753,7 @@
                   "page": 114,
                   "ru": "достаточный",
                   "en": "sufficient",
-                  "is_main": false,
+                  "is_main": true,
                   "tran": "[səˈfɪʃənt]"
                 },
                 {
@@ -8930,7 +8930,7 @@
                   "page": 114,
                   "ru": "желательный",
                   "en": "desirable",
-                  "is_main": false,
+                  "is_main": true,
                   "tran": "[dɪˈzaɪrəbəl]"
                 },
                 {
@@ -9115,7 +9115,7 @@
                   "page": 115,
                   "ru": "неуместный",
                   "en": "out of place",
-                  "is_main": false,
+                  "is_main": true,
                   "tran": "[ˈaʊt ˈʌv ˈpleɪs]"
                 },
                 {
@@ -9494,7 +9494,7 @@
                   "page": 117,
                   "ru": "сытый",
                   "en": "full",
-                  "is_main": false,
+                  "is_main": true,
                   "tran": "[ˈfʊl]"
                 },
                 {
@@ -9502,7 +9502,7 @@
                   "page": 117,
                   "ru": "голодный",
                   "en": "hungry",
-                  "is_main": false,
+                  "is_main": true,
                   "tran": "[ˈhʌŋɡri]"
                 },
                 {
