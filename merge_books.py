@@ -18,6 +18,105 @@
 import argparse, copy, json, sys
 
 
+# --- NOUN_FIX: точечные исправления OCR-шума в существительных ---
+# Существительные импортируются из 3001eng целиком и несут остаточный OCR-мусор
+# (мьщы→мышцы, мстро→метро, ииформация→информация и т.п. — внутрикириллические
+# подмены, которые не ловит clean_en/fix_ru). Чистим воспроизводимо при импорте.
+# Ключ — (page, исходная строка ru/en из 3001eng). Пополняй при новых ошибках.
+NOUN_FIX_RU = {
+    (123, "прямая лиия"): "прямая линия",
+    (127, "метапл"): "металл",
+    (127, "аюминий"): "алюминий",
+    (129, "метаплолом"): "металлолом",
+    (132, "зяяц"): "заяц",
+    (133, "домашияя птица"): "домашняя птица",
+    (133, "индюк' селезень"): "индюк селезень",
+    (137, "мьщы"): "мышцы",
+    (137, "ноготь покоть"): "ноготь локоть",
+    (140, "удобства клюц"): "удобства ключ",
+    (140, "кондиионер"): "кондиционер",
+    (141, "одежный пкаф"): "одежный шкаф",
+    (154, "нсобходимость"): "необходимость",
+    (156, "ти"): "тип",
+    (156, "принц"): "принцип",
+    (156, "сообщенне"): "сообщение",
+    (159, "учсбный год"): "учебный год",
+    (163, "гардсроб"): "гардероб",
+    (165, "гимнастнка"): "гимнастика",
+    (165, "фугбол"): "футбол",
+    (165, "бронзовая мёдаль"): "бронзовая медаль",
+    (165, "нпчя"): "ничья",
+    (169, "главпочтампт"): "главпочтамт",
+    (174, "мстро"): "метро",
+    (176, "ииформация"): "информация",
+    (176, "свяятая ложь"): "святая ложь",
+    (180, "наказанне"): "наказание",
+    (181, "профсоюоз"): "профсоюз",
+}
+NOUN_FIX_EN = {
+    (133, "lIamb foal"): "lamb foal",
+    (136, "namne passport"): "name passport",
+    (137, "abdomen chest neck back ebdoman"): "abdomen chest neck back",
+    (141, "roOm"): "room",
+    (143, "furcoat"): "fur coat",
+    (144, "shoc polish"): "shoe polish",
+    (147, "ma rinalade"): "marmalade",
+    (148, "soured creamn"): "soured cream",
+    (154, "rOOm"): "room",
+    (156, "sucCess"): "success",
+    (156, "exception sep"): "exception",
+    (158, "mathematics lmagr"): "mathematics",
+    (159, "jesson"): "lesson",
+    (160, "phrase wOrd"): "phrase word",
+    (161, "part of scntence"): "part of sentence",
+    (165, "olympic games mprk"): "olympic games",
+    (167, "transport communication comnerce"): "transport communication commerce",
+    (167, "electric power plant paua"): "electric power plant",
+    (168, "electronics engineer trunrks"): "electronics engineer",
+    (169, "general post-office paust"): "general post-office",
+    (171, "goods vanl"): "goods van",
+    (171, "parts of the planc"): "parts of the plane",
+    (173, "hom"): "horn",
+    (176, "serrice centre"): "service centre",
+    (176, "iie"): "lie",
+    (179, "orthodox churcli"): "orthodox church",
+    (180, "public prosccutor"): "public prosecutor",
+    (181, "abolitiol constitution article adoption"):
+        "abolition constitution article adoption",
+    (182, "foreign tradc decrease"): "foreign trade decrease",
+}
+# Раздробленные OCR-записи: слить две строки в одну. (page, ru_keep, ru_drop, new_ru, new_en).
+NOUN_MERGE = [
+    (122, "защита окружающей", "среды ргэ",
+     "защита окружающей среды", "environmental protection"),
+]
+
+
+def apply_noun_fix(theme_obj):
+    """Применяет NOUN_FIX_RU/EN и слияния к импортированной теме существительных."""
+    for s in theme_obj.get("sections", []):
+        for ss in s.get("subsections", []):
+            entries = ss.get("entries", [])
+            for e in entries:
+                k = (e.get("page"), e.get("ru"))
+                if k in NOUN_FIX_RU:
+                    e["ru"] = NOUN_FIX_RU[k]
+                ke = (e.get("page"), e.get("en"))
+                if ke in NOUN_FIX_EN:
+                    e["en"] = NOUN_FIX_EN[ke]
+            for page, ru_keep, ru_drop, new_ru, new_en in NOUN_MERGE:
+                keep = next((e for e in entries
+                             if e.get("page") == page and e.get("ru") == ru_keep), None)
+                drop = next((e for e in entries
+                             if e.get("page") == page and e.get("ru") == ru_drop), None)
+                if keep and drop:
+                    keep["ru"] = new_ru
+                    keep["en"] = new_en
+                    entries.remove(drop)
+                    ss["entries"] = entries
+    return theme_obj
+
+
 def collect_entries(theme_obj):
     """Все записи темы в порядке чтения (плоско)."""
     out = []
@@ -64,8 +163,8 @@ def main():
             report.append(f"{name}: из base (3000eng) как есть; "
                           f"записей={len(collect_entries(chosen))}")
         elif name == "Существительные":
-            # base почти пуст → берём полную тему из other (3001eng).
-            chosen = copy.deepcopy(ot)
+            # base почти пуст → берём полную тему из other (3001eng) и чистим OCR-шум.
+            chosen = apply_noun_fix(copy.deepcopy(ot))
             n_other = len(collect_entries(ot)) if ot else 0
             n_base = len(collect_entries(bt)) if bt else 0
             report.append(f"{name}: из other (3001eng) целиком; "
