@@ -61,6 +61,53 @@ _FALLBACK_ARPA = {
     'unselfish': 'AH2 N S EH1 L F IH0 SH',
     'perm': 'P ER1 M',
     'particoloured': 'P AA2 R T IY0 K AH1 L ER0 D',
+    # 3001eng photo set: compounds & British words CMUdict lacks (verified RP
+    # ARPABET — the existing non-rhotic post-processing then renders them).
+    'waggon': 'W AE1 G AH0 N',
+    'aeroplane': 'EH1 R OW0 P L EY1 N',
+    'giddiness': 'G IH1 D IY0 N AH0 S',
+    'toothache': 'T UW1 TH EY1 K',
+    'earache': 'IY1 R EY1 K',
+    'cashdesk': 'K AE1 SH D EH1 S K',
+    'roadmarking': 'R OW1 D M AA1 R K IH0 NG',
+    'windscreen': 'W AY1 N D S K R IY1 N',
+    'trolleybus': 'T R AA1 L IY0 B AH1 S',
+    'airhostess': 'EH1 R HH OW1 S T AH0 S',
+    'motorway': 'M OW1 T ER0 W EY1',
+    'furcoat': 'F ER1 K OW1 T',
+    'underclothes': 'AH1 N D ER0 K L OW1 DH Z',
+    'bedclothes': 'B EH1 D K L OW1 DH Z',
+    'pillowcase': 'P IH1 L OW0 K EY1 S',
+    'greengrocery': 'G R IY1 N G R OW1 S ER0 IY0',
+    'forenoon': 'F AO1 R N UW1 N',
+    'overestimation': 'OW1 V ER0 EH2 S T AH0 M EY1 SH AH0 N',
+    'underestimation': 'AH1 N D ER0 EH2 S T AH0 M EY1 SH AH0 N',
+    'longjump': 'L AO1 NG JH AH1 M P',
+    'coalmine': 'K OW1 L M AY1 N',
+    'crucian': 'K R UW1 SH AH0 N',
+    'gosling': 'G AA1 Z L IH0 NG',
+    'besom': 'B IY1 Z AH0 M',
+    'currant': 'K AH1 R AH0 N T',
+    'quadrangle': 'K W AA1 D R AE2 NG G AH0 L',
+    'diffidence': 'D IH1 F IH0 D AH0 N S',
+    'urbanity': 'ER0 B AE1 N IH0 T IY0',
+    'tactlessness': 'T AE1 K T L AH0 S N AH0 S',
+    'impertinence': 'IH2 M P ER1 T AH0 N AH0 N S',
+    'impudence': 'IH1 M P Y AH0 D AH0 N S',
+    'offence': 'AH0 F EH1 N S',
+    'rancour': 'R AE1 NG K ER0',
+    'pyjamas': 'P AH0 JH AA1 M AH0 Z',
+    'plimsolls': 'P L IH1 M S AH0 L Z',
+    'cravat': 'K R AH0 V AE1 T',
+    'groats': 'G R OW1 T S',
+    'rhombus': 'R AA1 M B AH0 S',
+    'repertoire': 'R EH1 P ER0 T W AA1 R',
+    'preposition': 'P R IY2 P AH0 Z IH1 SH AH0 N',
+    'precipitations': 'P R IH0 S IH2 P IH0 T EY1 SH AH0 N Z',
+    'hoarfrost': 'HH AO1 R F R AO2 S T',
+    'snowdrop': 'S N OW1 D R AO2 P',
+    'earlobe': 'IY1 R L OW0 B',
+    'ardour': 'AA1 R D ER0',
 }
 
 def _arpabet(word):
@@ -150,6 +197,11 @@ def _transcribe_word(word):
         return ''
     toks = _arpabet(w)
     if not toks:
+        # possessive 's: hairdresser's, one's, children's -> base + /ɪz|z/
+        if w.endswith("'s") and len(w) > 3:
+            base = _transcribe_word(w[:-2])
+            if base:
+                return base + ('ɪz' if base.endswith(('s', 'ʃ', 'tʃ', 'z', 'ʒ', 'θ')) else 'z')
         # try splitting a hyphenated compound (absent-minded -> absent + minded)
         if '-' in w:
             parts = [_transcribe_word(p) for p in w.split('-')]

@@ -4,61 +4,66 @@
     {"ru": "Глаголы стадии", "en": "Verbs of Stage", "subsections": [
       {"num": 1, "ru": "Начало", "en": "Beginning"},
       {"num": 2, "ru": "Продолжение", "en": "Continuation"},
-      {"num": 3, "ru": "Завершение", "en": "End"}]},
+      {"num": 3, "ru": "Завершение", "en": "End"}
+    ]},
     {"ru": "Глаголы движения", "en": "Verbs of Movement", "subsections": [
       {"num": 1, "ru": "Виды движений", "en": "Ways of Movement"},
       {"num": 2, "ru": "Движение вверх / вниз", "en": "Upward / Downward Movement"},
       {"num": 3, "ru": "Скорость", "en": "Speed"},
       {"num": 4, "ru": "Преследование", "en": "Pursuit"},
-      {"num": 5, "ru": "Цикл движений от начальной до конечной точки", "en": "Movement from Start to Finish"},
-      {"num": 6, "ru": "Движение в воде", "en": "Movement in Water"}]},
-    {"ru": "Глаголы наличия и количества", "en": "Verbs of Presence and Quantity", "subsections": [
-      {"num": 1, "ru": "Наличие / принадлежность", "en": "Presence / Belonging"},
+      {"num": 5, "ru": "Цикл движений от начальной до конечной точки движения", "en": "Movement from Start to Finish"},
+      {"num": 6, "ru": "Движение в воде", "en": "Movement in Water"}
+    ]},
+    {"ru": "Глаголы наличия / количества", "en": "Verbs of Presence / Quantity", "subsections": [
+      {"num": 1, "ru": "Наличие / принадлежность", "en": "Presence Belonging"},
       {"num": 2, "ru": "Нехватка", "en": "Lack"},
-      {"num": 3, "ru": "Добавление / избыток", "en": "Addition / Excess"},
-      {"num": 4, "ru": "Сокращение / остаток", "en": "Shortening / Remainder"},
+      {"num": 3, "ru": "Добавление избыток", "en": "Addition Excess"},
+      {"num": 4, "ru": "Сокращение / остаток", "en": "Shortening Remainder"},
       {"num": 5, "ru": "Сохранение", "en": "Preservation"},
-      {"num": 6, "ru": "Положение", "en": "Position"}]},
+      {"num": 6, "ru": "Положение", "en": "Position"}
+    ]},
     {"ru": "Бытовые глаголы", "en": "Verbs of Everyday Life", "subsections": [
       {"num": 1, "ru": "Жить", "en": "Live"},
       {"num": 2, "ru": "Работать", "en": "Work"},
       {"num": 3, "ru": "Есть / Пить", "en": "Eat / Drink"},
       {"num": 4, "ru": "Одеваться", "en": "Dress"},
-      {"num": 5, "ru": "Спать / приводить себя в порядок", "en": "Sleep / Tidy Oneself up"},
-      {"num": 6, "ru": "Болеть", "en": "Be Ill"}]},
+      {"num": 5, "ru": "Спать приводить себя в порядок", "en": "Sleep / Tidy Oneself up"},
+      {"num": 6, "ru": "Болеть", "en": "Be Ill"}
+    ]},
     {"ru": "Глаголы чувства", "en": "Verbs of Feeling", "subsections": [
       {"num": 1, "ru": "Хорошее отношение", "en": "Good Attitude"},
-      {"num": 2, "ru": "Плохое отношение", "en": "Bad Attitude"},
-      {"num": 3, "ru": "Горе / радость", "en": "Grief / Joy"},
-      {"num": 4, "ru": "Гордость / скромность", "en": "Pride / Modesty"},
-      {"num": 5, "ru": "Уверенность / сомнение", "en": "Confidence / Doubt"},
-      {"num": 6, "ru": "Старание / лень", "en": "Diligence / Laziness"},
-      {"num": 7, "ru": "Оттенки эмоции", "en": "Shades of Emotion"}]},
+      {"num": 3, "ru": "Горе радость", "en": "Grief Joy"},
+      {"num": 4, "ru": "Гордость скромность", "en": "Pride Modesty"},
+      {"num": 6, "ru": "Старание лень", "en": "Diligence Laziness"},
+      {"num": 7, "ru": "Оттенки эмоции", "en": "Shades of Emotion"}
+    ]},
     {"ru": "Глаголы восприятия и мышления", "en": "Verbs of Perception and Thinking", "subsections": [
       {"num": 1, "ru": "Восприятие мира", "en": "Perception of the World"},
       {"num": 2, "ru": "Обучение", "en": "Instruction"},
       {"num": 3, "ru": "Учебные операции", "en": "Learning Operations"},
-      {"num": 4, "ru": "Логические операции", "en": "Logical Operations"}]},
+      {"num": 4, "ru": "Логические операции", "en": "Logical Operations"}
+    ]},
     {"ru": "Рабочие операции", "en": "Working Operations", "subsections": [
-      {"num": 1, "ru": "Работать / делать", "en": "Work / Do"},
-      {"num": 2, "ru": "Готовить / проверять", "en": "Prepare / Control"},
+      {"num": 1, "ru": "Работать делать", "en": "Work"},
+      {"num": 2, "ru": "Готовить проверять", "en": "Prepare Control"},
       {"num": 3, "ru": "Брать (и другие операции рукой)", "en": "Take (and Other Manual Operations)"},
-      {"num": 4, "ru": "Соединять / закреплять", "en": "Connect / Fix"},
-      {"num": 5, "ru": "Закрывать / открывать", "en": "Close / Open"},
-      {"num": 6, "ru": "Разрушать / делить на части", "en": "Destroy / Divide into Parts"},
-      {"num": 7, "ru": "Операции с водой", "en": "Operations with Water"}]},
+      {"num": 4, "ru": "Соединять закреплять", "en": "Connect / Fix"},
+      {"num": 5, "ru": "Закрывать открывать", "en": "Close Open"},
+      {"num": 6, "ru": "Разрушать делить на части", "en": "Destroy Divide into Parts"},
+      {"num": 7, "ru": "Операции с водой", "en": "Operations with Water"}
+    ]},
     {"ru": "Глаголы общения", "en": "Verbs of Intercourse", "subsections": [
       {"num": 1, "ru": "Говорить", "en": "Speak"},
       {"num": 2, "ru": "Обращаться", "en": "Address"},
       {"num": 3, "ru": "Отвечать", "en": "Answer"},
-      {"num": 4, "ru": "Брать", "en": "Take"},
       {"num": 5, "ru": "Давать", "en": "Give"},
-      {"num": 6, "ru": "Визит / этикет", "en": "Visit / Etiquette"},
-      {"num": 7, "ru": "Нарушение этикета / наказание", "en": "Breach of Etiquette / Punishment"}]},
+      {"num": 6, "ru": "Визит этикет", "en": "Visit / Etiquette"},
+      {"num": 7, "ru": "Нарушение этикета наказание", "en": "Breach of Etiquette / Punishment"}
+    ]},
     {"ru": "Глаголы борьбы", "en": "Verbs of Fighting", "subsections": [
       {"num": 1, "ru": "Нападать", "en": "Attack"},
       {"num": 2, "ru": "Защищаться", "en": "Defend Oneself"},
-      {"num": 3, "ru": "Военные операции", "en": "Field Operations"},
-      {"num": 4, "ru": "Действия с оружием", "en": "Actions with Weapons"}]}
+      {"num": 4, "ru": "Действия с оружием", "en": "Actions with Weapons"}
+    ]}
   ]
 }

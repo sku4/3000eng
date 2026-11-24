@@ -6,37 +6,38 @@
       {"num": 2, "ru": "Кожа", "en": "Skin"},
       {"num": 3, "ru": "Язык", "en": "Tongue"},
       {"num": 4, "ru": "Ухо", "en": "Ear"},
-      {"num": 5, "ru": "Нос", "en": "Nose"}]},
+      {"num": 5, "ru": "Нос", "en": "Nose"}
+    ]},
     {"ru": "Время", "en": "Time", "subsections": [
       {"num": 1, "ru": "Основные признаки", "en": "Main Properties"},
-      {"num": 2, "ru": "Стадии", "en": "Stages"},
-      {"num": 3, "ru": "Непрерывность, частотность", "en": "Continuity / Frequency"}]},
-    {"ru": "Способности человека", "en": "Faculties; Ability", "subsections": [
+      {"num": 2, "ru": "Стадии", "en": "Stages"}
+    ]},
+    {"ru": "Способности человека", "en": "Faculties, ability", "subsections": [
       {"num": 1, "ru": "Способность", "en": "Ability"},
-      {"num": 2, "ru": "Отсутствие способности", "en": "Absence of Ability"},
-      {"num": 3, "ru": "Прилежание, внимательность", "en": "Diligence, Attention"},
-      {"num": 4, "ru": "Умение / опыт", "en": "Skill / Experience"}]},
-    {"ru": "Эмоция, чувство, настроение", "en": "Emotion, Feeling, Frame of Mind", "subsections": [
+      {"num": 3, "ru": "Прилежание внимательность", "en": "Diligence Attention"},
+      {"num": 4, "ru": "Умение / опыт", "en": "Skill Experience"}
+    ]},
+    {"ru": "Эмоция / чувство", "en": "Emotion Feeling Frame of Mind", "subsections": [
       {"num": 1, "ru": "Характер", "en": "Character"},
-      {"num": 2, "ru": "Настроение", "en": "Frame of Mind, Mood"},
+      {"num": 2, "ru": "Настроение", "en": "Frame of Mind; Mood"},
       {"num": 3, "ru": "Эмоциональная оценка", "en": "Emotional Estimation"},
-      {"num": 4, "ru": "Оттенки эмоции", "en": "Shades of Emotion"}]},
-    {"ru": "Мораль, поведение", "en": "Moral Behaviour", "subsections": [
+      {"num": 4, "ru": "Оттенки эмоции", "en": "Shades of Emotion"}
+    ]},
+    {"ru": "Мораль", "en": "Behaviour", "subsections": [
       {"num": 1, "ru": "Основные характеристики", "en": "Main Properties"},
-      {"num": 2, "ru": "Отношение к другим людям", "en": "Attitude to Other People"},
-      {"num": 3, "ru": "Качества в общении", "en": "Qualities in Intercourse"},
-      {"num": 4, "ru": "Качества в действиях", "en": "Qualities in Actions"}]},
+      {"num": 2, "ru": "Отношение к другим людям", "en": "Attitude to Other People"}
+    ]},
     {"ru": "Абстрактные прилагательные", "en": "Abstract Adjectives", "subsections": [
       {"num": 1, "ru": "Классификация", "en": "Classification"},
       {"num": 2, "ru": "Качество", "en": "Quality"},
-      {"num": 3, "ru": "Количество", "en": "Quantity"},
       {"num": 4, "ru": "Категория", "en": "Category"},
       {"num": 5, "ru": "Соответствие", "en": "Accordance"},
-      {"num": 6, "ru": "Выгода", "en": "Advantage"}]},
-    {"ru": "Состояние / статус", "en": "Condition / Status", "subsections": [
+      {"num": 6, "ru": "Выгода", "en": "Advantage"}
+    ]},
+    {"ru": "Состояние статус", "en": "Condition Status", "subsections": [
       {"num": 1, "ru": "Физическое состояние", "en": "Physical Condition"},
       {"num": 2, "ru": "Финансовое положение", "en": "Financial Status"},
-      {"num": 3, "ru": "Биологическое и семейное положение", "en": "Biological and Family Status"},
-      {"num": 4, "ru": "Применение", "en": "Application"}]}
+      {"num": 4, "ru": "Применение", "en": "Application"}
+    ]}
   ]
 }

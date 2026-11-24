@@ -1,0 +1,137 @@
+{
+  "theme": {"ru": "Существительные", "en": "Nouns"},
+  "sections": [
+    {"ru": "Мир", "en": "World", "subsections": [
+      {"num": 1, "ru": "Небо", "en": "Sky"},
+      {"num": 2, "ru": "Земля", "en": "Earth"},
+      {"num": 3, "ru": "Вода", "en": "Water"},
+      {"num": 4, "ru": "Положение", "en": "Position"},
+      {"num": 5, "ru": "Зона", "en": "Zone"}
+    ]},
+    {"ru": "Погода природные явления", "en": "Weather Natural Phenomena", "subsections": [
+      {"num": 1, "ru": "Сезон", "en": "Season"},
+      {"num": 3, "ru": "Осадки", "en": "Precipitations"},
+      {"num": 4, "ru": "Стихийные бедствия", "en": "Natural Calamities"}
+    ]},
+    {"ru": "Геометрия", "en": "Geometry", "subsections": [
+      {"num": 1, "ru": "Размер", "en": "Size"},
+      {"num": 2, "ru": "Форма", "en": "Shape"},
+      {"num": 3, "ru": "Фигуры на плоскости", "en": "Figures on Plane"},
+      {"num": 4, "ru": "Линия", "en": "Line"},
+      {"num": 5, "ru": "Структура", "en": "Structure"}
+    ]},
+    {"ru": "Время", "en": "Time", "subsections": [
+      {"num": 1, "ru": "Единицы времени", "en": "Time Units"},
+      {"num": 3, "ru": "Дни недели", "en": "Days of Week"},
+      {"num": 4, "ru": "Временные этапы", "en": "Stages"},
+      {"num": 7, "ru": "Праздник свободное время", "en": "Holiday Free Time"}
+    ]},
+    {"ru": "Вещество материал", "en": "Substance Material", "subsections": [
+      {"num": 1, "ru": "Физическое состояние", "en": "Physical State"},
+      {"num": 2, "ru": "Металлы", "en": "Metals"},
+      {"num": 3, "ru": "Строительные материалы", "en": "Construction Materials"},
+      {"num": 4, "ru": "Сырье", "en": "Raw Materials"},
+      {"num": 5, "ru": "Ткани кожа и мех", "en": "Textile Leather and Fur"},
+      {"num": 6, "ru": "Отходы", "en": "Waste"}
+    ]},
+    {"ru": "Растения", "en": "Plants", "subsections": [
+      {"num": 1, "ru": "Овощи бахчевые культуры", "en": "Vegetables Melons and Gourds"},
+      {"num": 2, "ru": "Фрукты ягоды", "en": "Fruit Berries"},
+      {"num": 4, "ru": "Деревья", "en": "Trees"},
+      {"num": 5, "ru": "Части дерева", "en": "Parts of Tree"}
+    ]},
+    {"ru": "Дикие животные", "en": "Wild Animals", "subsections": [
+      {"num": 2, "ru": "Домашние животные", "en": "Domestic Animals"},
+      {"num": 3, "ru": "Птицы", "en": "Birds"},
+      {"num": 5, "ru": "Насекомые", "en": "Insects"},
+      {"num": 6, "ru": "Прочие классы", "en": "Other Classes"}
+    ]},
+    {"ru": "Человек", "en": "Human Being", "subsections": [
+      {"num": 1, "ru": "Общие сведения", "en": "General Information"},
+      {"num": 2, "ru": "Анатомия", "en": "Anatomy"},
+      {"num": 3, "ru": "Отношения между людьми", "en": "Human Relations"}
+    ]},
+    {"ru": "Жилье", "en": "Dwelling", "subsections": [
+      {"num": 1, "ru": "Дом", "en": "House"},
+      {"num": 2, "ru": "Устройство дома", "en": "House Layout"},
+      {"num": 6, "ru": "Сосуды емкости", "en": "Vessels Containers"}
+    ]},
+    {"ru": "Одежда", "en": "Clothes", "subsections": [
+      {"num": 1, "ru": "Верхняя одежда", "en": "Outer Clothing"},
+      {"num": 2, "ru": "Одежда белье", "en": "Clothes Underclothes"},
+      {"num": 3, "ru": "Обувь", "en": "Footwear"},
+      {"num": 4, "ru": "Головные уборы", "en": "Headgear"},
+      {"num": 5, "ru": "Элементы одежды и туалета", "en": "Elements of Dress Accessories"}
+    ]},
+    {"ru": "Питание", "en": "Nourishment", "subsections": [
+      {"num": 1, "ru": "Прием пищи", "en": "Meal"},
+      {"num": 2, "ru": "Блюда", "en": "Dishes"},
+      {"num": 3, "ru": "Приправы", "en": "Dressings"},
+      {"num": 4, "ru": "Напитки", "en": "Drinks Beverages"},
+      {"num": 5, "ru": "Сладости", "en": "Sweets"},
+      {"num": 7, "ru": "Хлеб", "en": "Bread"},
+      {"num": 8, "ru": "Столовая посуда кухонные принадлежности", "en": "Dining-room Plates and Dishes Kitchen Utensils"}
+    ]},
+    {"ru": "Чувство характер", "en": "Feeling Character", "subsections": [
+      {"num": 1, "ru": "Положительные эмоции", "en": "Positive Emotions"},
+      {"num": 2, "ru": "Отрицательные эмоции", "en": "Negative Emotions"},
+      {"num": 4, "ru": "Любовь ненависть", "en": "Love Hatred"},
+      {"num": 5, "ru": "Гордость скромность такт", "en": "Pride Modesty Tact"},
+      {"num": 6, "ru": "Желание прилежание лень", "en": "Wish Diligence Laziness"}
+    ]},
+    {"ru": "Мышление", "en": "Thinking", "subsections": [
+      {"num": 1, "ru": "Природа сознание", "en": "Nature Consciousness"},
+      {"num": 2, "ru": "Познание", "en": "Cognition"},
+      {"num": 4, "ru": "Исследование", "en": "Research"},
+      {"num": 7, "ru": "Сообщение", "en": "Report"}
+    ]},
+    {"ru": "Образование", "en": "Education", "subsections": [
+      {"num": 1, "ru": "Учебное заведение", "en": "Educational Institution"},
+      {"num": 4, "ru": "Экзамен оценка", "en": "Exam Mark"}
+    ]},
+    {"ru": "Культура", "en": "Culture", "subsections": [
+      {"num": 1, "ru": "Кино", "en": "Cinema"},
+      {"num": 2, "ru": "Театр", "en": "Theatre"},
+      {"num": 5, "ru": "Спорт", "en": "Sport"}
+    ]},
+    {"ru": "Работа", "en": "Work", "subsections": [
+      {"num": 1, "ru": "Труд / занятость", "en": "Labour / Employment"},
+      {"num": 2, "ru": "Сфера", "en": "Branches"},
+      {"num": 3, "ru": "Предприятие", "en": "Enterprise"},
+      {"num": 4, "ru": "Профессия", "en": "Profession"},
+      {"num": 5, "ru": "Инструменты / оборудование", "en": "Tools Equipment"}
+    ]},
+    {"ru": "Связь транспорт", "en": "Communication Transport", "subsections": [
+      {"num": 1, "ru": "Почта телефон", "en": "Post Telephone"},
+      {"num": 2, "ru": "Железная дорога", "en": "Railway"},
+      {"num": 3, "ru": "Авиатранспорт", "en": "Air Transport"},
+      {"num": 4, "ru": "Автомобильный транспорт", "en": "Motor Transport"}
+    ]},
+    {"ru": "Город", "en": "City", "subsections": [
+      {"num": 1, "ru": "Улицы площади", "en": "Streets / Squares"},
+      {"num": 2, "ru": "Транспорт", "en": "Transport"},
+      {"num": 4, "ru": "Торговля услуги", "en": "Trade / Service"}
+    ]},
+    {"ru": "Общение", "en": "Intercourse", "subsections": [
+      {"num": 1, "ru": "Информация", "en": "Information"},
+      {"num": 3, "ru": "Визит", "en": "Visit"},
+      {"num": 4, "ru": "Этикет", "en": "Etiquette"}
+    ]},
+    {"ru": "Государство", "en": "State", "subsections": [
+      {"num": 1, "ru": "Государство", "en": "State"},
+      {"num": 2, "ru": "Народ", "en": "People"},
+      {"num": 3, "ru": "Общественное положение", "en": "Social Status"},
+      {"num": 4, "ru": "Право закон", "en": "Law"},
+      {"num": 5, "ru": "Политика", "en": "Politics"},
+      {"num": 6, "ru": "Экономика", "en": "Economy"},
+      {"num": 7, "ru": "Внешняя политика", "en": "Foreign Policy"}
+    ]},
+    {"ru": "Здоровье болезнь", "en": "Health Illness", "subsections": [
+      {"num": 2, "ru": "Наружные повреждения", "en": "Injuries"},
+      {"num": 3, "ru": "Инфекция", "en": "Infection"},
+      {"num": 4, "ru": "Другие заболевания", "en": "Other Diseases"},
+      {"num": 6, "ru": "Медосмотр лечение", "en": "Medical Examination / Treatment"},
+      {"num": 7, "ru": "Врачи больница", "en": "Physicians Hospital"}
+    ]}
+  ]
+}

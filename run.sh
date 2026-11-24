@@ -40,11 +40,16 @@ fi
 "$PY" parse6.py --input ocr_raw.json --output events.json --img-dir "$INPUT"
 
 # --- 4. сборка дерева ---
+# Apply every canonical_*.json present (one per theme: verbs / adjectives / nouns);
+# build_json routes each to its matching theme by name. Set CANONICAL to override
+# (e.g. a single theme's overlay).
 CANON_FLAG=""
 if [ -n "${CANONICAL:-}" ] && [ -f "$CANONICAL" ]; then
   CANON_FLAG="--canonical $CANONICAL"
-elif [ -f "$SCRIPT_DIR/canonical_verbs.json" ]; then
-  CANON_FLAG="--canonical $SCRIPT_DIR/canonical_verbs.json"
+else
+  for c in "$SCRIPT_DIR"/canonical_*.json; do
+    [ -f "$c" ] && CANON_FLAG="$CANON_FLAG --canonical $c"
+  done
 fi
 # shellcheck disable=SC2086
 "$PY" build_json.py --input events.json --output "$OUT" $CANON_FLAG

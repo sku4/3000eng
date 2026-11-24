@@ -21,10 +21,41 @@ import argparse, json, re
 EN_FIX={'g0':'go','G0':'go','CrOSS':'cross','Jast':'last','tumn':'turn','IOW':'row',
         'WAnZ':"one's","won's":"one's",'WAIZ':"ways",'mam':'man','rard':'raɪd',
         'go On':'go on','g0 On':'go on',
-        # context one-off: on p108 the en column drifted a row, so "оптимистический"
-        # picked up "sad" (which belongs to "печальный"). No real "sad" exists in the
-        # recognized pages, so a global replace is safe here; revisit if грустный/печальный=sad.
-        'sad':'optimistic'}
+        # Systematic easyocr confusions on these photos (c↔e, i↔l/t, rn↔m, cl↔d,
+        # n↔ion, l↔i). Each is an unresolved token that becomes a CMUdict word after
+        # the fix, so the IPA pass can transcribe it. Only distinctive garbles that
+        # cannot be a substring of a real English word are safe as a global replace;
+        # ambiguous ones (e.g. 'iate'→late, which bites 'appreciate') are handled as
+        # per-entry OVERRIDES in merge_dicts.py instead.
+        'bugin':'begin','becomc':'become','continuc':'continue','dclay':'delay',
+        'postponc':'postpone','resuline':'resume','fmish':'finish','breuk':'break',
+        'intcrrupt':'interrupt','slon':'slow','slidc':'slide','rotatc':'rotate',
+        'skatc':'skate','nursc':'nurse','suipass':'surpass','escane':'escape',
+        'stalt':'start','mleet':'meet','drowmn':'drown','cnter':'enter','hclong':'belong',
+        'icquire':'acquire','cmpty':'empty','ahsemt':'absent','rescarch':'research',
+        'timctable':'timetable','eoat':'coat','hlood':'blood','hcad':'head',
+        'objcction':'objection','subjcct':'subject','shakc':'shake','iift':'lift',
+        'iazy':'lazy','brcak':'break','inla':'into','iast':'last','spea':'speak',
+        'shup':'ship','suflicicnt':'sufficient','CKist':'exist','ihere':'there',
+        'kros':'cross','CTOSS':'cross','comeacross':'come across','cven':'even',
+        'surlacc':'surface','freh':'fresh','slau':'slow','thc':'the',
+        # 3001eng photo set: systematic en-token garbles → CMUdict words.
+        'appcar':'appear','tesue':'resume','ceasc':'cease','mheet':'meet','CIOsS':'cross',
+        'cxist':'exist','mnarry':'marry','cconomize':'economize','awakc':'awake',
+        'hcal':'heal','speakk':'speak','imvite':'invite','letive':'leave','botler':'bother',
+        'offcnd':'offend','invacle':'invade','submnit':'submit','lIittle':'little',
+        'nedr':'near','rectangulat':'rectangular','odourlcss':'odourless','sliolt':'short',
+        'modelm':'modern','giftcd':'gifted','txtlented':'talented','nervots':'nervous',
+        'handsomne':'handsome','tepulsive':'repulsive','excitcd':'excited','grcedy':'greedy',
+        'variouls':'various','simnilar':'similar','iawful':'lawful','advantagcous':'advantageous',
+        'hcalthy':'healthy','slimn':'slim','mnoon':'moon','inouth':'mouth','summiit':'summit',
+        'autzu':'autumn','SIOw':'snow','sccond':'second','paimt':'paint','petroleumn':'petroleum',
+        'tomnato':'tomato','iemon':'lemon','crownl':'crown','jion':'lion','stalfion':'stallion',
+        'madamn':'madam','dinig-room':'dining-room','fomm':'form','cquipment':'equipment',
+        'repcrtoire':'repertoire','vollcyball':'volleyball','speakr':'spear','tumer':'turner',
+        'mnanager':'manager','ervelope':'envelope','iuggage':'luggage','lleWs':'news',
+        'rcception':'reception','gulest':'guest','nlation':'nation','smnoking':'smoking',
+        'ointmnent':'ointment','doughut':'doughnut','specch':'speech','hdrance':'advance'}
 def fix_en(s):
     for k,v in EN_FIX.items(): s=s.replace(k,v)
     return re.sub(r'\s+',' ',s).strip(' ;:,.\'"')
@@ -53,6 +84,11 @@ def clean_en(s):
 def fix_ru(s):
     s=re.sub(r'^\d+\s*','',s)                 # leading stray digit
     s=re.sub(r'\s+\d+(?:\s+\d+)*\s*$','',s)   # trailing stray digits
+    # OCR often bundles the bracketed transcription into the ru column
+    # ("стирать [wdл", "толкать [puл"); cut from the first '[' — no real ru
+    # headword contains a bracket.
+    s=re.sub(r'\[.*$','',s)
+    s=s.replace('0','о')                       # '0' is OCR noise for Cyrillic 'о'
     if '(ся' in s and '(ся)' not in s: s=s.replace('(ся','(ся)')
     s=s.replace('(ся:','(ся)').replace('(ся.)','(ся)')
     s=re.sub(r'\(\+прил[^\)]*\)','(+прил.)',s)     # "(+прил:)" etc → "(+прил.)"
@@ -80,12 +116,13 @@ def main():
     ap=argparse.ArgumentParser()
     ap.add_argument('--input', default='events.json')
     ap.add_argument('--output', default='dictionary.json')
-    ap.add_argument('--canonical', default=None, help='optional clean-titles overlay (per-theme)')
+    ap.add_argument('--canonical', action='append', default=[],
+                   help='clean-titles overlay (per-theme); repeat once per theme')
     ap.add_argument('--book', default='Словарь-минимум с логической структурой')
     args=ap.parse_args()
 
     events=json.load(open(args.input,encoding="utf-8"))
-    canon=load_canonical(args.canonical)
+    canons=[load_canonical(p) for p in args.canonical] if args.canonical else []
     events.sort(key=lambda e:(e.get('page') or 9999, e.get('y',0)))
 
     # Per-page median of the ru-head stroke (base/regular text). Bold words are
@@ -100,7 +137,12 @@ def main():
                 page_med.setdefault(e.get('page'),[]).append(sb)
     page_med={pg:_median(v) for pg,v in page_med.items() if v}
 
-    BOLD_RATIO=1.30   # stroke/max(ru,en) divided by page-median ru stroke → bold
+    BOLD_RATIO=1.14   # stroke/max(ru,en) divided by page-median ru stroke → bold
+    # Tuned for this photo set (3001eng): the bold/regular stroke separation is
+    # narrower than the 1.30 calibrated on the earlier scan, so on p77–78 the
+    # эталон bold words (start, grow, continue, put off, repeat, finish, break,
+    # cease …) sit at ratio 1.14–1.28 while regular text is ≤1.08. 1.14 recovers
+    # 10/10 of the verified эталон with no false positives on those pages.
 
     themes=[]; cur_theme=None; cur_theme_obj=None
     cur_sec_obj=None; cur_sub_obj=None; order=0
@@ -108,9 +150,11 @@ def main():
     pending_sec=None     # most recent centered section title from OCR (fallback)
 
     def canon_for(theme_ru):
-        if not canon: return None
-        if canon['theme_ru'] is None: return canon            # back-compat (no theme)
-        return canon if canon['theme_ru']==theme_ru else None
+        if not canons: return None
+        for c in canons:
+            if c['theme_ru'] is None: return c            # back-compat (no theme)
+            if c['theme_ru']==theme_ru: return c
+        return None
 
     for e in events:
         t=e['type']

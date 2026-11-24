@@ -131,14 +131,28 @@ def main():
     pages=[]
     for f,pg in d.items():
         pn=page_number(pg['items'],pg['H'])
+        # The printed page number at the bottom is small/faint and easyocr misses
+        # it on most photos of this book (and on a few it misreads a content digit
+        # as the page number). The files are named by printed page (...-0106.jpg =
+        # page 106), which is authoritative, so fall back to / override with it.
+        m=re.search(r'-(\d{3,4})\.(?:jpg|jpeg|png)$', f, re.I)
+        if m:
+            fpn=int(m.group(1))
+            if pn is None or pn!=fpn:
+                pn=fpn
         pages.append({'file':f,'page':pn,'W':pg['W'],'H':pg['H'],'items':pg['items']})
     # order by printed page number (fallback: filename) — filename order matters if no page numbers
     pages.sort(key=lambda x:(x['page'] if x['page'] is not None else 9999, x['file']))
 
-    LINE_GAP=20
+    # Inter-row gap is ~16px on these photos (H≈750) while items within one row
+    # jitter by only ~2-4px in y0. A fixed 20 merges whole columns into one line;
+    # the gap is scaled per page (see inside the loop) by that page's H.
     events=[]
     for p in pages:
         items=p['items']; W=p['W']; H=p['H']; page=p['page']
+        # scale the line gap with page height: ~16px rows on H≈750, separates rows
+        # (gap≥14) while keeping within-row items (y-jitter ~2-4px) together.
+        LINE_GAP=max(10, int(0.015*H))
         its=[it for it in items if (alnum(it['text']) or it['ink']>0.05) and not is_title(it['text'])]
         its=sorted(its,key=lambda x:(x['y0'],x['x0']))
         # cluster into visual lines by consecutive Y gap
@@ -255,8 +269,13 @@ def main():
             ru_txt=clean(" ".join(x[1] for x in sorted(ru)))
             en_txt=clean(" ".join(x[1] for x in sorted(pending['en']+en)))
 
-            # 1) part-of-speech theme (Прилагательные / Существительные / Глаголы)
-            if not sec and num is None and is_theme(ru_txt,en_txt):
+            # 1) part-of-speech theme (Прилагательные / Существительные / Глаголы).
+            # Checked BEFORE the sec/num cases: the bare theme keyword "Глаголы"
+            # also matches SECTION_KEYS (which lists it for section titles like
+            # "Глаголы стадии"), so it would otherwise be misrouted to a section.
+            # is_theme uses an EXACT ru match for verbs, so multi-word section
+            # titles ("Глаголы стадии", "Бытовые глаголы") never match here.
+            if num is None and is_theme(ru_txt,en_txt):
                 flush(); pending={'en':[],'tr':[],'ru':[]}
                 events.append({'type':'theme','page':page,'y':y,'ru':ru_txt,'en':en_txt})
                 state['cur']=None; continue

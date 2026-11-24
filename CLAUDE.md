@@ -48,6 +48,7 @@ python merge_dicts.py --inputs dictionary.json adj_dict.json --output dictionary
 | `ipa.py` | корректная IPA-транскрипция из en (CMUdict → брит. RP, неротическое) |
 | `canonical_verbs.json` | overlay чистых названий для темы «Глаголы» (9 разделов) |
 | `canonical_adjectives.json` | overlay чистых названий для темы «Прилагательные» (7 разделов) |
+| `canonical_nouns.json` | overlay чистых названий для темы «Существительные» (21 раздел) |
 | `verbs_dict.json`, `adj_dict.json` | промежуточные dict по темам (входы для merge) |
 | `run.sh` | мастер-скрипт (одна тема) |
 | `README.md` | документация для пользователя |
@@ -65,13 +66,15 @@ python merge_dicts.py --inputs dictionary.json adj_dict.json --output dictionary
 - Метрика: **толщина штриха** = max distance-transform (`scipy.ndimage.distance_transform_edt`)
   маски слова (порог `<140`). Берём `max(ru_stroke, en_stroke)`.
 - Абсолютная толщина зависит от снимка → порог **нормируется по странице**:
-  `is_main = stroke / median_stroke(page) ≥ BOLD_RATIO` (`1.30` в `build_json.py`).
+  `is_main = stroke / median_stroke(page) ≥ BOLD_RATIO` (`1.14` в `build_json.py`).
   Медиана — по ru-боксам базового текста страницы (отфильтрованы блобы 1–12 px).
 - **Не** использовать erosion-survival (старая метрика — не разделяет). **Не** использовать
   эвристику «первое слово подраздела». Чисто пиксельная метрика.
 - Проверочный эталон (стр.77–78, подтверждён пользователем): start, grow, prepare,
   continue, put off, repeat, finish, break, cease, move (10/10, без ложных). На этих
-  страницах чистый разрыв: жирные ratio ≥1.36, нежирные ≤1.24.
+  страницах чистый разрыв: жирные ratio ≥1.14, нежирные ≤1.08. На более раннем
+  скан-наборе порог был 1.30 (разрыв ≥1.36 / ≤1.24); на этом наборе фото (77–186)
+  разделение уже — порог понижен до 1.14, чтобы восстановить эталон.
 
 ### Нормализация слов
 - `fix_ru` (в `build_json.py`): русский в **нижний регистр**; `(ся`→`(ся)`; `(+прил...)`→
@@ -124,8 +127,10 @@ python merge_dicts.py --inputs dictionary.json adj_dict.json --output dictionary
 ### Overlay
 - `canonical_*.json` несёт поле `theme`; `build_json` применяет overlay только к
   совпадающей по имени теме (можно безопасно передавать overlay глаголов при сборе
-  прилагательных — он не применится). Сопоставление разделов по **порядку**, подразделов
-  по **номеру** внутри раздела.
+  прилагательных — он не применится). `--canonical` можно повторять: по одному файлу
+  на тему (`canonical_verbs.json --canonical canonical_adjectives.json --canonical
+  canonical_nouns.json`); `run.sh` авто-подхватывает все `canonical_*.json` в папке.
+  Сопоставление разделов по **порядку**, подразделов по **номеру** внутри раздела.
 - Для темы без overlay — `CANONICAL=` (названия из OCR).
 
 ### Транскрипция (ключ `tran`) — генерируется, не из OCR
