@@ -160,18 +160,6 @@
   </div>
   <div class="offcanvas-body">
 
-    <div class="mb-4">
-      <label class="form-label fw-semibold mb-2">Translation direction</label>
-      <div class="btn-group w-100" role="group">
-        <input type="radio" class="btn-check" name="dirRadio" id="dirEnRu" value="en-ru">
-        <label class="btn btn-outline-primary" for="dirEnRu">EN <i class="bi bi-arrow-right arrow-sm"></i> RU</label>
-        <input type="radio" class="btn-check" name="dirRadio" id="dirRuEn" value="ru-en">
-        <label class="btn btn-outline-primary" for="dirRuEn">RU <i class="bi bi-arrow-right arrow-sm"></i> EN</label>
-      </div>
-    </div>
-
-    <hr>
-
     <div class="mb-3">
       <label for="secFrom" class="form-label fw-semibold">Subsection from</label>
       <select class="form-select" id="secFrom"></select>
@@ -325,11 +313,9 @@
     if (dir === 'en-ru') {
       $('tab-en-ru').classList.add('active');
       $('tab-ru-en').classList.remove('active');
-      $('dirEnRu').checked = true;
     } else {
       $('tab-ru-en').classList.add('active');
       $('tab-en-ru').classList.remove('active');
-      $('dirRuEn').checked = true;
     }
   }
 
@@ -512,8 +498,6 @@
 
     $('tab-en-ru').addEventListener('click', () => onDirChange('en-ru'));
     $('tab-ru-en').addEventListener('click', () => onDirChange('ru-en'));
-    $('dirEnRu').addEventListener('change', () => onDirChange('en-ru'));
-    $('dirRuEn').addEventListener('change', () => onDirChange('ru-en'));
 
     secFromSel.addEventListener('change', () => {
       if (parseInt(secFromSel.value,10) > parseInt(secToSel.value,10)) {
