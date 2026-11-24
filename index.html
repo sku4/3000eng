@@ -173,14 +173,14 @@
     <hr>
 
     <div class="mb-3">
-      <label for="secFrom" class="form-label fw-semibold">Section from</label>
+      <label for="secFrom" class="form-label fw-semibold">Subsection from</label>
       <select class="form-select" id="secFrom"></select>
     </div>
 
     <div class="mb-3">
-      <label for="secTo" class="form-label fw-semibold">Section to</label>
+      <label for="secTo" class="form-label fw-semibold">Subsection to</label>
       <select class="form-select" id="secTo"></select>
-      <div class="form-text">Range includes the selected sections.</div>
+      <div class="form-text">Range includes the selected subsections.</div>
     </div>
 
     <hr>
@@ -207,9 +207,9 @@
 
   // --- Состояние ---
   let DATA = null;          // весь dictionary.json
-  let SECTIONS = [];        // плоский список разделов: {gIdx, themeRu, themeEn, secRu, secEn, subs:[{...}]}
-  let POOL = [];            // текущие записи в выбранном диапазоне: {entry, gIdx, sub}
-  let current = null;       // выбранная запись {entry, gIdx, sub}
+  let SUBSECTIONS = [];     // плоский список подразделов: {gIdx, themeRu, themeEn, secRu, secEn, subsection:{ru,en}, entries}
+  let POOL = [];            // текущие записи в выбранном диапазоне: {entry, sub}
+  let current = null;       // выбранная запись {entry, sub}
   let revealed = false;
   let settings = loadSettings();
 
@@ -251,18 +251,22 @@
     return await loadFetched();
   }
 
-  function buildSections(themes) {
+  function buildSubsections(themes) {
     const out = [];
     let gIdx = 0;
     themes.forEach(t => {
       (t.sections || []).forEach(s => {
-        out.push({
-          gIdx: gIdx,
-          themeRu: t.theme.ru, themeEn: t.theme.en,
-          secRu: s.section.ru, secEn: s.section.en,
-          subs: s.subsections || []
+        (s.subsections || []).forEach(sub => {
+          out.push({
+            gIdx: gIdx,
+            themeRu: t.theme.ru, themeEn: t.theme.en,
+            secRu: s.section.ru, secEn: s.section.en,
+            subsection: sub.subsection || {},
+            number: sub.number,
+            entries: sub.entries || []
+          });
+          gIdx++;
         });
-        gIdx++;
       });
     });
     return out;
@@ -279,16 +283,18 @@
     localStorage.setItem(LS_KEY, JSON.stringify(settings));
   }
 
-  // ---------- Заполнение select'ов разделов ----------
+  // ---------- Заполнение select'ов подразделов ----------
   const THEME_ABBR = { 'Глаголы': 'Гл.', 'Прилагательные': 'Прил.', 'Существительные': 'Сущ.' };
 
   function compactLabel(s) {
     const abbr = THEME_ABBR[s.themeRu] || s.themeRu;
-    return `${abbr} · ${s.secRu}`;
+    const subRu = s.subsection.ru || '';
+    const num = s.number ? s.number + '. ' : '';
+    return `${abbr} · ${s.secRu} · ${num}${subRu}`;
   }
 
   function fillSectionSelects() {
-    const html = SECTIONS.map(s =>
+    const html = SUBSECTIONS.map(s =>
       `<option value="${s.gIdx}">${compactLabel(s)}</option>`
     ).join('');
     secFromSel.innerHTML = html;
@@ -301,14 +307,11 @@
     const to   = Math.max(settings.secFrom, settings.secTo);
     const pool = [];
     for (let gIdx = from; gIdx <= to; gIdx++) {
-      const sec = SECTIONS[gIdx];
-      if (!sec) continue;
-      sec.subs.forEach(sub => {
-        (sub.entries || []).forEach(e => {
-          // пропускаем пустые
-          if (!e || !e.ru || !e.en) return;
-          pool.push({ entry: e, gIdx, sub });
-        });
+      const sub = SUBSECTIONS[gIdx];
+      if (!sub) continue;
+      (sub.entries || []).forEach(e => {
+        if (!e || !e.ru || !e.en) return;
+        pool.push({ entry: e, sub });
       });
     }
     POOL = pool;
@@ -375,13 +378,12 @@
 
   function renderBlock() {
     if (!current) { blockPanel.classList.add('d-none'); return; }
-    const sec = SECTIONS[current.gIdx];
     const sub = current.sub;
     const dir = settings.dir;
 
-    const themeName = `${sec.themeRu}<span class="dot-sep">·</span>${sec.themeEn}`;
-    const secName   = `${sec.secRu}<span class="dot-sep">·</span>${sec.secEn}`;
-    const subName   = sub.subsection ? `${sub.subsection.ru}<span class="dot-sep">·</span>${sub.subsection.en}` : '';
+    const themeName = `${sub.themeRu}<span class="dot-sep">·</span>${sub.themeEn}`;
+    const secName   = `${sub.secRu}<span class="dot-sep">·</span>${sub.secEn}`;
+    const subName   = sub.subsection && sub.subsection.ru ? `${sub.subsection.ru}<span class="dot-sep">·</span>${sub.subsection.en}` : '';
 
     blockCrumbs.innerHTML =
       `<span class="crumb-line"><span class="crumb-item"><i class="bi bi-folder2-open"></i> ${themeName}</span>` +
@@ -456,7 +458,7 @@
 
   function applySettingsToUI() {
     applyDirectionUI();
-    const max = SECTIONS.length - 1;
+    const max = SUBSECTIONS.length - 1;
     settings.secFrom = clampInt(settings.secFrom, 0, max);
     settings.secTo   = clampInt(settings.secTo,   0, max);
     secFromSel.value = String(settings.secFrom);
@@ -547,9 +549,9 @@
       blockPanel.classList.add('d-none');
       return;
     }
-    SECTIONS = buildSections(DATA.themes || []);
-    if (!SECTIONS.length) {
-      poolInfo.textContent = 'No sections in dictionary.json.';
+    SUBSECTIONS = buildSubsections(DATA.themes || []);
+    if (!SUBSECTIONS.length) {
+      poolInfo.textContent = 'No subsections in dictionary.json.';
       blockPanel.classList.add('d-none');
       return;
     }
