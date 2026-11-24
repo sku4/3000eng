@@ -76,6 +76,9 @@
     .breadcrumb-mini .dot-sep { margin: 0 .4em; }
     #promptLabel .dot-sep { margin: 0 .4em; }
     #promptLabel .crumb-sep { margin: 0 .5rem; }
+    @media (max-width: 575.98px) {
+      #promptLabel .prompt-sub { display: block; }
+    }
     .block-list { text-align: start; }
     .topbar {
       position: sticky; top: 0; z-index: 1020;
@@ -99,13 +102,15 @@
 
     /* --- Поиск --- */
     .topbar .search-btn { left: 1rem; }
+    .topbar .search-btn,
+    .topbar .burger-btn { border-color: #dadfe4; }
     .topbar .search-btn:hover,
     .topbar .search-btn:focus,
     .topbar .search-btn:active,
     .topbar .search-btn:focus-visible {
       background-color: transparent;
       color: var(--bs-secondary-color, #6c757d);
-      border-color: var(--bs-secondary-border-subtle, #dee2e6);
+      border-color: #dadfe4;
       box-shadow: none;
     }
     .topbar .burger-btn { right: 1rem; }
@@ -625,7 +630,7 @@
       const secName = `${sub.secRu}<span class="dot-sep">·</span>${sub.secEn}`;
       const subName = `${sub.subsection.ru}<span class="dot-sep">·</span>${sub.subsection.en}`;
       promptLabel.innerHTML =
-        `${secName}<span class="text-secondary crumb-sep">›</span>${subName}`;
+        `${secName}<span class="text-secondary crumb-sep">›</span><span class="prompt-sub">${subName}</span>`;
     } else {
       promptLabel.textContent = '';
     }
