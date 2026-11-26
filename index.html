@@ -151,6 +151,9 @@
     }
     .search-clear:hover { color: #000; }
 
+    /* Высота одной строки результата с хлебной крошкой:
+       .search-item padding (.4+.4=.8) + crumb line (.72*1.3=.936) + crumb margin (.15)
+       + words line (.95*1.3=1.235) = 3.121rem. Округлено вверх до 3.13rem для запаса. */
     .search-results {
       position: absolute;
       top: calc(100% + .375rem);
@@ -162,7 +165,9 @@
       border-radius: .5rem;
       box-shadow: 0 .5rem 1rem rgba(0,0,0,.12);
       z-index: 1030;
-      max-height: 70vh;
+      /* Вмещает ровно 6 результатов (каждый с крошкой) + padding/border контейнера.
+         При ≤6 результатах контент короче → скролла нет; при 7–10 — вертикальный скролл. */
+      max-height: calc(6 * 3.13rem + .5rem + 2px);
       overflow-y: auto;
       display: none;
     }
@@ -171,7 +176,7 @@
     .search-item { padding: .4rem .15rem; border-radius: .35rem; cursor: pointer; }
     .search-item:hover, .search-item.active { background: #f1f3f5; }
     .search-crumb { font-size: .72rem; color: #6c757d; line-height: 1.3; margin-bottom: .15rem; }
-    .search-crumb .crumb-sep { margin: 0 .5rem; color: #adb5bd; }
+    .search-crumb .crumb-sep { margin: 0 .4rem; color: #adb5bd; }
     .search-words { font-size: .95rem; line-height: 1.3; }
     .search-words .word { font-weight: 600; }
     .search-words strong { font-weight: 700; color: #0d6efd; }
@@ -453,7 +458,7 @@
       scored.push({ r, score: best, field });
     }
     scored.sort((a, b) => b.score - a.score);
-    return scored.slice(0, 5);
+    return scored.slice(0, 15);
   }
 
   // Подсветка первого вхождения подстроки (уже экранированный HTML).
